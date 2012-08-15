@@ -1,0 +1,301 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{036050FC-D947-460A-BBA8-F072F6280E63}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NhsCui.Toolkit</RootNamespace>
+    <AssemblyName>NhsCui.Toolkit</AssemblyName>
+    
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\Nhs.Cui.Public.snk</AssemblyOriginatorKeyFile>
+                    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>NhsCui.Toolkit.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>NhsCui.Toolkit.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\VersionNumber.cs">
+      <Link>Properties\VersionNumber.cs</Link>
+    </Compile>
+    <Compile Include="AddressDisplayFormat.cs" />
+    <Compile Include="AllergyInformation.cs" />
+    <Compile Include="DateAndTime\NhsDateUITypeEditor.cs" />
+    <Compile Include="DateAndTime\NhsDateEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DateAndTime\NhsDateEditor.Designer.cs">
+      <DependentUpon>NhsDateEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateAndTime\InvalidArithmeticSetException.cs" />
+    <Compile Include="DateAndTime\NhsTimeEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DateAndTime\NhsTimeEditor.Designer.cs">
+      <DependentUpon>NhsTimeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateAndTime\NhsTimeTypeConverter.cs" />
+    <Compile Include="DateAndTime\NhsDateTypeConverter.cs" />
+    <Compile Include="DateAndTime\NhsTimeUITypeEditor.cs" />
+    <Compile Include="DateAndTime\Resources\NhsTimeSpanResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NhsTimeSpanResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DateAndTime\TimeSpanUnitLength.cs" />
+    <Compile Include="IdentifierType.cs" />
+    <Compile Include="NhsNumber.cs" />
+    <Compile Include="NhsNumberExceptionResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NhsNumberExceptionResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DateAndTime\NhsDate.cs" />
+    <Compile Include="DateAndTime\Enums.cs" />
+    <Compile Include="DateAndTime\GlobalizationService.cs" />
+    <Compile Include="DateAndTime\Resources\NhsDateResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NhsDateResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DateAndTime\Resources\NhsTimeResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NhsTimeResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DateAndTime\NhsTime.cs" />
+    <Compile Include="DateAndTime\NhsTimeSpan.cs" />
+    <Compile Include="PatientBanner\PatientBannerEventArgs.cs" />
+    <Compile Include="PatientName.cs" />
+    <Compile Include="PatientNameResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientNameResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientSearch\Enums.cs" />
+    <Compile Include="PatientSearch\FoundText.cs" />
+    <Compile Include="PatientSearch\Parser.cs" />
+    <Compile Include="PatientSearch\Resources\CommonFamilyNamesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonFamilyNamesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientSearch\Resources\CommonThoroughfaresResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonThoroughfaresResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientSearch\Resources\ParserResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParserResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientSearch\Resources\TitlesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TitlesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientSearch\Title.cs" />
+    <Compile Include="PatientGender.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceDefaultValueAttribute.cs" />
+    <Compile Include="ToolboxBitmaps\ResourceReference.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NhsNumberExceptionResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NhsNumberExceptionResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DateAndTime\Resources\NhsDateResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NhsDateResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateAndTime\Resources\NhsTimeResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NhsTimeResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientNameResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PatientNameResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolboxBitmaps\AddressLabel.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\DateInputBox.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\DateLabel.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\IdentifierLabel.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\NameLabel.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\PatientBanner.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\GenderLabel.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\TimeInputBox.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\TimeLabel.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\TimeSpanLabel.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DateAndTime\NhsDateEditor.resx">
+      <DependentUpon>NhsDateEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateAndTime\NhsTimeEditor.resx">
+      <DependentUpon>NhsTimeEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateAndTime\Resources\NhsTimeSpanResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NhsTimeSpanResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSearch\Resources\CommonFamilyNamesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonFamilyNamesResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSearch\Resources\CommonThoroughfaresResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonThoroughfaresResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSearch\Resources\ParserResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ParserResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSearch\Resources\TitlesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TitlesResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\ContactLabel.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolboxBitmaps\MedicationGrid.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\MedicationLine.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\MedicationNameLabel.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolboxBitmaps\PatientSearchInputBox.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolboxBitmaps\DateInputBoxValidator.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\TimeInputBoxValidator.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\TimeSpanInputBoxValidator.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolboxBitmaps\NhsErrorProvider.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\Validator.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolboxBitmaps\TimeSpanInputBox.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>  -->
+</Project>

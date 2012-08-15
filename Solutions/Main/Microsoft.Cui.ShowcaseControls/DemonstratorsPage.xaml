@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="Microsoft.Cui.ShowcaseControls.DemonstratorsPage"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:showcasecontrol="clr-namespace:Microsoft.Cui.ShowcaseControls;assembly=Microsoft.Cui.ShowcaseControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    >
+    <StackPanel x:Name="pnlRoot" HorizontalAlignment="Left">
+        <Rectangle x:Name="filler01" Height="2" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ViewVideo 
+            x:Name="demonstratorvideo01" 
+             MediaText="This Patient Journey Demonstrator conceptualizes an end-to-end journey where a specific clinical scenario is used to illustrate how an integrated patient-centric care record can transition seamlessly between care settings. It demonstrates how data can be accessed and entered from many of the care sources experienced along the patient journey.|In this scenario, a man with suspected heart disease is examined by his local General Practitioner. Using decision support tools, his General Practitioner decides that the best course of action is to refer him for further tests. The scenario then tracks the automated tasks that take place from the initial consultation through secondary care to an Angiogram investigation.|Click the thumbnail to start." 
+            TextTitle="Patient Journey Demonstrator" 
+            VideoImage="PatJoDem.png" 
+            ImageToolTip="Open the Patient Journey Demonstrator (New Window)"
+        />
+        <Rectangle x:Name="filler02" Height="1" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="demonstrators01" 
+            MediaText="This video provides a five to seven year vision of how emerging and established technologies, based on the Microsoft platform, will help healthcare and life sciences customers and partners realize a long-term competitive advantage.|The scenarios described are of two patients being treated for diabetes using futuristic concepts and tools. They demonstrate many aspects of the patients’ care from investigation through to treatment, such as the collection and secure sharing of patient data, use of virtual three dimensional clinical investigative and reporting systems to analyze patient data, use of virtual medical and human resource location finders, virtual scheduling of appointments, virtual consultations between patients and clinicians, virtual prescribing and administering of medications, and online patient acquisition of treatment using a digital wallet.|Click the thumbnail to start." 
+            TextTitle="Health: Future Vision" 
+            VideoImage="demoimagetwo.png" 
+            ImageToolTip="Play the Health: Future Vision video"
+            CloseControlEventHandler="CloseAllMedia"
+        />
+        <Rectangle x:Name="filler03" Height="1" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="demonstrators02" 
+            MediaText="This demonstration illustrates what a futuristic clinical application could look like.|In this scenario, whilst a febrile baby is being admitted into the ward, the doctor receives a task in the form of an alert. He is then seen viewing and adding to the patient care record.|Click the thumbnail to start." 
+            TextTitle="Pediatric Secondary Care – Patient Admission" 
+            VideoImage="demoimagethreee.png" 
+            ImageToolTip="Play the Pediatric Secondary Care - Patient Admission video"
+            CloseControlEventHandler="CloseAllMedia"
+        />
+        <Rectangle x:Name="filler04" Height="1" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="demonstrators03" 
+            MediaText="This demonstration shows how powerful visualization of data can be for healthcare practitioners.|The scenario demonstrates how the practitioners can view items in the patient notes, such as observations on oxygen and additional details about patient care. It also demonstrates how easy it is for them to process the data collected about the patient.|Click the thumbnail to start." 
+            TextTitle="Pediatric Secondary Care – Patient Review" 
+            VideoImage="demoimagefour.png" 
+            ImageToolTip="Play the Pediatric Secondary Care - Patient Review video"
+            CloseControlEventHandler="CloseAllMedia"
+        />
+        <Rectangle x:Name="filler05" Height="1" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="demonstrators04" 
+            MediaText="This demonstration shows how exciting user interface designs can be combined with technology to gain a better overview of patients’ care plans.|The demonstration illustrates a clear and intuitive mechanism for nurses to review past assessments of plans, carry out further assessments, or make adjustments to current care plans from within the ‘Nursing Now’ view."
+            TextTitle="Secondary Care – 'Nursing Now' View" 
+            VideoImage="demoimagefive.png" 
+            ImageToolTip="Play the Secondary Care - 'Nursing Now' View video" 
+            CloseControlEventHandler="CloseAllMedia"
+        />
+        <Rectangle x:Name="filler06" Height="1" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="demonstrators05" 
+            MediaText="This demonstrator is available as a video and a download.|This scenario demonstrates how, by the use of the latest user interface technology, it is possible to display pathway steps to healthcare practitioners in a truly innovative form.|The scenario clearly shows how a Care Pathway could be overlaid on top of an existing clinical application to help guide a healthcare practitioner through the required steps for that specific Care Pathway.|The scenario described is a Care Pathway for a Bunion. It demonstrates how the healthcare practitioner can easily gain access to information about the phases of care and steps within in a phase." 
+            TextTitle="Secondary Care –  Care Pathways" 
+            VideoImage="demoimagesix.png" 
+            MediaSource="MSCUI_Demonstrator_Care_Pathways.wmv"  
+            ImageToolTip="Play the Secondary Care - Care Pathways video"
+            CloseControlEventHandler="CloseAllMedia"
+        />
+        <showcasecontrol:DownloadMediaControl
+            x:Name="downloader01" 
+            MediaText="The download installs the Care Pathways scenario onto your computer. The demonstrator comes with a script to guide you through the scenario. It allows you to see how healthcare practitioners are supported through the Pathway by the use of some innovative user interface design concepts.|IMPORTANT NOTE: Your computer needs to have the .NET Framework 3.0 installed in order to run the Care Pathways Demonstrator. If your computer does not have the .NET Framework 3.0 installed, or you are not sure, download and install it before running the Care Pathways Demonstrator installer. Download from here:" 
+            DownloadImage="downlaodone.png" 
+            DownloadSource="Microsoft Health CUI Care Pathways Demonstrator.msi"        
+            ImageToolTip="Download the Care Pathways Demonstrator"
+            HyperlinkText="Microsoft Download Center – Microsoft .NET#http://www.microsoft.com/downloads/details.aspx?FamilyId=10CC340B-F857-4A14-83F5-25634C3BF043"/>
+
+        <MediaElement x:Name="media" Stretch="Uniform" Visibility="Collapsed"/>
+        <Rectangle x:Name="rectVideoBrush" Stretch="Uniform" Visibility="Collapsed">
+            <Rectangle.Fill>
+                <VideoBrush x:Name="mediaBrush" SourceName="media" Stretch="Uniform"/>
+            </Rectangle.Fill>
+        </Rectangle>
+    </StackPanel>
+
+</UserControl>

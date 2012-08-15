@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Patient Banner</title>
+  <back href="PatientIdentification.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Patient Banner.pdf" altText="Links to Design Guidance - Patient Banner documentation">Design Guidance - Patient Banner (PDF Format)</download>
+  <navigation collapseInactiveItems="false">
+    
+    <header text="Overview" tooltip="Patient Banner - Overview" href="QuickGuides/PatientBanner/default.aspx" />
+    
+    <header text="Structure" tooltip="Patient Banner - Structure" href="QuickGuides/PatientBanner/structure.aspx">
+      <subheader text="Zones" tooltip="Patient Banner - Structure - Zones" href="QuickGuides/PatientBanner/Structure/zones.aspx" />
+      <subheader text="Contents" tooltip="Patient Banner - Structure - Contents" href="QuickGuides/PatientBanner/Structure/contents.aspx" />
+      <subheader text="Expand / Collapse" tooltip="Patient Banner - Structure - Expand / Collapse" href="QuickGuides/PatientBanner/Structure/expandcontrol.aspx" />
+      <subheader text="Application Context" tooltip="Patient Banner - Structure - Application Context" href="QuickGuides/PatientBanner/Structure/context.aspx" />
+      <subheader text="Layout" tooltip="Patient Banner - Structure - Layout" href="QuickGuides/PatientBanner/Structure/layout.aspx" />
+      <subheader text="Visual Style" tooltip="Patient Banner - Structure - Visual Style" href="QuickGuides/PatientBanner/Structure/visualstyle.aspx" />
+      <subheader text="Data and Label Formats" tooltip="Patient Banner - Structure - Data and Label Formats" href="QuickGuides/PatientBanner/Structure/datalabelformats.aspx" />
+    </header>
+
+    <header text="Zone 1" tooltip="Patient Banner - Zone 1" href="QuickGuides/PatientBanner/zone1.aspx">
+      <subheader text="Contents" tooltip="Patient Banner - Zone 1 - Contents" href="QuickGuides/PatientBanner/Zone1/contents.aspx">
+        <subheader text="Order" tooltip="Patient Banner - Zone 1 - Contents - Order" href="QuickGuides/PatientBanner/Zone1/Contents/order.aspx" />
+        <subheader text="Preferred Name" tooltip="Patient Banner - Zone 1 - Contents - Preferred Name" href="QuickGuides/PatientBanner/Zone1/Contents/preferredname.aspx" />
+        <subheader text="Age" tooltip="Patient Banner - Zone 1 - Contents - Age" href="QuickGuides/PatientBanner/Zone1/Contents/age.aspx" />
+      </subheader>
+      <subheader text="Formatting" tooltip="Patient Banner - Zone 1 - Formatting" href="QuickGuides/PatientBanner/Zone1/formatting.aspx" />
+      <subheader text="Labels" tooltip="Patient Banner - Zone 1 - Labels" href="QuickGuides/PatientBanner/Zone1/labels.aspx">
+        <subheader text="Deceased" tooltip="Patient Banner - Zone 1 - Labels - Deceased" href="QuickGuides/PatientBanner/Zone1/Labels/deceased.aspx" />
+      </subheader>
+    </header>
+
+    <header text="Zone 2" tooltip="Patient Banner - Zone 2" href="QuickGuides/PatientBanner/zone2.aspx">
+      <subheader text="Collapsed Contents" tooltip="Patient Banner - Zone 2 - Collapsed Contents" href="QuickGuides/PatientBanner/Zone2/collapsed.aspx">
+        <subheader text="Deceased" tooltip="Patient Banner - Zone 2 - Collapsed Contents - Deceased" href="QuickGuides/PatientBanner/Zone2/Collapsed/deceased.aspx" />
+        <subheader text="Allergy Propensity" tooltip="Patient Banner - Zone 2 - Collapsed Contents - Allergy Propensity" href="QuickGuides/PatientBanner/Zone2/Collapsed/allergies.aspx" />
+      </subheader>
+      <subheader text="Expanded Contents" tooltip="Patient Banner - Zone 2 - Expanded Contents" href="QuickGuides/PatientBanner/Zone2/expanded.aspx" />
+      <subheader text="Labels" tooltip="Patient Banner - Zone 2 - Labels" href="QuickGuides/PatientBanner/Zone2/labels.aspx">
+        <subheader text="Allergy Propensity" tooltip="Patient Banner - Zone 2 - Labels - Allergy Propensity" href="QuickGuides/PatientBanner/Zone2/Labels/allergies.aspx" />
+        <subheader text="Allergy Icons" tooltip="Patient Banner - Zone 2 - Labels - Allergy Icons" href="QuickGuides/PatientBanner/Zone2/Labels/allergyicons.aspx" />
+      </subheader>
+    </header>
+    
+    <header text="Checklist" tooltip="Patient Banner - Checklist" href="QuickGuides/PatientBanner/checklist.aspx" />
+    <header text="Appendix" tooltip="Patient Banner - Appendix" href="QuickGuides/PatientBanner/appendix.aspx" />
+  </navigation>
+</quickguide>

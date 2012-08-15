@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="Microsoft.Cui.Controls.DataBoundRowGrouping"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:ctl="clr-namespace:Microsoft.Cui.Controls"
+        >
+    <UserControl.Resources>
+        <ctl:DictionaryToStringConverter x:Key="DictionaryToStringConverter" />
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot">
+        <TextBlock Text="----Group"/> <TextBlock x:Name="BindingElement" Text="{Binding Converter={StaticResource DictionaryToStringConverter}, ConverterParameter='DrugName'}" />
+    </Grid>
+</UserControl>

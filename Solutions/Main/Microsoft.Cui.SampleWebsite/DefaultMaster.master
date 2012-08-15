@@ -1,0 +1,145 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="DefaultMaster" CodeBehind="DefaultMaster.master.cs" %>
+
+<%@ Register Assembly="Microsoft.Cui.SampleWebsite" Namespace="Microsoft.Cui.SampleWebsite"
+    TagPrefix="SS" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Microsoft Health</title>
+    <link rel="SHORTCUT ICON" href="images/favicon.ico" />
+    <link rel="stylesheet" runat="server" id="mainStylesheet" title="Main stylesheet"
+        href="~/CSS/SFTheme.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="pageSpecificHeadTags" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        // Prevent IE6 background-image flicker
+        try {
+            document.execCommand("BackgroundImageCache", false, true);
+        } catch (err) { }
+        //]]>   
+        function OpenInNewWindow(url) {
+            window.open(url);
+        }
+        function TabClick(linkTab) {
+            var tab = $get(linkTab);
+            tab.focus();
+        }
+               
+    </script>
+
+    <style type="text/css">
+        #siteSectionNav
+        {
+            top: -30px;
+            font-size: 12pt;
+            float: left;
+        }
+    </style>
+</head>
+<body id="defaultBody" runat="server">
+    <div id="infoPane" class="isv-error-pane" style="display: none" onclick="this.style.display='none'">
+    </div>
+    <form id="MasterPageForm" runat="server">
+    <asp:SiteMapDataSource runat="server" ID="SiteMapDS" ShowStartingNode="false"></asp:SiteMapDataSource>
+    <div id="siteHeader">
+        <asp:ImageMap ID="mscuiImageMap" runat="server" ImageUrl="~/images/SFTheme/cuibann.png"
+            HotSpotMode="Navigate">
+            <asp:RectangleHotSpot Top="20" Left="20" Right="216" Bottom="148" NavigateUrl="~/Default.aspx"
+                AlternateText="Microsoft Health Common User Interface" />
+        </asp:ImageMap>
+        <table id="siteSectionNav">
+            <tr>
+                <td class="first">
+                    <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx" title='Links to Home page'>Home</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink runat="server" NavigateUrl="~/Introduction/Introduction.aspx" title='Links to Introduction section'>Introduction</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink runat="server" NavigateUrl="~/DesignGuide/DesignGuide.aspx" title='Links to Guidance section'>Guidance</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink runat="server" NavigateUrl="~/ControlsAndSamples.aspx" title='Links to Controls and Samples section'>Controls</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Showcase/Showcase.aspx"
+                        title='Links to Showcase section'>Showcase</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink runat="server" NavigateUrl="~/roadmap/roadmap.aspx" title='Links to Roadmap section'>Roadmap</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="blogLink" runat="server" NavigateUrl="~/Blog/Default.aspx" title='Links to Team Blog section'>Team Blog</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    <div id="siteContent">
+        <asp:ContentPlaceHolder ID="siteContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="siteFooter">
+        <span>&copy; 2010 Microsoft Corporation. All rights reserved.</span>
+        <div id="links">
+            <table>
+                <tr>
+                    <td class="first">
+                        <asp:HyperLink runat="server" NavigateUrl="~/about.aspx" title='Links to About this Website'>About</asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:HyperLink runat="server" NavigateUrl="~/sitemap.aspx" title='Links to Sitemap'>Sitemap</asp:HyperLink>
+                    </td>
+                    <td>
+                        <a href="http://www.microsoft.com/info/cpyright.mspx" title='Links to Terms of Use page on Microsoft.com'>
+                            Terms of Use</a>
+                    </td>
+                    <td>
+                        <asp:HyperLink runat="server" NavigateUrl="~/privacy.aspx"  title='Links to Privacy'>
+                            Privacy</asp:HyperLink>
+                    </td>
+                    <td>
+                        <a href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx" target="_blank" title='Links to Trademarks page on Microsoft.com (New Window)'>
+                            Trademarks</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--
+            <span runat="server" id="buildNo"></span>
+            -->
+    </div>
+    </form>
+
+    <script type="text/javascript" defer="defer">
+        //<![CDATA[
+        var infoPane = null;
+
+        // Error handler function
+        window.onerror = errorhandler;
+
+        // Global javascript error handler 
+        function errorhandler(message, url, linenumber) {
+            infoPane = document.getElementById('infoPane');
+            infoPane.style.display = "block";
+            infoPane.innerHTML = (message + ", " + url + ", " + linenumber).split("").join("<wbr />");
+        }
+        //]]>    
+    </script>
+
+    <asp:Literal runat="server" ID="analyticsPanel">
+    <!-- Start of StatCounter Code -->
+    <script type="text/javascript">
+        var sc_project = 3257659;
+        var sc_invisible = 0;
+        var sc_partition = 35;
+        var sc_security = "1fcbdb63"; 
+    </script>
+
+    <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c36.statcounter.com/3257659/0/1fcbdb63/0/" alt="free hit counter" /></a></div></noscript>
+    <!-- End of StatCounter Code --> 
+    </asp:Literal>
+</body>
+</html>

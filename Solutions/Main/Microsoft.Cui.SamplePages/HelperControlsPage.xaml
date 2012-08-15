@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Microsoft.Cui.SamplePages.HelperControlsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Microsoft.Cui.SamplePages;assembly=Microsoft.Cui.SamplePages"
+    Width="Auto" Height="Auto">
+    <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <local:DecoratorTextBoxPage  Margin="5,5,5,2.5"/>
+            <local:EncodableInputBoxPage Margin="5,5,5,2.5"/>
+            <local:IndentedLabelPage Margin="5,5,5,2.5"/>
+            <local:LevelOfDetailPage Margin="5,5,5,2.5"/>
+            <local:PanelViewerPage Margin="5,5,5,2.5"/>
+            <local:WrapPanelPage Margin="5,5,5,5"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

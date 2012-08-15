@@ -1,0 +1,525 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Cui.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Cui.Data.CfhRuleOutput">
+            <summary>
+            Rule output class.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.CfhRuleOutput.levelName">
+            <summary>
+            Level name for the template.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.CfhRuleOutput.templateName">
+            <summary>
+            Template name to be added.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.Data.CfhRuleOutput.LevelName">
+            <summary>
+            Gets or sets the level name for the template.
+            </summary>
+            <value>The name of the level.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Data.CfhRuleOutput.TemplateName">
+            <summary>
+            Gets or sets the template name.
+            </summary>
+            <value>The name of the template.</value>
+        </member>
+        <member name="T:Microsoft.Cui.Data.CfhRulesDataStore">
+            <summary>
+            Contains methods to access data for rules processing.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.CfhRulesDataStore.rules">
+            <summary>
+            Available rules list.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.CfhRulesDataStore.templates">
+            <summary>
+            List of templates.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.#ctor">
+            <summary>
+            Creates a new instance of RulesDataStore.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.GetVMPName(System.String)">
+            <summary>
+            Returns thge VMPName for the specified ID.
+            </summary>
+            <param name="vmpID">ID of VMP to search.</param>
+            <returns>
+            Corresponding drug name based upon the search rules.
+            </returns>
+            <remarks>
+            If VTMID is null for a VMP then instead of drug name the name field from VMP table is returned.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.GetVTMName(System.String)">
+            <summary>
+            Finds the VTMName for the specified VTMID.
+            </summary>
+            <param name="vtmID">ID of the VTM to search.</param>
+            <returns>Corresponding VTMName.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.GetAMPName(System.String)">
+            <summary>
+            Finds the AMPName for the specified AMPID.
+            </summary>
+            <param name="ampID">ID of the AMP to search.</param>
+            <returns>Corresponding AMPName.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.QueryDrugType(System.String,System.String)">
+            <summary>
+            Searches for the drug type for a given formCode and routeCode.
+            </summary>
+            <param name="form">FormCode to search.</param>
+            <param name="route">RouteCode to search.</param>
+            <returns>Drug type.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.GetVTMID(System.String)">
+            <summary>
+            Finds the VTMID for a particular VMPID.
+            </summary>
+            <param name="vmpID">VMPID to search.</param>
+            <returns>VTMID for the specified VMPID.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.ExecuteRules(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Executes rules for a given drug type.
+            </summary>
+            <param name="drugType">Drug type to execute.</param>
+            <param name="inputRow">Input Row of data.</param>        
+            <returns>Associated templates depending upon the successful rule.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.GetReader(System.String)">
+            <summary>
+            Returns Xml reader for the specified file name.
+            </summary>
+            <param name="fileName">XML File name to load.</param>
+            <returns>XML Reader.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.RunRule(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Runs the specified rule.
+            </summary>
+            <param name="ruleName">Rule name to execute.</param>
+            <param name="inputRow">Input row of data.</param>        
+            <returns>Status of rule.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.CreateTemplate(System.String,System.String)">
+            <summary>
+            Creates template for specified drugtype and rule.
+            </summary>
+            <param name="drugType">Drug Type of row.</param>
+            <param name="ruleID">Rule ID to execute.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRulesDataStore.ExecuteRuleForDrugType(System.Xml.XmlReader,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Executes rules for a given drug type.
+            </summary>
+            <param name="reader">XML reader object.</param>
+            <param name="drugType">Drug type to search.</param>
+            <param name="inputRow">Input row of data.</param>        
+            <returns>Execution status.</returns>
+        </member>
+        <member name="T:Microsoft.Cui.Data.CfhRule">
+            <summary>
+            Abstract class for Cfh rules.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.CfhRule.Execute(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Executes the rule.
+            </summary>
+            <param name="inputRow">Input row of data.</param>        
+            <returns>Execution status.</returns>
+        </member>
+        <member name="T:Microsoft.Cui.Data.ColumnMapping">
+            <summary>
+            This class stores the column mapping information. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.ColumnMapping.gridColumnName">
+            <summary>
+            Column name in the Grid.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.ColumnMapping.dataColumnName">
+            <summary>
+            Column name in the Data.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.ColumnMapping.#ctor(System.String,System.String)">
+            <summary>
+            Instantiates a new ColumnMapping object with the provided GridColumnName and DataColumnName.
+            </summary>
+            <param name="gridColumnName">Name of the column in the Grid.</param>
+            <param name="dataColumnName">Name of the column in the ISV data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.ColumnMapping.#ctor">
+            <summary>
+            Instantiates a new ColumnMapping object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.Data.ColumnMapping.GridColumnName">
+            <summary>
+            Gets or sets the Grid column name.
+            </summary>
+            <value>The name of the grid column.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Data.ColumnMapping.DataColumnName">
+            <summary>
+            Gets or sets the Data column name.
+            </summary>
+            <value>The name of the data column.</value>
+        </member>
+        <member name="T:Microsoft.Cui.Data.ColumnMappingList">
+            <summary>
+            List of Column Mappings.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Cui.Data.DataManager">
+            <summary>
+            This class acts a broker between UI Layer and ISV dataprovider.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManager.getDataMethod">
+            <summary>
+            GetData method name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManager.ruleManager">
+            <summary>
+            Rule manager object for applying rules.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManager.columnMappings">
+            <summary>
+            ColumnMapping object.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManager.rows">
+            <summary>
+            Object to hold the rows returned by ISV.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManager.totalRowCount">
+            <summary>
+            Total medication rows.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManager.pageSize">
+            <summary>
+            Specifies the number of records to be fetched at one time.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManager.threshold">
+            <summary>
+            Specifies the limit after which we need to fetch the rows again.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManager.cache">
+            <summary>
+            Cache of the rows already retrieved.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManager.isvDataProvider">
+            <summary>
+            ISV data provider object.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManager.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManager.Flush">
+            <summary>
+            Clears the local cache.
+            </summary>        
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManager.GetEnumerator">
+            <summary>
+            Gets an enumerator to loop through the rows.
+            </summary>
+            <returns>Enumerator to loop through the rows.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManager.GetItem(System.Int32)">
+            <summary>
+            Gets the row at a specified ordinal position.
+            </summary>
+            <param name="ordinalPosition">Ordinal position of the row to be returned.</param>
+            <returns>Row at the specified position.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManager.GetData(System.Int32)">
+            <summary>
+            Gets the data from ISV data provider.
+            </summary>
+            <param name="ordinalPosition">Starting row position from which the data has to be returned.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManager.ApplyColumnMappings">
+            <summary>
+            Apply column mappings.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManager.ApplyRules">
+            <summary>
+            Apply Rules to the rows provided by ISV.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManager.GetIsvData(System.Int32)">
+            <summary>
+            Get data from ISV.
+            </summary>
+            <param name="startOrdinalPosition">Specifies the start position from which to fetch the rows.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManager.UpdateCache">
+            <summary>
+            Update the local cache.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManager.AddRowCounts">
+            <summary>
+            Adds row counts to the dictionary.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.Data.DataManager.IsvDataProvider">
+            <summary>
+            Gets or sets the IsvDataProvider object.
+            </summary>
+            <value>The ISV data provider.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Data.DataManager.ColumnMappings">
+            <summary>
+            Gets or sets the Column mappings to be applied.
+            </summary>
+            <value>The column mappings.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Data.DataManager.CacheRecordCount">
+            <summary>
+            Gets the number of records in the cache.
+            </summary>
+            <value>The cache record count.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Data.DataManager.RuleManager">
+            <summary>
+            Gets or sets the RuleManger.
+            </summary>
+            <value>The rule manager.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Data.DataManager.GetDataMethod">
+            <summary>
+            Gets or sets the GetData method specified in the ISV implementation.
+            </summary>
+            <value>The get data method.</value>
+        </member>
+        <member name="T:Microsoft.Cui.Data.DataManagerEnumerator">
+            <summary>
+            Data Manager Enumerator class.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManagerEnumerator.dataManager">
+            <summary>
+            DataManager instance variable.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.DataManagerEnumerator.position">
+            <summary>
+            Current Ordinal position.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManagerEnumerator.MoveNext">
+            <summary>
+            Moves the cursor to next record in the enumerator.
+            </summary>
+            <returns>Returns true if the next record exists.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Data.DataManagerEnumerator.Reset">
+            <summary>
+            Resets the ordinal position to before first row.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.Data.DataManagerEnumerator.DataManager">
+            <summary>
+            Gets or sets the Data Manager.
+            </summary>
+            <value>The data manager.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Data.DataManagerEnumerator.Current">
+            <summary>
+            Gets the current object in the enumerator.
+            </summary>
+            <value>Gets the current object in the enumerator.</value>
+            <returns>The current element in the collection.</returns>
+            <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.-or- The collection was modified after the enumerator was created.</exception>
+        </member>
+        <member name="T:Microsoft.Cui.Data.StrengthRule">
+            <summary>
+            Class representing strength rule.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.StrengthRule.Execute(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Executes the Strength rule.
+            </summary>
+            <param name="inputRow">Input row of data.</param>        
+            <returns>True, if strength exists else false.</returns>
+        </member>
+        <member name="T:Microsoft.Cui.Data.SachetRule">
+            <summary>
+            Class representing sachet rule.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.SachetRule.Execute(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Executes the sachet rule.
+            </summary>
+            <param name="inputRow">Input row of data.</param>        
+            <returns>True, if sachet exists else false.</returns>
+        </member>
+        <member name="T:Microsoft.Cui.Data.StrengthForGases">
+            <summary>
+            Class representing StrengthForGases rule.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.StrengthForGases.Execute(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Executes the StrengthForGases rule.
+            </summary>
+            <param name="inputRow">Input row of data.</param>        
+            <returns>Rule result.</returns>
+        </member>
+        <member name="T:Microsoft.Cui.Data.RuleManager">
+            <summary>
+            Rules manager.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.RuleManager.strategy">
+            <summary>
+            Strategy class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleManager.ApplyRules(System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}})">
+            <summary>
+            Applies rules on the input row.
+            </summary>
+            <param name="rows">Input rows collection.</param>                    
+        </member>
+        <member name="P:Microsoft.Cui.Data.RuleManager.Strategy">
+            <summary>
+            Gets or sets the strategy object.
+            </summary>
+            <value>The strategy.</value>
+        </member>
+        <member name="T:Microsoft.Cui.Data.RuleStrategy">
+            <summary>
+            Rules strategy.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.RuleStrategy.ValidSeparator">
+            <summary>
+            Valid separator between fields.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.RuleStrategy.NullSeparator">
+            <summary>
+            Null separator, used if a field is null.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.RuleStrategy.levelName">
+            <summary>
+            Level Name.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleStrategy.Execute(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Executes the rules and appends selected templates to the output row.
+            </summary>
+            <param name="inputRow">Input Row of data.</param>        
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleStrategy.GetDrugName(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Derives the value for DrugName.
+            </summary>
+            <param name="inputRow">Input row.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleStrategy.ApplyFormatting(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Applies conditional formatting.
+            </summary>
+            <param name="inputRow">Input row of data.</param>                
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleStrategy.AddSeparatorAttributes(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Adds the separator attributes to the input row.
+            </summary>
+            <param name="inputRow">Input row of data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleStrategy.ApplyCapitalization(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Applies capitalization to drug name.
+            </summary>
+            <param name="inputRow">Input row of data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleStrategy.AddLabels(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Adds an attribute for end label.
+            </summary>
+            <param name="inputRow">Input row of data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleStrategy.AddReviewDateLabel(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Adds the review label for UI.
+            </summary>
+            <param name="inputRow">Input row of data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleStrategy.AddEndDateLabel(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Adds the labels for UI.
+            </summary>
+            <param name="inputRow">Input row of data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleStrategy.AddDoseLabel(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Adds an attribute for dose label.
+            </summary>
+            <param name="inputRow">Input row of data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Data.RuleStrategy.UpdateFrequencyAttribute(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Updates the display value of frequency.
+            </summary>
+            <param name="inputRow">Input row of data.</param>
+        </member>
+        <member name="P:Microsoft.Cui.Data.RuleStrategy.LevelName">
+            <summary>
+            Gets or sets the level name for the rules implementation.
+            </summary>
+            <value>The name of the level.</value>
+        </member>
+        <member name="T:Microsoft.Cui.Data.VirtualSet">
+            <summary>
+            Class for virtual set.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Data.VirtualSet.dataRows">
+            <summary>
+            Current data rows collection.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.Data.VirtualSet.DataRows">
+            <summary>
+            Gets or sets the current data rows collection.
+            </summary>
+        </member>
+    </members>
+</doc>

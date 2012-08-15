@@ -1,0 +1,380 @@
+﻿.medicationNameLabelSampleContainer
+{
+    background-color: #F0F0F0;
+    border: solid 1px #808080;
+}
+
+.medicationNameLabelSample
+{
+    color: Gray;
+    cursor: pointer;        
+}
+
+.medicationNameLabelSample .drugName
+{
+    color: Black;    
+}
+
+.medicationNameLabelSampleBlack
+{
+    color: Black;    
+    cursor: pointer;    
+}
+
+.medicationNameLabel
+{   
+    color:Black; 
+}
+
+/* Styles specific to the medicationLineSample */
+
+/* Base style for the entire MedicationLine */
+.medicationLineSample
+{       
+    background-color: #F0F0F0;
+    color: Gray;
+    border-collapse: collapse;       
+    cursor: pointer;        
+}
+
+/* Base style for the Cells */
+.medicationLineSample .nhscui_ml_cell
+{        
+    padding: 2px;
+    border:solid 1px gray;
+}
+
+/* For the two graphics - hide the joining vertical border */
+.medicationLineSample .nhscui_ml_indicator
+{            
+    border-right-style:none;    
+}
+.medicationLineSample .nhscui_ml_criticalalert
+{            
+    border-left-style:none;    
+}
+
+/* MedicationName - text is black */
+.medicationLineSample .nhscui_ml_mn 
+{    
+    color: Black;
+}
+
+/* MedicationName - text is black */
+.medicationGrid .nhscui_ml_mn 
+{    
+    color: Black;
+}
+
+/* Dosage Text - text is gray */
+.medicationLineSample .nhscui_ml_dosage
+{
+    color: Gray;
+}
+
+/* Status Date - text is gray */
+.medicationLineSample .nhscui_ml_statusdate
+{
+    color: Black;
+}
+
+/* Reason - text is green */
+.medicationLineSample .nhscui_ml_reason
+{
+    color:Green;
+}
+
+/* StartDate - text is Blue */
+.medicationLineSample .nhscui_ml_startdate
+{
+    color: Black;
+}
+
+/* Status - text is White */
+.medicationLineSample .nhscui_ml_statustext
+{
+    color: White;
+}
+
+/* StatusText (active) - text is Blue */
+.medicationLineSample .nhscui_ml_active .nhscui_ml_statustext
+{       
+    background-color: #202020;
+} 
+
+/* MedicationLine (suspended) - background is pink */
+.medicationLineSample .nhscui_ml_suspended
+{       
+    background-color: #FFCFCF;
+} 
+
+/* StatusText (suspended) - text is Blue */
+.medicationLineSample .nhscui_ml_suspended .nhscui_ml_statustext
+{       
+    background-color: Red;    
+} 
+
+
+/** Medication Grid **/
+/* Styles specific to the MedicationGrid */
+.medicationGrid
+{        
+    color: Gray;  
+    background-color: #FDFDFD;
+    
+    margin: 1px 1px 1px 1px;
+    border-collapse: collapse;  
+    font-size: 0.9em;        
+}
+
+/* MedicationGrid - Medication Line */
+.nhscui_mg_ml
+{
+    cursor:pointer;
+}
+
+/* Medication Grid - Selected Medication Line */
+.nhscui_mg_ml .nhscui_ml_selected
+{       
+    background-color: #F0F0F0;
+}
+
+/* Medication Grid - Suspended Medication Line */
+.nhscui_mg_ml .nhscui_ml_suspended
+{
+    background-color: #FBF0F0;
+}
+
+/* Medication Grid - Active Medication Line */
+.nhscui_mg_ml .nhscui_ml_active
+{
+    background-color: #C0C0C0;
+}
+
+.nhscui_mg_scroll_table
+{
+    border: solid 1px gray;
+}
+
+/* Medication Grid - Medication Line Cell */
+.medicationGrid .nhscui_ml_cell
+{
+    border: solid 1px gray;
+    padding: 0px 2px 5px 2px;
+}
+
+/* Medication Grid - Medication Line Cell - StateDate */
+.nhscui_mg_ml .nhscui_ml_startdate
+{
+    color:Blue;
+}
+
+/* Medication Grid - Active Medication Line Cell - Indicator */
+.nhscui_mg_ml .nhscui_ml_indicator
+{
+    border-right: 0px none;
+    padding: 0px 0px 0px 0px;
+}
+
+
+/* Medication Grid - Active Medication Line Cell - Critical Alert */
+.nhscui_mg_ml .nhscui_ml_criticalalert
+{
+    border-left-style: none;
+    padding: 0px 0px 0px 0px;
+}
+
+/* Medication Grid - Medication Line Cell -Reason */
+.nhscui_mg_ml .nhscui_ml_reason
+{
+    color:Green;
+}
+
+/* Medication Grid - Active Medication Line Cell - Status */
+.nhscui_mg_ml .nhscui_ml_status 
+{            
+   
+} 
+
+/* Medication Grid - Active Medication Line Cell - Status - Status Date */
+.medicationGrid .nhscui_ml_status .nhscui_ml_statusdate
+{           
+    color: black;    
+} 
+
+/* Medication Grid - Active Medication Line Cell - Status - Status Text */
+.medicationGrid .nhscui_ml_status .nhscui_ml_statustext
+{           
+    color: White;
+    background-color: black;
+    text-align: center;    
+} 
+
+/* Medication Grid - Active Medication Line Cell - DrugDetails - Dosage Text */
+.nhscui_ml_drugdetails .nhscui_ml_dosage
+{
+    color: brown;
+}
+
+
+/* Medication Grid - Medication Line Cell */
+.medicationGrid .nhscui_mg_body_table tbody .nhscui_ml_selected
+{
+    background-color: RoyalBlue;    
+}
+
+/* StatusText (suspended) - text is Blue */
+.medicationGrid .nhscui_ml_suspended .nhscui_ml_status .nhscui_ml_statustext
+{       
+    background-color: Red;    
+} 
+
+/* Medication Grid - Header Table*/
+.medicationGrid .nhscui_ml_selected .nhscui_ml_startdate,.medicationGrid .nhscui_ml_selected .nhscui_ml_mn,.medicationGrid .nhscui_ml_selected .nhscui_ml_reason,.medicationGrid  .nhscui_ml_selected .nhscui_ml_statusdate,.medicationGrid .nhscui_ml_selected .nhscui_ml_drugdetails,.medicationGrid .nhscui_ml_selected .nhscui_ml_dosage
+{    
+    color:White;
+}
+
+/* Medication Grid - Header Table*/
+.nhscui_mg_header_table
+{    
+    color: White;  
+    border:solid 1px black;        
+    text-align: center;
+    border-collapse: collapse;  
+    background-color: #C0C0C0;      
+}
+
+/* Medication Grid - Header Table - Cell*/
+.nhscui_mg_header_table tbody tr th
+{    
+    border-left:solid 1px Gray;
+    border-right:solid 1px Gray;
+    padding: 0px 2px 5px 2px;
+    text-align: center;
+}
+
+/* Medication Grid - Body Table - Collapse Borders */
+.nhscui_mg_body_table
+{    
+    border-collapse: collapse;  
+}
+
+/* Medication Grid - LookAhead/Behind More Button */
+.medicationGrid .nhscui_mg_look_morebutton
+{
+    background-color: Gray;
+    color: White;
+    z-index: 2;
+    vertical-align: middle;
+    font-size: 0.8em;        
+    cursor: pointer;        
+    padding-right: 5px;      
+    border:solid 1px black;     
+}
+
+/* Medication Grid - LookAhead/Behind More Button Adjustments to get the button to align perfectly */
+.medicationGrid .nhscui_mg_lookahead .nhscui_mg_look_morebutton
+{ 
+    height: 18px; 
+}
+.medicationGrid .nhscui_mg_lookbehind .nhscui_mg_look_morebutton
+{     
+    height: 19px; 
+}
+
+
+/* Medication Grid - LookAhead/Behind More Button : Hover*/
+.nhscui_mg_look_morebutton:hover
+{
+    background-color: black;
+}
+
+
+/* Medication Grid - LookAhead/Behind Wrapper*/
+.nhscui_mg_look_itemswrapper 
+{      
+    background: transparent url(../images/MedGridTabs/bg_nav.gif) repeat-x scroll 0%;    
+    vertical-align: middle;    
+    color: black;        
+    height:20px;
+}
+
+/* Medication Grid - LookAhead/Behind MedicationName Cells*/
+a.nhscui_mg_look_cell
+{        
+    border-left: solid 1px white;    
+    padding-right: 2px;
+    padding-left: 3px;
+    color:#CCE1FF;
+    cursor:pointer;
+}
+
+/* Medication Grid - LookAhead/Behind MedicationName Cells - Hover*/
+a.nhscui_mg_look_cell:hover
+{
+    color: #606060;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    background-color:#CCE1FF;
+    border-color: #C0C0C0;
+    cursor:pointer;
+}
+
+/* Medication Grid - LookAhead/Behind MedicationName Cells - Selected*/
+.nhscui_mg_look_selected
+{
+    color: white;
+    padding-top: 5px;
+    background-color: RoyalBlue;    
+}
+
+.medicationGrid .nhscui_mg_body_table tbody .nhscui_ml_focus  
+{    
+    border:dashed 1px black;        
+    background-color: #F0F8FF;    
+}
+
+.medicationGrid .nhscui_mg_body_table tbody .nhscui_ml_selected.nhscui_ml_focus  
+{
+    border:dashed 1px black;        
+    background-color: #99CCFF;    
+}
+
+.medicationHandleImage
+{
+    background-color:Blue;
+	width:15px;
+	height:16px;
+	background-image:url(../images/HandleHand.png);
+	overflow:hidden;
+	cursor:se-resize;
+}
+
+.medicationHandleText
+{
+	width:16px;
+	height:16px;
+	background-image:url(../images/HandleGrip.png);
+	overflow:hidden;
+	cursor:se-resize;
+}
+
+.medicationResizingImage
+{
+	padding:0px;
+	border-style:solid;
+	border-width:3px;
+	border-color:#B4D35D;
+}
+
+/* Fix IE6 wrapping when dosage, reason and status turned off */
+.nhscui_ml_drugdetails
+{
+	white-space:nowrap;
+}
+/* Undo the previous setting when the line is inside of a MedGrid */
+.nhscui_mg_body_table .nhscui_ml_drugdetails
+{
+	white-space:normal;
+}

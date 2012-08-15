@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Medications List</title>
+  <back href="MedicationsList.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Medications List.pdf" altText="Links to Design Guidance - Medications List documentation">Design Guidance - Medications List (PDF Format)</download>
+  <navigation collapseInactiveItems="true">
+    <header text="Overview" tooltip="Medications List - Overview" href="QuickGuides/MedicationsList/default.aspx" />
+    <header text="Structure and Layout" tooltip="Medications List - Structure and Layout" href="QuickGuides/MedicationsList/structure.aspx">
+      <subheader text="Tabular Layout" tooltip="Medications List - Structure and Layout - Tabular Layout" href="QuickGuides/MedicationsList/Structure/tabular.aspx" />
+      <subheader text="List Length" tooltip="Medications List - Structure and Layout - List Length" href="QuickGuides/MedicationsList/Structure/listlength.aspx" />
+      <subheader text="Gridlines" tooltip="Medications List - Structure and Layout - Gridlines" href="QuickGuides/MedicationsList/Structure/gridlines.aspx" />
+      <subheader text="Displaying Icons" tooltip="Medications List - Structure and Layout - Displaying Icons" href="QuickGuides/MedicationsList/Structure/icons.aspx" />
+      <subheader text="Empty Lists" tooltip="Medications List - Structure and Layout - Empty Lists" href="QuickGuides/MedicationsList/Structure/emptylists.aspx" />
+      <subheader text="Levels of Detail" tooltip="Medications List - Structure and Layout - Levels of Detail" href="QuickGuides/MedicationsList/Structure/levelsofdetail.aspx" />
+    </header>
+    <header text="Columns" tooltip="Medications List - Columns" href="QuickGuides/MedicationsList/columns.aspx">
+      <subheader text="Mandatory Columns" tooltip="Medications List - Columns - Mandatory Columns" href="QuickGuides/MedicationsList/Columns/mandatory.aspx">
+        <subheader text="Current Medications" tooltip="Medications List - Columns - Mandatory Columns - Current Medications" href="QuickGuides/MedicationsList/Columns/Mandatory/currentcol.aspx" />
+        <subheader text="Past Medications" tooltip="Medications List - Columns - Mandatory Columns - Past Medications" href="QuickGuides/MedicationsList/Columns/Mandatory/pastcol.aspx" />
+      </subheader>
+      <subheader text="Date" tooltip="Medications List - Columns - Date" href="QuickGuides/MedicationsList/Columns/date.aspx" />
+      <subheader text="Headings" tooltip="Medications List - Columns - Headings" href="QuickGuides/MedicationsList/Columns/headings.aspx" />
+      <subheader text="Composite" tooltip="Medications List - Columns - Composite" href="QuickGuides/MedicationsList/Columns/composite.aspx" />
+      <subheader text="Dimensions" tooltip="Medications List - Columns - Dimensions" href="QuickGuides/MedicationsList/Columns/dimensions.aspx" />
+    </header>
+    <header text="Status" tooltip="Medications List - Status" href="QuickGuides/MedicationsList/status.aspx">
+      <subheader text="Formatting" tooltip="Medications List - Status - Formatting" href="QuickGuides/MedicationsList/Status/formatting.aspx" />
+      <subheader text="Additional Information" tooltip="Medications List - Status - Additional Information" href="QuickGuides/MedicationsList/Status/additionalinfo.aspx" />
+      <subheader text="Data Values" tooltip="Medications List - Status - Data Values" href="QuickGuides/MedicationsList/Status/datavalues.aspx" />
+      <subheader text="Suspended" tooltip="Medications List - Status - Suspended" href="QuickGuides/MedicationsList/Status/suspended.aspx" />
+      <subheader text="Current and Past" tooltip="Medications List - Status - Current and Past" href="QuickGuides/MedicationsList/Status/currentpaststatus.aspx" />
+    </header>
+    <header text="Current and Past" tooltip="Medications List - Current and Past" href="QuickGuides/MedicationsList/currentpast.aspx">
+      <subheader text="Controls" tooltip="Medications List - Current and Past - Controls" href="QuickGuides/MedicationsList/CurrentPast/controls.aspx">
+        <subheader text="Defaults" tooltip="Medications List - Current and Past - Controls - Defaults" href="QuickGuides/MedicationsList/CurrentPast/Controls/defaults.aspx" />
+        <subheader text="Current Selection" tooltip="Medications List - Current and Past - Controls - Current Selection" href="QuickGuides/MedicationsList/CurrentPast/Controls/selection.aspx" />
+      </subheader>
+      <subheader text="Current" tooltip="Medications List - Current and Past - Current" href="QuickGuides/MedicationsList/CurrentPast/currentmeds.aspx">
+        <subheader text="Recent Past" tooltip="Medications List - Current and Past - Current - Recent Past" href="QuickGuides/MedicationsList/CurrentPast/CurrentMeds/recentpast.aspx" />
+        <subheader text="Notification Contents" tooltip="Medications List - Current and Past - Current - Notification Contents" href="QuickGuides/MedicationsList/CurrentPast/CurrentMeds/notificationcontents.aspx" />
+      </subheader>
+      <subheader text="Past" tooltip="Medications List - Current and Past - Past" href="QuickGuides/MedicationsList/CurrentPast/pastmeds.aspx" />
+    </header>
+    <header text="Filtering" tooltip="Medications List - Filtering" href="QuickGuides/MedicationsList/filtering.aspx">
+      <subheader text="Control State" tooltip="Medications List - Filtering - Control State" href="QuickGuides/MedicationsList/Filtering/controlstate.aspx" />
+      <subheader text="Notifications" tooltip="Medications List - Filtering - Notifications" href="QuickGuides/MedicationsList/Filtering/notifications.aspx" />
+    </header>
+    <header text="Look-Ahead Scroll Bar" tooltip="Medications List - Look-Ahead Scroll Bar" href="QuickGuides/MedicationsList/lookahead.aspx">
+      <subheader text="Purpose" tooltip="Medications List - Look-Ahead Scroll Bar - Purpose" href="QuickGuides/MedicationsList/LookAhead/purpose.aspx" />
+      <subheader text="Current Medications" tooltip="Medications List - Look-Ahead Scroll Bar - Current Medications" href="QuickGuides/MedicationsList/LookAhead/current.aspx" />
+      <subheader text="Past Medications" tooltip="Medications List - Look-Ahead Scroll Bar - Past Medications" href="QuickGuides/MedicationsList/LookAhead/pastmedications.aspx" />
+      <subheader text="Layout" tooltip="Medications List - Look-Ahead Scroll Bar - Layout" href="QuickGuides/MedicationsList/LookAhead/layout.aspx" />
+      <subheader text="Grouping" tooltip="Medications List - Look-Ahead Scroll Bar - Grouping" href="QuickGuides/MedicationsList/LookAhead/grouping.aspx" />
+      <subheader text="Interaction" tooltip="Medications List - Look-Ahead Scroll Bar - Interaction" href="QuickGuides/MedicationsList/LookAhead/interaction.aspx" />
+      <subheader text="Notifications" tooltip="Medications List - Look-Ahead Scroll Bar - Notifications" href="QuickGuides/MedicationsList/LookAhead/notifications.aspx">
+        <subheader text="Contents" tooltip="Medications List - Look-Ahead Scroll Bar - Notifications - Contents" href="QuickGuides/MedicationsList/LookAhead/Notifications/contents.aspx" />
+        <subheader text="Counts" tooltip="Medications List - Look-Ahead Scroll Bar - Notifications - Counts" href="QuickGuides/MedicationsList/LookAhead/Notifications/counts.aspx" />
+        <subheader text="Order" tooltip="Medications List - Look-Ahead Scroll Bar - Notifications - Order" href="QuickGuides/MedicationsList/LookAhead/Notifications/order.aspx" />               
+        <subheader text="Delimiters" tooltip="Medications List - Look-Ahead Scroll Bar - Notifications - Delimiters" href="QuickGuides/MedicationsList/LookAhead/Notifications/delimiters.aspx" />
+        <subheader text="Formatting" tooltip="Medications List - Look-Ahead Scroll Bar - Notifications - Formatting" href="QuickGuides/MedicationsList/LookAhead/Notifications/formatting.aspx" />
+      </subheader>
+    </header>
+    <header text="Grouping" tooltip="Medications List - Grouping" href="QuickGuides/MedicationsList/grouping.aspx">
+      <subheader text="Grouping Control" tooltip="Medications List - Grouping - Grouping Control" href="QuickGuides/MedicationsList/Grouping/groupingcontrol.aspx" />
+      <subheader text="Display" tooltip="Medications List - Grouping - Display" href="QuickGuides/MedicationsList/Grouping/display.aspx" />
+      <subheader text="Row Shading" tooltip="Medications List - Grouping - Row Shading" href="QuickGuides/MedicationsList/Grouping/rowshading.aspx" />
+      <subheader text="Headings" tooltip="Medications List - Grouping - Headings" href="QuickGuides/MedicationsList/Grouping/headings.aspx" />
+      <subheader text="Null Groups" tooltip="Medications List - Grouping - Null Groups" href="QuickGuides/MedicationsList/Grouping/nullgroups.aspx" />
+      <subheader text="Expand and Collapse" tooltip="Medications List - Grouping - Expand and Collapse" href="QuickGuides/MedicationsList/Grouping/expandcollapse.aspx" />
+      <subheader text="Combining" tooltip="Medications List - Grouping - Combining" href="QuickGuides/MedicationsList/Grouping/combining.aspx" />
+    </header>
+    <header text="Sorting" tooltip="Medications List - Sorting" href="QuickGuides/MedicationsList/sorting.aspx">
+      <subheader text="Sorting Control" tooltip="Medications List - Sorting - Sorting Control" href="QuickGuides/MedicationsList/Sorting/sortingcontrol.aspx" />
+      <subheader text="Sort Order" tooltip="Medications List - Sorting - Sort Order" href="QuickGuides/MedicationsList/Sorting/sortorder.aspx" />
+    </header>
+    <header text="Selection" tooltip="Medications List - Selection" href="QuickGuides/MedicationsList/selection.aspx">
+      <subheader text="Highlighting" tooltip="Medications List - Selection - Highlighting" href="QuickGuides/MedicationsList/Selection/highlighting.aspx" />
+      <subheader text="Supporting Selection" tooltip="Medications List - Selection - Supporting Selection" href="QuickGuides/MedicationsList/Selection/supporting.aspx" />
+      <subheader text="Context Menu" tooltip="Medications List - Selection - Context Menu" href="QuickGuides/MedicationsList/Selection/contextmenu.aspx" />
+    </header>
+    <header text="Checklist" tooltip="Medications List - Checklist" href="QuickGuides/MedicationsList/checklist.aspx" />      
+  </navigation>
+</quickguide>

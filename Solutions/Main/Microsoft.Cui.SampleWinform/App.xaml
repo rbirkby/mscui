@@ -1,0 +1,440 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:data="clr-namespace:Microsoft.Cui.Data;assembly=Microsoft.Cui.WPFData"
+             x:Class="Microsoft.Cui.SampleWinform.App"
+             xmlns:ctl="clr-namespace:Microsoft.Cui.Controls;assembly=Microsoft.Cui.WPFControls" 
+             xmlns:local="clr-namespace:Microsoft.Cui.Controls;assembly=Microsoft.Cui.WPFControls" 
+             xmlns:current="clr-namespace:Microsoft.Cui.SamplePages"
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Microsoft.Cui.SampleWinform;component/WPFControls/SearchAndPrescribe/ResourceDictionaries/DefaultResourceDictionary.xaml" />
+                <ResourceDictionary Source="/Microsoft.Cui.SampleWinform;component/WPFControls/Graphing/ResourceDictionaries/TimeActivityGraphHost.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <ctl:DictionaryToStringConverter x:Key="dictionaryToStringConverter"/>
+            <ctl:DictionaryToDataTemplateConverter x:Key="dictionaryToDataTemplateConverter"/>
+
+            <!-- Element styles -->
+            <ControlTemplate TargetType="ToolTip" x:Key="ToolTipTemplate">
+                <Border BorderBrush="#FF080808" BorderThickness="1,1,1,1" Background="#FFFFFBE9" CornerRadius="2">
+                    <Grid>
+                        <ContentPresenter Grid.Column="0"
+                                        Content="{TemplateBinding Content}"
+                                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                                        Margin="{TemplateBinding Padding}" 
+                                        VerticalAlignment="Top"
+                                        HorizontalAlignment="Left"/>
+
+                    </Grid>
+                </Border>
+            </ControlTemplate>
+
+            <Style TargetType="Button" x:Key="ELEMENT_directionArrowStyle">
+                <Setter Property="Canvas.ZIndex" Value="1000" />
+                <Setter Property="Visibility"  Value="Collapsed" />
+                <Setter Property="IsHitTestVisible" Value="True" />
+                <Setter Property="IsTabStop" Value="False" />
+                <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <Rectangle Fill="Transparent" />
+                                <Polygon Points="8,0, 16,6, 12,6, 12,12, 4,12, 4,6, 0,6" Fill="#BB0000" Stroke="#000000" Opacity="0.5" StrokeThickness="1" />
+                                <ContentPresenter Margin="{TemplateBinding Padding}" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}"/>
+                                <ToolTipService.ToolTip>
+                                    <ToolTip Template="{StaticResource ToolTipTemplate}">
+                                        <ToolTip.Content>
+                                            <TextBlock FontWeight="Normal" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Scroll to view more data"></TextBlock>
+                                        </ToolTip.Content>
+                                    </ToolTip>
+                                </ToolTipService.ToolTip>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <DataTemplate x:Key="Square">
+                <Rectangle Canvas.ZIndex="10" Width="5" Height="5" Fill="#990000" Stroke="Black" StrokeThickness="1" ctl:GraphBase.XOffset="-2.5" ctl:GraphBase.YOffset="-2.5" />
+            </DataTemplate>
+            <DataTemplate x:Key="Circle">
+                <Ellipse Canvas.ZIndex="10" Width="5" Height="5" Fill="#2932E0" Stroke="Black" StrokeThickness="1" ctl:GraphBase.XOffset="-2.5" ctl:GraphBase.YOffset="-2.5" />
+            </DataTemplate>
+            <DataTemplate x:Key="Triangle">
+                <Polygon Canvas.ZIndex="10" Height="6" Width="6" ctl:GraphBase.XOffset="-3" ctl:GraphBase.YOffset="-3" Stroke="Black" StrokeThickness="1"
+                            Points="0,6 6,6 3,0" Fill="#B966B9" />
+            </DataTemplate>
+            <DataTemplate x:Key="Diamond">
+                <Rectangle Canvas.ZIndex="10" Width="5" Height="5" Fill="#CC6600" Stroke="Black" StrokeThickness="1" ctl:GraphBase.XOffset="-2.5" ctl:GraphBase.YOffset="-2.5">
+                    <Rectangle.RenderTransform>
+                        <RotateTransform Angle="45" CenterX="2.5" CenterY="2.5" />
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </DataTemplate>
+
+            <DataTemplate x:Key="IBarMarker">
+                <Grid Canvas.ZIndex="10" Height="9" Width="9" ctl:GraphBase.XOffset="-4.5" ctl:GraphBase.YOffset="-1.5" ctl:GraphBase.SnapToPixels="True">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="3"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="0" VerticalAlignment="Top" Height="3" Width="9" Fill="Black"/>
+                    <Rectangle Grid.Row="1" HorizontalAlignment="Center" Fill="Black" Width="1"/>
+                    <Rectangle Grid.Row="2" VerticalAlignment="Bottom" Height="3" Width="9" Fill="Black"/>
+                </Grid>
+            </DataTemplate>
+            <DataTemplate x:Key="IBarPoint">
+                <ctl:GraphPoint Y1="{Binding Y1}" Y2="{Binding Y2}" X1="{Binding DateTime}"/>
+            </DataTemplate>
+            <DataTemplate x:Key="IBarLabel">
+                <Border Canvas.ZIndex="9999" RenderTransformOrigin="0, 1"
+                                            BorderThickness="1"     
+                                            Background="White"
+                                            BorderBrush="DarkGray" Padding="0" 
+                                            CornerRadius="2"                                            
+                                            ctl:GraphBase.XOffset="2" 
+                                            ctl:GraphBase.YOffset="-12"
+                                        >
+
+                    <StackPanel Margin="0,-1,0,-1">
+                        <TextBlock x:Name="ELEMENT_labelTextBlock"  HorizontalAlignment="Left" Margin="0,0,0,0" Text="{Binding Path=DataContext}" />
+                    </StackPanel>
+
+                </Border>
+            </DataTemplate>
+
+            <!-- Some styles for the graph-->
+
+            <Style TargetType="ctl:TimeGraphBase" x:Key="OverriddenDefaultStyle">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <Grid>
+                                <Border BorderThickness="1" BorderBrush="Gray" CornerRadius="4">
+                                    <Grid x:Name="ELEMENT_layoutRoot" Background="{TemplateBinding Background}">
+                                        <Grid.Resources>
+                                            <DataTemplate x:Key="ELEMENT_dynamicMainLayerTemplate">
+                                                <Grid x:Name="ELEMENT_dynamicMainLayer">
+                                                    <Canvas Background="White" Canvas.ZIndex="10" VerticalAlignment="Top" x:Name="ELEMENT_dynamicTopAxisLayerViewport" Height="30" Visibility="Collapsed">
+                                                        <Canvas x:Name="ELEMENT_dynamicTopAxisLayer">
+
+                                                        </Canvas>
+                                                    </Canvas>
+                                                    <Canvas Canvas.ZIndex="5" x:Name="ELEMENT_dynamicPlotLayerViewport">
+                                                        <Canvas x:Name="ELEMENT_dynamicPlotLayer">
+                                                        </Canvas>
+                                                    </Canvas>
+                                                </Grid>
+                                            </DataTemplate>
+
+                                            <DataTemplate x:Key="ELEMENT_collisionTemplate">
+                                                <Grid Canvas.ZIndex="6" Opacity="0.6" Width="23" Height="19"  ctl:GraphBase.XOffset="0" ctl:GraphBase.YOffset="-23">
+                                                    <Path Margin="0.4,0.4,0.2,0.2" Fill="#FFF3F500" Stretch="Fill" Stroke="#FF000000" Data="M0.75,14.125 C17.375,14.125 17.125,14.125 17.125,14.125 L9.1251093,0.125 z" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" StrokeThickness="1.2"/>
+                                                    <Path RenderTransformOrigin="0,0" Margin="10.25,6.125,9.75,2.75" Fill="#FF000000" Stretch="Fill" Data="M1.9921874,9.7406769 C2.2382813,9.7406769 2.4482422,9.8256378 2.6220703,9.9955597 C2.7958984,10.165482 2.8828125,10.371536 2.8828125,10.613724 C2.8828125,10.887161 2.7949219,11.102005 2.6191406,11.258255 C2.4433594,11.414505 2.2382813,11.49263 2.0039063,11.49263 C1.765625,11.49263 1.5576172,11.415482 1.3798828,11.261185 C1.2910156,11.184036 1.2243652,11.091507 1.1799316,10.983597 C1.135498,10.875687 1.1132813,10.752396 1.1132813,10.613724 C1.1132813,10.371536 1.1982422,10.165482 1.3681641,9.9955597 C1.5380859,9.8256378 1.7460938,9.7406769 1.9921874,9.7406769 z M2.0390625,2.6215363 C2.2070313,2.6215363 2.347168,2.650589 2.4594727,2.7086945 C2.5717773,2.7667999 2.65625,2.8539581 2.7128906,2.9701691 C2.7695313,3.08638 2.8120117,3.2282257 2.840332,3.3957062 C2.8686523,3.5631866 2.8828125,3.7563019 2.8828125,3.9750519 C2.8828125,4.2328644 2.8691406,4.4945831 2.8417969,4.7602081 L2.5898438,7.64888 C2.5625,7.99263 2.5039063,8.2563019 2.4140625,8.4398956 C2.3691406,8.5316925 2.3095703,8.6005402 2.2353516,8.6464386 C2.1611328,8.692337 2.0722656,8.7152863 1.96875,8.7152863 C1.8632813,8.7152863 1.7739258,8.6930695 1.7006836,8.6486359 C1.6274414,8.6042023 1.5703125,8.5375519 1.5292969,8.4486847 C1.4882813,8.3598175 1.453125,8.247757 1.4238281,8.1125031 C1.3945313,7.9772491 1.3710938,7.8188019 1.3535156,7.6371613 L1.1660156,4.8305206 C1.1484375,4.5570831 1.1352539,4.3222198 1.1264648,4.1259308 C1.1176758,3.9296417 1.1132813,3.7719269 1.1132813,3.6527863 C1.1132813,3.3285675 1.1982422,3.0756378 1.3681641,2.8939972 C1.453125,2.8031769 1.5515137,2.7350616 1.6633301,2.6896515 C1.7751465,2.6442413 1.9003906,2.6215363 2.0390625,2.6215363 z">
+                                                        <Path.RenderTransform>
+                                                            <TransformGroup>
+                                                                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                                                <SkewTransform AngleX="0" AngleY="0"/>
+                                                                <RotateTransform Angle="0"/>
+                                                                <TranslateTransform X="0" Y="0"/>
+                                                            </TransformGroup>
+                                                        </Path.RenderTransform>
+                                                    </Path>
+                                                    <ToolTipService.ToolTip>
+                                                        <ToolTip Template="{StaticResource ToolTipTemplate}">
+                                                            <ToolTip.Content>
+                                                                <StackPanel Width="125" Margin="5,0,5,0">
+                                                                    <TextBlock FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Overcrowded data"></TextBlock>
+                                                                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap"><Run Text="Adjust your timescale to see this data."/></TextBlock>
+                                                                </StackPanel>
+                                                            </ToolTip.Content>
+                                                        </ToolTip>
+                                                    </ToolTipService.ToolTip>
+                                                </Grid>
+                                            </DataTemplate>
+                                            <DataTemplate x:Key="ELEMENT_dataMarkerTemplate">
+                                                <Rectangle Canvas.ZIndex="10" Height="5" Width="5" Fill="Blue" Stroke="Black" StrokeThickness="3" ctl:GraphBase.XOffset="-2.5" ctl:GraphBase.YOffset="-2.5" />
+                                            </DataTemplate>
+                                            <DataTemplate x:Key="ELEMENT_PointTemplate">
+                                                <ctl:GraphPoint Canvas.ZIndex="9999" Y1="{Binding Y1}"  X1="{Binding DateTime}"/>
+                                            </DataTemplate>
+                                            <DataTemplate x:Key="ELEMENT_LabelTemplate">
+                                                <Border Canvas.ZIndex="9999" RenderTransformOrigin="0, 1"
+                                            BorderThickness="1"     
+                                            Background="White"
+                                            BorderBrush="DarkGray" Padding="0" 
+                                            CornerRadius="2"                                                
+                                            ctl:GraphBase.XOffset="2" 
+                                            ctl:GraphBase.YOffset="-12"
+                                        >
+
+                                                    <StackPanel Margin="0,-1,0,-1">
+                                                        <TextBlock x:Name="ELEMENT_labelTextBlock"  HorizontalAlignment="Left" Margin="0,0,0,0" Text="{Binding Path=DataContext}" />
+                                                    </StackPanel>
+
+                                                </Border>
+                                            </DataTemplate>
+
+                                            <ScaleTransform x:Key="ELEMENT_LabelTransform" ScaleX="1.4" ScaleY="1.4">
+                                            </ScaleTransform>
+                                            <DataTemplate x:Key="ELEMENT_XAxisLabelTemplate">
+                                                <TextBlock FontSize="11" />
+                                            </DataTemplate>
+                                            <DataTemplate x:Key="ELEMENT_YAxisLabelTemplate">
+                                                <TextBlock FontSize="11" Margin="3,0,0,0" />
+                                            </DataTemplate>
+                                            <local:TimeFrequency x:Key="DefaultVisibleWindow" Unit="Minute" Value="5" />
+                                        </Grid.Resources>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="0"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="0"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="20" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="{TemplateBinding Background}" x:Name="ELEMENT_TitleArea">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="5*" />
+                                                <ColumnDefinition Width="5*" />
+                                                <ColumnDefinition Width="80" />
+                                            </Grid.ColumnDefinitions>
+                                            <Rectangle RadiusX="2" RadiusY="2" Grid.ColumnSpan="3">
+                                            </Rectangle>
+                                            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Grid.Column="0" HorizontalAlignment="Left">
+                                                <TextBlock Margin="5,0,0,0" FontSize="12" FontWeight="Bold" Text="{Binding Title}" ></TextBlock>
+                                                <TextBlock Margin="5,0,0,0" FontSize="12" FontStyle="Italic" Text="{Binding Units}" ToolTipService.ToolTip="{Binding UnitsDescription}"></TextBlock>
+                                            </StackPanel>
+                                            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right" Visibility="{Binding ShowNormalRange}">
+                                                <TextBlock Margin="5,0,0,0" FontSize="12" Text="Adult normal range"></TextBlock>
+                                                <TextBlock Margin="5,0,0,0" FontSize="12" FontStyle="Italic" Text="{Binding NormalRangeMinimumValue}"></TextBlock>
+                                                <TextBlock Margin="5,0,0,0" FontSize="12" FontStyle="Italic" Text="-"></TextBlock>
+                                                <TextBlock Margin="5,0,0,0" FontSize="12" FontStyle="Italic" Text="{Binding NormalRangeMaximumValue}"></TextBlock>
+                                                <TextBlock Margin="5,0,0,0" FontSize="12" FontStyle="Italic" Text="{Binding Units}" ToolTipService.ToolTip="{Binding UnitsDescription}"></TextBlock>
+                                            </StackPanel>
+                                            <StackPanel Margin="0,2,1,2" VerticalAlignment="Center" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                                                <ctl:CuiToggleButton IsTabStop="False" Width="50" Margin="5,0,0,0" x:Name="ELEMENT_ScaleToFit" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                                    <ctl:CuiToggleButton.Content>
+                                                        <Grid Background="Transparent" Width="50" Height="20" ToolTipService.ToolTip="Scale to fit all data">
+                                                            <Polyline Points="25,0 25,5 28,3" Stroke="Black"/>
+                                                            <Polyline Points="25,5 22,3" Stroke="Black"/>
+                                                            <Polyline Points="2,12 12,2 35,10 45,3" Stroke="Blue" />
+                                                            <Polyline Points="25,18 25,10 28,12" Stroke="Black"/>
+                                                            <Polyline Points="25,10 22,12" Stroke="Black"/>
+                                                        </Grid>
+                                                    </ctl:CuiToggleButton.Content>
+                                                    <ctl:CuiToggleButton.PressedStateContent>
+                                                        <Grid Width="50" Height="20" Background="Orange" ToolTipService.ToolTip="Return to default scale">
+                                                            <Polyline Points="25,7 25,0 28,3" Stroke="Black"/>
+                                                            <Polyline Points="25,0 22,3" Stroke="Black"/>
+                                                            <Polyline Points="2,12 12,2 35,10 45,3" Stroke="Blue" />
+                                                            <Polyline Points="25,8 25,14 28,11" Stroke="Black"/>
+                                                            <Polyline Points="25,14 22,11" Stroke="Black"/>
+                                                        </Grid>
+                                                    </ctl:CuiToggleButton.PressedStateContent>
+                                                </ctl:CuiToggleButton>
+                                                <ctl:CuiToggleButton IsTabStop="False" Width="20" x:Name="ELEMENT_MinimizeToTitle" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                                    <ctl:CuiToggleButton.Content>
+                                                        <Grid Background="Transparent" ToolTipService.ToolTip="Minimize" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                            <Rectangle Margin="0,8,0,0" Height="2" Width="10" Stroke="#FF000000" StrokeThickness="2" />
+                                                        </Grid>
+                                                    </ctl:CuiToggleButton.Content>
+                                                    <ctl:CuiToggleButton.PressedStateContent>
+                                                        <Grid Background="Transparent" ToolTipService.ToolTip="Maximize" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                            <Rectangle Height="10" Width="10" Stroke="#FF000000" StrokeThickness="2" />
+                                                        </Grid>
+                                                    </ctl:CuiToggleButton.PressedStateContent>
+                                                </ctl:CuiToggleButton>
+                                            </StackPanel>
+                                        </Grid>
+
+                                        <Grid Grid.Row="1" Background="Gray" Margin="5,0,30,0" Visibility="Collapsed">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <Border BorderBrush="Gray" BorderThickness="1,1,1,0" Grid.Column="0">
+                                                <TextBlock Text="" x:Name="ELEMENT_XAxisTitleStartDate" FontSize="14" />
+                                            </Border>
+                                            <Border BorderBrush="Gray" BorderThickness="1,1,1,0" Grid.Column="2">
+                                                <TextBlock Text="" x:Name="ELEMENT_XAxisTitleEndDate" HorizontalAlignment="Right" FontSize="14"/>
+                                            </Border>
+                                        </Grid>
+
+                                        <Canvas Grid.Row="2" Canvas.ZIndex="10" Margin="5,0,30,5" x:Name="ELEMENT_dynamicMainLayerViewport">
+                                            <Button x:Name="ELEMENT_directionArrowUp" Style="{StaticResource ELEMENT_directionArrowStyle}">
+                                            </Button>
+                                            <Button x:Name="ELEMENT_directionArrowDown" Style="{StaticResource ELEMENT_directionArrowStyle}">
+                                                <Button.RenderTransform>
+                                                    <RotateTransform Angle="180"/>
+                                                </Button.RenderTransform>
+                                            </Button>
+                                        </Canvas>
+
+                                        <Canvas Grid.Row="2" Canvas.ZIndex="5" Margin="5,0,0,5" x:Name="ELEMENT_nonDynamicRightAxisViewPort" Background="White">
+                                            <Canvas x:Name="ELEMENT_NonDynamicRightAxisLabels">
+                                            </Canvas>
+                                            <Canvas x:Name="ELEMENT_NonDynamicRightAxisLines">
+                                            </Canvas>
+                                        </Canvas>
+
+                                        <ScrollBar Grid.Row="2" Margin="2,0,2,5" Orientation="Vertical" Grid.Column="1" Minimum="-155" Maximum="155" Value="0" SmallChange="5" LargeChange="10" x:Name="ELEMENT_scrollBarVertical"/>
+                                        <ScrollBar Margin="2,2,2,2" Grid.Row="3" Orientation="Horizontal" x:Name="ELEMENT_scrollBar"/>
+
+                                    </Grid>
+                                </Border>
+                                <Rectangle x:Name="FocusVisualElement" Opacity="0" IsHitTestVisible="False" StrokeThickness="1" Stroke="Black" StrokeDashArray="3 4" Margin="1, 1, 1, 1" />
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <DataTemplate x:Key="BasicBoldTemplate">
+                <Grid Height="Auto" Width="Auto" Margin="0,0,0,5" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontWeight="Bold" TextWrapping="Wrap" Grid.Column="0" Grid.Row="1" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DrugName'}"/>
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="BasicTemplate">
+                <Grid Height="Auto" Width="Auto" Margin="0,0,0,5" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock  TextWrapping="Wrap" Grid.Column="0" Grid.Row="1" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DrugName'}"/>
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="NameStrengthFrequency">
+                <Grid Grid.Column="0" Grid.Row="1" Height="Auto" Width="Auto" Margin="0,0,0,5" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
+                        <ctl:WrapPanel   >
+                            <TextBlock  FontWeight="Bold" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DrugName'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='StrengthSeparator'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='Strength'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='FormNameSeparator'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='FormName'}"/>
+                        </ctl:WrapPanel>
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="2" VerticalAlignment="Top">
+                        <ctl:WrapPanel >
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                                <TextBlock FontFamily="Courier New" FontSize="14" Margin="0,0,0,0" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DoseLabel'}" Foreground="#336699"/>
+                                <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DOSEQTY'}"/>
+                            </StackPanel>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DOSEQTYSeparator'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='RouteName'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='RouteNameSeparator'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='Frequency'}"/>
+                        </ctl:WrapPanel>
+                    </Grid>
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="NameFormFrequency" >
+                <Grid Grid.Column="0" Grid.Row="1" Height="Auto" Width="Auto" Margin="0,0,0,5" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
+                        <ctl:WrapPanel>
+                            <TextBlock  TextWrapping="Wrap" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DrugName'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='FormNameSeparator'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='FormName'}"/>
+                        </ctl:WrapPanel>
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="2" VerticalAlignment="Top">
+                        <ctl:WrapPanel>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                                <TextBlock FontFamily="Courier New" Margin="0,0,0,0"  FontSize="14" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DoseLabel'}" Foreground="#336699"/>
+                                <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DOSEQTY'}"/>
+                            </StackPanel>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DOSEQTYSeparator'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='RouteName'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='RouteNameSeparator'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='Frequency'}"/>
+                        </ctl:WrapPanel>
+                    </Grid>
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="NameStrengthMedication">
+                <Grid Grid.Column="0" Grid.Row="1" Height="Auto" Width="Auto" Margin="0,0,0,5" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
+                        <ctl:WrapPanel >
+                            <TextBlock  FontWeight="Bold" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DrugName'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='StrengthSeparator'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='Strength'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='RouteNameSeparator'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='RouteName'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='MedicationTypeSeparator'}"/>
+                            <TextBlock  Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='MedicationType'}"/>
+                        </ctl:WrapPanel>
+                    </Grid>
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="DrugDetailsTemplateDefault">
+                <Grid Height="Auto" Width="Auto" Margin="0,0,0,5" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock  TextWrapping="Wrap" Grid.Column="0" Grid.Row="1" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DrugName'}"/>
+                </Grid>
+            </DataTemplate>
+
+            <Style TargetType="TextBlock" x:Key="ToolBar_TextBlock">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontFamily" Value="Serif" />
+            </Style>
+
+            <Style TargetType="ListBoxItem" x:Key="ToolBar_ListBoxItem">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontFamily" Value="Serif" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

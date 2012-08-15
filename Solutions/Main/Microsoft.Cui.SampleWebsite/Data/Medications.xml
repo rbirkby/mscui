@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patients>
+  <Patient FamilyName="Chandrasekhar">
+    <!-- Active -->
+    <Medications>
+      <Medication
+          Dose="40 mg"
+          Frequency="daily"
+          Route="oral"
+          Form="tablet"
+          Reason="management of cholesterol"
+          Status="Active"
+          StartDate="25-Apr-06" >
+        <MedicationNames>
+          <MedicationName Name="atorvastatin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+          IndicatorGraphic="~/images/SmallIcons/arrow_right2.gif"
+          Dose="125 microgrammes"
+          Frequency="daily"
+          Route="oral"
+          Form="tablet"
+          Reason="treatment of atrial fibrillation"
+          Status="Active"
+          StartDate="01-Jun-06" >
+        <MedicationNames>
+          <MedicationName Name="digoxin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+          Frequency="3 times a day"
+          Form="tablet"
+          Reason="relief for arthritis"
+          Route="oral"
+          Dose="50 mg"
+          Status="Active"
+          StartDate="01-Sep-06" >
+        <MedicationNames>
+          <MedicationName Name="diclofenac sodium" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          Frequency="twice daily"
+          Form="tablet"
+          Dose="150 mg"
+          Route="oral"
+          Reason="treatment for prevention of stomach ulcer as a side-effect of diclofenac sodium"
+          Status="Active"
+          StartDate="17-Oct-06" >
+        <MedicationNames>
+          <MedicationName Name="ranitidine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          Dose="250 mg"
+          Frequency="every 6 hours"
+          Form="tablet"
+          Route="oral"
+          Reason="treatment for infection in left leg"
+          Status="Active"
+          StartDate="01-Nov-06" >
+        <MedicationNames>
+          <MedicationName Name="erythromycin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          Dose="50 mg"
+          Frequency="3 times a day"
+          Form="tablet"
+          Route="oral"
+          Reason="treatment for hayfever"
+          Status="Active"
+          StartDate="23/12/2006" >
+        <MedicationNames>
+          <MedicationName Name="cyclizine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          Dose="4 mg"
+          Frequency="4 times a day"
+          Form="tablet"
+          Route="oral"
+          Reason="treatment for hayfever"
+          Status="Active"
+          StartDate="02/01/2007" >
+        <MedicationNames>
+          <MedicationName Name="chlorophenamine maleate" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              Dose="2.5 mg"
+              Frequency="daily"
+              Route="oral"
+              Form="tablet"
+              Reason="hypertension"
+              Status="Active"
+              StartDate="01-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="bendroflumethiazide" />
+        </MedicationNames>
+      </Medication>
+      <Medication
+              Dose="150 mg"
+              Frequency="twice daily"
+              Route="oral"
+              Form="tablet"
+              Reason="treatment for prevention of stomach ulcer as a side-effect or diclofenac sodium"
+              Status="Active"
+              StartDate="10-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="ranitidine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              Dose="250 mg"
+              Frequency="every 6 hours"
+              Route="oral"
+              Form="tablet"
+              Reason="treatment for infection in left leg"
+              Status="Active"
+              StartDate="12-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="erythromycin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              Dose="50 mg"
+              Frequency="3 times a day"
+              Route="oral"
+              Form="tablet"
+              Reason="treatment for hayfever"
+              Status="Active"
+              StartDate="12-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="cyclizine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+             CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+             IndicatorGraphic="~/images/SmallIcons/arrow_right2.gif"
+             Dose="2.5 mg"
+             Frequency="daily"
+             Route="oral"
+             Form="tablet"
+             Reason="hypertension"
+             Status="Active"
+             StartDate="01-Jan-06" >
+        <MedicationNames>
+          <MedicationName Name="bendroflumethiazide" />
+        </MedicationNames>
+      </Medication>
+      
+      <!-- Past Medications -->
+      <Medication
+              StartDate="10/12/2005"
+              StatusDate="28/12/2005"
+              IndicatorGraphic="~/images/SmallIcons/arrow_right2.gif"
+              CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+              Dose="125 microgrammes"
+              Frequency="daily"
+              Form="tablet"
+              Route="oral"
+              Reason="treatment of atrial fibrillation"
+              Status="Suspended"
+              >
+
+        <MedicationNames>
+          <MedicationName Name="digoxin" />
+        </MedicationNames>
+      </Medication>
+      <Medication
+              StartDate="31/07/2006"
+              StatusDate="31/01/2007"
+              Dose="40 mg"
+              Frequency="half a tablet daily"
+              Form="tablet"
+              Route="oral"
+              Reason="management of cholesterol"
+              Status="Suspended"
+              >
+
+        <MedicationNames>
+          <MedicationName Name="atorvastatin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="21/09/2006"
+              StatusDate="15/11/2006"
+              IndicatorGraphic="~/images/SmallIcons/arrow_right2.gif"
+              CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+              Dose="125 microgrammes"
+              Frequency="daily"
+              Form="tablet"
+              Route="oral"
+              Reason="treatment of atrial fibrillation"
+              Status="Suspended"
+              >
+
+        <MedicationNames>
+          <MedicationName Name="digoxin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="01/08/2006"
+              StatusDate="31/08/2006"
+              CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+              Dose="50 mg"
+              Frequency="3 times a day"
+              Form="tablet"
+              Route="oral"
+              Reason="relief for arthritis"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="diclofenac sodium" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="01/08/2006"
+              StatusDate="01/08/2006"
+              Dose="150 mg"
+              Frequency="daily"
+              Form="tablet"
+              Route="oral"
+              Reason="Treatment for prevention of stomach ulcer as a side-effect or diclofenac sodium"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="ranitidine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="14/07/2006"
+              StatusDate="25/08/2006"
+              Dose="4 mg"
+              Frequency="twice daily"
+              Form="tablet"
+              Route="oral"
+              Reason="treatment for hayfever"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="chlorophenamine maleate" />
+        </MedicationNames>
+      </Medication>
+    </Medications>
+  </Patient>
+  <Patient FamilyName="Cooper">
+    <!-- Active -->
+    <Medications>
+      <Medication
+          Dose="40 mg"
+          Frequency="daily"
+          Route="oral"
+          Form="tablet"
+          Reason="management of cholesterol"
+          Status="Active"
+          StartDate="25-Apr-06" >
+        <MedicationNames>
+          <MedicationName Name="atorvastatin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+          IndicatorGraphic="~/images/SmallIcons/arrow_right2.gif"
+          Dose="125 microgrammes"
+          Frequency="daily"
+          Route="oral"
+          Form="tablet"
+          Reason="treatment of atrial fibrillation"
+          Status="Active"
+          StartDate="01-Jun-06" >
+        <MedicationNames>
+          <MedicationName Name="digoxin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+          Frequency="3 times a day"
+          Form="tablet"
+          Reason="relief for arthritis"
+          Route="oral"
+          Dose="50 mg"
+          Status="Active"
+          StartDate="01-Sep-06" >
+        <MedicationNames>
+          <MedicationName Name="diclofenac sodium" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          Frequency="twice daily"
+          Form="tablet"
+          Dose="150 mg"
+          Route="oral"
+          Reason="treatment for prevention of stomach ulcer as a side-effect or diclofenac sodium"
+          Status="Active"
+          StartDate="17-Oct-06" >
+        <MedicationNames>
+          <MedicationName Name="ranitidine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          Dose="250 mg"
+          Frequency="every 6 hours"
+          Form="tablet"
+          Route="oral"
+          Reason="treatment for infection in left leg"
+          Status="Active"
+          StartDate="01-Nov-06" >
+        <MedicationNames>
+          <MedicationName Name="erythromycin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          Dose="50 mg"
+          Frequency="3 times a day"
+          Form="tablet"
+          Route="oral"
+          Reason="treatment for hayfever"
+          Status="Active"
+          StartDate="23/12/2006" >
+        <MedicationNames>
+          <MedicationName Name="cyclizine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          Dose="4 mg"
+          Frequency="4 times a day"
+          Form="tablet"
+          Route="oral"
+          Reason="treatment for hayfever"
+          Status="Active"
+          StartDate="02/01/2007" >
+        <MedicationNames>
+          <MedicationName Name="chlorophenamine maleate" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+          Dose="1 g"
+          Frequency="every 6 hours"
+          Route="oral"
+          Form="tablet"
+          Reason="pyrexia"
+          Status="Active"
+          StartDate="02-Feb-07" >
+        <MedicationNames>
+          <MedicationName Name="paracetamol" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              Dose="2.5 mg"
+              Frequency="daily"
+              Route="oral"
+              Form="tablet"
+              Reason="hypertension"
+              Status="Active"
+              StartDate="01-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="bendroflumethiazide" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              IndicatorGraphic="~/images/SmallIcons/arrow_right2.gif"
+              Dose="100-200 microgrammes"
+              Frequency="3-4 times daily"
+              Route="oral"
+              Form="inhaler"
+              Reason="relief of bronchospasm asthma"
+              Status="Active"
+              StartDate="01-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="salbutamol" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              Dose="40 mg"
+              Frequency="daily"
+              Route="oral"
+              Form="tablet"
+              Reason="management of cholesterol"
+              Status="Active"
+              StartDate="02-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="atorvastatin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+              IndicatorGraphic="~/images/SmallIcons/arrow_right2.gif"
+              Dose="125 microgrammes"
+              Frequency="daily"
+              Route="oral"
+              Form="tablet"
+              Reason="treatment of atrial fibrillation"
+              Status="Active"
+              StartDate="04-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="digoxin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+              Dose="50 mg"
+              Frequency="3 times a day"
+              Route="oral"
+              Form="tablet"
+              Reason="relief for arthritis"
+              Status="Active"
+              StartDate="08-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="diclofenac sodium" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              Dose="150 mg"
+              Frequency="twice daily"
+              Route="oral"
+              Form="tablet"
+              Reason="treatment for prevention of stomach ulcer as a side-effect or diclofenac sodium"
+              Status="Active"
+              StartDate="10-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="ranitidine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              Dose="250 mg"
+              Frequency="every 6 hours"
+              Route="oral"
+              Form="tablet"
+              Reason="treatment for infection in left leg"
+              Status="Active"
+              StartDate="12-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="erythromycin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              Dose="50 mg"
+              Frequency="3 times a day"
+              Route="oral"
+              Form="tablet"
+              Reason="treatment for hayfever"
+              Status="Active"
+              StartDate="12-Mar-07" >
+        <MedicationNames>
+          <MedicationName Name="cyclizine" />
+        </MedicationNames>
+      </Medication>
+      <!-- Past Medications -->
+      <Medication
+              StartDate="31/07/2006"
+              StatusDate="31/01/2007"
+              Dose="40 mg"
+              Frequency="half a tablet daily"
+              Form="tablet"
+              Route="oral"
+              Reason="management of cholesterol"
+              Status="Suspended"
+              >
+
+        <MedicationNames>
+          <MedicationName Name="atorvastatin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="21/09/2006"
+              StatusDate="15/11/2006"
+              IndicatorGraphic="~/images/SmallIcons/arrow_right2.gif"
+              CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+              Dose="125 microgrammes"
+              Frequency="daily"
+              Form="tablet"
+              Route="oral"
+              Reason="treatment of atrial fibrillation"
+              Status="Suspended"
+              >
+
+        <MedicationNames>
+          <MedicationName Name="digoxin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="01/08/2006"
+              StatusDate="31/08/2006"
+              CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+              Dose="50 mg"
+              Frequency="3 times a day"
+              Form="tablet"
+              Route="oral"
+              Reason="relief for arthritis"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="diclofenac sodium" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="01/08/2006"
+              StatusDate="01/08/2006"
+              Dose="150 mg"
+              Frequency="daily"
+              Form="tablet"
+              Route="oral"
+              Reason="Treatment for prevention of stomach ulcer as a side-effect or diclofenac sodium"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="ranitidine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="14/07/2006"
+              StatusDate="25/08/2006"
+              Dose="4 mg"
+              Frequency="twice daily"
+              Form="tablet"
+              Route="oral"
+              Reason="treatment for hayfever"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="chlorophenamine maleate" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="01/05/2006"
+              StatusDate="31/07/2006"
+              Dose="2.5 mg"
+              Frequency="2.5 mg"
+              Form="tablet"
+              Route="oral"
+              Reason="hypertension"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="bendroflumethiazide" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="01/01/2006"
+              StatusDate="30/06/2006"
+              Dose="100-200 microgrammes"
+              Frequency="2-3 times daily"
+              Form="inhaler"
+              Route="oral"
+              Reason="relief of bronchospasm asthma"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="salbutamol" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="01/06/2006"
+              StatusDate="22/06/2006"
+              Dose="20 mg"
+              Frequency=""
+              Form="tablet"
+              Route="oral"
+              Reason="management of cholesterol"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="atorvastatin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="23/04/2006"
+              StatusDate="25/05/2006"
+              Dose="20 mg"
+              Frequency="half a tablet daily"
+              Form="tablet"
+              Route="oral"
+              Reason="management of cholesterol"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="atorvastatin" />
+        </MedicationNames>
+      </Medication>
+
+
+      <Medication
+              StartDate="23/04/2006"
+              StatusDate="01/05/2006"
+              Dose="25 mg"
+              Frequency="daily"
+              Form="tablet"
+              Route="oral"
+              Reason="treatment for hayfever"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="cyclizine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+              StartDate="01/02/2006"
+              StatusDate="30/04/2006"
+              IndicatorGraphic="~/images/SmallIcons/arrow_right2.gif"
+              CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+              Dose="125 microgrammes"
+              Frequency="daily"
+              Form="tablet"
+              Route="oral"
+              Reason="treatment of atrial fibrillation"
+              Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="digoxin" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+        StartDate="01/10/2005"
+        StatusDate="30/04/2006"
+        Dose="2.5 mg"
+        Frequency=""
+        Form="tablet"
+        Route="oral"
+        Reason="hypertension"
+        Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="bendroflumethiazide" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+        StartDate="01/07/2005"
+        StatusDate="31/12/2005"
+        Dose="100 microgrammes"
+        Frequency="1-2 times daily"
+        Form="inhaler"
+        Route="oral"
+        Reason="relief of bronchospasm asthma"
+        Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="salbutamol" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+        StartDate="02/02/2005"
+        StatusDate="15/09/2005"
+        Dose="2.5 mg"
+        Frequency="daily"
+        Form="tablet"
+        Route="oral"
+        Reason="to treat hypertension"
+        Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="bendroflumethiazide" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+        StartDate="01/01/2005"
+        StatusDate="30/06/2005"
+        IndicatorGraphic="~/images/SmallIcons/arrow_right2.gif"
+        Dose="100 microgrammes"
+        Frequency="1-2 times daily"
+        Form="inhaler"
+        Route="oral"
+        Reason="relief of bronchospasm asthma"
+        Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="salbutamol" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+        StartDate="16/03/2005"
+        StatusDate="31/08/2005"
+        Dose="150 mg"
+        Frequency="daily"
+        Form="tablet"
+        Route="oral"
+        Reason="treatment for prevention of stomach ulcer as a side-effevct or diclophenac sodium"
+        Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="ranitidine" />
+        </MedicationNames>
+      </Medication>
+
+      <Medication
+        StartDate="16/03/2005"
+        StatusDate="24/08/2005"
+        CriticalAlertGraphic="~/images/SmallIcons/warning.gif"
+        Dose="50 mg"
+        Frequency="daily"
+        Form="tablet"
+        Route="oral"
+        Reason="relief for arthritis"
+        Status="Suspended"
+              >
+        <MedicationNames>
+          <MedicationName Name="diclofenac sodium" />
+        </MedicationNames>
+      </Medication>
+    </Medications>
+  </Patient>
+</Patients>

@@ -1,0 +1,16 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LeafPageTwo.master.cs" Inherits="Microsoft.Cui.SampleWebsite.LeafPageTwo" MasterPageFile="~/Navigational.master"%>
+<%@ Register Assembly="Microsoft.Cui.SampleWebsite" Namespace="Microsoft.Cui.SampleWebsite" TagPrefix="SS" %>   
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="navigationSpecificHeadTags">
+    <asp:ContentPlaceHolder id="leafPageSpecificHeadTags" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="navigationPageContent">
+    <ajaxToolkit:ToolkitScriptManager ID="DefaultScriptManager" runat="server" EnableScriptGlobalization="true" EnablePartialRendering="true" OnAsyncPostBackError="DefaultScriptManager_AsynchronousPostBackError" /> 
+    <asp:ContentPlaceHolder ID="leafPageTwoContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:SiteMapDataSource runat="server" ID="SiteMapDS" ShowStartingNode="false">
+    </asp:SiteMapDataSource>    
+</asp:Content>

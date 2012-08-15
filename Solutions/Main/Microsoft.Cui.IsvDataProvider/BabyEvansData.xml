@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+*
+*added prescriptionid
+*commented out the rows which do not have appropriate rules (prescriptionid=104,106,107,109,110,111,112)
+*added the data for paitientid=1 into patientid=2 (the PrescriptionId begins with 2, i.e 201,202,etc.)
+*updated Reason element to sync with BabyEvans.xlsx file
+*saurabhd, Mar 6,2007
+*
+*ignore patient medication record that have been commented.
+*saurabh, Mar 14, 2007
+*
+-->
+<MedicationData>
+  <Patient id="1">
+    <Medication>
+      <!-- paracetamol - 120 mg in 5 mL - suspension – DOSE 120 mg – oral –  every 4 hours as required -->
+      <RowId>0</RowId>
+      <MedicationId>0</MedicationId>
+      <DrugName>paracetamol</DrugName>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>      
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>4</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in 5 mL</Strength>
+      <DOSEQTY>120 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Clift</Prescriber>
+      <StartDate>25-May-2007</StartDate>
+      <ReviewDate>30-May-2007</ReviewDate>
+      <StopDate>30-May-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>25-May-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>101</PrescriptionId>
+    </Medication>
+    <Medication>
+      <!-- DIORALYTE – powder – DOSE 1 sachet – oral – once only-->
+      <RowId>1</RowId>
+      <MedicationId>1</MedicationId>
+      <DrugName>DIORALYTE</DrugName>
+      <VMPID>3542211000001105</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>      
+      <Frequency>Once</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>3095811000001100</Form>
+      <FormName>powder</FormName>
+      <Strength></Strength>
+      <DOSEQTY>1 sachet</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Clift</Prescriber>
+      <StartDate>25-May-2007</StartDate>
+      <ReviewDate>30-May-2007</ReviewDate>
+      <StopDate>30-May-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>once only</MedicationType>
+      <Reason>Prevention of dehydration</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>102</PrescriptionId>
+    </Medication>
+    <Medication>
+      <!-- amoxicillin – 125 mg in 5 mL – suspension – DOSE 125 mg – oral – every 8 hours -->
+      <RowId>2</RowId>
+      <MedicationId>2</MedicationId>
+      <DrugName>amoxicillin</DrugName>
+      <VMPID>323732002</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>      
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>8</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>125 mg in 5 mL</Strength>
+      <DOSEQTY>125 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Clift</Prescriber>
+      <StartDate>25-May-2007</StartDate>
+      <ReviewDate>30-May-2007</ReviewDate>
+      <StopDate>30-May-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of infection</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>103</PrescriptionId>
+    </Medication>
+    <!--<Medication>
+      diazepam – 2 mg in 1 mL – solution – DOSE 5 mg – rectal – once only 
+      <RowId>3</RowId>
+      <VMPID>323073009</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>      
+      <Frequency>Once</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>385023001</Form>
+      <FormName>solution</FormName>
+      <Strength>2 mg in 1 ml</Strength>
+      <DOSEQTY>5 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>37161004</Route>
+      <RouteName>rectal</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>1</Prescriber>
+      <StartDate>01-Jan-2001</StartDate>
+      <ReviewDate>03-Jan-2001</ReviewDate>
+      <StopDate>05-Feb-2002</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>01-Jan-2001</StatusDate>
+      <MedicationType></MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>104</PrescriptionId>
+    </Medication>-->
+    <Medication>
+      <!-- oxygen – 100% – oral – as required -->
+      <RowId>3</RowId>
+      <MedicationId>3</MedicationId>
+      <DrugName>oxygen</DrugName>
+      <VMPID></VMPID>
+      <VTMID>320917000</VTMID>
+      <AMPID></AMPID>
+      <Frequency>Continuous</Frequency>
+      <FrequencyAmount></FrequencyAmount>
+      <Form>3092311000001100</Form>
+      <FormName>Inhalation Gas</FormName>
+      <Strength>100%</Strength>
+      <DOSEQTY></DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>112239003</Route>
+      <RouteName>respiratory</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>26-May-2007</StartDate>
+      <ReviewDate>26-May-2007</ReviewDate>
+      <StopDate>26-May-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of febrile convulsions</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>105</PrescriptionId>
+    </Medication>
+    <!--<Medication>
+    diazepam – 10 mg in 2 mL – emulsion for injection – DOSE 3 mg – intravenous – once only
+    
+      <RowId>5</RowId>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>4</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in 5 ml</Strength>
+      <DOSEQTY>80 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>1</Prescriber>
+      <StartDate>01-Jan-2001</StartDate>
+      <StopDate>01-Jan-2008</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>01-Jan-2001</StatusDate>
+      <MedicationType></MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>106</PrescriptionId>
+    </Medication>-->
+    <!--<Medication>
+      sodium chloride – 0.9% - solution for injection –  320 mL per hour – intravenous infusion – once only – start at 10:00
+      <RowId>6</RowId>
+      <VMPID>4880611000001100</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>Once</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>385219001</Form>
+      <FormName>solution for injection</FormName>
+      <Strength>0.009</Strength>
+      <DOSEQTY>80 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate>320 ml per hour</Rate>
+      <CourseDuration></CourseDuration>
+      <Route>47625008</Route>
+      <RouteName>intravenous</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>1</Prescriber>
+      <StartDate>01-Jan-2001</StartDate>
+      <StopDate></StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>01-Jan-2001</StatusDate>
+      <MedicationType></MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions>start at 10:00 am</Instructions>
+      <PrescriptionId>107</PrescriptionId>
+    </Medication>-->
+    <Medication>
+      <!--paracetamol – 120 mg in 5 mL – suspension – DOSE 80 mg – oral –  every 4 hours-->
+      <RowId>4</RowId>
+      <MedicationId>4</MedicationId>
+      <DrugName>paracetamol</DrugName>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>4</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in  5 mL</Strength>
+      <DOSEQTY>80 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>26-May-2007</StartDate>
+      <ReviewDate>27-May-2007</ReviewDate>
+      <StopDate>27-May-2007</StopDate>
+      <MedicationStatus>Suspended</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>108</PrescriptionId>
+    </Medication>
+    <!--<Medication>
+      sodium chloride – 0.9% - solution for injection – 40 mL per hour – intravenous infusion – once only
+      <RowId>8</RowId>
+      <VMPID>4880611000001100</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>Once</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>385219001</Form>
+      <FormName>solution for injection</FormName>
+      <Strength>0.009</Strength>
+      <DOSEQTY></DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate>40 ml per hour</Rate>
+      <CourseDuration></CourseDuration>
+      <Route>47625008</Route>
+      <RouteName>intravenous</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>1</Prescriber>
+      <StartDate>01-Jan-2001</StartDate>
+      <StopDate></StopDate>
+      <MedicationStatus>Suspended</MedicationStatus>
+      <StatusDate>01-Jan-2001</StatusDate>
+      <MedicationType></MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>109</PrescriptionId>
+    </Medication>-->
+    <!--<Medication>
+       cefotaxime – powder for solution for injection – DOSE 400 mg – intravenous – every 8 hours 
+      <RowId>9</RowId>
+      <VMPID>323824004</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>8</FrequencyAmount>
+      <Form>3095811000001100</Form>
+      <FormName>powder for solution for injection</FormName>
+      <Strength></Strength>
+      <DOSEQTY>400 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>47625008</Route>
+      <RouteName>intravenous</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>1</Prescriber>
+      <StartDate>01-Jan-2001</StartDate>
+      <StopDate></StopDate>
+      <MedicationStatus>NotStarted</MedicationStatus>
+      <StatusDate>20-02-2008</StatusDate>
+      <MedicationType></MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>110</PrescriptionId>
+    </Medication>-->
+    <Medication>
+      <!-- sodium chloride – 0.9% – potassium chloride – 10mmol/L – ADD: 5 micromol – calcium gluconate – 10% – ADD: 20 mL – solution for injection – intravenous – 40 mL per hour – continuous – start at: 12:15 -->
+      <RowId>5</RowId>
+      <MedicationId>5</MedicationId>
+      <DrugName>co-amoxiclav</DrugName>
+      <VMPID>323542003</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>12</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>400 mg / 57 mg / 5 mL</Strength>
+      <DOSEQTY>1.2 mL</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>28-May-2007</StartDate>
+      <ReviewDate>30-May-2007</ReviewDate>
+      <StopDate>30-May-2007</StopDate>
+      <MedicationStatus>Discontinued</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of urinary tract infection</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>113</PrescriptionId>
+    </Medication>
+    <Medication>
+      <!-- sodium chloride – 0.9% - solution for injection – intravenous infusion –  40 mL per hour – once only -->
+      <RowId>6</RowId>
+      <MedicationId>6</MedicationId>
+      <DrugName>trimethoprim</DrugName>
+      <VMPID>324433003</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>24</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>50 mg in 10 mL</Strength>
+      <DOSEQTY>16 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>30-May-2007</StartDate>
+      <ReviewDate>02-Jun-2007</ReviewDate>
+      <StopDate>02-Jun-2007</StopDate>
+      <MedicationStatus>Completed</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Prevention of urinary tract infection</Reason>
+      <Instructions>At night</Instructions>
+      <PrescriptionId>114</PrescriptionId>
+    </Medication>     
+  </Patient>
+  <Patient id="2">
+    <Medication>
+      <!-- paracetamol – 120 mg in 5 mL – suspension – DOSE 120 mg – oral –  every 4 hours as required -->
+      <RowId>0</RowId>
+      <MedicationId>0</MedicationId>
+      <DrugName>paracetamol</DrugName>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>      
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>4</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in 5 mL</Strength>
+      <DOSEQTY>120 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>25-May-2007</StartDate>
+      <ReviewDate>30-May-2007</ReviewDate>
+      <StopDate>30-May-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>201</PrescriptionId>
+    </Medication>
+    <Medication>
+      <!-- DIORALYTE – powder – DOSE 1 sachet – oral – once only-->
+      <RowId>1</RowId>
+      <MedicationId>1</MedicationId>
+      <DrugName>DIORALYTE</DrugName>
+      <VMPID>3542211000001105</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>      
+      <Frequency>Once</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>3095811000001100</Form>
+      <FormName>powder</FormName>
+      <Strength></Strength>
+      <DOSEQTY>1 sachet</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>25-May-2007</StartDate>
+      <ReviewDate>30-May-2007</ReviewDate>
+      <StopDate>30-May-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Prevention of dehydration</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>202</PrescriptionId>
+    </Medication>
+    <Medication>
+      <!-- amoxicillin – 125 mg in 5 mL – suspension – DOSE 125 mg – oral – every 8 hours -->
+      <RowId>2</RowId>
+      <MedicationId>2</MedicationId>
+      <DrugName>amoxicillin</DrugName>
+      <VMPID>323732002</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>      
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>8</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>125 mg in 5 mL</Strength>
+      <DOSEQTY>125 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>25-May-2005</StartDate>
+      <ReviewDate>30-May-2005</ReviewDate>
+      <StopDate>30-May-2005</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of infection</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>203</PrescriptionId>
+    </Medication>
+    <Medication>
+      <!-- oxygen – 100% – oral – as required -->
+      <RowId>3</RowId>
+      <MedicationId>3</MedicationId>
+      <DrugName>oxygen</DrugName>
+      <VMPID></VMPID>
+      <VTMID>320917000</VTMID>
+      <AMPID></AMPID>
+      <Frequency>Continuous</Frequency>
+      <FrequencyAmount></FrequencyAmount>
+      <Form>3092311000001100</Form>
+      <FormName>Inhalation Gas</FormName>
+      <Strength>100%</Strength>
+      <DOSEQTY></DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>112239003</Route>
+      <RouteName>respiratory</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>26-May-2007</StartDate>
+      <ReviewDate>26-May-2007</ReviewDate>
+      <StopDate>26-May-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of febrile convulsions</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>205</PrescriptionId>
+    </Medication>
+    <Medication>
+      <!--paracetamol – 120 mg in 5 mL – suspension – DOSE 80 mg – oral –  every 4 hours-->
+      <RowId>4</RowId>
+      <MedicationId>4</MedicationId>
+      <DrugName>paracetamol</DrugName>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>4</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in 5 mL</Strength>
+      <DOSEQTY>80 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>26-May-2007</StartDate>
+      <ReviewDate>30-May-2007</ReviewDate>
+      <StopDate>30-May-2007</StopDate>
+      <MedicationStatus>Suspended</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>208</PrescriptionId>
+    </Medication>
+    <Medication>
+      <!-- sodium chloride – 0.9% – potassium chloride – 10mmol/L – ADD: 5 micromol – calcium gluconate – 10% – ADD: 20 mL – solution for injection – intravenous – 40 mL per hour – continuous – start at: 12:15 -->
+      <RowId>5</RowId>
+      <MedicationId>5</MedicationId>
+      <DrugName>co-amoxiclav</DrugName>
+      <VMPID>323542003</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>12</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>400 mg / 57 mg / 5 mL</Strength>
+      <DOSEQTY>1.2 mL</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>28-May-2007</StartDate>
+      <ReviewDate>30-Jan-2008</ReviewDate>
+      <StopDate>30-Jan-2008</StopDate>
+      <MedicationStatus>Discontinued</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of urinary tract infection</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>213</PrescriptionId>
+    </Medication>
+    <Medication>
+      <!-- sodium chloride – 0.9% - solution for injection – intravenous infusion –  40 mL per hour – once only -->
+      <RowId>6</RowId>
+      <MedicationId>6</MedicationId>
+      <DrugName>trimethoprim</DrugName>
+      <VMPID>324433003</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>24</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>50 mg in 10 mL</Strength>
+      <DOSEQTY>16 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>30-May-2007</StartDate>
+      <ReviewDate>30-Nov-2007</ReviewDate>
+      <StopDate>30-Nov-2007</StopDate>
+      <MedicationStatus>Completed</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Prevention of urinary tract infection</Reason>
+      <Instructions>At night</Instructions>
+      <PrescriptionId>214</PrescriptionId>
+    </Medication>
+
+    <!-- Generating more rows out of the valid data -->
+    <Medication>
+      <RowId>7</RowId>
+      <MedicationId>7</MedicationId>
+      <DrugName>paracetamol</DrugName>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>8</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in 5 mL</Strength>
+      <DOSEQTY>120 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Pat</Prescriber>
+      <StartDate>21-Mar-2007</StartDate>
+      <ReviewDate>30-Apr-2007</ReviewDate>
+      <StopDate>30-Apr-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>01-Jan-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>101</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>8</RowId>
+      <MedicationId>8</MedicationId>
+      <DrugName>DIORALYTE</DrugName>
+      <VMPID>3542211000001105</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>Once</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>3095811000001100</Form>
+      <FormName>powder</FormName>
+      <Strength></Strength>
+      <DOSEQTY>1 sachet</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>25-May-2004</StartDate>
+      <ReviewDate>30-May-2007</ReviewDate>
+      <StopDate>30-May-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Prevention of dehydration</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>102</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>9</RowId>
+      <MedicationId>9</MedicationId>
+      <DrugName>amoxicillin</DrugName>
+      <VMPID>323732002</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>2</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>125 mg in 5 mL</Strength>
+      <DOSEQTY>125 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Clift</Prescriber>
+      <StartDate>25-May-2007</StartDate>
+      <ReviewDate>30-May-2007</ReviewDate>
+      <StopDate>30-May-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of infection</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>103</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>10</RowId>
+      <MedicationId>10</MedicationId>
+      <DrugName>oxygen</DrugName>
+      <VMPID></VMPID>
+      <VTMID>320917000</VTMID>
+      <AMPID></AMPID>
+      <Frequency>Continuous</Frequency>
+      <FrequencyAmount></FrequencyAmount>
+      <Form>3092311000001100</Form>
+      <FormName>Inhalation Gas</FormName>
+      <Strength>100%</Strength>
+      <DOSEQTY></DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>112239003</Route>
+      <RouteName>respiratory</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>26-Jan-2007</StartDate>
+      <ReviewDate>21-Feb-2007</ReviewDate>
+      <StopDate>21-Feb-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of febrile convulsions</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>105</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>11</RowId>
+      <MedicationId>11</MedicationId>
+      <DrugName>paracetamol</DrugName>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>2</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in 5 mL</Strength>
+      <DOSEQTY>80 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>21-Jan-2007</StartDate>
+      <ReviewDate>27-Feb-2007</ReviewDate>
+      <StopDate>27-Feb-2007</StopDate>
+      <MedicationStatus>Suspended</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>108</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>12</RowId>
+      <MedicationId>12</MedicationId>
+      <DrugName>co-amoxiclav</DrugName>
+      <VMPID>323542003</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>12</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>400 mg / 57 mg / 5 mL</Strength>
+      <DOSEQTY>1.2 mL</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>28-Jan-2006</StartDate>
+      <ReviewDate>28-Feb-2008</ReviewDate>
+      <StopDate>28-Feb-2008</StopDate>
+      <MedicationStatus>Discontinued</MedicationStatus>
+      <StatusDate>01-Jan-2006</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of urinary tract infection</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>113</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>13</RowId>
+      <MedicationId>13</MedicationId>
+      <DrugName>trimethoprim</DrugName>
+      <VMPID>324433003</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>24</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>50 mg in 10 mL</Strength>
+      <DOSEQTY>16 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>30-May-2004</StartDate>
+      <ReviewDate>02-Jun-2004</ReviewDate>
+      <StopDate>02-Jun-2004</StopDate>
+      <MedicationStatus>Completed</MedicationStatus>
+      <StatusDate>01-Feb-2004</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Prevention of urinary tract infection</Reason>
+      <Instructions>At night</Instructions>
+      <PrescriptionId>Regular</PrescriptionId>
+    </Medication>
+
+    <Medication>
+      <RowId>14</RowId>
+      <MedicationId>14</MedicationId>
+      <DrugName>paracetamol</DrugName>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in 5 mL</Strength>
+      <DOSEQTY>80 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>21-Feb-2005</StartDate>
+      <ReviewDate>30-Apr-2005</ReviewDate>
+      <StopDate>30-Apr-2005</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>01-Jan-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>101</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>15</RowId>
+      <MedicationId>15</MedicationId>
+      <DrugName>DIORALYTE</DrugName>
+      <VMPID>3542211000001105</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>Once</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>3095811000001100</Form>
+      <FormName>powder</FormName>
+      <Strength></Strength>
+      <DOSEQTY>1 sachet</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>31-May-2007</StartDate>
+      <ReviewDate>30-Jul-2007</ReviewDate>
+      <StopDate>30-Jul-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Prevention of dehydration</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>102</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>16</RowId>
+      <MedicationId>16</MedicationId>
+      <DrugName>amoxicillin</DrugName>
+      <VMPID>323732002</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>2</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>125 mg in 5 mL</Strength>
+      <DOSEQTY>125 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>21-Mar-2007</StartDate>
+      <ReviewDate>30-May-2007</ReviewDate>
+      <StopDate>30-May-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>26-May-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of infection</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>103</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>17</RowId>
+      <MedicationId>17</MedicationId>
+      <DrugName>oxygen</DrugName>
+      <VMPID></VMPID>
+      <VTMID>320917000</VTMID>
+      <AMPID></AMPID>
+      <Frequency>Continuous</Frequency>
+      <FrequencyAmount></FrequencyAmount>
+      <Form>3092311000001100</Form>
+      <FormName>Inhalation Gas</FormName>
+      <Strength>100%</Strength>
+      <DOSEQTY></DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>112239003</Route>
+      <RouteName>respiratory</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Steve</Prescriber>
+      <StartDate>22-Jan-2006</StartDate>
+      <ReviewDate>21-Mar-2006</ReviewDate>
+      <StopDate>21-Mar-2006</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>01-Jan-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of febrile convulsions</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>105</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>18</RowId>
+      <MedicationId>18</MedicationId>
+      <DrugName>paracetamol</DrugName>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>6</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in 5 mL</Strength>
+      <DOSEQTY>120 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>21-Jan-2004</StartDate>
+      <ReviewDate>27-Feb-2005</ReviewDate>
+      <StopDate>27-Feb-2005</StopDate>
+      <MedicationStatus>Suspended</MedicationStatus>
+      <StatusDate>01-Mar-2005</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>108</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>19</RowId>
+      <MedicationId>19</MedicationId>
+      <DrugName>co-amoxiclav</DrugName>
+      <VMPID>323542003</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>400 mg / 57 mg / 5 mL</Strength>
+      <DOSEQTY>1.2 mL</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>28-Jan-2007</StartDate>
+      <ReviewDate>28-Feb-2008</ReviewDate>
+      <StopDate>28-Feb-2008</StopDate>
+      <MedicationStatus>Discontinued</MedicationStatus>
+      <StatusDate>01-Jan-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of urinary tract infection</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>113</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>20</RowId>
+      <MedicationId>20</MedicationId>
+      <DrugName>trimethoprim</DrugName>
+      <VMPID>324433003</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>24</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>50 mg in 10 mL</Strength>
+      <DOSEQTY>16 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murchison</Prescriber>
+      <StartDate>16-Mar-2007</StartDate>
+      <ReviewDate>02-Apr-2007</ReviewDate>
+      <StopDate>02-Apr-2007</StopDate>
+      <MedicationStatus>Completed</MedicationStatus>
+      <StatusDate>01-Feb-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Prevention of urinary tract infection</Reason>
+      <Instructions>At night</Instructions>
+      <PrescriptionId>Regular</PrescriptionId>
+    </Medication>
+
+    <Medication>
+      <RowId>21</RowId>
+      <MedicationId>21</MedicationId>
+      <DrugName>paracetamol</DrugName>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>4</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in 5 mL</Strength>
+      <DOSEQTY>80 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>21-Feb-2002</StartDate>
+      <ReviewDate>30-Apr-2002</ReviewDate>
+      <StopDate>30-Apr-2002</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>01-Jan-2003</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>101</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>22</RowId>
+      <MedicationId>22</MedicationId>
+      <DrugName>DIORALYTE</DrugName>
+      <VMPID>3542211000001105</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>Once</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>3095811000001100</Form>
+      <FormName>powder</FormName>
+      <Strength></Strength>
+      <DOSEQTY>1 sachet</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>31-May-2007</StartDate>
+      <ReviewDate>30-Jul-2007</ReviewDate>
+      <StopDate>30-Jul-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>01-Jul-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Prevention of dehydration</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>102</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>23</RowId>
+      <MedicationId>23</MedicationId>
+      <DrugName>amoxicillin</DrugName>
+      <VMPID>323732002</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>12</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>125 mg in 5 mL</Strength>
+      <DOSEQTY>125 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>11-Mar-2002</StartDate>
+      <ReviewDate>30-May-2002</ReviewDate>
+      <StopDate>30-May-2002</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>01-Jan-2002</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of infection</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>103</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>24</RowId>
+      <MedicationId>24</MedicationId>
+      <DrugName>oxygen</DrugName>
+      <VMPID></VMPID>
+      <VTMID>320917000</VTMID>
+      <AMPID></AMPID>
+      <Frequency>Continuous</Frequency>
+      <FrequencyAmount></FrequencyAmount>
+      <Form>3092311000001100</Form>
+      <FormName>Inhalation Gas</FormName>
+      <Strength>100%</Strength>
+      <DOSEQTY></DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>112239003</Route>
+      <RouteName>respiratory</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Murnich</Prescriber>
+      <StartDate>22-Jan-2007</StartDate>
+      <ReviewDate>26-Apr-2007</ReviewDate>
+      <StopDate>26-Apr-2007</StopDate>
+      <MedicationStatus>Started</MedicationStatus>
+      <StatusDate>21-Mar-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of febrile convulsions</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>105</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>25</RowId>
+      <MedicationId>25</MedicationId>
+      <DrugName>paracetamol</DrugName>
+      <VMPID>322277008</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>10</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>120 mg in 5 mL</Strength>
+      <DOSEQTY>80 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>21-Jan-2007</StartDate>
+      <ReviewDate>27-Feb-2007</ReviewDate>
+      <StopDate>27-Feb-2007</StopDate>
+      <MedicationStatus>Suspended</MedicationStatus>
+      <StatusDate>01-Mar-2007</StatusDate>
+      <MedicationType>as required</MedicationType>
+      <Reason>Treatment of fever</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>108</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>26</RowId>
+      <MedicationId>26</MedicationId>
+      <DrugName>co-amoxiclav</DrugName>
+      <VMPID>323542003</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>1</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>400 mg / 57 mg / 5 mL</Strength>
+      <DOSEQTY>1.2 mL</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>16-Jan-2002</StartDate>
+      <ReviewDate>13-Mar-2008</ReviewDate>
+      <StopDate>13-Mar-2008</StopDate>
+      <MedicationStatus>Discontinued</MedicationStatus>
+      <StatusDate>01-Jan-2002</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Treatment of urinary tract infection</Reason>
+      <Instructions></Instructions>
+      <PrescriptionId>113</PrescriptionId>
+    </Medication>
+    <Medication>
+      <RowId>27</RowId>
+      <MedicationId>27</MedicationId>
+      <DrugName>trimethoprim</DrugName>
+      <VMPID>324433003</VMPID>
+      <VTMID></VTMID>
+      <AMPID></AMPID>
+      <Frequency>EveryNHours</Frequency>
+      <FrequencyAmount>12</FrequencyAmount>
+      <Form>385024007</Form>
+      <FormName>suspension</FormName>
+      <Strength>50 mg in 10 mL</Strength>
+      <DOSEQTY>80 mg</DOSEQTY>
+      <DoseDuration></DoseDuration>
+      <Rate></Rate>
+      <CourseDuration></CourseDuration>
+      <Route>26643006</Route>
+      <RouteName>oral</RouteName>
+      <Site></Site>
+      <Method></Method>
+      <Prescriber>Dr. Richard</Prescriber>
+      <StartDate>16-Mar-2007</StartDate>
+      <ReviewDate>02-Apr-2007</ReviewDate>
+      <StopDate>02-Apr-2007</StopDate>
+      <MedicationStatus>Completed</MedicationStatus>
+      <StatusDate>01-Feb-2007</StatusDate>
+      <MedicationType>regular</MedicationType>
+      <Reason>Prevention of urinary tract infection</Reason>
+      <Instructions>At night</Instructions>
+      <PrescriptionId>Regular</PrescriptionId>
+    </Medication>
+  </Patient>
+</MedicationData>

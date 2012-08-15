@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Patient ID Number Input and Display</title>
+  <back href="PatientNoDisplay.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Patient Identification Number Input and Display.pdf" altText="Links to Design Guidance - Patient Identification Number Input and Display documentation">Design Guidance - Patient Identification Number Input and Display (PDF Format)</download>
+  <navigation collapseInactiveItems="false">
+    <header text="Overview" tooltip="Patient ID Number Input and Display - Overview" href="QuickGuides/PatientIDNumber/default.aspx" />
+    <header text="Display" tooltip="Patient ID Number Input and Display - Display" href="QuickGuides/PatientIDNumber/display.aspx">
+      <subheader text="Format" tooltip="Patient ID Number Input and Display - Display - Format" href="QuickGuides/PatientIDNumber/Display/format.aspx" />
+    </header>  
+    <header text="Input" tooltip="Patient ID Number Input and Display - Input" href="QuickGuides/PatientIDNumber/input.aspx">
+      <subheader text="Input Box" tooltip="Patient ID Number Input and Display - Input - Input Box" href="QuickGuides/PatientIDNumber/Input/inputbox.aspx" />
+      <subheader text="Dimensions" tooltip="Patient ID Number Input and Display - Input - Dimensions" href="QuickGuides/PatientIDNumber/Input/dimensions.aspx" />
+      <subheader text="Input Methods" tooltip="Patient ID Number Input and Display - Input - Input Methods" href="QuickGuides/PatientIDNumber/Input/inputmethods.aspx" />
+      <subheader text="Instructions" tooltip="Patient ID Number Input and Display - Input - Instructions" href="QuickGuides/PatientIDNumber/Input/instructions.aspx" />      
+    </header>
+    <header text="Checklist" tooltip="Patient ID Number Input and Display - Checklist" href="QuickGuides/PatientIDNumber/checklist.aspx" />
+  </navigation>
+</quickguide>

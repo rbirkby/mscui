@@ -1,0 +1,540 @@
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E07CA3AF-5BF8-413D-8CE2-1A46EADF9F7C}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Cui.Controls</RootNamespace>
+    <AssemblyName>Microsoft.Cui.Controls</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+                    
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>..\Microsoft.Cui.Silverlight.snk</AssemblyOriginatorKeyFile>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>false</ThrowErrorsInValidation>
+    <StyleCopErrorsAllowed>False</StyleCopErrorsAllowed>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>ClientBin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>+!Microsoft.Design#CA1012;-!Microsoft.Design#CA2210;+!Microsoft.Design#CA1040;+!Microsoft.Design#CA1005;+!Microsoft.Design#CA1020;+!Microsoft.Design#CA1021;+!Microsoft.Design#CA1010;+!Microsoft.Design#CA1011;+!Microsoft.Design#CA1009;+!Microsoft.Design#CA1050;+!Microsoft.Design#CA1026;+!Microsoft.Design#CA1019;+!Microsoft.Design#CA1031;+!Microsoft.Design#CA1047;+!Microsoft.Design#CA1000;+!Microsoft.Design#CA1048;+!Microsoft.Design#CA1051;+!Microsoft.Design#CA1002;+!Microsoft.Design#CA1061;+!Microsoft.Design#CA1006;-!Microsoft.Design#CA1046;+!Microsoft.Design#CA1045;-!Microsoft.Design#CA1065;+!Microsoft.Design#CA1038;+!Microsoft.Design#CA1008;-!Microsoft.Design#CA1028;-!Microsoft.Design#CA1064;+!Microsoft.Design#CA1004;+!Microsoft.Design#CA1035;+!Microsoft.Design#CA1063;+!Microsoft.Design#CA1032;+!Microsoft.Design#CA1023;+!Microsoft.Design#CA1033;+!Microsoft.Design#CA1039;+!Microsoft.Design#CA1016;+!Microsoft.Design#CA1014;+!Microsoft.Design#CA1017;+!Microsoft.Design#CA1018;+!Microsoft.Design#CA1027;+!Microsoft.Design#CA1059;+!Microsoft.Design#CA1060;+!Microsoft.Design#CA1034;+!Microsoft.Design#CA1013;+!Microsoft.Design#CA1036;+!Microsoft.Design#CA1044;+!Microsoft.Design#CA1041;+!Microsoft.Design#CA1025;+!Microsoft.Design#CA1052;+!Microsoft.Design#CA1053;+!Microsoft.Design#CA1057;+!Microsoft.Design#CA1058;+!Microsoft.Design#CA1001;+!Microsoft.Design#CA1049;+!Microsoft.Design#CA1054;+!Microsoft.Design#CA1056;+!Microsoft.Design#CA1055;+!Microsoft.Design#CA1030;+!Microsoft.Design#CA1003;+!Microsoft.Design#CA1007;+!Microsoft.Design#CA1043;+!Microsoft.Design#CA1024;+!Microsoft.Globalization#CA1301;+!Microsoft.Globalization#CA1302;+!Microsoft.Globalization#CA1308;+!Microsoft.Globalization#CA1306;+!Microsoft.Globalization#CA1304;+!Microsoft.Globalization#CA1305;+!Microsoft.Globalization#CA2101;+!Microsoft.Globalization#CA1300;+!Microsoft.Globalization#CA1307;+!Microsoft.Globalization#CA1309;+!Microsoft.Interoperability#CA1403;+!Microsoft.Interoperability#CA1406;+!Microsoft.Interoperability#CA1413;+!Microsoft.Interoperability#CA1402;+!Microsoft.Interoperability#CA1407;+!Microsoft.Interoperability#CA1404;+!Microsoft.Interoperability#CA1410;+!Microsoft.Interoperability#CA1411;+!Microsoft.Interoperability#CA1405;+!Microsoft.Interoperability#CA1409;+!Microsoft.Interoperability#CA1415;+!Microsoft.Interoperability#CA1408;+!Microsoft.Interoperability#CA1414;+!Microsoft.Interoperability#CA1412;+!Microsoft.Interoperability#CA1400;+!Microsoft.Interoperability#CA1401;-!Microsoft.Maintainability#CA1506;-!Microsoft.Maintainability#CA1502;-!Microsoft.Maintainability#CA1501;-!Microsoft.Maintainability#CA1505;-!Microsoft.Maintainability#CA1504;-!Microsoft.Maintainability#CA1500;+!Microsoft.Mobility#CA1600;+!Microsoft.Mobility#CA1601;-!Microsoft.Naming#CA1702;-!Microsoft.Naming#CA1700;+!Microsoft.Naming#CA1712;+!Microsoft.Naming#CA1713;+!Microsoft.Naming#CA1714;+!Microsoft.Naming#CA1709;+!Microsoft.Naming#CA1704;+!Microsoft.Naming#CA1708;+!Microsoft.Naming#CA1715;+!Microsoft.Naming#CA1710;-!Microsoft.Naming#CA1720;+!Microsoft.Naming#CA1707;+!Microsoft.Naming#CA1722;+!Microsoft.Naming#CA1711;+!Microsoft.Naming#CA1716;+!Microsoft.Naming#CA1717;+!Microsoft.Naming#CA1725;+!Microsoft.Naming#CA1719;+!Microsoft.Naming#CA1721;+!Microsoft.Naming#CA1701;+!Microsoft.Naming#CA1703;+!Microsoft.Naming#CA1724;+!Microsoft.Naming#CA1726;+!Microsoft.Performance#CA1809;-!Microsoft.Performance#CA1811;+!Microsoft.Performance#CA1812;+!Microsoft.Performance#CA1813;-!Microsoft.Performance#CA1823;+!Microsoft.Performance#CA1800;+!Microsoft.Performance#CA1805;+!Microsoft.Performance#CA1810;-!Microsoft.Performance#CA1824;+!Microsoft.Performance#CA1822;+!Microsoft.Performance#CA1815;+!Microsoft.Performance#CA1814;+!Microsoft.Performance#CA1819;+!Microsoft.Performance#CA1821;+!Microsoft.Performance#CA1804;+!Microsoft.Performance#CA1820;+!Microsoft.Performance#CA1802;+!Microsoft.Portability#CA1903;+!Microsoft.Portability#CA1901;+!Microsoft.Portability#CA1900;-!Microsoft.Reliability#CA2001;-!Microsoft.Reliability#CA2002;-!Microsoft.Reliability#CA2003;-!Microsoft.Reliability#CA2004;-!Microsoft.Reliability#CA2006;+!Microsoft.Security#CA2116;+!Microsoft.Security#CA2117;+!Microsoft.Security#CA2105;+!Microsoft.Security#CA2115;+!Microsoft.Security#CA2102;+!Microsoft.Security#CA2104;+!Microsoft.Security#CA2122;+!Microsoft.Security#CA2114;+!Microsoft.Security#CA2123;+!Microsoft.Security#CA2111;+!Microsoft.Security#CA2108;+!Microsoft.Security#CA2107;+!Microsoft.Security#CA2103;+!Microsoft.Security#CA2118;+!Microsoft.Security#CA2109;+!Microsoft.Security#CA2119;+!Microsoft.Security#CA2106;+!Microsoft.Security#CA2112;+!Microsoft.Security#CA2120;+!Microsoft.Security#CA2121;+!Microsoft.Security#CA2126;+!Microsoft.Security#CA2124;+!Microsoft.Security#CA2127;+!Microsoft.Security#CA2128;+!Microsoft.Security#CA2129;+!Microsoft.Usage#CA2243;+!Microsoft.Usage#CA2236;+!Microsoft.Usage#CA1816;+!Microsoft.Usage#CA2227;+!Microsoft.Usage#CA2213;+!Microsoft.Usage#CA2216;+!Microsoft.Usage#CA2214;+!Microsoft.Usage#CA2222;+!Microsoft.Usage#CA1806;+!Microsoft.Usage#CA2217;+!Microsoft.Usage#CA2212;+!Microsoft.Usage#CA2219;+!Microsoft.Usage#CA2201;+!Microsoft.Usage#CA2228;+!Microsoft.Usage#CA2221;+!Microsoft.Usage#CA2220;+!Microsoft.Usage#CA2240;+!Microsoft.Usage#CA2229;+!Microsoft.Usage#CA2238;+!Microsoft.Usage#CA2207;+!Microsoft.Usage#CA2208;+!Microsoft.Usage#CA2235;+!Microsoft.Usage#CA2237;+!Microsoft.Usage#CA2232;+!Microsoft.Usage#CA2223;+!Microsoft.Usage#CA2211;+!Microsoft.Usage#CA2233;+!Microsoft.Usage#CA2225;+!Microsoft.Usage#CA2226;+!Microsoft.Usage#CA2231;+!Microsoft.Usage#CA2224;+!Microsoft.Usage#CA2218;+!Microsoft.Usage#CA2234;+!Microsoft.Usage#CA2239;+!Microsoft.Usage#CA2200;+!Microsoft.Usage#CA1801;+!Microsoft.Usage#CA2242;+!Microsoft.Usage#CA2205;+!Microsoft.Usage#CA2230</CodeAnalysisRules>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>Microsoft.Cui.Controls.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>ClientBin\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>+!Microsoft.Design#CA1012;-!Microsoft.Design#CA2210;+!Microsoft.Design#CA1040;+!Microsoft.Design#CA1005;+!Microsoft.Design#CA1020;+!Microsoft.Design#CA1021;+!Microsoft.Design#CA1010;+!Microsoft.Design#CA1011;+!Microsoft.Design#CA1009;+!Microsoft.Design#CA1050;+!Microsoft.Design#CA1026;+!Microsoft.Design#CA1019;+!Microsoft.Design#CA1031;+!Microsoft.Design#CA1047;+!Microsoft.Design#CA1000;+!Microsoft.Design#CA1048;+!Microsoft.Design#CA1051;+!Microsoft.Design#CA1002;+!Microsoft.Design#CA1061;+!Microsoft.Design#CA1006;-!Microsoft.Design#CA1046;+!Microsoft.Design#CA1045;-!Microsoft.Design#CA1065;+!Microsoft.Design#CA1038;+!Microsoft.Design#CA1008;-!Microsoft.Design#CA1028;-!Microsoft.Design#CA1064;+!Microsoft.Design#CA1004;+!Microsoft.Design#CA1035;+!Microsoft.Design#CA1063;+!Microsoft.Design#CA1032;+!Microsoft.Design#CA1023;+!Microsoft.Design#CA1033;+!Microsoft.Design#CA1039;+!Microsoft.Design#CA1016;+!Microsoft.Design#CA1014;+!Microsoft.Design#CA1017;+!Microsoft.Design#CA1018;+!Microsoft.Design#CA1027;+!Microsoft.Design#CA1059;+!Microsoft.Design#CA1060;+!Microsoft.Design#CA1034;+!Microsoft.Design#CA1013;+!Microsoft.Design#CA1036;+!Microsoft.Design#CA1044;+!Microsoft.Design#CA1041;+!Microsoft.Design#CA1025;+!Microsoft.Design#CA1052;+!Microsoft.Design#CA1053;+!Microsoft.Design#CA1057;+!Microsoft.Design#CA1058;+!Microsoft.Design#CA1001;+!Microsoft.Design#CA1049;+!Microsoft.Design#CA1054;+!Microsoft.Design#CA1056;+!Microsoft.Design#CA1055;+!Microsoft.Design#CA1030;+!Microsoft.Design#CA1003;+!Microsoft.Design#CA1007;+!Microsoft.Design#CA1043;+!Microsoft.Design#CA1024;+!Microsoft.Globalization#CA1301;+!Microsoft.Globalization#CA1302;+!Microsoft.Globalization#CA1308;+!Microsoft.Globalization#CA1306;+!Microsoft.Globalization#CA1304;+!Microsoft.Globalization#CA1305;+!Microsoft.Globalization#CA2101;+!Microsoft.Globalization#CA1300;+!Microsoft.Globalization#CA1307;+!Microsoft.Globalization#CA1309;+!Microsoft.Interoperability#CA1403;+!Microsoft.Interoperability#CA1406;+!Microsoft.Interoperability#CA1413;+!Microsoft.Interoperability#CA1402;+!Microsoft.Interoperability#CA1407;+!Microsoft.Interoperability#CA1404;+!Microsoft.Interoperability#CA1410;+!Microsoft.Interoperability#CA1411;+!Microsoft.Interoperability#CA1405;+!Microsoft.Interoperability#CA1409;+!Microsoft.Interoperability#CA1415;+!Microsoft.Interoperability#CA1408;+!Microsoft.Interoperability#CA1414;+!Microsoft.Interoperability#CA1412;+!Microsoft.Interoperability#CA1400;+!Microsoft.Interoperability#CA1401;-!Microsoft.Maintainability#CA1506;-!Microsoft.Maintainability#CA1502;-!Microsoft.Maintainability#CA1501;-!Microsoft.Maintainability#CA1505;-!Microsoft.Maintainability#CA1504;-!Microsoft.Maintainability#CA1500;+!Microsoft.Mobility#CA1600;+!Microsoft.Mobility#CA1601;-!Microsoft.Naming#CA1702;-!Microsoft.Naming#CA1700;+!Microsoft.Naming#CA1712;+!Microsoft.Naming#CA1713;+!Microsoft.Naming#CA1714;+!Microsoft.Naming#CA1709;+!Microsoft.Naming#CA1704;+!Microsoft.Naming#CA1708;+!Microsoft.Naming#CA1715;+!Microsoft.Naming#CA1710;-!Microsoft.Naming#CA1720;+!Microsoft.Naming#CA1707;+!Microsoft.Naming#CA1722;+!Microsoft.Naming#CA1711;+!Microsoft.Naming#CA1716;+!Microsoft.Naming#CA1717;+!Microsoft.Naming#CA1725;+!Microsoft.Naming#CA1719;+!Microsoft.Naming#CA1721;+!Microsoft.Naming#CA1701;+!Microsoft.Naming#CA1703;+!Microsoft.Naming#CA1724;+!Microsoft.Naming#CA1726;+!Microsoft.Performance#CA1809;-!Microsoft.Performance#CA1811;+!Microsoft.Performance#CA1812;+!Microsoft.Performance#CA1813;-!Microsoft.Performance#CA1823;+!Microsoft.Performance#CA1800;+!Microsoft.Performance#CA1805;+!Microsoft.Performance#CA1810;-!Microsoft.Performance#CA1824;+!Microsoft.Performance#CA1822;+!Microsoft.Performance#CA1815;+!Microsoft.Performance#CA1814;+!Microsoft.Performance#CA1819;+!Microsoft.Performance#CA1821;+!Microsoft.Performance#CA1804;+!Microsoft.Performance#CA1820;+!Microsoft.Performance#CA1802;+!Microsoft.Portability#CA1901;+!Microsoft.Portability#CA1900;-!Microsoft.Reliability#CA2001;-!Microsoft.Reliability#CA2002;-!Microsoft.Reliability#CA2003;-!Microsoft.Reliability#CA2004;-!Microsoft.Reliability#CA2006;+!Microsoft.Security#CA2116;+!Microsoft.Security#CA2117;+!Microsoft.Security#CA2105;+!Microsoft.Security#CA2115;+!Microsoft.Security#CA2102;+!Microsoft.Security#CA2104;+!Microsoft.Security#CA2122;+!Microsoft.Security#CA2114;+!Microsoft.Security#CA2123;+!Microsoft.Security#CA2111;+!Microsoft.Security#CA2108;+!Microsoft.Security#CA2107;+!Microsoft.Security#CA2103;+!Microsoft.Security#CA2118;+!Microsoft.Security#CA2109;+!Microsoft.Security#CA2119;+!Microsoft.Security#CA2106;+!Microsoft.Security#CA2112;+!Microsoft.Security#CA2120;+!Microsoft.Security#CA2121;+!Microsoft.Security#CA2126;+!Microsoft.Security#CA2124;+!Microsoft.Security#CA2127;+!Microsoft.Security#CA2128;+!Microsoft.Security#CA2129;+!Microsoft.Usage#CA2243;+!Microsoft.Usage#CA2236;+!Microsoft.Usage#CA1816;+!Microsoft.Usage#CA2227;+!Microsoft.Usage#CA2213;+!Microsoft.Usage#CA2216;+!Microsoft.Usage#CA2214;+!Microsoft.Usage#CA2222;+!Microsoft.Usage#CA1806;+!Microsoft.Usage#CA2217;+!Microsoft.Usage#CA2212;+!Microsoft.Usage#CA2219;+!Microsoft.Usage#CA2201;+!Microsoft.Usage#CA2228;+!Microsoft.Usage#CA2221;+!Microsoft.Usage#CA2220;+!Microsoft.Usage#CA2240;+!Microsoft.Usage#CA2229;+!Microsoft.Usage#CA2238;+!Microsoft.Usage#CA2207;+!Microsoft.Usage#CA2208;+!Microsoft.Usage#CA2235;+!Microsoft.Usage#CA2237;+!Microsoft.Usage#CA2232;+!Microsoft.Usage#CA2223;+!Microsoft.Usage#CA2211;+!Microsoft.Usage#CA2233;+!Microsoft.Usage#CA2225;+!Microsoft.Usage#CA2226;+!Microsoft.Usage#CA2231;+!Microsoft.Usage#CA2224;+!Microsoft.Usage#CA2218;+!Microsoft.Usage#CA2234;+!Microsoft.Usage#CA2239;+!Microsoft.Usage#CA2200;+!Microsoft.Usage#CA1801;+!Microsoft.Usage#CA2242;+!Microsoft.Usage#CA2205;+!Microsoft.Usage#CA2230</CodeAnalysisRules>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>Microsoft.Cui.Controls.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\SilverlightCommonAssemblyInfo.cs">
+      <Link>Properties\SilverlightCommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\VersionNumber.cs">
+      <Link>Properties\VersionNumber.cs</Link>
+    </Compile>
+    <Compile Include="AddressLabelControl\AddressDisplayFormat.cs" />
+    <Compile Include="AddressLabelControl\AddressLabel.cs" />
+    <Compile Include="AllergiesLabelControl\AllergiesLabel.cs" />
+    <Compile Include="AllergiesLabelControl\AllergiesLabelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllergiesLabelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Automation Peer\AddressLabelAutomationPeer.cs" />
+    <Compile Include="Automation Peer\AllergiesLabelAutomationPeer.cs" />
+    <Compile Include="Automation Peer\CascadingListBoxAutomationPeer.cs" />
+    <Compile Include="Automation Peer\ContactLabelAutomationPeer.cs" />
+    <Compile Include="Automation Peer\DateLabelAutomationPeer.cs" />
+    <Compile Include="Automation Peer\GenderLabelAutomationPeer.cs" />
+    <Compile Include="Automation Peer\IdentifierLabelAutomationPeer.cs" />
+    <Compile Include="Automation Peer\LabelAutomationPeer.cs" />
+    <Compile Include="Automation Peer\NameLabelAutomationPeer.cs" />
+    <Compile Include="Automation Peer\PatientBannerAutomationPeer.cs" />
+    <Compile Include="Automation Peer\SplitComboBoxItemAutomationPeer.cs" />
+    <Compile Include="Automation Peer\SplitListBoxItemAutomationPeer.cs" />
+    <Compile Include="Automation Peer\TimeLabelAutomationPeer.cs" />
+    <Compile Include="Common\BrushHighContrastSetter.cs" />
+    <Compile Include="Common\DateTimeConverter.cs" />
+    <Compile Include="Common\DoubleConverter.cs" />
+    <Compile Include="Common\BaseLabel.cs" />
+    <Compile Include="Common\Label.cs" />
+    <Compile Include="Common\LinearGradientBrushHighContrastSetter.cs" />
+    <Compile Include="Common\SolidColorBrushHighContrastSetter.cs" />
+    <Compile Include="Common\StringArrayTypeConverter.cs" />
+    <Compile Include="Common\TextBlockHelper.cs" />
+    <Compile Include="Common\AllergyInformation.cs" />
+    <Compile Include="Common\DateAndTime\CuiTime.cs" />
+    <Compile Include="Common\DateAndTime\CuiTimeSpan.cs" />
+    <Compile Include="Common\DateAndTime\Enums.cs" />
+    <Compile Include="Common\DateAndTime\GlobalizationService.cs" />
+    <Compile Include="Common\DateAndTime\InvalidArithmeticSetException.cs" />
+    <Compile Include="Common\DateAndTime\CuiDate.cs" />
+    <Compile Include="Common\DateAndTime\Resources\CuiDateResources.Designer.cs" />
+    <Compile Include="Common\DateAndTime\Resources\CuiTimeResources.Designer.cs" />
+    <Compile Include="Common\DateAndTime\Resources\CuiTimeSpanResources.Designer.cs" />
+    <Compile Include="Common\DateConverter.cs" />
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="Common\CommonResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactLabelControl\ContactLabel.cs" />
+    <Compile Include="ContactLabelControl\ContactLabelControlResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactLabelControlResources.resx</DependentUpon>
+      <WithCulture>False</WithCulture>
+    </Compile>
+    <Compile Include="AddressLabelControl\AddressLabelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddressLabelResources.resx</DependentUpon>
+      <WithCulture>False</WithCulture>
+    </Compile>
+    <Compile Include="Converters\BoolInverterConverter.cs" />
+    <Compile Include="DateInputBoxControl\DateInputBox.cs" />
+    <Compile Include="GenericGridControl\LevelOfDetail.cs" />
+    <Compile Include="GenericGridControl\LevelOfDetailTick.cs" />
+    <Compile Include="DateLabelControl\DateLabel.cs" />
+    <Compile Include="GraphingControl\ActivityCollection.cs" />
+    <Compile Include="GraphingControl\AxisHelper.cs" />
+    <Compile Include="GraphingControl\Collision.cs" />
+    <Compile Include="GraphingControl\CollisionCollection.cs" />
+    <Compile Include="GraphingControl\CollisionDetectionManager.cs" />
+    <Compile Include="GraphingControl\DataHelper.cs" />
+    <Compile Include="GraphingControl\DataSelector.cs" />
+    <Compile Include="GraphingControl\DataSelectorItem.cs" />
+    <Compile Include="GraphingControl\DoubleBindingHelper.cs" />
+    <Compile Include="GraphingControl\FilteredCollection.cs" />
+    <Compile Include="GraphingControl\GraphSection.cs" />
+    <Compile Include="GraphingControl\GraphingResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GraphingResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GraphingControl\GraphSummary.cs" />
+    <Compile Include="GraphingControl\GraphBase.cs" />
+    <Compile Include="GraphingControl\GraphHost.cs" />
+    <Compile Include="GraphingControl\GraphPoint.cs" />
+    <Compile Include="GraphingControl\GridLineVisibility.cs" />
+    <Compile Include="GraphingControl\PanelWrapper.cs" />
+    <Compile Include="GraphingControl\SeamedElementCollection.cs" />
+    <Compile Include="GraphingControl\ISupportInterpolation.cs" />
+    <Compile Include="GraphingControl\TimeAndYGraphBase.cs" />
+    <Compile Include="GraphingControl\TimeActivityGraph.cs" />
+    <Compile Include="GraphingControl\TimeActivityGraphHost.cs" />
+    <Compile Include="GraphingControl\TimeActivityPoint.cs" />
+    <Compile Include="GraphingControl\TimeIBarGraph.cs" />
+    <Compile Include="GraphingControl\ISupportTimeWindow.cs" />
+    <Compile Include="GraphingControl\NonFilteredCollection.cs" />
+    <Compile Include="GraphingControl\ReorderedEventArgs.cs" />
+    <Compile Include="GraphingControl\StyleParser.cs" />
+    <Compile Include="GraphingControl\TimeFrequency.cs" />
+    <Compile Include="GraphingControl\TimeFrequencyBindingHelper.cs" />
+    <Compile Include="GraphingControl\TimeFrequencyCollection.cs" />
+    <Compile Include="GraphingControl\TimeGraphBase.cs" />
+    <Compile Include="GraphingControl\TimeLineGraph.cs" />
+    <Compile Include="GraphingControl\MedicationLabel.cs" />
+    <Compile Include="GraphingControl\TimePoint.cs" />
+    <Compile Include="GraphingControl\PanelViewer.cs" />
+    <Compile Include="GraphingControl\VisualFocusLine.cs" />
+    <Compile Include="GenderLabelControl\GenderControlResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenderControlResources.resx</DependentUpon>
+      <WithCulture>False</WithCulture>
+    </Compile>
+    <Compile Include="GenderLabelControl\GenderLabel.cs" />
+    <Compile Include="GenderLabelControl\PatientGender.cs" />
+    <Compile Include="GenericGridControl\ColumnHeaderClickEventArgs.cs" />
+    <Compile Include="GenericGridControl\ColumnManager.xaml.cs">
+      <DependentUpon>ColumnManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericGridControl\ColumnView.xaml.cs" />
+    <Compile Include="GenericGridControl\DataBoundCell.xaml.cs">
+      <DependentUpon>DataBoundCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericGridControl\DataBoundRow.cs" />
+    <Compile Include="GenericGridControl\DataBoundRowGrouping.xaml.cs">
+      <DependentUpon>DataBoundRowGrouping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericGridControl\DataTemplateHelper.cs" />
+    <Compile Include="GenericGridControl\DictionaryToDataTemplateConverter.cs" />
+    <Compile Include="GenericGridControl\DictionaryToStringConverter.cs" />
+    <Compile Include="GenericGridControl\FilterControl.xaml.cs">
+      <DependentUpon>FilterControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericGridControl\FilterEventArgs.cs" />
+    <Compile Include="GenericGridControl\GroupByEventArgs.cs" />
+    <Compile Include="GenericGridControl\GroupingControl.xaml.cs">
+      <DependentUpon>GroupingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericGridControl\GroupingRenderEventArgs.cs" />
+    <Compile Include="GenericGridControl\GroupMember.cs" />
+    <Compile Include="GenericGridControl\HashtableToTemplateBindingBroker.cs" />
+    <Compile Include="GenericGridControl\KeyboardHelper.cs" />
+    <Compile Include="GenericGridControl\LookAheadView.xaml.cs">
+      <DependentUpon>LookAheadView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericGridControl\LookBehindView.xaml.cs">
+      <DependentUpon>LookBehindView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericGridControl\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericGridControl\SummaryManager.cs" />
+    <Compile Include="GenericGridControl\WrapDataGrid.xaml.cs">
+      <DependentUpon>WrapDataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericGridControl\WrapDataGridColumn.cs" />
+    <Compile Include="GenericGridControl\WrapDataGridColumnCollection.cs" />
+    <Compile Include="GenericGridControl\WrapDataGridResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WrapDataGridResources.resx</DependentUpon>
+      <WithCulture>False</WithCulture>
+    </Compile>
+    <Compile Include="GenericGridControl\WrapPanel.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="GraphingControl\VisualFocusSnappedItem.cs" />
+    <Compile Include="GraphingControl\YAxisPosition.cs" />
+    <Compile Include="IdentifierLabelControl\IdentifierLabel.cs" />
+    <Compile Include="IdentifierLabelControl\IdentifierType.cs" />
+    <Compile Include="IdentifierLabelControl\NhsNumber.cs" />
+    <Compile Include="IdentifierLabelControl\NhsNumberExceptionResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NhsNumberExceptionResources.resx</DependentUpon>
+      <WithCulture>False</WithCulture>
+    </Compile>
+    <Compile Include="NameLabelControl\NameLabel.cs" />
+    <Compile Include="NameLabelControl\NameLabelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NameLabelResources.resx</DependentUpon>
+      <WithCulture>False</WithCulture>
+    </Compile>
+    <Compile Include="NameLabelControl\PatientName.cs" />
+    <Compile Include="NameLabelControl\PatientNameResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientNameResources.resx</DependentUpon>
+      <WithCulture>False</WithCulture>
+    </Compile>
+    <Compile Include="PatientBannerControl\Allergy.cs" />
+    <Compile Include="PatientBannerControl\AllergyCollection.cs" />
+    <Compile Include="PatientBannerControl\PatientBanner.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientBannerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientBannerControl\ResourceHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\CuiToggleButton.cs" />
+    <Compile Include="SearchAndPrescribeControl\CascadingListBox.cs" />
+    <Compile Include="SearchAndPrescribeControl\CascadingListBoxGroup.cs" />
+    <Compile Include="SearchAndPrescribeControl\CascadingListBoxItem.cs" />
+    <Compile Include="SearchAndPrescribeControl\CollapsibleContentControl.cs" />
+    <Compile Include="Converters\BoolToBooleanConverter.cs" />
+    <Compile Include="Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converters\NullEmptyToBoolConverter.cs" />
+    <Compile Include="Converters\NullEmptyToVisibilityConverter.cs" />
+    <Compile Include="SearchAndPrescribeControl\FocusHelper.cs" />
+    <Compile Include="SearchAndPrescribeControl\IEnumerableHelper.cs" />
+    <Compile Include="SearchAndPrescribeControl\ObjectCollection.cs" />
+    <Compile Include="SearchAndPrescribeControl\WatermarkedTextBox.cs" />
+    <Compile Include="SearchAndPrescribeControl\ISplitItemsControl.cs" />
+    <Compile Include="SearchAndPrescribeControl\SplitItemsControlHelper.cs" />
+    <Compile Include="SearchAndPrescribeControl\ISplitItemsControlItem.cs" />
+    <Compile Include="SearchAndPrescribeControl\LabeledContentControl.cs" />
+    <Compile Include="SearchAndPrescribeControl\LinkingWrapPanel.cs" />
+    <Compile Include="SearchAndPrescribeControl\OptionalFieldContainer.cs" />
+    <Compile Include="SearchAndPrescribeControl\SearchAndPrescribeBase.cs" />
+    <Compile Include="SearchAndPrescribeControl\SearchAndPrescribeControl.cs" />
+    <Compile Include="SearchAndPrescribeControl\SelectedEventArgs.cs" />
+    <Compile Include="SearchAndPrescribeControl\ShortcutKeyHelper.cs" />
+    <Compile Include="SearchAndPrescribeControl\SplitComboBox.cs" />
+    <Compile Include="SearchAndPrescribeControl\SplitComboBoxItem.cs" />
+    <Compile Include="SearchAndPrescribeControl\SplitListBox.cs" />
+    <Compile Include="SearchAndPrescribeControl\SplitListBoxItem.cs" />
+    <Compile Include="SingleConceptMatchingControl\ConceptListBox.cs" />
+    <Compile Include="SingleConceptMatchingControl\DecoratorItemContainer.cs" />
+    <Compile Include="SingleConceptMatchingControl\DecoratorItemsControl.cs" />
+    <Compile Include="SingleConceptMatchingControl\DecoratorItemsWrapPanel.cs" />
+    <Compile Include="SingleConceptMatchingControl\DecoratorTextBox.cs" />
+    <Compile Include="SingleConceptMatchingControl\DecoratorTextBoxItem.cs" />
+    <Compile Include="SingleConceptMatchingControl\EncodableInputBox.cs" />
+    <Compile Include="SingleConceptMatchingControl\IndentedLabel.cs" />
+    <Compile Include="SingleConceptMatchingControl\MatchingTermItemContainer.cs" />
+    <Compile Include="SingleConceptMatchingControl\MatchingTermItemsControl.cs" />
+    <Compile Include="SingleConceptMatchingControl\TermItem.cs" />
+    <Compile Include="SingleConceptMatchingControl\TermItemsControl.cs" />
+    <Compile Include="SingleConceptMatchingControl\SingleConceptMatching.cs" />
+    <Compile Include="TimeLabelControl\TimeLabel.cs" />
+    <Compile Include="WaitAnimationControl\WaitAnimation.xaml.cs">
+      <DependentUpon>WaitAnimation.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ReferencedAssemblies\SilverlightToolkit\System.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddressLabelControl\AddressLabelResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddressLabelResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllergiesLabelControl\AllergiesLabelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AllergiesLabelResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DateAndTime\Resources\CuiDateResources.resx">
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DateAndTime\Resources\CuiTimeResources.resx">
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DateAndTime\Resources\CuiTimeSpanResources.resx">
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CommonResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactLabelControl\ContactLabelControlResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ContactLabelControlResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenderLabelControl\GenderControlResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GenderControlResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericGridControl\WrapDataGridResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WrapDataGridResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphingControl\GraphingResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GraphingResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentifierLabelControl\NhsNumberExceptionResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NhsNumberExceptionResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameLabelControl\NameLabelResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NameLabelResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameLabelControl\PatientNameResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PatientNameResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientBannerControl\PatientBannerResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PatientBannerResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="themes\generic.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="DateInputBoxControl\DateInputBoxStyles.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericGridControl\ColumnManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericGridControl\DataBoundCell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericGridControl\DataBoundRowGrouping.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericGridControl\FilterControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericGridControl\GroupingControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericGridControl\LookAheadView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericGridControl\LookBehindView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericGridControl\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericGridControl\WrapDataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SearchAndPrescribeControl\SearchAndPrescribeStyles.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Resource Include="GraphingControl\TimeActivityGraphStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Resource>
+    <Page Include="ResourceDictionaries\DefaultResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="WaitAnimationControl\WaitAnimation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PatientBannerControl\AllergiesNotPresentIcon.png" />
+    <Resource Include="PatientBannerControl\AllergiesPresentIcon.png" />
+    <Resource Include="PatientBannerControl\AllergiesUnavailable.png" />
+    <Resource Include="PatientBannerControl\Collapse.png" />
+    <Resource Include="PatientBannerControl\Expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PatientBannerControl\Patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\Common\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddressLabelControl\AddressLabel.Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContactLabelControl\ContactLabel.Icon.bmp" />
+    <EmbeddedResource Include="DateLabelControl\DateLabel.Icon.bmp" />
+    <EmbeddedResource Include="GenderLabelControl\GenderLabel.Icon.bmp" />
+    <EmbeddedResource Include="GenericGridControl\LevelOfDetail.Icon.bmp" />
+    <EmbeddedResource Include="GenericGridControl\WrapDataGrid.Icon.bmp" />
+    <EmbeddedResource Include="GenericGridControl\WrapPanel.Icon.bmp" />
+    <EmbeddedResource Include="GraphingControl\GraphHost.Icon.bmp" />
+    <EmbeddedResource Include="GraphingControl\TimeLineGraph.Icon.bmp" />
+    <EmbeddedResource Include="GraphingControl\PanelViewer.Icon.bmp" />
+    <EmbeddedResource Include="IdentifierLabelControl\IdentifierLabel.Icon.bmp" />
+    <EmbeddedResource Include="NameLabelControl\NameLabel.Icon.bmp" />
+    <EmbeddedResource Include="PatientBannerControl\PatientBanner.Icon.bmp" />
+    <EmbeddedResource Include="SingleConceptMatchingControl\DecoratorTextBox.Icon.bmp" />
+    <EmbeddedResource Include="SingleConceptMatchingControl\EncodableInputBox.Icon.bmp" />
+    <EmbeddedResource Include="SingleConceptMatchingControl\IndentedLabel.Icon.bmp" />
+    <EmbeddedResource Include="SingleConceptMatchingControl\SingleConceptMatching.Icon.bmp" />
+    <EmbeddedResource Include="TimeLabelControl\TimeLabel.Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GraphingControl\TimeIBarGraph.Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DateInputBoxControl\DateInputBox.Icon.bmp" />
+    <EmbeddedResource Include="GraphingControl\TimeActivityGraph.Icon.bmp" />
+    <EmbeddedResource Include="GraphingControl\TimeActivityGraphHost.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\CascadingListBox.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\CascadingListBoxGroup.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\CollapsibleContentControl.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\LabeledContentControl.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\LinkingWrapPanel.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\OptionalFieldContainer.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\SearchAndPrescribeControl.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\SplitComboBox.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\SplitComboBoxItem.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\SplitListBox.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\SplitListBoxItem.Icon.bmp" />
+    <EmbeddedResource Include="SearchAndPrescribeControl\WatermarkedTextBox.Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SearchAndPrescribeControl\CascadingListBoxItem.Icon.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" Condition="" />
+  
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemDefinitionGroup>
+    <EmbeddedResource>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemDefinitionGroup>
+</Project>

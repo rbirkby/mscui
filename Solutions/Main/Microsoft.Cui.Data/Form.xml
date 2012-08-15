@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DocumentElement>
+<Form>
+  <Code>385023001</Code>
+  <Name>Oral solution</Name>
+</Form>
+<Form>
+  <Code>385024007</Code>
+  <Name>Oral suspension</Name>
+</Form>
+<Form>
+  <Code>385221006</Code>
+  <Name>Emulsion for injection</Name>
+</Form>
+<Form>
+  <Code>385219001</Code>
+  <Name>Solution for injection</Name>
+</Form>
+<Form>
+  <Code>3095811000001100</Code>
+  <Name>Powder</Name>
+</Form>
+<Form>
+  <Code>3092311000001100</Code>
+  <Name>Inhalation gas</Name>
+</Form>
+ </DocumentElement>

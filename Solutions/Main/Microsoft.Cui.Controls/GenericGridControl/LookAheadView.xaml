@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="Microsoft.Cui.Controls.LookAheadView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:local="clr-namespace:Microsoft.Cui.Controls"
+        Width="400"
+        Height="300"
+        >
+
+</UserControl>

@@ -1,0 +1,590 @@
+
+/* Blue Double Bar */
+
+.blueDoubleBar
+{
+    border: #000000 solid 1px;
+}
+
+.blueDoubleBar_Zone1
+{
+	background-color: white;
+	background-image: url(../Samples/PatientBanner/PatientBannerRestyleImages/PB_Sample_2DoubleBlueBarMainPic.png);
+    padding: 0.5em 0px 0px 0px;
+    border: solid 1px white;
+    vertical-align:middle;
+    line-height:3.5em;
+}
+
+.blueDoubleBar .blueDoubleBar_Zone1 img
+{
+    float: left;
+    padding: 0.5px;
+    margin-top : 0.2em;
+}
+
+.blueDoubleBar_Zone1 img
+{
+    float: left;
+    padding: 2px;
+    margin-top : -0.5em;
+}
+
+.blueDoubleBar_zone1_label
+{
+	font-style: italic;
+    font-size: smaller;
+    font-weight: normal;
+    padding: 0px 0.25em 0px 0.5em;
+}
+
+.blueDoubleBar_zone1_data
+{
+    float: right;
+    font-weight: bold;
+	display: block;
+    white-space: nowrap;
+}
+
+.blueDoubleBar_zone2_title
+{
+    background-color: #9D9D9D;
+    background-image: url(../Samples/PatientBanner/PatientBannerRestyleImages/PB_Sample_2DoubleBlueBarMenuPic.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    text-align: left;
+    font-weight: normal;
+	font-style: italic;
+    vertical-align: middle;
+    border: #C0C0C0 1px solid;
+    width: 25%;
+}
+.blueDoubleBar_zone2_title_hover *
+{
+	border-color:yellow #C0C0C0 Yellow yellow;
+	cursor:pointer;
+}
+
+.blueDoubleBar_zone2_title img
+{
+    float: right;
+}
+.blueDoubleBar_zone2_data
+{
+    font-weight: bold;
+    vertical-align: top;
+    background-image: url(../Samples/PatientBanner/PatientBannerRestyleImages/PB_Sample_2DoubleBlueBarMainPic.png);
+    background-color: White;
+    border-right: #E0E0E0 1px solid;
+    padding: 0px;
+}
+.blueDoubleBar_zone2_title .blueDoubleBar_zone2_data
+{
+    background-color: Transparent;
+    background-image: none;
+    font-style: normal;
+    border-width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left:5px;
+}
+
+.blueDoubleBar_zone2_data ol
+{
+	padding:0px;
+	margin:0px;
+}
+
+.blueDoubleBar_zone2_data a
+{
+	color:White;
+}
+
+.blueDoubleBar_zone2_title span
+{
+    float: left;
+    display: block;
+}
+/* Blue Reverse */
+
+.blueReverse
+{
+    border: #000000 solid 1px;
+}
+
+.blueReverse_Zone1
+{
+	background-color: #0066cc;
+	color:#FFFFFF;
+	padding: 0.5em 0px 0px 0px;
+    border: solid 1px white;
+    vertical-align:middle;
+    line-height:3.5em;
+}
+
+.blueReverse_Zone1 img
+{
+    float: left;
+    padding: 2px;
+    margin-top : -0.5em;
+}
+
+.blueReverse_zone1_label
+{
+	font-style: italic;
+    font-size: smaller;
+    font-weight: normal;
+    padding: 0px 0.25em 0px 0.5em;
+}
+
+.blueReverse_zone1_data
+{
+    float: right;
+    font-weight: bold;
+	display: block;
+    white-space: nowrap;
+}
+
+.blueReverse_zone2_title
+{
+    background-color: #9D9D9D;
+    color:#FFFFFF;
+    background-image: url(../Samples/PatientBanner/PatientBannerRestyleImages/PB_Sample_2BlueRevMenuPic.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    text-align: left;
+    font-weight: normal;
+	font-style: italic;
+    vertical-align: middle;
+    border: #C0C0C0 1px solid;
+    width: 25%;
+}
+
+.blueReverse_zone2_title img
+{
+    float: right;
+}
+
+.blueReverse_zone2_data
+{
+    font-weight: bold;
+    background-color: #0066cc !important;
+    border-right: #E0E0E0 1px solid;
+    padding: 0px;
+    color:White;
+}
+
+.blueReverse_zone2_title .blueReverse_zone2_data
+{
+    background-color: Transparent !important;
+    background-image: none;
+    font-style: normal;
+    border-width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+
+.blueReverse_zone2_title_hover *
+{
+	background-color:Transparent;
+	border-color:yellow #C0C0C0 Yellow yellow;
+	cursor:pointer;
+}
+
+.blueReverse_zone2_data ol
+{
+	padding:0px;
+	margin:0px;
+}
+
+.blueReverse_zone2_data a
+{
+	color:White;
+}
+
+.blueReverse_zone2_title span
+{
+    float: left;
+    display: block;
+}
+/* Steel */
+
+.steel
+{
+    border: #000000 solid 1px;
+}
+
+.steel_Zone1
+{
+	background-color: #0066cc;
+	background-image: url(../Samples/PatientBanner/PatientBannerRestyleImages/PB_Sample_2SteelMainPic.png);
+	padding: 0.5em 0px 0px 0px;
+    border: solid 1px white;
+    vertical-align:middle;
+    line-height:3.5em;
+}
+
+.steel_Zone1 img
+{
+    float: left;
+    padding: 2px;
+    margin-top : -0.5em;
+}
+
+.steel_zone1_label
+{
+	font-style: italic;
+    font-size: smaller;
+    font-weight: normal;
+    padding: 0px 0.25em 0px 0.5em;
+}
+
+.steel_zone1_data
+{
+    float: right;
+    font-weight: bold;
+	display: block;
+    white-space: nowrap;
+}
+
+.steel_zone2_title
+{
+    background-color: #9D9D9D;
+    background-image: url(../Samples/PatientBanner/PatientBannerRestyleImages/PB_Sample_2SteelMenuPic.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    text-align: left;
+    font-weight: normal;
+	font-style: italic;
+    vertical-align: middle;
+    border: #C0C0C0 1px solid;
+    width: 25%;
+}
+
+.steel_zone2_title img
+{
+    float: right;
+}
+
+.steel_zone2_data
+{
+    font-weight: bold;
+    background-color: White;
+    border-right: #E0E0E0 1px solid;
+    padding: 0px;
+}
+
+.steel_zone2_title .steel_zone2_data
+{
+    background-color: Transparent;
+    background-image: none;
+    font-style: normal;
+    border-width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+
+.steel_zone2_title_hover *
+{
+	background-color:Transparent;
+	border-color:yellow #C0C0C0 Yellow yellow;
+	cursor:pointer;
+}
+
+.steel_zone2_data ol
+{
+	padding:0px;
+	margin:0px;
+}
+
+.steel_zone2_title span
+{
+    float: left;
+    display: block;
+}
+/* pureSimple */
+
+.pureSimple
+{
+    border: #000000 solid 1px;
+}
+
+.pureSimple_Zone1
+{
+	background-color: #FFFFFF;
+	padding: 0.5em 0px 0px 0px;
+    border: solid 1px white;
+    vertical-align:middle;
+    line-height:3.5em;
+}
+
+.pureSimple_Zone1 img
+{
+    float: left;
+    padding: 2px;
+    margin-top : -0.5em;
+}
+
+.pureSimple_zone1_label
+{
+	font-style: italic;
+    font-size: smaller;
+    font-weight: normal;
+    padding: 0px 0.25em 0px 0.5em;
+}
+
+.pureSimple_zone1_data
+{
+    float: right;
+    font-weight: bold;
+	display: block;
+    white-space: nowrap;
+}
+
+.pureSimple_zone2_title
+{
+    background-color: #FFFFFF;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    text-align: left;
+    font-weight: normal;
+	font-style: italic;
+    vertical-align: middle;
+    border: #C0C0C0 1px solid;
+    width: 25%;
+}
+
+.pureSimple_zone2_title img
+{
+    /*float: right;
+    border-left: #C0C0C0 1px solid !important;*/
+}
+
+.pureSimple_zone2_title .pureSimple_zone2_data
+{
+	border-width:0px;
+	padding-left:5px;
+	font-weight:bold;
+}
+
+.pureSimple_zone2_data
+{
+    background-color: white;
+    background-image: none;
+    font-style: normal;    
+    font-weight:normal;
+    overflow: hidden;
+    border-right: #C0C0C0 1px solid;
+    white-space: nowrap;
+    font-weight:bold;
+}
+
+.pureSimple_zone2_data ol
+{
+	margin:0px;
+	padding:0px;
+}
+
+.pureSimple_zone2_title span
+{
+    float: left;
+    display: block;
+}
+/* Blue Bar */
+
+.blueBar
+{
+    border: #000000 solid 1px;
+}
+
+.blueBar_Zone1
+{
+	background-color: #0066cc;
+	background-image: url(../Samples/PatientBanner/PatientBannerRestyleImages/PB_Sample_2BlueBarMainPic.png);
+	padding: 0.5em 0px 0px 0px;
+    border: solid 1px white;
+    vertical-align:middle;
+    line-height:3.5em;
+}
+
+.blueBar_Zone1 img
+{
+    float: left;
+    padding: 2px;
+    margin-top : -0.5em;
+}
+
+.blueBar_zone1_label
+{
+	font-style: italic;
+    font-size: smaller;
+    font-weight: normal;
+    padding: 0px 0.25em 0px 0.5em;
+}
+
+.blueBar_zone1_data
+{
+    float: right;
+    font-weight: bold;
+	display: block;
+    white-space: nowrap;
+}
+
+.blueBar_zone2_title
+{
+    background-color: #9D9D9D;
+    background-image: url(../Samples/PatientBanner/PatientBannerRestyleImages/PB_Sample_2BlueBarMenuPic.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    text-align: left;
+    font-weight: normal;
+	font-style: italic;
+    vertical-align: middle;
+    border: #C0C0C0 1px solid;
+    width: 25%;
+}
+
+.blueBar_zone2_title_hover *
+{
+	background-color:Transparent;
+	border-color:yellow #C0C0C0 Yellow yellow;
+	cursor:pointer;
+}
+
+.blueBar_zone2_title img
+{
+    float: right;
+}
+
+.blueBar_zone2_data
+{
+    font-weight: bold;
+    background-image: url(../Samples/PatientBanner/PatientBannerRestyleImages/PB_Sample_2BlueBarMainPic.png);
+    background-color: White;
+    border-right: #E0E0E0 1px solid;
+    padding: 0px;
+}
+
+.blueBar_zone2_title .blueBar_zone2_data
+{
+    background-color: Transparent;
+    background-image: none;
+    font-style: normal;
+    border-width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+
+.blueBar_zone2_data ol
+{
+	padding:0px;
+	margin:0px;
+}
+
+.blueBar_zone2_data a
+{
+	color:White;
+}
+
+.blueBar_zone2_title span
+{
+    float: left;
+    display: block;
+}
+/* Mono Chrome */
+
+.monoChrome
+{
+    border: #000000 solid 1px;
+}
+
+.monoChrome_Zone1
+{
+	background-color: #FFFFFF;
+	padding: 0.5em 0px 0px 0px;
+    border: solid 1px white;
+    vertical-align:middle;
+    line-height:3.5em;
+}
+
+.monoChrome_Zone1 img
+{
+    float: left;
+    padding: 2px;
+    margin-top : -0.5em;
+}
+
+.monoChrome_zone1_label
+{
+	font-style: italic;
+    font-size: smaller;
+    font-weight: normal;
+    padding: 0px 0.25em 0px 0.5em;
+}
+
+.monoChrome_zone1_data
+{
+    float: right;
+    font-weight: bold;
+	display: block;
+    white-space: nowrap;
+}
+
+.monoChrome_zone2_title
+{
+    background-color: #c5c5c5;
+    background-image: url(../Samples/PatientBanner/PatientBannerRestyleImages/Zone2TitleBackground.png);
+    background-repeat: repeat-x;
+    text-align: left;
+    font-weight: normal;
+	font-style: italic;
+    vertical-align: middle;
+    border: #C0C0C0 1px solid;
+    width: 25%;
+}
+
+.monoChrome_zone2_title img
+{
+    float: right;
+}
+
+.monoChrome_zone2_data
+{
+    font-weight: bold;
+    background-color: White;    
+	padding: 0px;
+	border-right:1px solid #C0C0C0;
+}
+
+.monoChrome_zone2_title .monoChrome_zone2_data
+{
+    background-color: Transparent;
+    background-image: none;
+    font-style: normal;
+    border-width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+
+.monoChrome_zone2_data ol
+{
+	padding:0px;
+	margin:0px;
+}
+
+.monoChrome_zone2_title_hover *
+{
+	background-color:Transparent;
+	border-color:yellow #C0C0C0 Yellow yellow;
+	cursor:pointer;
+}
+
+.monoChrome_zone2_title span
+{
+    float: left;
+    display: block;
+}

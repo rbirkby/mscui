@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Date and Time Input</title>
+  <back href="DateDisplay.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Date and Time Input.pdf" altText="Links to Design Guidance - Date and Time Input documentation">Design Guidance - Date and Time Input (PDF Format)</download>
+  <navigation collapseInactiveItems="false">
+    <header text="Overview" tooltip="Date and Time Input - Overview" href="QuickGuides/DateTimeInput/default.aspx" />
+    <header text="Date" tooltip="Date and Time Input - Date" href="QuickGuides/DateTimeInput/date.aspx">
+      <subheader text="General" tooltip="Date and Time Input - Date - General" href="QuickGuides/DateTimeInput/Date/general.aspx"/>
+      <subheader text="Free Text Entry" tooltip="Date and Time Input - Date - Free Text Entry" href="QuickGuides/DateTimeInput/Date/freetext.aspx">
+        <subheader text="Instructions" tooltip="Date and Time Input - Date - Free Text Entry - Instructions" href="QuickGuides/DateTimeInput/Date/Freetext/instructions.aspx" />
+        <subheader text="Unknown Values" tooltip="Date and Time Input - Date - Free Text Entry - Unknown Values" href="QuickGuides/DateTimeInput/Date/Freetext/unknown.aspx" />
+        <subheader text="Editing" tooltip="Date and Time Input - Date - Free Text Entry - Editing" href="QuickGuides/DateTimeInput/Date/Freetext/editing.aspx" />
+        <subheader text="Arithmetic Shortcuts" tooltip="Date and Time Input - Date - Free Text Entry - Arithmetic Shortcuts" href="QuickGuides/DateTimeInput/Date/Freetext/arithmetic.aspx" />
+        <subheader text="Defaults" tooltip="Date and Time Input - Date - Free Text Entry - Defaults" href="QuickGuides/DateTimeInput/Date/Freetext/defaults.aspx" />
+      </subheader>
+      <subheader text="Calendar" tooltip="Date and Time Input - Date - Calendar" href="QuickGuides/DateTimeInput/Date/calendar.aspx">
+        <subheader text="Editing" tooltip="Date and Time Input - Date - Calendar - Editing" href="QuickGuides/DateTimeInput/Date/CalInput/editing.aspx" />
+        <subheader text="Instructions" tooltip="Date and Time Input - Date - Calendar - Instructions" href="QuickGuides/DateTimeInput/Date/CalInput/instructions.aspx" />
+        <subheader text="Calendar Elements" tooltip="Date and Time Input - Date - Calendar - Calendar Elements" href="QuickGuides/DateTimeInput/Date/CalInput/elements.aspx" />
+        <subheader text="Calendar Controls" tooltip="Date and Time Input - Date - Calendar - Calendar Controls" href="QuickGuides/DateTimeInput/Date/CalInput/controls.aspx" />
+        <subheader text="Keyboard Access" tooltip="Date and Time Input - Date - Calendar - Keyboard Access" href="QuickGuides/DateTimeInput/Date/CalInput/keyboard.aspx" />
+      </subheader>
+      <subheader text="Disambiguation" tooltip="Date and Time Input - Date - Disambiguation" href="QuickGuides/DateTimeInput/Date/disambiguation.aspx"/>
+    </header>
+    <header text="Time" tooltip="Date and Time Input - Time" href="QuickGuides/DateTimeInput/time.aspx">
+      <subheader text="Input Box" tooltip="Date and Time Input - Time - Input Box" href="QuickGuides/DateTimeInput/Time/inputbox.aspx" />
+      <subheader text="Display Format" tooltip="Date and Time Input - Time - Display Format" href="QuickGuides/DateTimeInput/Time/displayformat.aspx" />
+      <subheader text="Editing" tooltip="Date and Time Input - Time - Editing" href="QuickGuides/DateTimeInput/Time/editing.aspx" />
+      <subheader text="Arithmetic Shortcuts" tooltip="Date and Time Input - Time - Arithmetic Shortcuts" href="QuickGuides/DateTimeInput/Time/arithmetic.aspx" />
+      <subheader text="Instructions" tooltip="Date and Time Input - Time - Instructions" href="QuickGuides/DateTimeInput/Time/instructions.aspx" />
+      <subheader text="Unknown Values" tooltip="Date and Time Input - Time - Unknown Values" href="QuickGuides/DateTimeInput/Time/unknown.aspx" />
+      <subheader text="Defaults" tooltip="Date and Time Input - Time - Defaults" href="QuickGuides/DateTimeInput/Time/defaults.aspx" />
+    </header>        
+    <header text="Duration" tooltip="Date and Time Input - Duration" href="QuickGuides/DateTimeInput/duration.aspx">
+      <subheader text="Display Format" tooltip="Date and Time Input - Duration - Display Format" href="QuickGuides/DateTimeInput/Duration/displayformat.aspx" />
+      <subheader text="Instructions" tooltip="Date and Time Input - Duration - Instructions" href="QuickGuides/DateTimeInput/Duration/instructions.aspx" />
+      <subheader text="Editing" tooltip="Date and Time Input - Duration - Editing" href="QuickGuides/DateTimeInput/Duration/editing.aspx" />
+      <subheader text="Abbreviations" tooltip="Date and Time Input - Duration - Abbreviations" href="QuickGuides/DateTimeInput/Duration/abbreviations.aspx" />
+      <subheader text="Disambiguation" tooltip="Date and Time Input - Duration - Disambiguation" href="QuickGuides/DateTimeInput/Duration/disambiguation.aspx" />
+      <subheader text="Time Zones" tooltip="Date and Time Input - Duration - Time Zones" href="QuickGuides/DateTimeInput/Duration/timezones.aspx" />
+    </header>
+    <header text="Checklist" tooltip="Date and Time Input - Checklist" href="QuickGuides/DateTimeInput/checklist.aspx" />
+  </navigation>
+</quickguide>

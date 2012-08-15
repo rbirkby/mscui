@@ -1,0 +1,2654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TimelineSampleData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TimelineData.xsd">
+  <Scenario PatientId="1" Description="Secondary Care Data" BaseDate="18-Mar-2009 12:00:00" TimeFrequencySelectedIndex="9">
+    <Section Name="Problems">
+      <Row Id="91524294613" Name="diabetes mellitus type 1" Background="#F2F2F2">
+        <Item Name="diabetes mellitus type 1" StartDate="14-Aug-1985 00:00:00"/>
+      </Row>
+      <Row Id="88246271609" Name="diabetic neuropathy" >
+        <Item Name="diabetic neuropathy" StartDate="30-Sep-1995 00:00:00"/>
+      </Row>
+      <Row Id="19802752733" Name="alcoholic" Background="#F2F2F2">
+        <Item Name="alcoholic" StartDate="14-Feb-2000 00:00:00"/>
+      </Row>
+      <Row Id="103716073035" Name="drowsy" MaxLabelStackLevels="2">
+        <Item Name="drowsy" StartDate="16-Mar-2006 11:40:00" EndDate="16-Mar-2006 13:10:00"/>
+        <Item Name="drowsy" StartDate="05-Jan-2008 11:50:00" EndDate="05-Jan-2008 13:10:00"/>
+        <Item Name="drowsy" StartDate="16-Mar-2009 11:50:00" EndDate="16-Mar-2009 13:10:00"/>
+      </Row>
+      <Row Id="84977821110" Name="diabetic ketoacidosis" MaxLabelStackLevels="2" Background="#F2F2F2">
+        <Item Name="diabetic ketoacidosis" StartDate="16-Mar-2006 12:00:00" EndDate="23-Mar-2006 23:59:00"/>
+        <Item Name="diabetic ketoacidosis" StartDate="05-Jan-2008 12:10:00" EndDate="12-Jan-2008 23:59:00"/>
+        <Item Name="diabetic ketoacidosis" StartDate="16-Mar-2009 12:10:00"/>
+      </Row>
+      <Row Id="35937449931" Name="infected foot : left" MaxLabelStackLevels="2">
+        <Item Name="infected foot : left" StartDate="16-Mar-2006 12:00:00" EndDate="18-Mar-2006 09:35:00"/>
+        <Item Name="infected foot : left" StartDate="05-Jan-2008 12:10:00" EndDate="07-Jan-2008 22:00:00"/>
+        <Item Name="infected foot : left" StartDate="16-Mar-2009 12:10:00"/>
+      </Row>
+      <Row Id="17573944330" Name="urinary tract infection" MaxLabelStackLevels="2" Background="#F2F2F2">
+        <Item Name="urinary tract infection" StartDate="16-Mar-2006 12:00:00" EndDate="23-Mar-2006 23:59:00"/>
+        <Item Name="urinary tract infection" StartDate="05-Jan-2008 12:10:00" EndDate="12-Jan-2008 23:59:00"/>
+        <Item Name="urinary tract infection" StartDate="16-Mar-2009 12:10:00"/>
+      </Row>
+      <Row Id="12868318557" Name="systemic sepsis">
+        <Item Name="systemic sepsis" StartDate="18-Mar-2009 09:35:00"/>
+      </Row>
+      <Row />
+    </Section>
+    <Section Name="Medications">
+      <Row Id="75123623608" Name="insulin" Description="— MIXTARD" MaxLabelStackLevels="3" Background="#F2F2F2">
+        <Item Name="insulin" Type="SecondaryCareMedication" StartDate="30-Sep-1995 00:00:00" EndDate="16-Mar-2006 11:40:00">
+          <Brand>MIXTARD</Brand>
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>variable</Dose>
+          <Route>subcutaenous</Route>
+          <Frequency>as required</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="30-Sep-1995 00:00:00" ActualEndDate="16-Mar-2006 11:40:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="insulin" Type="SecondaryCareMedication" StartDate="24-Mar-2006 00:00:00" EndDate="05-Jan-2008 11:40:00">
+          <Brand>MIXTARD</Brand>
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>variable</Dose>
+          <Route>subcutaenous</Route>
+          <Frequency>as required</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="24-Mar-2006 00:00:00" ActualEndDate="05-Jan-2008 11:40:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="insulin" Type="SecondaryCareMedication" StartDate="13-Jan-2008 00:00:00" EndDate="16-Mar-2009 11:40:00">
+          <Brand>MIXTARD</Brand>
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>variable</Dose>
+          <Route>subcutaenous</Route>
+          <Frequency>as required</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="13-Jan-2008 00:00:00" ActualEndDate="16-Mar-2009 11:40:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="37692425250" Name="sodium chloride" Description=" 0.9%" MaxLabelStackLevels="3" ShowLabelOvercrowdingNotifications="True">
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="16-Mar-2006 11:40:00" EndDate="16-Mar-2006 12:10:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>1 L</Dose>
+          <DoseDuration>over 30 minutes</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 11:40:00" ActualEndDate="16-Mar-2006 12:10:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="16-Mar-2006 12:10:00" EndDate="16-Mar-2006 13:10:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>1 L</Dose>
+          <DoseDuration>over 1 hour</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 12:10:00" ActualEndDate="16-Mar-2006 13:10:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="16-Mar-2006 13:10:00" EndDate="16-Mar-2006 15:10:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>1 L</Dose>
+          <DoseDuration>over 2 hours</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 13:10:00" ActualEndDate="16-Mar-2006 15:10:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="16-Mar-2006 15:10:00" EndDate="23-Mar-2006 22:00:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>2 L</Dose>
+          <DoseDuration>over 24 hours</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 15:10:00" ActualEndDate="23-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="05-Jan-2008 11:40:00" EndDate="05-Jan-2008 12:10:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>1 L </Dose>
+          <DoseDuration>over 30 minutes</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 11:40:00" ActualEndDate="05-Jan-2008 12:10:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="05-Jan-2008 12:10:00" EndDate="05-Jan-2008 13:10:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>1 L </Dose>
+          <DoseDuration>over 1 hour</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 12:10:00" ActualEndDate="05-Jan-2008 13:10:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="05-Jan-2008 13:10:00" EndDate="05-Jan-2008 15:10:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>1 L </Dose>
+          <DoseDuration>over 2 hours</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 13:10:00" ActualEndDate="05-Jan-2008 15:10:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="05-Jan-2008 15:10:00" EndDate="12-Jan-2008 22:10:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>2 L</Dose>
+          <DoseDuration>over 24 hours</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 15:10:00" ActualEndDate="12-Jan-2008 22:10:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="16-Mar-2009 11:40:00" EndDate="16-Mar-2009 12:10:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>1 L</Dose>
+          <DoseDuration>over 30 minutes</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 11:40:00" ActualEndDate="16-Mar-2009 12:10:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="16-Mar-2009 12:10:00" EndDate="16-Mar-2009 13:10:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>1 L</Dose>
+          <DoseDuration>over 1 hour</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 12:10:00" ActualEndDate="16-Mar-2009 13:10:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="sodium chloride" Type="SecondaryCareMedication" StartDate="16-Mar-2009 13:10:00" EndDate="16-Mar-2009 15:10:00">
+          <FluidStrength>0.9%</FluidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>1 L</Dose>
+          <DoseDuration>over 2 hours</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 13:10:00" ActualEndDate="16-Mar-2009 15:10:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        
+      </Item>
+      </Row>
+      <Row Id="20731869935" Name="paracetamol" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True" Background="#F2F2F2">
+        <Item Name="paracetamol " Type="SecondaryCareMedication" StartDate="16-Mar-2006 11:40:00" EndDate="16-Mar-2006 11:55:00">
+          <SolidStrength>1 g per 100 mL</SolidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>100 mL</Dose>
+          <DoseDuration>over 15 minutes</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 11:40:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="paracetamol" Type="SecondaryCareMedication" StartDate="16-Mar-2006 12:10:00" EndDate="23-Mar-2006 22:00:00">
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>1 g</Dose>
+          <Route>oral</Route>
+          <Frequency>every 6 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 15:35:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 09:35:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="21-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="21-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="21-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="21-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="22-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="22-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="22-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="22-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="23-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="23-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="23-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="23-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="paracetamol" Type="SecondaryCareMedication" StartDate="05-Jan-2008 11:40:00" EndDate="05-Jan-2008 11:55:00">
+          <SolidStrength>1 g per 100 mL</SolidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>100 mL</Dose>
+          <DoseDuration>over 15 minutes</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 11:40:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="paracetamol" Type="SecondaryCareMedication" StartDate="05-Jan-2008 12:10:00" EndDate="12-Jan-2008 22:00:00">
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>1 g</Dose>
+          <Route>oral</Route>
+          <Frequency>every 6 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 15:35:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="06-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="06-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="06-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="06-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 09:35:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="10-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="10-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="10-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="10-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="11-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="11-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="11-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="11-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="12-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="12-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="12-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="12-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="paracetamol" Type="SecondaryCareMedication" StartDate="16-Mar-2009 11:40:00" EndDate="16-Mar-2009 11:55:00">
+          <SolidStrength>1 g per 100 mL</SolidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>100 mL</Dose>
+          <DoseDuration>over 15 minutes</DoseDuration>
+          <Route>intravenous</Route>
+          <Frequency>once only</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 11:40:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="paracetamol" Type="SecondaryCareMedication" StartDate="16-Mar-2009 12:10:00">
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>1 g</Dose>
+          <Route>oral</Route>
+          <Frequency>every 6 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 15:35:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2009 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2009 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2009 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2009 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2009 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2009 09:35:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2009 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="18-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="18-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="19-Mar-2009 08:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="19-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="19-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="19-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="20-Mar-2009 08:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="20-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="20-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="20-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="21-Mar-2009 08:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="21-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="21-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="21-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="22-Mar-2009 08:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="22-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="22-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="22-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="23-Mar-2009 08:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="23-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="23-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="23-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="103125987051" Name="oxygen" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True">
+        <Item Name="oxygen" Type="SecondaryCareMedication" StartDate="16-Mar-2006 11:40:00" EndDate="17-Mar-2006 09:45:00">
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>10 L per minute</Dose>
+          <Route>inhaled</Route>
+          <Frequency>continuous</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 11:40:00" ActualEndDate="17-Mar-2006 09:45:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="oxygen" Type="SecondaryCareMedication" StartDate="17-Mar-2006 09:45:00" EndDate="23-Mar-2006 22:00:00">
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>2 L per minute</Dose>
+          <Route>inhaled</Route>
+          <Frequency>continuous</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="17-Mar-2006 09:45:00" ActualEndDate="23-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="oxygen" Type="SecondaryCareMedication" StartDate="05-Jan-2008 11:40:00" EndDate="06-Jan-2008 09:45:00">
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>10 L per minute</Dose>
+          <Route>inhaled</Route>
+          <Frequency>continuous</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 11:40:00" ActualEndDate="06-Jan-2008 09:45:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="oxygen" Type="SecondaryCareMedication" StartDate="06-Jan-2008 09:45:00" EndDate="12-Jan-2008 22:00:00">
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>2 L per minute</Dose>
+          <Route>inhaled</Route>
+          <Frequency>continuous</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="06-Jan-2008 09:45:00" ActualEndDate="12-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="oxygen" Type="SecondaryCareMedication" StartDate="16-Mar-2009 11:40:00" EndDate="17-Mar-2009 09:45:00">
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>10 L per minute</Dose>
+          <Route>inhaled</Route>
+          <Frequency>continuous</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 11:40:00" ActualEndDate="17-Mar-2009 09:45:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="oxygen" Type="SecondaryCareMedication" StartDate="17-Mar-2009 09:45:00">
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>2 L per minute</Dose>
+          <Route>inhaled</Route>
+          <Frequency>continuous</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="17-Mar-2009 09:45:00" Status="started">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="30156282186" Name="dextrose" Description=" 5%" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True" Background="#F2F2F2">
+        <Item Name="dextrose" Type="SecondaryCareMedication" StartDate="16-Mar-2006 12:10:00" EndDate="23-Mar-2006 22:00:00">
+          <FluidStrength>5%</FluidStrength>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>variable</Dose>
+          <Route>infusion</Route>
+          <Frequency>as required</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 12:10:00" ActualEndDate="23-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+
+        </Item>
+        <Item Name="dextrose" Type="SecondaryCareMedication" StartDate="05-Jan-2008 12:10:00" EndDate="12-Jan-2008 22:00:00">
+          <FluidStrength>5%</FluidStrength>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>variable</Dose>
+          <Route>infusion</Route>
+          <Frequency>as required</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 12:10:00" ActualEndDate="12-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="dextrose" Type="SecondaryCareMedication" StartDate="17-Mar-2009 12:10:00" EndDate="18-Mar-2009 12:10:00">
+          <FluidStrength>5%</FluidStrength>
+          <DoseLabel>VOLUME</DoseLabel>
+          <Dose>2 L</Dose>
+          <DoseDuration>over 24 hours</DoseDuration>
+          <Route>infusion</Route>
+          <Frequency>as required</Frequency>
+        </Item>
+      </Row>
+      <Row Id="20177457332" Name="insulin" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True">
+        <Item Name="insulin" Type="SecondaryCareMedication" StartDate="16-Mar-2006 12:10:00" EndDate="23-Mar-2006 22:00:00">
+          <Form>infusion</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>sliding scale</Dose>
+          <Route>subcutaneous</Route>
+          <Frequency>continuous</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 12:10:00" ActualEndDate="23-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="insulin" Type="SecondaryCareMedication" StartDate="05-Jan-2008 12:10:00" EndDate="12-Jan-2008 22:00:00">
+          <Form>infusion</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>sliding scale</Dose>
+          <Route>subcutaneous</Route>
+          <Frequency>continuous</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 12:10:00" ActualEndDate="12-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="insulin" Type="SecondaryCareMedication" StartDate="16-Mar-2009 12:10:00">
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>sliding scale</Dose>
+          <Route>subcutaneous infusion</Route>
+          <Frequency>continuous</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 12:10:00" Status="started">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="55527750253" Name="flucloxacillin" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True" Background="#F2F2F2">
+        <Item Name="flucloxacillin" Type="SecondaryCareMedication" StartDate="16-Mar-2006 12:30:00" EndDate="18-Mar-2006 09:35:00">
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>2 g</Dose>
+          <Route>intravenous</Route>
+          <Frequency>every 8 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 15:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="17-Mar-2006 15:00:00" ActualStartDate="17-Mar-2006 15:30:00" Status="late">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="flucloxacillin" Type="SecondaryCareMedication" StartDate="05-Jan-2008 12:30:00" EndDate="07-Jan-2008 09:35:00">
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>2 g</Dose>
+          <Route>intravenous</Route>
+          <Frequency>every 8 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 15:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="06-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="06-Jan-2008 15:00:00" ActualStartDate="06-Jan-2008 15:30:00" Status="late">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="06-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="flucloxacillin" Type="SecondaryCareMedication" StartDate="16-Mar-2009 12:30:00" EndDate="18-Mar-2009 09:35:00">
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>2 g</Dose>
+          <Route>intravenous</Route>
+          <Frequency>every 8 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 15:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2009 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="17-Mar-2009 15:00:00" ActualStartDate="17-Mar-2009 15:30:00" Status="late">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2009 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2009 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="76985416411" Name="co-amoxiclav" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True">
+        <Item Name="co-amoxiclav" Type="SecondaryCareMedication" StartDate="16-Mar-2006 13:35:00" EndDate="21-Mar-2006 08:00:00">
+          <SolidStrength>500 mg and 100 mg</SolidStrength>
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>1.2 g</Dose>
+          <Route>intravenous</Route>
+          <Frequency>every 8 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 14:55:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="17-Mar-2006 15:00:00" ActualStartDate="17-Mar-2006 15:30:00" Status="late">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="21-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="co-amoxiclav" Type="SecondaryCareMedication" StartDate="05-Jan-2008 13:35:00" EndDate="10-Jan-2008 08:00:00">
+          <SolidStrength>500 mg and 100 mg</SolidStrength>
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>1.2 g</Dose>
+          <Route>intravenous</Route>
+          <Frequency>8 hourly</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 14:55:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="06-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="06-Jan-2008 15:00:00" ActualStartDate="06-Jan-2008 15:30:00" Status="late">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="06-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="10-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="co-amoxiclav" Type="SecondaryCareMedication" StartDate="16-Mar-2009 13:35:00">
+          <SolidStrength>500 mg and 100 mg</SolidStrength>
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>1.2 g</Dose>
+          <Route>intravenous</Route>
+          <Frequency>every 8 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 14:55:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2009 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="17-Mar-2009 15:00:00" ActualStartDate="17-Mar-2009 15:30:00" Status="late">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2009 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2009 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2009 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="18-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="19-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="19-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="20-Mar-2009 08:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="20-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="20-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="21-Mar-2009 08:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="98836783169" Name="enoxaparin" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True" Background="#F2F2F2">
+        <Item Name="enoxaparin" Type="SecondaryCareMedication" StartDate="16-Mar-2006 16:10:00" EndDate="23-Mar-2006 22:00:00">
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>40 mg</Dose>
+          <Route>subcutaneous</Route>
+          <Frequency>once a day</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="21-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="22-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="23-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="enoxaparin" Type="SecondaryCareMedication" StartDate="05-Jan-2008 16:10:00" EndDate="12-Jan-2008 22:00:00">
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>40 mg</Dose>
+          <Route>subcutaneous</Route>
+          <Frequency>once a day</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="05-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="06-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="10-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="11-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="12-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="enoxaparin" Type="SecondaryCareMedication" StartDate="16-Mar-2009 16:10:00">
+          <Form>injection</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>40 mg</Dose>
+          <Route>subcutaneous</Route>
+          <Frequency>once a day</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="16-Mar-2009 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="17-Mar-2009 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="18-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="19-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="20-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="21-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="22-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="23-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="68359587191" Name="metronidazole" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True">
+        <Item Name="metronidazole" Type="SecondaryCareMedication" StartDate="18-Mar-2006 09:35:00" EndDate="23-Mar-2006 12:00:00">
+          <SolidStrength>5 mg per mL</SolidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>500 mg</Dose>
+          <Route>intravenous</Route>
+          <Frequency>every 6 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="18-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="19-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="20-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="21-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="21-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="21-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="21-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="22-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="22-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="22-Mar-2006 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="22-Mar-2006 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="23-Mar-2006 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="23-Mar-2006 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="metronidazole" Type="SecondaryCareMedication" StartDate="07-Jan-2008 09:35:00" EndDate="12-Jan-2008 12:00:00">
+          <SolidStrength>5 mg per mL</SolidStrength>
+          <Form>intravenous</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>500 mg</Dose>
+          <Route>infusion</Route>
+          <Frequency>every 6 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="07-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="08-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="09-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="10-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="10-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="10-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="10-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="11-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="11-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="11-Jan-2008 18:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="11-Jan-2008 22:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="12-Jan-2008 08:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" ActualStartDate="12-Jan-2008 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+        <Item Name="metronidazole" Type="SecondaryCareMedication" StartDate="18-Mar-2009 09:35:00" EndDate="23-Mar-2009 12:00:00">
+          <SolidStrength>5 mg per mL</SolidStrength>
+          <Form>infusion</Form>
+          <DoseLabel>DOSE</DoseLabel>
+          <Dose>500 mg</Dose>
+          <Route>intravenous</Route>
+          <Frequency>every 6 hours</Frequency>
+          <Events>
+            <Event Type="administrations" ActualStartDate="18-Mar-2009 12:00:00" Status="completed">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="18-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="18-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="19-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="19-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="19-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="20-Mar-2009 08:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="21-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="21-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="21-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="22-Mar-2009 08:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="22-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="22-Mar-2009 18:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="22-Mar-2009 22:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="23-Mar-2009 08:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+            <Event Type="administrations" PlannedStartDate="23-Mar-2009 12:00:00" Status="planned">
+              <Comments></Comments>
+              <Clinician></Clinician>
+            </Event>
+          </Events>
+        </Item>
+      </Row>
+      <Row />
+    </Section>
+    <Section Name="Measurements">
+      <Row Id="73310462235" Name="temperature" Background="#EBCCCC">
+        <Item Name="temperature">
+          <Units>°C</Units>
+          <UnitsDescription>°C: Degrees Celsius</UnitsDescription>
+          <YAxisMaxValue>45</YAxisMaxValue>
+          <YAxisMinValue>30</YAxisMinValue>
+          <YAxisPadding>11</YAxisPadding>
+          <YAxisMajorInterval>1</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>20</YAxisIntervalMinimumHeight>
+          <Height>100</Height>
+          <ShowNormalRange>True</ShowNormalRange>
+          <NormalRangeDescription>Adult normal range</NormalRangeDescription>
+          <NormalRangeMinimumValue>35</NormalRangeMinimumValue>
+          <NormalRangeMaximumValue>37</NormalRangeMaximumValue>
+          <NormalRangeBrush>#FEFCE9</NormalRangeBrush>
+          <HoverBackground>#B84E4E</HoverBackground>
+          <InterpolationLineColor>#990000</InterpolationLineColor>
+          <DataMarkerTemplate>{StaticResource Square}</DataMarkerTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 11:40:00" Y1="38.5" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 12:05:00" Y1="38.7" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 14:00:00" Y1="38.8" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 16:05:00" Y1="38.9" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 18:00:00" Y1="38.8" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 22:00:00" Y1="38.8" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 06:00:00" Y1="38.7" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 12:00:00" Y1="38.7" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 18:00:00" Y1="38.6" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 22:00:00" Y1="38.7" />
+            <Event Type="GraphData" ActualStartDate="18-Mar-2009 06:00:00" Y1="38.8" />
+            <Event Type="GraphData" ActualStartDate="18-Mar-2009 12:00:00" Y1="38.8" />
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="61649975776" Name="pulse rate" Background="#96C4F3">
+        <Item Name="pulse rate">
+          <Units>beats per minute</Units>
+          <YAxisMaxValue>200</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisMajorInterval>10</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>25</YAxisIntervalMinimumHeight>
+          <Height>100</Height>
+          <ShowNormalRange>True</ShowNormalRange>
+          <NormalRangeDescription>Adult normal range</NormalRangeDescription>
+          <NormalRangeMinimumValue>60</NormalRangeMinimumValue>
+          <NormalRangeMaximumValue>100</NormalRangeMaximumValue>
+          <NormalRangeBrush>#FEFCE9</NormalRangeBrush>
+          <HoverBackground>#656DFD</HoverBackground>
+          <InterpolationLineColor>#2932E0</InterpolationLineColor>
+          <DataMarkerTemplate>{StaticResource Circle}</DataMarkerTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 11:40:00" Y1="110" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 12:05:00" Y1="112" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 14:00:00" Y1="115" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 16:05:00" Y1="115" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 18:00:00" Y1="110" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 22:00:00" Y1="113" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 06:00:00" Y1="112" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 12:00:00" Y1="111" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 18:00:00" Y1="114" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 22:00:00" Y1="111" />
+            <Event Type="GraphData" ActualStartDate="18-Mar-2009 06:00:00" Y1="116" />
+            <Event Type="GraphData" ActualStartDate="18-Mar-2009 12:00:00" Y1="117" />
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="55805019139" Name="blood pressure" Background="#D6EBD6">
+        <Item Name="blood pressure">
+          <Units>mmHg</Units>
+          <UnitsDescription>mmHg: Millimetres of mercury</UnitsDescription>
+          <YAxisMaxValue>300</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisPadding>6</YAxisPadding>
+          <YAxisMajorInterval>10</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>17</YAxisIntervalMinimumHeight>
+          <Height>150</Height>
+          <ShowNormalRange>False</ShowNormalRange>
+          <HoverBackground>#5BA25B</HoverBackground>
+          <DataMarkerTemplate>{StaticResource IBarMarker}</DataMarkerTemplate>
+          <PointTemplate>{StaticResource IBarPoint}</PointTemplate>
+          <LabelTemplate>{StaticResource IBarLabel}</LabelTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 11:40:00" Y1="110" Y2="80" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 12:05:00" Y1="100" Y2="78" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 14:00:00" Y1="105" Y2="80" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 16:05:00" Y1="95" Y2="75" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 18:00:00" Y1="95" Y2="75" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 22:00:00" Y1="98" Y2="70" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 06:00:00" Y1="92" Y2="65" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 12:00:00" Y1="95" Y2="70" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 18:00:00" Y1="100" Y2="75" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 22:00:00" Y1="95" Y2="75" />
+            <Event Type="GraphData" ActualStartDate="18-Mar-2009 06:00:00" Y1="95" Y2="75" />
+            <Event Type="GraphData" ActualStartDate="18-Mar-2009 12:00:00" Y1="100" Y2="75" />
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="89569137095" Name="respiratory rate" Background="#E7D3E7">
+        <Item Name="respiratory rate">
+          <Units>breaths per minute</Units>
+          <YAxisMaxValue>80</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisPadding>12</YAxisPadding>
+          <YAxisMajorInterval>10</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>40</YAxisIntervalMinimumHeight>
+          <Height>110</Height>
+          <ShowNormalRange>True</ShowNormalRange>
+          <NormalRangeDescription>Adult normal range</NormalRangeDescription>
+          <NormalRangeMinimumValue>10</NormalRangeMinimumValue>
+          <NormalRangeMaximumValue>20</NormalRangeMaximumValue>
+          <NormalRangeBrush>#FEFCE9</NormalRangeBrush>
+          <HoverBackground>#B966B9</HoverBackground>
+          <InterpolationLineColor>#B966B9</InterpolationLineColor>
+          <DataMarkerTemplate>{StaticResource Triangle}</DataMarkerTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 11:40:00" Y1="18" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 12:05:00" Y1="18" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 14:00:00" Y1="19" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 16:05:00" Y1="19" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 18:00:00" Y1="19" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 22:00:00" Y1="19" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 06:00:00" Y1="18" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 12:00:00" Y1="16" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 18:00:00" Y1="17" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 22:00:00" Y1="16" />
+            <Event Type="GraphData" ActualStartDate="18-Mar-2009 06:00:00" Y1="18" />
+            <Event Type="GraphData" ActualStartDate="18-Mar-2009 12:00:00" Y1="17" />
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="58339039086" Name="oxygen saturation" Background="#F5E0CC">
+        <Item Name="oxygen saturation">
+          <Units>%</Units>
+          <YAxisMaxValue>100</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisMajorInterval>10</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>50</YAxisIntervalMinimumHeight>
+          <Height>100</Height>
+          <ShowNormalRange>True</ShowNormalRange>
+          <NormalRangeDescription>Adult normal range</NormalRangeDescription>
+          <NormalRangeMinimumValue>95</NormalRangeMinimumValue>
+          <NormalRangeMaximumValue>100</NormalRangeMaximumValue>
+          <NormalRangeBrush>#FEFCE9</NormalRangeBrush>
+          <HoverBackground>#CC6600</HoverBackground>
+          <InterpolationLineColor>#CC6600</InterpolationLineColor>
+          <DataMarkerTemplate>{StaticResource Diamond}</DataMarkerTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 11:40:00" Y1="94" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 12:05:00" Y1="96" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 14:00:00" Y1="95" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 16:05:00" Y1="95" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 18:00:00" Y1="95" />
+            <Event Type="GraphData" ActualStartDate="16-Mar-2009 22:00:00" Y1="95" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 06:00:00" Y1="95" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 12:00:00" Y1="94" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 18:00:00" Y1="95" />
+            <Event Type="GraphData" ActualStartDate="17-Mar-2009 22:00:00" Y1="94" />
+            <Event Type="GraphData" ActualStartDate="18-Mar-2009 06:00:00" Y1="95" />
+            <Event Type="GraphData" ActualStartDate="18-Mar-2009 12:00:00" Y1="94" />
+          </Events>
+        </Item>
+      </Row>
+    </Section>
+  </Scenario>
+  <Scenario PatientId="2" Description="Primary care" BaseDate="22-Jul-2009 10:00:00" TimeFrequencySelectedIndex="21">
+    <Section Name="Problems">
+      <Row Id="85592565535" Name="diabetes mellitus type 2" Background="#F2F2F2">
+        <Item Name="diabetes mellitus type 2" StartDate="10-Apr-2001 00:00:00">
+          <Comments>Ongoing.</Comments>
+        </Item>
+      </Row>
+      <Row Id="71892288922" Name="impotence">
+        <Item Name="impotence" StartDate="17-May-2002 00:00:00">
+          <Comments></Comments>
+        </Item>
+      </Row>
+      <Row Id="102562210558" Name="essential hypertension" Background="#F2F2F2">
+        <Item Name="essential hypertension" StartDate="01-Jan-2004 00:00:00">
+          <Comments>Ongoing.</Comments>
+        </Item>
+      </Row>
+      <Row Id="60595170258" Name="background diabetic retinopathy">
+        <Item Name="background diabetic retinopathy" StartDate="28-Jun-2007 00:00:00" EndDate="27-Mar-2009 23:59:59">
+          <Comments></Comments>
+        </Item>
+      </Row>
+      <Row Id="80118117331" Name="background diabetic retinopathy : bilateral" Background="#F2F2F2">
+        <Item Name="background diabetic retinopathy : bilateral" StartDate="28-Mar-2009 00:00:00">
+          <Comments>Bilateral.</Comments>
+        </Item>
+      </Row>
+      <Row />
+    </Section>
+    <Section Name="Medications">
+      <Row Id="109433797596" Name="Clostet Vaccine">
+        <Item Name="Clostet Vaccine" StartDate="02-Apr-2001 00:00:00" EndDate="02-Apr-2001 00:00:00">
+          <Form>1 pre-filled syringe</Form>
+          <Frequency>immediately</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="02-Apr-2001 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="51583192348" Name="Hepatyrix Injection" Background="#F2F2F2">
+        <Item Name="Hepatyrix Injection (Prefilled Syringe) 1 mL" StartDate="02-Apr-2001 00:00:00" EndDate="02-Apr-2001 00:00:00">
+          <Form>1 pre-filled syringe</Form>
+          <Frequency>immediately</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="02-Apr-2001 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="53595701455" Name="Poliomyelitis Vaccine, Live(Oral) Bp Liquid">
+        <Item Name="Poliomyelitis Vaccine, Live(Oral) Bp Liquid" StartDate="02-Apr-2001 00:00:00" EndDate="02-Apr-2001 00:00:00">
+          <Form>1 dose</Form>
+          <Frequency>immediately</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="02-Apr-2001 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="105926094054" Name="Test Strips"  MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True" Background="#F2F2F2">
+        <Item Name="Active Test Strips" StartDate="12-May-2006 00:00:00" EndDate="03-Apr-2009 00:00:00">
+          <Form>2*50 strips</Form>
+          <Frequency>as directed</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="12-May-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="26-May-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="09-Jun-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Jun-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="10-Jul-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="30-Jul-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Feb-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Apr-2009 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Accu-Chek Advantage II Test Strips" StartDate="27-Apr-2001 00:00:00" EndDate="19-Apr-2006 00:00:00">
+          <Form>50 strips</Form>
+          <Frequency>as directed</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="27-Apr-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="18-May-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="16-Jul-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="10-Aug-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="24-Oct-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="23-Nov-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="17-May-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Oct-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Oct-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="18-Nov-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Oct-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="19-Apr-2006 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Accu-Chek Advantage Plus Test Strips" StartDate="24-Apr-2006 00:00:00" EndDate="24-Apr-2006 00:00:00">
+          <Form>50 strips</Form>
+          <Frequency>as directed</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="24-Apr-2006 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="42581156491" Name="Lancets" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True">
+        <Item Name="BD Micro-Fine Lancets 0.25 mm (31G) * 8mm" StartDate="19-Apr-2006 00:00:00" EndDate="13-Jul-2009 00:00:00">
+          <Form>100 needles</Form>
+          <Frequency>as directed</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="19-Apr-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Jun-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="02-Aug-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Sep-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Nov-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Jan-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Mar-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Apr-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="30-Jul-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Nov-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Feb-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Sep-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Feb-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Apr-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-May-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="13-Jul-2009 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Accu-Chek Softclix II Lancets Type C 0.4 mm (28G)" StartDate="27-Apr-2001 00:00:00" EndDate="10-Aug-2001 00:00:00">
+          <Form>200 needles</Form>
+          <Frequency>as directed</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="27-Apr-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="10-Aug-2001 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Accu-Chek Softclix Lancets Type C 0.4 mm (28G)" StartDate="18-Nov-2004 00:00:00" EndDate="18-Nov-2004 00:00:00">
+          <Form>200 needles</Form>
+          <Frequency>as directed</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="18-Nov-2004 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="45427248477" Name="Sildenafil Citrate" MaxLabelStackLevels="2" Background="#F2F2F2">
+        <Item Name="Sildenafil Citrate Tablets 100 mg" StartDate="06-Dec-2002 00:00:00" EndDate="13-Jul-2009 00:00:00">
+          <Form>8 tablets</Form>
+          <Frequency>as required</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="06-Dec-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="23-Jan-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="26-Feb-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="25-Mar-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="30-Apr-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="23-May-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Jul-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="14-Aug-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="09-Oct-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="19-Dec-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="16-Mar-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Apr-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="27-May-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Jun-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="18-Aug-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Oct-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Oct-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="21-Dec-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="14-Feb-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Apr-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Jul-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Oct-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Dec-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="04-Jan-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Mar-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="24-Apr-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-May-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Jun-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="14-Jul-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="24-Aug-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Sep-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Nov-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Dec-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Jan-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Mar-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="30-Jul-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Oct-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Nov-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="10-Jan-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Feb-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Jun-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Aug-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Sep-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="26-Nov-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Feb-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Apr-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-May-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="13-Jul-2009 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Sildenafil Citrate Tablets 50 mg" StartDate="27-Apr-2001 00:00:00" EndDate="11-Nov-2002 00:00:00">
+          <Form>8 tablets</Form>
+          <Frequency>as required</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="27-Apr-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="18-May-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="16-Jul-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="10-Aug-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="21-Sep-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="24-Oct-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="23-Nov-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="31-Jan-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="25-Feb-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Apr-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="17-May-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Jul-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Aug-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="17-Oct-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Nov-2002 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="17205134630" Name="Metformin Hydrochloride" MaxLabelStackLevels="2">
+        <Item Name="Metformin Hydrochloride Tablets 500 mg" StartDate="21-Sep-2001 00:00:00" EndDate="24-Oct-2001 00:00:00">
+          <Form>56 tablets</Form>
+          <Frequency>one tablet twice daily</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="21-Sep-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="24-Oct-2001 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Metformin Hydrochloride Tablets 500 mg" StartDate="23-Nov-2001 00:00:00" EndDate="05-May-2009 00:00:00">
+          <Form>224 tablets</Form>
+          <Frequency>two tablets twice daily</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="23-Nov-2001 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="31-Jan-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Apr-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="17-May-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="19-Sep-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Nov-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="23-Jan-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="25-Mar-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="23-May-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Jul-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="09-Oct-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="19-Dec-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Apr-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Jun-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="18-Aug-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Oct-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="21-Dec-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="14-Feb-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Apr-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Jul-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Oct-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Dec-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Mar-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-May-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Jun-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Sep-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Dec-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Jan-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Mar-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-May-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="30-Jul-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Nov-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="10-Jan-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Feb-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Jun-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Aug-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Sep-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="26-Nov-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Feb-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Apr-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-May-2009 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="104672989844" Name="Gliclazide" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True" Background="#F2F2F2">
+        <Item Name="Gliclazide Tablets 80 mg" StartDate="25-Feb-2002 00:00:00" EndDate="11-Apr-2002 00:00:00">
+          <Form>56 tablets</Form>
+          <Frequency>one tablet in the morning</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="25-Feb-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Apr-2002 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Gliclazide Tablets 80 mg" StartDate="17-May-2002 00:00:00" EndDate="19-Dec-2003 00:00:00">
+          <Form>56 tablets</Form>
+          <Frequency>half a tablet daily</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="17-May-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Jul-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="19-Sep-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Nov-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="23-Jan-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="25-Mar-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="23-May-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Jul-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="09-Oct-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="19-Dec-2003 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Gliclazide Tablets 80 mg" StartDate="05-Oct-2004 00:00:00" EndDate="05-Oct-2004 00:00:00">
+          <Form>60 tablets</Form>
+          <Frequency>one tablet daily</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="05-Oct-2004 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Gliclazide Tablets 80 mg" StartDate="18-Nov-2004 00:00:00" EndDate="06-Jun-2005 00:00:00">
+          <Form>120 tablets</Form>
+          <Frequency>one tablet twice daily</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="18-Nov-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="21-Dec-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="14-Feb-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Apr-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2005 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Gliclazide Tablets 80 mg" StartDate="28-Jul-2005 00:00:00" EndDate="06-Oct-2005 00:00:00">
+          <Form>168 tablets</Form>
+          <Frequency>one tablet in the morning</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="28-Jul-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Oct-2005 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Gliclazide Tablets 80 mg" StartDate="05-Dec-2005 00:00:00" EndDate="12-Feb-2009 00:00:00">
+          <Form>224 tablets</Form>
+          <Frequency>two tablets twice daily</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="05-Dec-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Mar-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-May-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Jun-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="24-Aug-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Sep-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Dec-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Jan-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Mar-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="30-Jul-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Oct-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Nov-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="10-Jan-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Feb-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Jun-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Aug-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Sep-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="26-Nov-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Feb-2009 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="102614883183" Name="Havrix Monodose Vaccine">
+        <Item Name="Havrix Monodose Vaccine 1440 units/1 mL" StartDate="25-Feb-2002 00:00:00" EndDate="25-Feb-2002 00:00:00">
+          <Form>1 pre-filled disposable syringe</Form>
+          <Frequency>immediately</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="25-Feb-2002 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="21502826213" Name="Aspirin" Background="#F2F2F2">
+        <Item Name="Aspirin Tablets 75 mg" StartDate="17-May-2002 00:00:00" EndDate="07-Sep-2009 00:00:00">
+          <Form>2*28 tablets</Form>
+          <Frequency>one tablet daily</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="17-May-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Jul-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="19-Sep-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Nov-2002 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="23-Jan-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="25-Mar-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="23-May-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Jul-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="09-Oct-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="19-Dec-2003 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Apr-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Jun-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="18-Aug-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Oct-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="21-Dec-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="14-Feb-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Apr-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Jul-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Oct-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Dec-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Mar-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-May-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Jun-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="24-Aug-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Sep-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Dec-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Jan-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Apr-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="30-Jul-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Oct-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Nov-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="10-Jan-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Feb-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Jun-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Aug-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Sep-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="26-Nov-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Feb-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Apr-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-May-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="13-Jul-2009 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="45448127984" Name="Codeine Linctus" MaxLabelStackLevels="2">
+        <Item Name="Codeine Linctus Diabetic Linctus 15 mg/5 mL" StartDate="17-May-2002 00:00:00" EndDate="17-May-2002 00:00:00">
+          <Form>200 mL</Form>
+          <Frequency>20 mL at night</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="17-May-2002 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Codeine Linctus Diabetic Linctus 15 mg/5 mL" StartDate="06-Aug-2002 00:00:00" EndDate="06-Aug-2002 00:00:00">
+          <Form>200 mL</Form>
+          <Frequency>20 mL at night</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="06-Aug-2002 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Codeine Linctus Sugar Free BP" StartDate="05-Nov-2007 00:00:00" EndDate="05-Nov-2007 00:00:00">
+          <Form>200 mL</Form>
+          <Frequency>5 mL four times a day</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="05-Nov-2007 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="75534830092" Name="Diclofenac Sodium E/C Tablets" Background="#F2F2F2">
+        <Item Name="Diclofenac Sodium E/C Tablets 50 mg" StartDate="08-Jul-2003 00:00:00" EndDate="08-Jul-2003 00:00:00">
+          <Form>tablet</Form>
+          <Frequency>one tablet three times a day</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="08-Jul-2003 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="48256901502" Name="Rosiglitazone Maleate Tablets">
+        <Item Name="Rosiglitazone Maleate Tablets 4 mg" StartDate="12-Jan-2004 00:00:00" EndDate="18-Aug-2004 00:00:00">
+          <Form>56 tablets</Form>
+          <Frequency>one tablet in the morning</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="12-Jan-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Apr-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Jun-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="18-Aug-2004 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="34894154071" Name="Ramipril" MaxLabelStackLevels="2" ShowLabelOvercrowdingNotifications="True" Background="#F2F2F2">
+        <Item Name="Ramipril Capsules 10 mg" StartDate="18-Nov-2004 00:00:00" EndDate="13-Jul-2009 00:00:00">
+          <Form>2*28 tablets</Form>
+          <Frequency>one tablet daily</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="18-Nov-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="21-Dec-2004 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="14-Feb-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Apr-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Jul-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Oct-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Dec-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Mar-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-May-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Jun-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="24-Aug-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Sep-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Dec-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Jan-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Apr-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-May-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="30-Jul-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Nov-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="10-Jan-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Feb-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Jun-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Aug-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Sep-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="26-Nov-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Feb-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Apr-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-May-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="13-Jul-2009 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Ramipril Capsules 2.5 mg" StartDate="12-Jan-2004 00:00:00" EndDate="12-Jan-2004 00:00:00">
+          <Form>2*28 tablets</Form>
+          <Frequency>one tablet at night for one week then two in the morning</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="12-Jan-2004 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Ramipril Capsules 2.5 mg" StartDate="03-Sep-2004 00:00:00" EndDate="03-Sep-2004 00:00:00">
+          <Form>2*28 tablets</Form>
+          <Frequency>one tablet at night for one week then two in the morning</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="03-Sep-2004 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Ramipril Capsules 5 mg" StartDate="05-Oct-2004 00:00:00" EndDate="05-Oct-2004 00:00:00">
+          <Form>2*28 tablets</Form>
+          <Frequency>one tablet daily</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="05-Oct-2004 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="79321995972" Name="Begrivac Vaccine" MaxLabelStackLevels="2">
+        <Item Name="Begrivac Vaccine" StartDate="12-Jan-2004 00:00:00" EndDate="12-Jan-2004 00:00:00">
+          <Form>1 pre-filled syringe</Form>
+          <Frequency>immediately</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="12-Jan-2004 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Begrivac Vaccine" StartDate="18-Nov-2004 00:00:00" EndDate="18-Nov-2004 00:00:00">
+          <Form>1 pre-filled syringe</Form>
+          <Frequency>immediately</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="18-Nov-2004 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="76769671439" Name="Movelat" MaxLabelStackLevels="2" Background="#F2F2F2">
+        <Item Name="Movelat Cream" StartDate="05-Oct-2004 00:00:00" EndDate="05-Oct-2004 00:00:00">
+          <Form>100 g cream</Form>
+          <Frequency>three times a day</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="05-Oct-2004 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Movelat Gel" StartDate="02-Mar-2006 00:00:00" EndDate="02-Mar-2006 00:00:00">
+          <Form>100 g cream</Form>
+          <Frequency>three times a day</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="02-Mar-2006 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="60983041524" Name="Bendroflumethiazide">
+        <Item Name="Bendroflumethiazide Tablets 2.5 mg" StartDate="05-Dec-2005 00:00:00" EndDate="05-May-2009 00:00:00">
+          <Form>56 tablets</Form>
+          <Frequency>one tablet only during the day</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="05-Dec-2005 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="04-Jan-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Mar-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-May-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Jun-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="24-Aug-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="28-Sep-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Dec-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Jan-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Apr-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Jun-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="30-Jul-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Oct-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="20-Nov-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="10-Jan-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Feb-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Jun-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-Aug-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Sep-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="26-Nov-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Feb-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Apr-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-May-2009 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="72423741816" Name="Enzira Suspension For Injection" MaxLabelStackLevels="2" Background="#F2F2F2">
+        <Item Name="Enzira Suspension For Injection" StartDate="05-Dec-2005 00:00:00" EndDate="05-Dec-2005 00:00:00">
+          <Form>one 5 mL pre-filled syringe</Form>
+          <Frequency>immediately</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="05-Dec-2005 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Enzira Suspension For Injection" StartDate="10-Feb-2009 00:00:00" EndDate="10-Feb-2009 00:00:00">
+          <Form>one 5 mL pre-filled syringe</Form>
+          <Frequency>immediately</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="10-Feb-2009 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="64609209298" Name="Amoxicillin" MaxLabelStackLevels="2">
+        <Item Name="Amoxicillin 250 mg" StartDate="05-Jan-2006 00:00:00" EndDate="05-Jan-2006 00:00:00">
+          <Form>21 capsules</Form>
+          <Frequency>one tablet three times a day</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="05-Jan-2006 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Amoxicillin 250 mg" StartDate="29-Dec-2006 00:00:00" EndDate="29-Dec-2006 00:00:00">
+          <Form>21 capsules</Form>
+          <Frequency>one tablet three times a day</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="29-Dec-2006 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="52280101775" Name="Movelat Gel" Background="#F2F2F2">
+        <Item Name="Movelat Gel" StartDate="02-Mar-2006 00:00:00" EndDate="02-Mar-2006 00:00:00">
+          <Form>100 g gel</Form>
+          <Frequency>three times a day</Frequency>
+        </Item>
+      </Row>
+      <Row Id="65335539578" Name="Penicillin V Tablets">
+        <Item Name="Penicillin V Tablets 250 mg" StartDate="06-Feb-1989 00:00:00" EndDate="06-Feb-1989 00:00:00">
+          <Form>20 tablets</Form>
+          <Frequency>one tablet four times a day</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="06-Feb-1989 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Penicillin V Tablets 250 mg" StartDate="12-Nov-1992 00:00:00" EndDate="12-Nov-1992 00:00:00">
+          <Form>20 tablets</Form>
+          <Frequency>one tablet four times a day</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="12-Nov-1992 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+        <Item Name="Penicillin V Tablets 250 mg" StartDate="02-Mar-2006 00:00:00" EndDate="02-Mar-2006 00:00:00">
+          <Form>20 tablets</Form>
+          <Frequency>one tablet four times a day</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="02-Mar-2006 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="91714880465" Name="Humapen Luxura Re-Usable Pen" Background="#F2F2F2">
+        <Item Name="Humapen Luxura Re-Usable Pen 3 mL, 1-60 units" StartDate="19-Apr-2006 00:00:00" EndDate="19-Apr-2006 00:00:00">
+          <Form>1 pen</Form>
+          <Frequency>as directed</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="19-Apr-2006 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="34689894914" Name="Needle Clipping (Chopping) Device">
+        <Item Name="Needle Clipping (Chopping) Device" StartDate="19-Apr-2006 00:00:00" EndDate="19-Apr-2006 00:00:00">
+          <Form>1 device</Form>
+          <Frequency>as directed</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="19-Apr-2006 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="83175740241" Name="Humalog Mix50 100 units/mL Cartridges" Background="#F2F2F2">
+        <Item Name="Humalog Mix50 100 units/mL suspension for injection 3 mL cartridges" StartDate="19-Apr-2006 00:00:00" EndDate="13-Jul-2009 00:00:00">
+          <Form>5 cartridges</Form>
+          <Frequency>as directed</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="19-Apr-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Jun-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="02-Aug-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="06-Nov-2006 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Jan-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="07-Mar-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="11-Apr-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="30-Jul-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="01-Oct-2007 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="08-Feb-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="22-Sep-2008 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="12-Feb-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="03-Apr-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="05-May-2009 0:00:00" Status="issued"/>
+            <Event Type="prescription issue events" ActualStartDate="13-Jul-2009 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="74235538243" Name="Inactivated Influenza (Split Virion) Vaccine">
+        <Item Name="Inactivated Influenza (Split Virion) Vaccine 0.5 mL pre-filled syringe" StartDate="30-Nov-2006 00:00:00" EndDate="30-Nov-2006 00:00:00">
+          <Form>1 pre-filled syringe</Form>
+          <Frequency>immediately</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="30-Nov-2006 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="85254142283" Name="Viroflu Suspension For Injection" Background="#F2F2F2">
+        <Item Name="Viroflu Suspension For Injection 0.5 mL pre-filled syringe lot 3001262 exp 6/08" StartDate="05-Nov-2007 00:00:00" EndDate="05-Nov-2007 00:00:00">
+          <Form>1 pre-filled disposable syringe</Form>
+          <Frequency>immediately</Frequency>
+          <Events>
+            <Event Type="prescription issue events" ActualStartDate="05-Nov-2007 0:00:00" Status="issued"/>
+          </Events>
+        </Item>
+      </Row>
+      <Row />
+    </Section>
+    <Section Name="Measurements">
+      <Row Id="18354336023" Name="serum creatinine" Background="#96C4F3">
+        <Item Name="serum creatinine">
+          <Units>µmol/L</Units>
+          <UnitsDescription>µmol/L: Micromoles per litre</UnitsDescription>
+          <YAxisMaxValue>200</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisPadding>10</YAxisPadding>
+          <YAxisMajorInterval>10</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>29</YAxisIntervalMinimumHeight>
+          <Height>140</Height>
+          <ShowNormalRange>False</ShowNormalRange>
+          <HoverBackground>#656DFD</HoverBackground>
+          <InterpolationLineColor>#2932E0</InterpolationLineColor>
+          <DataMarkerTemplate>{StaticResource Circle}</DataMarkerTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="11-Apr-2001 00:00:00" Y1="98" />
+            <Event Type="GraphData" ActualStartDate="09-Jul-2001 00:00:00" Y1="109" />
+            <Event Type="GraphData" ActualStartDate="13-Sep-2001 00:00:00" Y1="110" />
+            <Event Type="GraphData" ActualStartDate="15-Nov-2001 00:00:00" Y1="104" />
+            <Event Type="GraphData" ActualStartDate="15-Feb-2002 00:00:00" Y1="107" />
+            <Event Type="GraphData" ActualStartDate="09-May-2002 00:00:00" Y1="102" />
+            <Event Type="GraphData" ActualStartDate="29-Nov-2002 00:00:00" Y1="109" />
+            <Event Type="GraphData" ActualStartDate="05-Jan-2004 00:00:00" Y1="103" />
+            <Event Type="GraphData" ActualStartDate="03-Sep-2004 00:00:00" Y1="107" />
+            <Event Type="GraphData" ActualStartDate="06-Oct-2004 00:00:00" Y1="104" />
+            <Event Type="GraphData" ActualStartDate="10-Jun-2005 00:00:00" Y1="107" />
+            <Event Type="GraphData" ActualStartDate="20-Oct-2005 00:00:00" Y1="122" />
+            <Event Type="GraphData" ActualStartDate="16-Feb-2006 00:00:00" Y1="116" />
+            <Event Type="GraphData" ActualStartDate="06-Jun-2007 00:00:00" Y1="127" />
+            <Event Type="GraphData" ActualStartDate="10-Feb-2009 00:00:00" Y1="111" />
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="64335737227" Name="plasma glucose level" Background="#F5E0CC">
+        <Item Name="plasma glucose level">
+          <Units>mmol/L</Units>
+          <UnitsDescription>mmol/L: Millimoles per litre</UnitsDescription>
+          <YAxisMaxValue>100</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisPadding>15</YAxisPadding>
+          <YAxisMajorInterval>10</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>40</YAxisIntervalMinimumHeight>
+          <Height>160</Height>
+          <ShowNormalRange>False</ShowNormalRange>
+          <HoverBackground>#CC6600</HoverBackground>
+          <InterpolationLineColor>#CC6600</InterpolationLineColor>
+          <DataMarkerTemplate>{StaticResource Diamond}</DataMarkerTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="11-Apr-2001 00:00:00" Y1="19.6" />
+            <Event Type="GraphData" ActualStartDate="09-Jul-2001 00:00:00" Y1="12.3" />
+            <Event Type="GraphData" ActualStartDate="13-Sep-2001 00:00:00" Y1="13.3" />
+            <Event Type="GraphData" ActualStartDate="15-Nov-2001 00:00:00" Y1="11.9" />
+            <Event Type="GraphData" ActualStartDate="15-Feb-2002 00:00:00" Y1="14.7" />
+            <Event Type="GraphData" ActualStartDate="09-May-2002 00:00:00" Y1="8.3" />
+            <Event Type="GraphData" ActualStartDate="29-Nov-2002 00:00:00" Y1="8.8" />
+            <Event Type="GraphData" ActualStartDate="05-Jan-2004 00:00:00" Y1="7.7" />
+            <Event Type="GraphData" ActualStartDate="03-Sep-2004 00:00:00" Y1="9.9" />
+            <Event Type="GraphData" ActualStartDate="10-Jun-2005 00:00:00" Y1="7.8" />
+            <Event Type="GraphData" ActualStartDate="20-Oct-2005 00:00:00" Y1="14.6" />
+            <Event Type="GraphData" ActualStartDate="16-Feb-2006 00:00:00" Y1="11.7" />
+            <Event Type="GraphData" ActualStartDate="06-Jun-2007 00:00:00" Y1="6.9" />
+            <Event Type="GraphData" ActualStartDate="10-Feb-2009 00:00:00" Y1="15.3" />
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="59295586347" Name="serum cholesterol" Background="#EBCCCC">
+        <Item Name="serum cholesterol">
+          <Units>mmol/L</Units>
+          <UnitsDescription>mmol/L: Millimoles per litre</UnitsDescription>
+          <YAxisMaxValue>30</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisPadding>19</YAxisPadding>
+          <YAxisMajorInterval>1</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>29</YAxisIntervalMinimumHeight>
+          <Height>100</Height>
+          <ShowNormalRange>False</ShowNormalRange>
+          <HoverBackground>#B84E4E</HoverBackground>
+          <InterpolationLineColor>#990000</InterpolationLineColor>
+          <DataMarkerTemplate>{StaticResource Square}</DataMarkerTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="09-Jul-2001 00:00:00" Y1="4.3" />
+            <Event Type="GraphData" ActualStartDate="15-Feb-2002 00:00:00" Y1="4.4" />
+            <Event Type="GraphData" ActualStartDate="29-Nov-2002 00:00:00" Y1="4" />
+            <Event Type="GraphData" ActualStartDate="05-Jan-2004 00:00:00" Y1="4.9" />
+            <Event Type="GraphData" ActualStartDate="03-Sep-2004 00:00:00" Y1="5" />
+            <Event Type="GraphData" ActualStartDate="20-Oct-2005 00:00:00" Y1="4.6" />
+            <Event Type="GraphData" ActualStartDate="16-Feb-2006 00:00:00" Y1="4.1" />
+            <Event Type="GraphData" ActualStartDate="06-Jun-2007 00:00:00" Y1="4.3" />
+            <Event Type="GraphData" ActualStartDate="10-Feb-2009 00:00:00" Y1="4.5" />
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="69453880786" Name="blood pressure" Background="#D6EBD6">
+        <Item Name="blood pressure">
+          <Units>mmHg</Units>
+          <UnitsDescription>mmHg: Millimetres of mercury</UnitsDescription>
+          <YAxisMaxValue>300</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisMajorInterval>10</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>17</YAxisIntervalMinimumHeight>
+          <Height>150</Height>
+          <ShowNormalRange>False</ShowNormalRange>
+          <HoverBackground>#5BA25B</HoverBackground>
+          <DataMarkerTemplate>{StaticResource IBarMarker}</DataMarkerTemplate>
+          <PointTemplate>{StaticResource IBarPoint}</PointTemplate>
+          <LabelTemplate>{StaticResource IBarLabel}</LabelTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="30-Aug-1985 00:00:00" Y1="140" Y2="85" />
+            <Event Type="GraphData" ActualStartDate="06-Feb-1989 00:00:00" Y1="140" Y2="90" />
+            <Event Type="GraphData" ActualStartDate="02-Apr-2001 00:00:00" Y1="130" Y2="82" />
+            <Event Type="GraphData" ActualStartDate="10-Aug-2001 00:00:00" Y1="142" Y2="88" />
+            <Event Type="GraphData" ActualStartDate="23-Nov-2001 00:00:00" Y1="146" Y2="86" />
+            <Event Type="GraphData" ActualStartDate="25-Feb-2002 00:00:00" Y1="132" Y2="88" />
+            <Event Type="GraphData" ActualStartDate="17-May-2002 00:00:00" Y1="142" Y2="74" />
+            <Event Type="GraphData" ActualStartDate="06-Dec-2002 00:00:00" Y1="140" Y2="84" />
+            <Event Type="GraphData" ActualStartDate="12-Jan-2004 00:00:00" Y1="152" Y2="100" />
+            <Event Type="GraphData" ActualStartDate="03-Sep-2004 00:00:00" Y1="162" Y2="104" />
+            <Event Type="GraphData" ActualStartDate="05-Oct-2004 00:00:00" Y1="148" Y2="92" />
+            <Event Type="GraphData" ActualStartDate="18-Nov-2004 00:00:00" Y1="152" Y2="96" />
+            <Event Type="GraphData" ActualStartDate="07-Jul-2005 00:00:00" Y1="150" Y2="84" />
+            <Event Type="GraphData" ActualStartDate="05-Dec-2005 00:00:00" Y1="150" Y2="94" />
+            <Event Type="GraphData" ActualStartDate="16-Feb-2006 00:00:00" Y1="131" Y2="87" />
+            <Event Type="GraphData" ActualStartDate="06-Jun-2007 00:00:00" Y1="138" Y2="83" />
+            <Event Type="GraphData" ActualStartDate="07-Feb-2008 00:00:00" Y1="129" Y2="82" />
+            <Event Type="GraphData" ActualStartDate="10-Feb-2009 00:00:00" Y1="142" Y2="85" />
+            <Event Type="GraphData" ActualStartDate="03-Apr-2009 00:00:00" Y1="132" Y2="85" />
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="72615472077" Name="HbA1c level (DCCT aligned)" Background="#E7D3E7">
+        <Item Name="HbA1c level (DCCT aligned)">
+          <Units>%</Units>
+          <YAxisMaxValue>100</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisMajorInterval>1</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>29</YAxisIntervalMinimumHeight>
+          <Height>140</Height>
+          <ShowNormalRange>False</ShowNormalRange>
+          <HoverBackground>#B966B9</HoverBackground>
+          <InterpolationLineColor>#B966B9</InterpolationLineColor>
+          <DataMarkerTemplate>{StaticResource Triangle}</DataMarkerTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="05-Jan-2004 00:00:00" Y1="8" />
+            <Event Type="GraphData" ActualStartDate="03-Sep-2004 00:00:00" Y1="9" />
+            <Event Type="GraphData" ActualStartDate="10-Jun-2005 00:00:00" Y1="8.9" />
+            <Event Type="GraphData" ActualStartDate="20-Oct-2005 00:00:00" Y1="9" />
+            <Event Type="GraphData" ActualStartDate="16-Feb-2006 00:00:00" Y1="8.8" />
+            <Event Type="GraphData" ActualStartDate="31-Jul-2006 00:00:00" Y1="7.3" />
+            <Event Type="GraphData" ActualStartDate="06-Jun-2007 00:00:00" Y1="8" />
+            <Event Type="GraphData" ActualStartDate="10-Feb-2009 00:00:00" Y1="9.3" />
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="105971274374" Name="body mass index" Background="#EBCCCC">
+        <Item Name="body mass index">
+          <YAxisMaxValue>60</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisMajorInterval>2</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>29</YAxisIntervalMinimumHeight>
+          <Height>200</Height>
+          <ShowNormalRange>True</ShowNormalRange>
+          <NormalRangeDescription>Patient ideal range</NormalRangeDescription>
+          <NormalRangeMinimumValue>18.5</NormalRangeMinimumValue>
+          <NormalRangeMaximumValue>25</NormalRangeMaximumValue>
+          <NormalRangeBrush>#FEFCE9</NormalRangeBrush>
+          <HoverBackground>#B84E4E</HoverBackground>
+          <InterpolationLineColor>#990000</InterpolationLineColor>
+          <DataMarkerTemplate>{StaticResource Square}</DataMarkerTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="16-Jul-2001 00:00:00" Y1="30.4" />
+            <Event Type="GraphData" ActualStartDate="21-Sep-2001 00:00:00" Y1="30.9" />
+            <Event Type="GraphData" ActualStartDate="25-Feb-2002 00:00:00" Y1="30.9" />
+            <Event Type="GraphData" ActualStartDate="12-Jan-2004 00:00:00" Y1="31.5" />
+            <Event Type="GraphData" ActualStartDate="05-Oct-2004 00:00:00" Y1="30.8" />
+            <Event Type="GraphData" ActualStartDate="18-Nov-2004 00:00:00" Y1="30.8" />
+            <Event Type="GraphData" ActualStartDate="07-Jul-2005 00:00:00" Y1="31.8" />
+            <Event Type="GraphData" ActualStartDate="05-Dec-2005 00:00:00" Y1="32.1" />
+            <Event Type="GraphData" ActualStartDate="16-Feb-2006 00:00:00" Y1="31" />
+            <Event Type="GraphData" ActualStartDate="12-Jun-2007 00:00:00" Y1="32.2" />
+            <Event Type="GraphData" ActualStartDate="07-Feb-2008 00:00:00" Y1="32.2" />
+            <Event Type="GraphData" ActualStartDate="10-Feb-2009 00:00:00" Y1="31.3" />
+          </Events>
+        </Item>
+      </Row>
+      <Row Id="46132138967" Name="weight" Background="#96C4F3">
+        <Item Name="weight">
+          <Units>kilograms</Units>
+          <YAxisMaxValue>120</YAxisMaxValue>
+          <YAxisMinValue>0</YAxisMinValue>
+          <YAxisMajorInterval>10</YAxisMajorInterval>
+          <YAxisIntervalMinimumHeight>29</YAxisIntervalMinimumHeight>
+          <Height>100</Height>
+          <ShowNormalRange>True</ShowNormalRange>
+          <NormalRangeDescription>Patient ideal weight</NormalRangeDescription>
+          <NormalRangeMinimumValue>72</NormalRangeMinimumValue>
+          <NormalRangeMaximumValue>74</NormalRangeMaximumValue>
+          <NormalRangeBrush>#FEFCE9</NormalRangeBrush>
+          <HoverBackground>#656DFD</HoverBackground>
+          <InterpolationLineColor>#2932E0</InterpolationLineColor>
+          <DataMarkerTemplate>{StaticResource Circle}</DataMarkerTemplate>
+          <Style>{StaticResource OverriddenDefaultStyle}</Style>
+          <Events>
+            <Event Type="GraphData" ActualStartDate="18-May-2001 00:00:00" Y1="96.7" />
+            <Event Type="GraphData" ActualStartDate="16-Jul-2001 00:00:00" Y1="97.3" />
+            <Event Type="GraphData" ActualStartDate="21-Sep-2001 00:00:00" Y1="99" />
+            <Event Type="GraphData" ActualStartDate="25-Feb-2002 00:00:00" Y1="99" />
+            <Event Type="GraphData" ActualStartDate="12-Jan-2004 00:00:00" Y1="101" />
+            <Event Type="GraphData" ActualStartDate="05-Oct-2004 00:00:00" Y1="98.64" />
+            <Event Type="GraphData" ActualStartDate="07-Jul-2005 00:00:00" Y1="101.82" />
+            <Event Type="GraphData" ActualStartDate="05-Dec-2005 00:00:00" Y1="103" />
+            <Event Type="GraphData" ActualStartDate="16-Feb-2006 00:00:00" Y1="98" />
+            <Event Type="GraphData" ActualStartDate="12-Jun-2007 00:00:00" Y1="101.82" />
+            <Event Type="GraphData" ActualStartDate="07-Feb-2008 00:00:00" Y1="101.82" />
+            <Event Type="GraphData" ActualStartDate="10-Feb-2009 00:00:00" Y1="99" />
+          </Events>
+        </Item>
+      </Row>
+    </Section>
+  </Scenario>
+</TimelineSampleData>

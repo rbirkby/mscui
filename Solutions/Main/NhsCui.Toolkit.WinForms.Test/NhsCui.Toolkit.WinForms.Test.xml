@@ -1,0 +1,544 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NhsCui.Toolkit.WinForms.Test</name>
+    </assembly>
+    <members>
+        <member name="T:NhsCui.Toolkit.WinForms.Test.PatientBannerTest">
+            <summary>
+            Unit tests for patient banner control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ImageDisplayedTest">
+            <summary>
+            Test image displayed property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.LastNameTest">
+            <summary>
+            Test LastName property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.FirstNameTest">
+            <summary>
+            Test FirstName property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.TitleTest">
+            <summary>
+            Test Title property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.NameDisplayValueTest">
+            <summary>
+            Test display value property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.PreferredNameTest">
+            <summary>
+            Test Preferred Name
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.PreferredNameLabelTest">
+            <summary>
+            Test preferred name label
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.IdentifierTypeTest">
+             <summary>
+            A test for IdentifierType
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.IdentifierTypeBadParameterTest">
+             <summary>
+             Test that value throws an exception when an invalid identifier type is specified
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ValidNhsNumberFormattedInputStringTest">
+            <summary>
+            TestValidNhsNumberFormattedInputString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ValidNhsNumberUnformattedInputStringTest">
+            <summary>
+            TestValidNhsNumberUnformattedInputString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.DateOfBirthTest">
+            <summary>
+            Test DateOfBirth property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.DateOfDeathTest">
+            <summary>
+            Test DateOfDeath property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.GenderTest">
+            <summary>
+            Test Gender property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.HomePhoneNumberTest">
+            <summary>
+            HomePhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.WorkPhoneNumberTest">
+            <summary>
+            WorkPhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.MobilePhoneNumberTest">
+            <summary>
+            MobilePhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.EmailAddressTest">
+            <summary>
+            EmailAddress property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.Address1Test">
+            <summary>
+            Test for Address1 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.Address2Test">
+            <summary>
+            Test for Address2 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.Address3Test">
+            <summary>
+            Test for Address3 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.TownTest">
+            <summary>
+            Test for Town property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.CountyTest">
+            <summary>
+            Test for County property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.PostCodeTest">
+            <summary>
+            Test for PostCode property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.CountryTest">
+            <summary>
+            Test for Country property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.IdentifierLabelTextTest">
+            <summary>
+            Test IdentifierLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.GenderLabelTextTest">
+            <summary>
+            Test GenderLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.BornLabelTextTest">
+            <summary>
+            Test BornLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ContactDetailsLabelTextTest">
+            <summary>
+            Test ContactDetailsLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.AddressLabelTextTest">
+            <summary>
+            Test AddressLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.HomePhoneLabelTextTest">
+            <summary>
+            Test HomePhoneLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.WorkPhoneLabelTextTest">
+            <summary>
+            Test WorkPhoneLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.MobilePhoneLabelTextTest">
+            <summary>
+            Test MobilePhoneLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.EmailLabelTextTest">
+            <summary>
+            Test EmailLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ZoneOneBackColorTest">
+            <summary>
+            Test for ZoneOneBackColor property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.BorderColorTest">
+            <summary>
+            Test for BorderColor property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ZoneOneDataFontTest">
+            <summary>
+            Test for ZoneOneDataFont property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ZoneOneLabelFontTest">
+            <summary>
+            Test for ZoneOneLabelFont
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ZoneTwoBackColorTest">
+            <summary>
+            Test for ZoneTwoBackColor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ZoneTwoDataFontTest">
+            <summary>
+            Test for ZoneTwoDataFont
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ZoneTwoLabelFontTest">
+            <summary>
+            Test for ZoneTwoLabelFont
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ZoneTwoHoverBorderColorTest">
+            <summary>
+            Test for ZoneTwoHoverBorderColor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ZoneTwoTitleBackColorTest">
+            <summary>
+            Test for ZoneTwoTitleBackColor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ZoneTwoTitleFontTest">
+            <summary>
+            Test for ZoneTwoTitleFont
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ActivePatientBackColorTest">
+            <summary>
+            Test for ActivePatientBackColor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.DeadPatientBackColorTest">
+            <summary>
+            Test for DeadPatientBackColor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.ZoneTwoTooltipTest">
+            <summary>
+            Test for ZoneTwoTooltip property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.GenderLabelTooltipTest">
+            <summary>
+            Gender label tooltip test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.GenderValueTooltipTest">
+            <summary>
+            Gender value tooltip test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.IdentifierLabelTooltipTest">
+            <summary>
+            Identifier label tooltip test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.IdentifierTooltipTest">
+            <summary>
+            Identifier tooltip
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.SubsectionOneWidthTest">
+            <summary>
+            Subsection one width test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.SubsectionTwoWidthTest">
+            <summary>
+            Subsection two width test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.SubsectionThreeWidthTest">
+            <summary>
+            Subsection three width test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.SubsectionFourWidthTest">
+            <summary>
+            Subsection four width test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.SubsectionFiveWidthTest">
+            <summary>
+            Subsection five width test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.PatientBannerTest.AllergyInformationTest">
+            <summary>
+            Allergy information test
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.WinForms.Test.AddressLabelTest">
+            <summary>
+            Unit tests for address label control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.AddressLabelTest.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.AddressLabelTest.Address1Test">
+            <summary>
+            Test for Address1 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.AddressLabelTest.Address2Test">
+            <summary>
+            Test for Address2 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.AddressLabelTest.Address3Test">
+            <summary>
+            Test for Address3 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.AddressLabelTest.TownTest">
+            <summary>
+            Test for Town property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.AddressLabelTest.CountyTest">
+            <summary>
+            Test for County property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.AddressLabelTest.PostcodeTest">
+            <summary>
+            Test for PostCode property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.AddressLabelTest.CountryTest">
+            <summary>
+            Test for Country property
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.WinForms.Test.ContactLabelTest">
+            <summary>
+            Unit tests for contact label control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.ContactLabelTest.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.ContactLabelTest.HomePhoneNumberTest">
+            <summary>
+            HomePhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.ContactLabelTest.WorkPhoneNumberTest">
+            <summary>
+            WorkPhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.ContactLabelTest.MobilePhoneNumberTest">
+            <summary>
+            MobilePhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.ContactLabelTest.EmailAddressTest">
+            <summary>
+            EmailAddress property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.ContactLabelTest.HomePhoneLabelTextTest">
+            <summary>
+            HomePhoneLabelText property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.ContactLabelTest.WorkPhoneLabelTextTest">
+            <summary>
+            WorkPhoneLabelText property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.ContactLabelTest.MobilePhoneLabelTextTest">
+            <summary>
+            MobilePhoneLabelText property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.ContactLabelTest.EmailLabelTextTest">
+            <summary>
+            EmailLabelText property test
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.WinForms.Test.IdentifierLabelTest">
+            <summary>
+            IdentifierLabelTest class
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.IdentifierLabelTest.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.IdentifierLabelTest.IdentifierTypeTest">
+             <summary>
+            A test for IdentifierType
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.IdentifierLabelTest.ValidNhsNumberFormattedInputStringTest">
+            <summary>
+            TestValidNhsNumberFormattedInputString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.IdentifierLabelTest.ValidNhsNumberUnformattedInputStringTest">
+            <summary>
+            TestValidNhsNumberUnformattedInputString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.IdentifierLabelTest.ValueTest">
+             <summary>
+            A test for Value
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.WinForms.Test.NameLabelTest">
+            <summary>
+            Unit tests for name label
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.NameLabelTest.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.NameLabelTest.FamilyNameTest">
+            <summary>
+            Test FamilyName property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.NameLabelTest.FamilyNameLengthTest">
+            <summary>
+            Test FamilyName length
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.NameLabelTest.GivenNameTest">
+            <summary>
+            Test GivenName property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.NameLabelTest.GivenNameLengthTest">
+            <summary>
+            Test GivenName length
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.NameLabelTest.TitleTest">
+            <summary>
+            Test Title property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.NameLabelTest.TitleLengthTest">
+            <summary>
+            Test Title length
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.NameLabelTest.DisplayValueTest">
+            <summary>
+            Test display value property
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.WinForms.Test.GenderLabelTest">
+             <summary>
+            This is a test class for NhsCui.Toolkit.WinForms.GenderLabel and is intended
+            to contain all NhsCui.Toolkit.WinForms.GenderLabel Unit Tests
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.GenderLabelTest.ValueTest">
+             <summary>
+            A test for Value
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.WinForms.Test.TimeLabelTest">
+            <summary>
+            Unit tests for TimeLabel control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.TimeLabelTest.#ctor">
+            <summary>
+            Default ctor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.TimeLabelTest.TimeValueProperty">
+            <summary>
+            Test assignment to the TimeValue property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.TimeLabelTest.TimeTypeProperty">
+            <summary>
+            Test assignment to the TimeType property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.TimeLabelTest.ValueProperty">
+            <summary>
+            Test assignment to the TimePeriod property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.TimeLabelTest.DisplaySecondsProperty">
+            <summary>
+            Test assignment to the DisplaySeconds property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.TimeLabelTest.Display12HourProperty">
+            <summary>
+            Test assignment to the Display12Hour property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.TimeLabelTest.DisplayAMPMProperty">
+            <summary>
+            Test assignment to the DisplayAMPM property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.TimeLabelTest.NullIndexProperty">
+            <summary>
+            Test assignment to the NullIndex property
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.WinForms.Test.TimeSpanLabelTest">
+            <summary>
+            Unit tests for timespan label control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.TimeSpanLabelTest.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.WinForms.Test.TimeSpanLabelTest.UnitLengthTest">
+            <summary>
+            Test UnitLength property
+            </summary>
+        </member>
+    </members>
+</doc>

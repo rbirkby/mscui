@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <!-- This is an example config file for a test assembly
+       The settings in this file can be modified depending upon which environment the test is being run under.
+       
+       The App.config file contains the default settings that will work in a dev workstation environment
+       The templated version of this file is called Sdc.Sample2005.Test.MsTest.config.template
+        it contains token values that will be replaced appropriately when tests are run in 
+        other environments. The file build/test.properties defines how these substitutions occur.
+  -->
+  <appSettings>
+    <add key="WebServicePublicUrl" value="http://localhost/Public/Public.asmx"/>
+  </appSettings>
+</configuration>

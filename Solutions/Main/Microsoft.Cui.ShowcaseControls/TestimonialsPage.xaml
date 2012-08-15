@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="Microsoft.Cui.ShowcaseControls.TestimonialsPage"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:showcasecontrol="clr-namespace:Microsoft.Cui.ShowcaseControls;assembly=Microsoft.Cui.ShowcaseControls"
+    xmlns:extended="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    >
+    <StackPanel x:Name="pnlRoot" HorizontalAlignment="Left">
+        
+        <Rectangle x:Name="filler01" Height="2" Fill="#CCCCCCCC"></Rectangle>        
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="testimonials01" 
+            MediaText="Dr Mark Ferrar from NHS Connecting for Health discusses the creation of the NHS CUI Programme and explains why the UK National Health Service (NHS) is working with Microsoft.|John Coulthard, Director of Microsoft UK Healthcare, talks about Microsoft's commitment to healthcare, and Andrew Kirby, Director of the NHS CUI Programme, provides further information about the Programme's objectives.|Click the thumbnail to start." 
+            TextTitle="The NHS Common User Interface Programme" 
+            VideoImage="TestimonialImageNHSCUI.png" 
+            ImageToolTip="Play video of The NHS Common User Interface Programme"
+            CloseControlEventHandler="CloseAllMedia"
+         />
+
+        <Rectangle x:Name="filler02" Height="2" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="testimonials02" 
+            MediaText="Adam Towler (CEO) talks about Bluewire Technologies’ involvement with Microsoft Health CUI, explaining the benefits of a common standard to the healthcare industry, Bluewire’s input into Microsoft Health CUI and their use of the Design Guidelines within their products. |Click the thumbnail to start." 
+            TextTitle="Bluewire Technologies" 
+            VideoImage="TestimonialsImageBlueWire.png" 
+            ImageToolTip="Play video of Bluewire Technologies"
+            CloseControlEventHandler="CloseAllMedia"
+         />
+        
+        <Rectangle x:Name="filler03" Height="2" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="testimonials03" 
+            MediaText="One of our partners, Dr Shaun O’Hanlon, explains how working with the NHS CUI Programme benefits EMIS.|Click the thumbnail to start." 
+            TextTitle="EMIS" 
+            VideoImage="TestimonialsImageEMIS.png" 
+            ImageToolTip="Play video of EMIS"
+            CloseControlEventHandler="CloseAllMedia"
+            />
+        
+        <Rectangle x:Name="filler04" Height="2" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="testimonials04" 
+            MediaText="Stephen Hawkins (Senior Consultant) and Joel Hammond-Turner (Technical Architect) talk about In4tek’s (now known as Civica) integrated health and social care product Paris4Care and their involvement with Microsoft Health CUI. They discuss the different challenges that face the Integrated Health and Social Care industry over the Healthcare industry and how they have accommodated the Microsoft Health CUI guidance into their products, specifically the PatientBanner and PatientSearchInputBox controls and associated Design Guidance. |Click the thumbnail to start." 
+            TextTitle="In4tek (now known as Civica)" 
+            VideoImage="TestimonialsImageIn4tek.png" 
+            ImageToolTip="Play video of Civica"
+            CloseControlEventHandler="CloseAllMedia"
+         />
+        
+        <Rectangle x:Name="filler05" Height="2" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="testimonials05" 
+            MediaText="Susan Webber (Lead User Experience Architect) talks about the Map of Medicine and the use of the Microsoft Health CUI PatientBanner control within their products, and their input to, and use of, the Design Guidelines around medications. |Click the thumbnail to start." 
+            TextTitle="Map of Medicine" 
+            VideoImage="TestimonialsImageMapOfMedicine.png" 
+            ImageToolTip="Play video of Map of Medicine"
+            CloseControlEventHandler="CloseAllMedia"
+         />
+        
+        <Rectangle x:Name="filler06" Height="2" Fill="#CCCCCCCC"></Rectangle>
+        <showcasecontrol:ShowcaseMediaControl
+            x:Name="testimonials06" 
+            MediaText="Roger Killen (Managing Director) and Peter Greengross (Medical Director) talk about The Learning Clinic’s involvement with Microsoft Health CUI, explaining scenarios that clinicians are faced with in hospitals and how hand-held or mobile IT devices can help to improve patient safety and efficiency. They describe how The Learning Clinic has incorporated the Microsoft Health CUI Design Guidance and controls into their products, especially Patient Banner, and how they are looking to incorporate the guidance on medications. |Click the thumbnail to start." 
+            TextTitle="The Learning Clinic" 
+            VideoImage="TestimonialsImageTheLearningClinic.png" 
+            ImageToolTip="Play video of The Learning Clinic"
+            CloseControlEventHandler="CloseAllMedia"
+         />
+        
+        <MediaElement x:Name="media" Stretch="Uniform" Visibility="Collapsed"/>
+        <Rectangle x:Name="rectVideoBrush" Stretch="Uniform" Visibility="Collapsed">
+            <Rectangle.Fill>
+                <VideoBrush x:Name="mediaBrush" SourceName="media" Stretch="Uniform"/>
+            </Rectangle.Fill>
+        </Rectangle>
+    </StackPanel>
+
+</UserControl>

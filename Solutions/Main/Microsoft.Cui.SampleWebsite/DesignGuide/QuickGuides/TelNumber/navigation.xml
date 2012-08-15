@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Telephone Number Input and Display</title>
+  <back href="TelephoneNoDisplay.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Telephone Number Input and Display.pdf" altText="Links to Design Guidance - Telephone Number Input and Display documentation">Design Guidance - Telephone Number Input and Display (PDF Format)</download>
+  <navigation collapseInactiveItems="false">
+    <header text="Overview" tooltip="Telephone Number Input and Display - Overview" href="QuickGuides/TelNumber/default.aspx" />
+    <header text="Display" tooltip="Telephone Number Input and Display - Display" href="QuickGuides/TelNumber/display.aspx">
+      <subheader text="Country Code" tooltip="Telephone Number Input and Display - Display - Country Code" href="QuickGuides/TelNumber/Display/countrycode.aspx" />
+      <subheader text="Area Code" tooltip="Telephone Number Input and Display - Display - Area Code" href="QuickGuides/TelNumber/Display/areacode.aspx" />
+      <subheader text="Extension Number" tooltip="Telephone Number Input and Display - Display - Extension Number" href="QuickGuides/TelNumber/Display/extension.aspx" />
+      <subheader text="Formatting" tooltip="Telephone Number Input and Display - Display - Formatting" href="QuickGuides/TelNumber/Display/formatting.aspx" />
+    </header>
+    <header text="Input" tooltip="Telephone Number Input and Display - Input" href="QuickGuides/TelNumber/input.aspx">
+      <subheader text="Prompts" tooltip="Telephone Number Input and Display - Input - Prompts" href="QuickGuides/TelNumber/Input/prompts.aspx" />
+      <subheader text="Tooltips" tooltip="Telephone Number Input and Display - Input - Tooltips" href="QuickGuides/TelNumber/Input/tooltips.aspx" />
+      <subheader text="Input Boxes" tooltip="Telephone Number Input and Display - Input - Input Boxes" href="QuickGuides/TelNumber/Input/inputboxes.aspx" />
+      <subheader text="Entry Format" tooltip="Telephone Number Input and Display - Input - Entry Format" href="QuickGuides/TelNumber/Input/entryformat.aspx" />
+      <subheader text="Input Validation" tooltip="Telephone Number Input and Display - Input - Input Validation" href="QuickGuides/TelNumber/Input/validation.aspx" />
+      <subheader text="Redisplay Formats" tooltip="Telephone Number Input and Display - Input - Redisplay Formats" href="QuickGuides/TelNumber/Input/redisplay.aspx" />
+      </header>
+    <header text="Checklist" tooltip="Telephone Number Input and Display - Checklist" href="QuickGuides/TelNumber/checklist.aspx" />    
+  </navigation>
+</quickguide>

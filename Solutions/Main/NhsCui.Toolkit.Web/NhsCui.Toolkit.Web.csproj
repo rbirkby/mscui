@@ -1,0 +1,695 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E107459-2A67-4848-819C-2C7995D570BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NhsCui.Toolkit.Web</RootNamespace>
+    <AssemblyName>NhsCui.Toolkit.Web</AssemblyName>
+    
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\Nhs.Cui.Public.snk</AssemblyOriginatorKeyFile>
+                    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591, 618</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>NhsCui.Toolkit.Web.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591, 618</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>NhsCui.Toolkit.Web.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.11119.20658, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ReferencedAssemblies\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXssLibrary, Version=1.5.0.0, Culture=neutral, PublicKeyToken=5906d2bb3d8a12c4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ReferencedAssemblies\AntiXss\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\VersionNumber.cs">
+      <Link>Properties\VersionNumber.cs</Link>
+    </Compile>
+    <Compile Include="..\NhsCui.Toolkit\DateAndTime\Resources\NhsTimeSpanResources.Designer.cs">
+      <Link>Common\NhsTimeSpanResources.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\NhsCui.Toolkit\NhsNumberExceptionResources.Designer.cs">
+      <Link>IdentifierInputBoxControl\NhsNumberExceptionResources.Designer.cs</Link>
+    </Compile>
+    <Compile Include="AddressInputBoxControl\AddressInputBox.cs" />
+    <Compile Include="AddressInputBoxControl\AddressLine.cs" />
+    <Compile Include="AddressLabelControl\AddressLabel.cs" />
+    <Compile Include="AddressLabelControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonNhsCuiToolkitScripts.cs" />
+    <Compile Include="Common\NhsDateJavascriptConverter.cs" />
+    <Compile Include="Common\NhsDateScripts.cs" />
+    <Compile Include="Common\NhsTimeJavascriptConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\NhsTimeScripts.cs" />
+    <Compile Include="Common\NhsTimeSpanJavascriptConverter.cs" />
+    <Compile Include="Common\NhsTimeSpanScripts.cs" />
+    <Compile Include="Common\StringUtil.cs" />
+    <Compile Include="ContactLabelControl\ContactLabel.cs" />
+    <Compile Include="ContactLabelControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DateInputBoxControl\DateInputBox.cs" />
+    <Compile Include="DateInputBoxControl\DateInputBoxDesigner.cs" />
+    <Compile Include="DateInputBoxControl\DateInputBoxValidator.cs" />
+    <Compile Include="DateInputBoxControl\DateInputBoxValidatorResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DateInputBoxValidatorResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DateInputBoxControl\DateInputClientState.cs" />
+    <Compile Include="DateInputBoxControl\DateInputBoxExtender.cs" />
+    <Compile Include="DateInputBoxControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DateLabelControl\DateLabelDesigner.cs" />
+    <Compile Include="EmailInputBoxControl\EmailInputBox.cs" />
+    <Compile Include="EmailInputBoxControl\EmailInputBoxClientState.cs" />
+    <Compile Include="EmailInputBoxControl\EmailInputBoxExtender.cs" />
+    <Compile Include="EmailInputBoxControl\EmailInputBoxValidator.cs" />
+    <Compile Include="EmailInputBoxControl\EmailInputBoxValidatorResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailInputBoxValidatorResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FocusToolTip\FocusToolTipDesigner.cs" />
+    <Compile Include="FocusToolTip\FocusToolTipExtender.cs" />
+    <Compile Include="GenderInputBoxControl\GenderInputBox.cs" />
+    <Compile Include="GenderInputBoxControl\GenderInputBoxClientState.cs" />
+    <Compile Include="GenderInputBoxControl\GenderInputBoxDesigner.cs" />
+    <Compile Include="GenderInputBoxControl\GenderInputBoxExtender.cs" />
+    <EmbeddedResource Include="IdentifierInputBoxControl\IdentifierInputBoxValidator.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <Compile Include="IdentifierInputBoxControl\IdentifierInputBox.cs" />
+    <Compile Include="IdentifierInputBoxControl\IdentifierInputBoxClientState.cs" />
+    <Compile Include="IdentifierInputBoxControl\IdentifierInputBoxExtender.cs" />
+    <Compile Include="IdentifierInputBoxControl\IdentifierInputBoxValidator.cs" />
+    <Compile Include="IdentifierInputBoxControl\IdentifierInputBoxValidatorResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IdentifierInputBoxValidatorResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IdentifierInputBoxControl\NhsNumberScripts.cs" />
+    <Compile Include="IdentifierLabelControl\IdentifierLabel.cs" />
+    <Compile Include="MedicationGridControl\MedicationGridColumn.cs" />
+    <Compile Include="MedicationGridControl\MedicationListViewMode.cs" />
+    <Compile Include="MedicationLineControl\MedicationEventArg.cs" />
+    <Compile Include="MedicationGridControl\MedicationGrid.cs" />
+    <Compile Include="MedicationGridControl\MedicationGridExtender.cs" />
+    <Compile Include="MedicationGridControl\MedicationGridFooter.cs" />
+    <Compile Include="MedicationGridControl\MedicationGridHeader.cs" />
+    <Compile Include="MedicationGridControl\MedicationListView.cs" />
+    <Compile Include="MedicationGridControl\MedicationsListViewExtender.cs" />
+    <Compile Include="MedicationGridControl\MedicationsViewListIds.cs" />
+    <Compile Include="MedicationGridControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicationLineControl\Medication.cs" />
+    <Compile Include="MedicationLineControl\MedicationLine.cs" />
+    <Compile Include="MedicationLineControl\MedicationLineExtender.cs" />
+    <Compile Include="MedicationLineControl\MedicationStatus.cs" />
+    <Compile Include="MedicationLineControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicationNameLabelControl\MedicationName.cs" />
+    <Compile Include="MedicationNameLabelControl\MedicationNameCollection.cs" />
+    <Compile Include="MedicationNameLabelControl\MedicationNameLabel.cs" />
+    <Compile Include="MedicationNameLabelControl\MedicationNameLabelExtender.cs" />
+    <Compile Include="MedicationNameLabelControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\NullStringUtil.cs" />
+    <Compile Include="MonthCalendarControl\MonthCalendarExtender.cs" />
+    <Compile Include="MonthCalendarControl\MonthCalendarClientState.cs" />
+    <Compile Include="MonthCalendarControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="NameInputBoxControl\NameInputBox.cs" />
+    <Compile Include="NameInputBoxControl\NameInputBoxClientState.cs" />
+    <Compile Include="NameInputBoxControl\NameInputBoxExtender.cs" />
+    <Compile Include="NameInputBoxControl\NameLine.cs" />
+    <Compile Include="NameInputBoxControl\TitleAutoCompleteExtender.cs" />
+    <Compile Include="NameLabelControl\NameLabel.cs" />
+    <Compile Include="PatientBannerControl\Allergy.cs" />
+    <Compile Include="PatientBannerControl\AllergyCollection.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerCssClasses.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerDesigner.cs" />
+    <Compile Include="PatientSearchInputBoxControl\PatientSearchInputBox.cs" />
+    <Compile Include="PatientSearchInputBoxControl\PatientSearchInputBoxExtender.cs" />
+    <Compile Include="PatientSearchInputBoxControl\PatientSearchInputClientState.cs" />
+    <Compile Include="PatientSearchInputBoxControl\PatientSearchScripts.cs" />
+    <Compile Include="PatientSearchInputBoxControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Picker\PickerDataType.cs" />
+    <Compile Include="Picker\PickerDesigner.cs" />
+    <Compile Include="Picker\PickerExtender.cs" />
+    <Compile Include="DateLabelControl\DateLabel.cs" />
+    <Compile Include="DateLabelControl\NhsDateLabelExceptionMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NhsDateLabelExceptionMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\PatientSearchInputMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientSearchInputMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TelephoneInputBoxControl\TelephoneInputBox.cs" />
+    <Compile Include="TelephoneInputBoxControl\TelephoneInputBoxClientState.cs" />
+    <Compile Include="TelephoneInputBoxControl\TelephoneInputBoxExtender.cs" />
+    <Compile Include="TimeInputBoxControl\TimeInputBoxDesigner.cs" />
+    <Compile Include="TimeInputBoxControl\TimeInputBoxExtender.cs" />
+    <Compile Include="TimeInputBoxControl\TimeInputBoxValidator.cs" />
+    <Compile Include="TimeInputBoxControl\TimeInputBoxValidatorResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeInputBoxValidatorResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeInputBoxControl\TimeInputClientState.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerZoneTwoContainer.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerContainerBase.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerControlIds.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerZoneTwoTemplate.cs" />
+    <Compile Include="PatientBannerControl\PatientBanner.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerZoneOneContainer.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerZoneOneTemplate.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerTemplateBase.cs" />
+    <Compile Include="PatientBannerControl\PatientBannerWebResources.cs" />
+    <Compile Include="PatientBannerControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GenderLabelControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GenderLabelControl\GenderLabel.cs" />
+    <Compile Include="TimeInputBoxControl\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="TimeLabelControl\TimeLabel.cs" />
+    <Compile Include="TimeLabelControl\TimeLabelDesigner.cs" />
+    <Compile Include="TimeSpanInputBoxControl\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSpanInputBoxControl\TimeSpanInputBox.cs" />
+    <Compile Include="TimeSpanInputBoxControl\TimeSpanInputBoxDesigner.cs" />
+    <Compile Include="TimeSpanInputBoxControl\TimeSpanInputBoxExtender.cs" />
+    <Compile Include="TimeSpanInputBoxControl\TimeSpanInputBoxValidator.cs" />
+    <Compile Include="TimeSpanInputBoxControl\TimeSpanInputBoxValidatorResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeSpanInputBoxValidatorResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSpanInputBoxControl\TimeSpanInputClientState.cs" />
+    <Compile Include="TimeSpanLabelControl\TimeSpanLabel.cs" />
+    <Compile Include="TimeInputBoxControl\TimeInputBox.cs" />
+    <Compile Include="TimeSpanLabelControl\TimeSpanLabelDesigner.cs" />
+    <Compile Include="Validators\Validation.cs" />
+    <Compile Include="ZIndexFix\ZIndexFixDesigner.cs" />
+    <Compile Include="ZIndexFix\ZIndexFixExtender.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NhsCui.Toolkit\NhsCui.Toolkit.csproj">
+      <Project>{036050FC-D947-460A-BBA8-F072F6280E63}</Project>
+      <Name>NhsCui.Toolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddressLabelControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactLabelControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientBannerControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenderLabelControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DateLabelControl\NhsDateLabelExceptionMessages.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NhsDateLabelExceptionMessages.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PatientBannerControl\PatientBanner.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TimeInputBoxControl\TimeInputBox.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PatientBannerControl\DefaultPatient.gif">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PatientBannerControl\DefaultCollapse.gif">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientBannerControl\DefaultExpand.gif">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ZIndexFix\ZIndexFixBehavior.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FocusToolTip\FocusToolTipBehavior.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DateInputBoxControl\arrow-left.gif">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateInputBoxControl\arrow-right.gif">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateInputBoxControl\Calendar.css">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateInputBoxControl\DateInputBox.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\NhsDate.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\NhsTime.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicationNameLabelControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MedicationNameLabelControl\MedicationNameLabelBehavior.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Picker\PickerBehavior.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\GlobalizationService.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\Common.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PatientSearchInputMessages.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PatientSearchInputMessages.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PatientSearchInputBoxControl\Parser.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSearchInputBoxControl\PatientSearchInputBox.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateInputBoxControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSearchInputBoxControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\NhsCui.Toolkit\DateAndTime\Resources\NhsDateResources.resx">
+      <Link>Common\NhsDateResources.resx</Link>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\NhsCui.Toolkit\DateAndTime\Resources\NhsTimeResources.resx">
+      <Link>Common\NhsTimeResources.resx</Link>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\NhsCui.Toolkit\PatientSearch\Resources\CommonFamilyNamesResources.resx">
+      <Link>PatientSearchInputBoxControl\CommonFamilyNamesResources.resx</Link>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\NhsCui.Toolkit\PatientSearch\Resources\CommonThoroughfaresResources.resx">
+      <Link>PatientSearchInputBoxControl\CommonThoroughfaresResources.resx</Link>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\NhsCui.Toolkit\PatientSearch\Resources\ParserResources.resx">
+      <Link>PatientSearchInputBoxControl\ParserResources.resx</Link>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\NhsCui.Toolkit\PatientSearch\Resources\TitlesResources.resx">
+      <Link>PatientSearchInputBoxControl\TitlesResources.resx</Link>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicationLineControl\MedicationLineBehavior.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicationLineControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PatientSearchInputBoxControl\CommonFamilyNames.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSearchInputBoxControl\CommonThoroughfares.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSearchInputBoxControl\TitlesResources.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MedicationGridControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientBannerControl\PatientBanner.css">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientBannerControl\Zone2TitleBackground.png">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MedicationGridControl\MedicationGridBehavior.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicationGridControl\MedicationListView.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DateInputBoxControl\calendar.png">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeInputBoxControl\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\NhsCui.Toolkit\DateAndTime\Resources\NhsTimeSpanResources.resx">
+      <Link>Common\NhsTimeSpanResources.resx</Link>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSpanInputBoxControl\TimeSpanInputBox.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\NhsTimeSpan.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DateInputBoxControl\DateInputBoxValidator.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateInputBoxControl\DateInputBoxValidatorResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DateInputBoxValidatorResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeInputBoxControl\TimeInputBoxValidatorResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimeInputBoxValidatorResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TimeInputBoxControl\TimeInputBoxValidator.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSpanInputBoxControl\TimeSpanInputBoxValidatorResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimeSpanInputBoxValidatorResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TimeSpanInputBoxControl\TimeSpanInputBoxValidator.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmailInputBoxControl\EmailInputBoxValidatorResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmailInputBoxValidatorResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressInputBoxControl\AddressInputBox.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientBannerControl\AllergiesNotPresentIcon.gif">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientBannerControl\AllergiesPresentIcon.gif">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientBannerControl\AllergiesUnavailable.gif">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailInputBoxControl\EmailInputBox.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenderInputBoxControl\GenderInputBox.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentifierInputBoxControl\IdentifierInputBox.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameInputBoxControl\NameInputBox.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelephoneInputBoxControl\TelephoneInputBox.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmailInputBoxControl\EmailInputBoxValidator.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\NhsCui.Toolkit\NhsNumberExceptionResources.resx">
+      <Link>IdentifierInputBoxControl\NhsNumberExceptionResources.resx</Link>
+      <SubType>Designer</SubType>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentifierInputBoxControl\IdentifierInputBoxValidatorResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IdentifierInputBoxValidatorResources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentifierInputBoxControl\NhsNumber.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Validators\NhsCuiValidation.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NameInputBoxControl\TitleAutoComplete.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PatientBannerControl\Zone1DeadBackground.gif">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MonthCalendarControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientBannerControl\DeceasedPatientTransparentIcon.gif">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MonthCalendarControl\MonthCalendar.js">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MonthCalendarControl\MonthCalendar.css">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PatientBannerControl\Zone1DeadBackground.bmp">
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSpanInputBoxControl\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

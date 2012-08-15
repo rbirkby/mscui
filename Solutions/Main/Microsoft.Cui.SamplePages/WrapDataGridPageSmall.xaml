@@ -1,0 +1,433 @@
+﻿<UserControl x:Class="Microsoft.Cui.SamplePages.WrapDataGridPageSmall"
+            xmlns="http://schemas.microsoft.com/client/2007" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+            xmlns:ctl="clr-namespace:Microsoft.Cui.Controls;assembly=Microsoft.Cui.Controls"             
+            xmlns:isv="clr-namespace:Microsoft.Cui.IsvData;assembly=Microsoft.Cui.IsvDataProvider"
+            xmlns:data="clr-namespace:Microsoft.Cui.Data;assembly=Microsoft.Cui.Data"            
+            xmlns:prms="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows"
+            xmlns:extended="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+            Width="750"
+            Height="490"
+            Loaded="UserControl_Loaded"              
+            xmlns:core="clr-namespace:System;assembly=mscorlib"
+             KeyDown="UserControl_KeyDown"
+             KeyUp="UserControl_KeyUp"
+            >
+    <UserControl.Resources>
+
+        <Style TargetType="TextBlock" x:Key="ToolBar_TextBlock">
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="FontFamily" Value="Arial" />
+        </Style>
+
+        <Style TargetType="ListBoxItem" x:Key="ToolBar_ListBoxItem">
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="FontFamily" Value="Arial" />
+        </Style>
+
+        <Style TargetType="ComboBoxItem" x:Key="ToolBar_ComboBoxItem">
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="FontFamily" Value="Arial" />
+        </Style>
+        
+        <core:Double x:Key="StandardFontSize">13</core:Double>
+        <core:String x:Key="StandardFontFamily">Arial</core:String>
+        <ctl:DictionaryToStringConverter x:Key="DictionaryToStringConverter" />
+        <isv:IsvDataProvider x:Name="IsvDataProvider" FilterCondition="Current" SortColumn="StartDate" SortDirection="Descending" ColumnDataType="DateTime"/>
+        <data:RuleStrategy x:Name="RuleStrategy" LevelName="Level2" />
+        <data:RuleManager x:Name="RuleManager" Strategy="{StaticResource RuleStrategy}" />
+        <data:DataManager x:Name="DataManager"
+                              IsvDataProvider="{StaticResource IsvDataProvider}"
+                              RuleManager="{StaticResource RuleManager}"
+                              >
+        </data:DataManager>
+
+        <Style TargetType="Border" x:Key="ControlsStackPanelStyle">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStopCollection>
+                            <GradientStop Color="AliceBlue" Offset="0"/>
+                            <GradientStop Color="LightBlue" Offset="1"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        
+        <DataTemplate x:Key="NotificationTemplate">
+            <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3"/>
+                    <RowDefinition />
+                    <RowDefinition x:Name="SpacerToEndOfNotificationBorder" Height="3"/>
+                    <RowDefinition x:Name="SpacerAboveScrollBar" Height="3"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <Border Margin="0,-1,-19,-8" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" BorderThickness="1" CornerRadius="5" BorderBrush="LightGray" Background="LightYellow" VerticalAlignment="Center">
+                    <TextBlock FontSize="13.333" Height="25" FontFamily="Arial" x:Name="NotificationText" Text="NotificationText" Margin="4,7,0,0" VerticalAlignment="Center" />
+                </Border>
+                <Button x:Name="RemoveNotification" Height="25" Content="Remove Filter" Click="RemoveNotification_Click" Grid.Row="1" Grid.Column="1" Margin="0,10,0,0" VerticalAlignment="Center"/>
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1" x:Name="Row0"></RowDefinition>
+            <RowDefinition Height="Auto" x:Name="Row1"></RowDefinition>
+            <RowDefinition Height="*" x:Name="Row2"></RowDefinition>
+            <RowDefinition Height="1" x:Name="Row3"></RowDefinition>
+            <RowDefinition Height="1" x:Name="Row4"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="Column0" Width="1"></ColumnDefinition>
+            <ColumnDefinition x:Name="Column1" Width="*" MinWidth="550"></ColumnDefinition>
+            <ColumnDefinition x:Name="Column2" Width="1"></ColumnDefinition>
+            <ColumnDefinition Width="1" x:Name="Column3"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.Resources>
+            <DataTemplate x:Name="groupingTemplateLogicMedicationStatus">
+                <ctl:DataBoundRowGrouping  GroupingKey="MedicationStatus" NullGroupingText="No Medication Status"/>
+            </DataTemplate>
+            <DataTemplate x:Name="groupingTemplateLogicMedicationType">
+                <ctl:DataBoundRowGrouping GroupingKey="MedicationType" NullGroupingText="No Medication Type" />
+            </DataTemplate>
+            <DataTemplate x:Name="groupingTemplateLogicReason">
+                <ctl:DataBoundRowGrouping GroupingKey="Reason" NullGroupingText="No Reason" />
+            </DataTemplate>
+            <DataTemplate x:Name="groupingTemplateLogicPrescriber">
+                <ctl:DataBoundRowGrouping GroupingKey="Prescriber" NullGroupingText="No Prescriber"/>
+            </DataTemplate>
+            <DataTemplate x:Name="groupingTemplatePresentation">
+                <Grid Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="ExpandCollapse" Click="ExpandCollapse_Click" Margin="10,15,0,10"
+                            Grid.Column="0" Grid.Row="0" Height="15" Width="15" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" VerticalContentAlignment="Center">
+                        <Button.Content>
+                            <TextBlock Name="ExpandCollapseText" Text="-" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                        </Button.Content>
+                    </Button>
+
+                    <TextBlock FontSize="14.666" FontFamily="Arial" x:Name="GroupTitle" FontWeight="Bold" Margin="10,15,0,5"
+                               Grid.Column="1" Grid.Row="0" VerticalAlignment="Bottom" />
+
+                    <Border BorderThickness="2" BorderBrush="DarkBlue" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Height="2" />
+
+                </Grid>
+            </DataTemplate>
+            <DataTemplate x:Key="AscendingIndicator">
+                <Path Margin="0,0,7,0" x:Name="arrow" Grid.Row="0" Grid.Column="1"
+               StrokeThickness = "1"
+               Fill            = "gray"
+               Data            = "M 5,10 L 15,10 L 10,5 L 5,10"/>
+            </DataTemplate>
+            <DataTemplate x:Key="DescendingIndicator">
+                <Path Margin="0,0,7,0" x:Name="arrow" Grid.Row="0" Grid.Column="1"
+              StrokeThickness = "1"
+              Fill            = "gray"
+              Data            = "M 5,5 L 10,10 L 15,5 L 5,5"/>
+            </DataTemplate>
+            <DataTemplate x:Key="ColumnResizerTemplate">
+                <extended:GridSplitter Canvas.ZIndex="5" HorizontalAlignment="Right" Height="20" IsTabStop="False">
+                    <extended:GridSplitter.Template>
+                        <ControlTemplate>
+                            <Grid Width="10">
+                                <Rectangle Height="Auto" Width="8" HorizontalAlignment="Left"  Fill="LightGray" Opacity=".01"></Rectangle>
+                                <Rectangle Height="Auto" Width="2" HorizontalAlignment="Right" Fill="Gray"></Rectangle>
+                            </Grid>
+                        </ControlTemplate>
+                    </extended:GridSplitter.Template>
+                </extended:GridSplitter>
+            </DataTemplate>            
+            <DataTemplate x:Key="LookAheadCellTemplate">
+                <StackPanel Orientation="Horizontal" Margin="-2,0,0,0" Cursor="Hand">
+                    <StackPanel.Background>
+
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+
+                            <GradientStop Color="#FFD7DDE3" Offset="0.107"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.964"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.604"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.582"/>
+                            <GradientStop Color="#FF000000" Offset="0.022"/>
+                            <GradientStop Color="#FF000000" Offset="0.036"/>
+                            <GradientStop Color="#FFFCFDFD" Offset="0.018"/>
+
+                        </LinearGradientBrush>
+
+
+                    </StackPanel.Background>
+                    <Ellipse Margin="3,3,8,0" Fill="Black" Height="5" Width="5" StrokeThickness="1" Stroke="Black"></Ellipse>
+                    <TextBlock FontSize="13.333" FontFamily="Arial" Margin="0,3,8,0" Grid.Column="0" Grid.Row="0" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DrugName'}" />
+                </StackPanel>
+            </DataTemplate>
+
+            <DataTemplate x:Key="LookBehindCellTemplate">
+                <StackPanel Orientation="Horizontal" Margin="-2,0,0,0" Cursor="Hand">
+                    <StackPanel.Background>
+
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFD7DDE3" Offset="0"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.884"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.604"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.582"/>
+                            <GradientStop Color="#FF000000" Offset="0.942"/>
+                            <GradientStop Color="#FFF6FAFB" Offset="1"/>
+                            <GradientStop Color="#FFF2F6F7" Offset="0.969"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                    <Ellipse Margin="3,0,8,0" Fill="Black" Height="5" Width="5" StrokeThickness="1" Stroke="Black"></Ellipse>
+                    <TextBlock FontSize="13.333" FontFamily="Arial" Margin="0,0,8,0" Grid.Column="0" Grid.Row="0" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='DrugName'}" />
+                </StackPanel>
+            </DataTemplate>
+
+            <DataTemplate x:Key="LookAheadSummaryCellTemplate">
+                <Grid Height="Auto" Width="Auto">
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+
+                            <GradientStop Color="#FFD7DDE3" Offset="0.107"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.964"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.604"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.582"/>
+                            <GradientStop Color="#FF000000" Offset="0.022"/>
+                            <GradientStop Color="#FF000000" Offset="0.036"/>
+                            <GradientStop Color="#FFFCFDFD" Offset="0.018"/>
+
+                        </LinearGradientBrush>
+
+                    </Grid.Background>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="55"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontSize="13.333" FontFamily="Arial" Margin="0,3,5,0" Cursor="Hand" Text=" more " Grid.Column="1" Grid.Row="0"></TextBlock>
+                    <TextBlock FontSize="13.333" FontFamily="Arial" HorizontalAlignment="Right" Cursor="Hand" Margin="5,3,0,0" Grid.Column="0" Grid.Row="0" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='RowsBelow'}"/>
+                </Grid>
+            </DataTemplate>          
+
+            <DataTemplate x:Key="LookBehindSummaryCellTemplate">
+                <Grid ShowGridLines="False" Height="Auto" Width="Auto">
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+
+                            <GradientStop Color="#FFD7DDE3" Offset="0"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.884"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.604"/>
+                            <GradientStop Color="#FFD7DDE3" Offset="0.582"/>
+                            <GradientStop Color="#FF000000" Offset="0.942"/>
+                            <GradientStop Color="#FFF6FAFB" Offset="1"/>
+                            <GradientStop Color="#FFF2F6F7" Offset="0.969"/>
+
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="55"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontSize="13.333" FontFamily="Arial" Cursor="Hand" Margin="0,0,5,0" Text=" more " Grid.Column="1" Grid.Row="0"></TextBlock>
+                    <TextBlock FontSize="13.333" FontFamily="Arial" Cursor="Hand" HorizontalAlignment="Right" Margin="5,0,0,0" Grid.Column="0" Grid.Row="0" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='RowsAbove'}"/>
+                </Grid>
+            </DataTemplate>
+
+            <LinearGradientBrush x:Key="CurrentSelectedRowBrush" StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#FFFFFFFF" Offset="0.00"/>
+                <GradientStop Color="#FF000000" Offset="0.01"/>
+                <GradientStop Color="#FFFFFFFF" Offset="0.02"/>
+                <GradientStop Color="#FFCEE2FC" Offset="0.02"/>
+                <GradientStop Color="#FFE6F0FF" Offset="0.5"/>
+                <GradientStop Color="#FFCEE2FC" Offset="0.98"/>
+                <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                <GradientStop Color="#FFFFFFFF" Offset="0.98"/>
+                <GradientStop Color="#FF000000" Offset="0.99"/>
+                <GradientStop Color="#FFFFFFFF" Offset="1.00"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush StartPoint="0,0" x:Key="SelectedRowBrush" EndPoint="0,1">
+                <GradientStop Color="#FFFFFFFF" Offset="0.00"/>
+                <GradientStop Color="#FFCEE2FC" Offset="0.02"/>
+                <GradientStop Color="#FFE6F0FF" Offset="0.5"/>
+                <GradientStop Color="#FFCEE2FC" Offset="0.98"/>
+                <GradientStop Color="#FFFFFFFF" Offset="1"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush StartPoint="0,0" x:Key="CurrentEvenRowBrush" EndPoint="0,1">
+                <GradientStop Color="#FFFFFFFF" Offset="0.00"/>
+                <GradientStop Color="#FF000000" Offset="0.01"/>
+                <GradientStop Color="#FFFFFFFF" Offset="0.03"/>
+                <GradientStop Color="#FFFFFFFF" Offset="0.97"/>
+                <GradientStop Color="#FF000000" Offset="0.99"/>
+                <GradientStop Color="#FFFFFFFF" Offset="1.00"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush StartPoint="0,0" x:Key="CurrentOddRowBrush" EndPoint="0,1">
+                <GradientStop Color="#FFFFFFFF" Offset="0.00"/>
+                <GradientStop Color="#FF000000" Offset="0.01"/>
+                <GradientStop Color="#FFFFFFFF" Offset="0.02"/>
+                <GradientStop Color="#F2F2F2" Offset="0.02"/>
+                <GradientStop Color="#F2F2F2" Offset="0.98"/>
+                <GradientStop Color="#FFFFFFFF" Offset="0.98"/>
+                <GradientStop Color="#FF000000" Offset="0.99"/>
+                <GradientStop Color="#FFFFFFFF" Offset="1.00"/>
+            </LinearGradientBrush>
+
+            <ColumnDefinition x:Name="WGColumn1" MinWidth="88" Width="13*" />
+            <ColumnDefinition x:Name="WGColumn2" MinWidth="200" Width="40*" />
+            <ColumnDefinition x:Name="WGColumn3" MinWidth="120" Width="20*" />
+            <ColumnDefinition x:Name="WGColumn4" MinWidth="10" Width="14*" />
+            <ColumnDefinition x:Name="WGColumn5" MinWidth="10" Width="13*" />
+        </Grid.Resources>
+
+        <extended:GridSplitter IsTabStop="False" Canvas.ZIndex="5" Background="DarkGray" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="1" Grid.Row="1" Grid.Column="1" />
+        <extended:GridSplitter IsTabStop="False" Canvas.ZIndex="5" Grid.Column="1" HorizontalAlignment="Left" Width="1" Background="DarkGray" Grid.RowSpan="3" Grid.Row="1"/>
+        <extended:GridSplitter IsTabStop="False" Canvas.ZIndex="5" Grid.Column="1" HorizontalAlignment="Right" Width="1" Background="DarkGray" Grid.RowSpan="3" Grid.Row="1"/>
+        <extended:GridSplitter IsTabStop="False" Canvas.ZIndex="5" Background="DarkGray" HorizontalAlignment="Stretch" Grid.Row="3" Grid.Column="1" />
+        <Border Margin="4,4,4,4" x:Name="ParentBorder" CornerRadius="5" BorderThickness="2" BorderBrush="DarkGray" Grid.Row="2" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Canvas.ZIndex="1" Margin="2,2,2,0" BorderThickness="2" CornerRadius="5" BorderBrush="#5788CA" Style="{StaticResource ControlsStackPanelStyle}">
+                    <Grid ShowGridLines="false">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal">
+                            <Border Width="200" BorderBrush="LightGray" CornerRadius="3" BorderThickness="1" Style="{StaticResource ControlsStackPanelStyle}" Margin="0,0">
+                                <ctl:FilterControl x:Name="FilterControl" ResizeChildren="True" OnFilter="FilterControl_OnFilter">
+                                </ctl:FilterControl>
+                            </Border>
+                            <Rectangle Margin="1,2,1,2" Height="Auto" Width="2" RadiusX="1" RadiusY="1" Fill="#5788CA"></Rectangle>
+                            <Border Width="300" BorderBrush="LightGray" CornerRadius="3" BorderThickness="1" Style="{StaticResource ControlsStackPanelStyle}" Margin="0,0">
+                                <StackPanel Orientation="Horizontal" Margin="4,5,4,5" SizeChanged="StackPanel_SizeChanged">
+                                    <TextBlock x:Name="ComboBoxDisplayText" Text="Group by" FontSize="13.333" FontFamily="Arial" Margin="0,4,0,0"/>                                                            
+                                    <ComboBox Height="22" Width="100" x:Name="Grouping" SelectionChanged="Grouping_SelectedIndexChanged" KeyDown="Grouping_KeyDown">
+                                    </ComboBox>
+                                </StackPanel>
+                            </Border>
+                            <Rectangle Margin="1,2,1,2" Height="Auto" Width="2" RadiusX="1" RadiusY="1" Fill="#5788CA"></Rectangle>
+                            <Border BorderBrush="LightGray" CornerRadius="3" BorderThickness="1" Style="{StaticResource ControlsStackPanelStyle}" Margin="0,0">
+                                <ctl:LevelOfDetail x:Name="LevelOfDetailControl" FontFamily="Serif" FontSize="12" CurrentLevel="2" NumberOfLevels="4" OnLevelOfDetailChange="LevelOfDetailControl_OnLevelOfDetailSliderValueChanged" />
+                            </Border>
+                            <Rectangle Margin="1,2,1,2" Height="Auto" Width="2" RadiusX="1" RadiusY="1" Fill="#5788CA"></Rectangle>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <ctl:WrapDataGrid Grid.Row="1" Margin="4,0" x:Name="WrapDataGrid" 
+                          SelectionMode="MultipleSimple" 
+                          LookAheadCellTemplate="{StaticResource LookAheadCellTemplate}" 
+                          LookBehindCellTemplate="{StaticResource LookBehindCellTemplate}"
+                          LookAheadSummaryCellTemplate="{StaticResource LookAheadSummaryCellTemplate}" 
+                          LookBehindSummaryCellTemplate="{StaticResource LookBehindSummaryCellTemplate}"  
+                          CurrentEvenRowBackground="{StaticResource CurrentEvenRowBrush}" 
+                          CurrentOddRowBackground="{StaticResource CurrentOddRowBrush}" 
+                          CurrentSelectedRowBackground="{StaticResource CurrentSelectedRowBrush}"        
+                          SelectionBackground="{StaticResource SelectedRowBrush}"
+                          OnColumnHeaderClick="WrapDataGrid_ColumnHeaderClick"
+                          OnGroupingRender="WrapDataGrid_OnGroupingRender" 
+                          GroupingDataTemplatePresentation="{StaticResource groupingTemplatePresentation}"                                        
+                          DataContext="{StaticResource DataManager}" 
+                          AscendingOrderIndicatorDataTemplate="{StaticResource AscendingIndicator}" 
+                          DescendingOrderIndicatorDataTemplate="{StaticResource DescendingIndicator}"
+                          AlternatingRowBackground="#f2f2f2"
+                          OnKeyPress="WrapDataGrid_OnKeyPress"
+                          IsTabStop="True" ColumnResizerTemplate="{StaticResource ColumnResizerTemplate}"     
+                          >
+
+                    <ctl:WrapDataGrid.WrapDataGridColumns>
+                        <ctl:WrapDataGridColumn ColumnDefinition="{StaticResource WGColumn1}" BodyMarginAsString="0,0,8,0">
+                            <ctl:WrapDataGridColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontSize="12" FontFamily="Arial" HorizontalAlignment="Right" Height="20" Margin="0,4,5,0" Text="Start Date"/>
+                                </DataTemplate>
+                            </ctl:WrapDataGridColumn.HeaderTemplate>
+                            <ctl:WrapDataGridColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontSize="13.333" FontFamily="Arial" Margin="0,0,10,0" HorizontalAlignment="Right" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='StartDate'}"/>
+                                </DataTemplate>
+                            </ctl:WrapDataGridColumn.CellTemplate>
+                        </ctl:WrapDataGridColumn>
+
+                        <ctl:WrapDataGridColumn ColumnDefinition="{StaticResource WGColumn2}" BodyMarginAsString="8,0,0,0">
+                            <ctl:WrapDataGridColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ContentControl IsTabStop="False" Content="{Binding Converter={StaticResource dictionaryToDataTemplateConverter}, ConverterParameter='TemplateName'}" />
+                                </DataTemplate>
+                            </ctl:WrapDataGridColumn.CellTemplate>
+                            <ctl:WrapDataGridColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontSize="12" FontFamily="Arial" Margin="5,4,5,0" Height="20" Text="Drug Details"/>
+                                </DataTemplate>
+                            </ctl:WrapDataGridColumn.HeaderTemplate>
+                        </ctl:WrapDataGridColumn>
+
+                        <ctl:WrapDataGridColumn ColumnDefinition="{StaticResource WGColumn3}" BodyMarginAsString="8,0,0,0">
+                            <ctl:WrapDataGridColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontSize="13.333" FontFamily="Arial" Margin="0,0,3,0" FontStyle="Italic" Foreground="#585858" TextWrapping="Wrap" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='Reason'}"/>
+                                </DataTemplate>
+                            </ctl:WrapDataGridColumn.CellTemplate>
+                            <ctl:WrapDataGridColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontSize="12" FontFamily="Arial" Margin="5,4,5,0" Height="20" Text="Reason"/>
+                                </DataTemplate>
+                            </ctl:WrapDataGridColumn.HeaderTemplate>
+                        </ctl:WrapDataGridColumn>
+
+                        <ctl:WrapDataGridColumn ColumnDefinition="{StaticResource WGColumn4}" BodyMarginAsString="8,0,0,0">
+                            <ctl:WrapDataGridColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontSize="13.333" FontFamily="Arial" Margin="0,0,10,0"  FontWeight="Bold" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='MedicationStatus'}"/>
+                                </DataTemplate>
+                            </ctl:WrapDataGridColumn.CellTemplate>
+                            <ctl:WrapDataGridColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontSize="12" FontFamily="Arial" Margin="5,4,5,0"  Height="20" Text="Status"/>
+                                </DataTemplate>
+                            </ctl:WrapDataGridColumn.HeaderTemplate>
+                        </ctl:WrapDataGridColumn>
+
+                        <ctl:WrapDataGridColumn ColumnDefinition="{StaticResource WGColumn5}" BodyMarginAsString="0,0,8,0">
+                            <ctl:WrapDataGridColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontSize="13.333" FontFamily="Arial" Margin="0,0,4,0" HorizontalAlignment="Right" Text="{Binding Converter={StaticResource dictionaryToStringConverter}, ConverterParameter='ReviewDate'}"/>
+                                </DataTemplate>
+                            </ctl:WrapDataGridColumn.CellTemplate>
+                            <ctl:WrapDataGridColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <TextBlock FontSize="12" FontFamily="Arial" HorizontalAlignment="Right" Height="20" Text="Review Date" Margin="0,4,5,0"/>
+                                </DataTemplate>
+                            </ctl:WrapDataGridColumn.HeaderTemplate>
+                        </ctl:WrapDataGridColumn>
+                    </ctl:WrapDataGrid.WrapDataGridColumns>
+                </ctl:WrapDataGrid>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

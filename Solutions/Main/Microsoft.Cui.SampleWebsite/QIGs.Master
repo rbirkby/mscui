@@ -1,0 +1,62 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="QIGs.master.cs" Inherits="Microsoft.Cui.SampleWebsite.QIGs" MasterPageFile="~/DefaultMaster.master" %>
+
+<asp:Content ID="QIGsHeadContent" runat="server" ContentPlaceholderID="pageSpecificHeadTags">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="<%=Path %>../../CSS/QIGs.css" rel="stylesheet" type="text/css" />
+    <title><%=PageTitle %></title> 
+    <script type="text/javascript">
+        function ToggleRationale(linkID, divID) 
+        {
+            var divElement = document.getElementById(divID);
+            var linkElement = document.getElementById(linkID);
+
+            if (divElement && linkElement) 
+            {
+                divElement.className = (divElement.className == 'hidden') ? 'revealed' : 'hidden';
+                linkElement.innerHTML = (divElement.className == 'hidden') ? 'show Rationale' : 'hide Rationale';
+            }
+        }
+    </script>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceholderID="siteContentPlaceHolder">
+    <div id="container">           
+        <div id="box">       
+            <div class="backLinkContainer">                    
+                <div class="backLinkArrow" >
+                    <a class="backLink" title="<%=BackText %>" href="<%=BackPath%>">
+                        <div>GUIDANCE</div>
+                    </a>
+                </div>                    
+                <asp:Panel runat="server" id="leftnav" CssClass="leftnav">
+                </asp:Panel>
+            </div>        
+            
+            <div id="contentContainer">
+                <div>
+                    <div class="downloadBoxBig">
+                        <h1 class="downloadHeader">DOWNLOAD</h1>
+                        <a title="Links to <%=GuidanceDownloadText%>" href="<%=GuidanceDownloadUrl%>" target="_blank">
+                            <img alt="<%=GuidanceDownloadAltText%>" src="<%=Path %>../images/SFTheme/pdf.png" />
+                            <span><%=GuidanceDownloadText%></span>
+                        </a>
+                        <asp:Panel ID="SecondaryDownloadContainer" CssClass="secondaryDownloadContainer" runat="server" Visible="false">
+                            <hr/>                                              
+                            <a title="Links to <%=GuidanceSecondaryDownloadText%>" href="<%=GuidanceSecondaryDownloadUrl%>" target="_blank">
+                                <img alt="<%=GuidanceSecondaryDownloadAltText%>" src="<%=Path %>../images/SFTheme/pdf.png" />
+                                <span><%=GuidanceSecondaryDownloadText%></span>
+                            </a>
+                        </asp:Panel>
+                    </div>
+                    <h1><%=PageTitle%></h1> 
+                    <h2><%=SubHeader1%></h2>             
+                    <h3><%=SubHeader2%></h3>          
+                </div>
+                <div>
+                    <asp:ContentPlaceHolder ID="QIGsPageContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>                
+        </div>            
+    </div>
+</asp:Content>

@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Microsoft.Cui.SamplePages.LevelOfDetailPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Microsoft.Cui.Controls;assembly=Microsoft.Cui.Controls"
+             FontFamily="Verdana" FontSize="13.3"
+             Width="Auto" Height="Auto">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Border Background="#E4E4E4" Padding="5">
+            
+            <local:LevelOfDetail Label="LevelOfDetail Label" 
+                                 ToolTipService.ToolTip="LevelOfDetailTooltip" 
+                                 NumberOfLevels="14" 
+                                 CurrentLevel="5"
+                                 Grid.Column="0">
+            </local:LevelOfDetail>
+            
+        </Border>
+        
+        <TextBlock Text="The LevelOfDetail description."
+                   TextWrapping="Wrap" 
+                   Grid.Column="1" 
+                   Margin="10,0,0,0" 
+                   VerticalAlignment="Center">
+        </TextBlock>
+        
+    </Grid>
+</UserControl>

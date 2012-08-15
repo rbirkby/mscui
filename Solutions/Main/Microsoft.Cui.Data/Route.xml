@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DocumentElement>
+  <Route>
+    <Code>26643006</Code>
+    <Name>oral</Name>
+  </Route>
+  <Route>
+    <Code>37161004</Code>
+    <Name>rectal</Name>
+  </Route>
+  <Route>
+    <Code>47625008</Code>
+    <Name>intravenous</Name>
+  </Route>
+  <Route>
+    <Code>112239003</Code>
+    <Name>respiratory</Name>  
+</Route>
+</DocumentElement>

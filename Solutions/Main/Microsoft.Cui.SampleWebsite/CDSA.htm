@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Microsoft Health Clinical Documentation Solution Accelerator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <link href="css/CDSA.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        function openIntroVideo() {
+            var div = document.getElementById("divIntroVideo");
+            if (div != null) {
+                div.style.visibility = "visible";
+                div.style.height = document.body.clientHeight + "px";
+            }
+
+            var mediaPlayer = document.getElementById("devVideoPlayer");
+            if (mediaPlayer != null && mediaPlayer.content != null) {
+                if (mediaPlayer.content.Player.CurrentState == 3) {
+                    mediaPlayer.content.Player.Pause();
+                }
+            }
+        }
+        function closeIntroVideo() {
+            var div = document.getElementById("divIntroVideo");
+            if (div != null) {
+                div.style.visibility = "hidden";
+            }
+        }
+        function videoPlayerLoaded() {
+            var slNotPresentLayer = document.getElementById("endUserSLNotPresentLayer");
+            var img = document.getElementById("endUserVideoImage");
+            if (slNotPresentLayer != null) {
+                slNotPresentLayer.style.visibility = "hidden";
+                slNotPresentLayer.style.height = "0px";
+            }
+            if (img != null) {
+                img.style.visibility = "visible";
+                img.style.height = "";
+            }
+
+            var watchIntroVideoLink = document.getElementById("watchIntroVideoLink");
+            if (watchIntroVideoLink != null) {
+                watchIntroVideoLink.style.visibility = "visible";
+                watchIntroVideoLink.style.height = "";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="panel">
+            <div id="topShadowBar">
+                <div id="topLeftCorner">
+                    &nbsp;</div>
+                <div id="topRightCorner">
+                    &nbsp;</div>
+                <div id="topEdge">
+                    <div id="MSCUITextPanel">
+                        <img alt="Double Left Chevron" src="images/cdsa/tiny_arrow_180.png" style="margin-right: 2px;
+                            vertical-align: top; margin-top: 6px;" />
+                        <span><a name="mscui" title="www.mscui.net" href="http://www.mscui.net/" style="vertical-align: top;">
+                            www.mscui.net </a></span>
+                    </div>
+                </div>
+            </div>
+            <div id="leftEdgeShadowDiv">
+                <div id="rightEdgeShadowDiv">
+                    <div id="panel_contents">
+                        <div id="header">
+                            <img alt="Microsoft Health CUI Header" width="927" height="60" src="images/cdsa/mscui_banner.png" />
+                        </div>
+                        <div id="banner">
+                            <img src="images/CDSA/CDSAHomepageBanner.jpg" alt="Clinical Documentation Solution Accelerator Header" />
+                        </div>
+                    </div>
+                    <div id="textContent">
+                        <div id="leftColumn">
+                            <p class="paraTitle" style="margin-top: 15px">
+                                Overview
+                            </p>
+                            <p class="paraText">
+                                The Clinical Documentation Solution Accelerator (CDSA) for the Microsoft Office
+                                system is a Connected Health Platform resource that enables you or your customer
+                                to define and create clinically encoded documents. Documents can be created based
+                                upon ready-made templates (for example, for a Discharge Summary or a Referral) retrieved
+                                using the Microsoft Office System.
+                            </p>
+                            <p class="paraTitle">
+                                Key Benefits for Your Organization
+                            </p>
+                            <p class="paraText">
+                                <ul id="keybenefits">
+                                    <li>Improve productivity and reduce training costs
+                                        <p>
+                                            Users employ the already familiar Microsoft Office Word interface to complete documents
+                                            that are yet readable by both people and systems</p>
+                                    </li>
+                                    <li>Quickly design and create clinical documents
+                                        <p>
+                                            CDSA supports rapid development of a range of clinical documents that readily match
+                                            those currently in use by clinicians and end-users</p>
+                                    </li>
+                                    <li>Directly link to external data sources
+                                        <p>
+                                            Look up, verify and encode your data (such as clinical terms or medications) by
+                                            background reference to online services</p>
+                                    </li>
+                                    <li>Easily share encoded documents
+                                        <p>
+                                            Use existing e-mail and middleware systems to send documents, sharing data between
+                                            primary care and hospital and acute care clinicians and communicating with the patient</p>
+                                    </li>
+                                </ul>
+                            </p>
+                            <p class="paraSubTitle">
+                                Uses MSCUI Controls to Encode Clinical Information
+                            </p>
+                            <p class="paraText">
+                                CDSA promotes the safety and consistency of clinical documentation by utilizing
+                                Microsoft Health Common User Interface software toolkit components. Those components
+                                support the embedding of structured, machine-readable clinical information in a
+                                human-readable Microsoft Office document shareable across care boundaries. The encoding
+                                of clinical information is to industry standard formats (such as the Health Level
+                                7 (HL7) Clinical Document Architecture (CDA)).
+                            </p>
+                            <p class="paraSubTitle">
+                                Built for External Data Sources
+                            </p>
+                            <p class="paraText">
+                                This resource demonstrates the direct utilization of external clinical data (perhaps
+                                from a cloud platform or Windows Azure source) in a document. Example external data
+                                sources include Systematized Nomenclature of Medicine Clinical Terms (<a href="http://www.ihtsdo.org/snomed-ct/"
+                                    target="_blank" title="Opens the SNOMED Clinical Terms website (New Window)">SNOMED&nbsp;CT</a><sup>&reg;</sup>)
+                                encoding services or drug reference data. This enables a powerful editing experience,
+                                specific to the healthcare domain but easy to use because it offers familiar, industry-leading
+                                authoring tools, such as Microsoft Office Word 2007 or Microsoft Office Word 2010.
+                            </p>
+                            <p class="paraSubTitle">
+                                Integrate with Your Existing IT Systems
+                            </p>
+                            <p class="paraText">
+                                You can use CDSA as the foundation for clinical document workflows (for example,
+                                in combination with Microsoft Office SharePoint Server 2010). Tailor those to the
+                                specific Electronic Medical Record (EMR) or Electronic Health Record (EHR) systems
+                                in your own or your customer's healthcare environment. In addition, CDSA will enable
+                                you to create clinical documents suitable for upload to a Personal Health Record
+                                (PHR) system (such as Microsoft HealthVault) or to other external storage.
+                            </p>
+                            <p class="paraSubTitle">
+                                Easily Create Clinical Templates
+                            </p>
+                            <p class="paraText">
+                                Template designers can create Office Word templates, allowing the data entered in
+                                the document to be mapped to a machine-readable representation using clinical encoding
+                                taxonomies (such as SNOMED CT<sup>&reg;</sup>). This is in addition to providing
+                                a human-readable version of the document.
+                            </p>
+                            <p class="paraSubTitle">
+                                Easily Create Clinical Documents
+                            </p>
+                            <p class="paraText">
+                                Clinicians can complete clinical forms created from a CDSA-enabled Office Word template.
+                                The Office Word (.docx) file contains both human-readable and machine-readable clinical
+                                information (such as a HL7 CDA representation).
+                            </p>
+                            <p class="paraSubTitle">
+                                Share Clinical Documents Across Care Boundaries
+                            </p>
+                            <p class="paraText">
+                                Even without the need for the CDSA add-in, a recipient can read the clinical document.
+                                The document .docx file still contains the machine-readable clinical information
+                                and this can be extracted and uploaded to an external clinical system. It is easy
+                                to share clinical documents created using the CDSA, passing them across care boundaries
+                                whilst retaining the clinically encoded data.
+                            </p>
+                            <div id="watchIntroVideoLink" style="visibility: hidden; margin-top: 10px; height: 0px;">
+                                <a class="paraText" href="#mscui" onclick="javascript:openIntroVideo()" title="Watch the CDSA Introduction video">
+                                    Click to view a video introduction to CDSA</a>
+                            </div>
+                            <div class="paraTitle">
+                                Resources for developers
+                            </div>
+                            <div class="paraText">
+                                The CDSA add-in extends Microsoft Word to provide easy to use features for designing
+                                and configuring clinical document templates that use CDSA controls. You can also
+                                use Visual Studio 2008 to enhance and extend your clinical document templates and
+                                implement complex mappings to machine readable storage formats (such as HL7 CDA
+                                format). Two sample clinical document templates are provided to illustrate how the
+                                CDSA add-in can be applied to create interoperable, encoded clinical documents.
+                                Two sample web services are provided to show how data from external clinical data
+                                sources, such as encoding services or drugs catalogues, can be included to populate
+                                the document with data.
+                            </div>
+                        </div>
+                        <div id="rightColumn">
+                            <img id="endUserVideoImage" style="visibility: hidden; height: 0px; margin-left: -4px"
+                                src="images/CDSA/EndUserVideo.jpg" onclick="openIntroVideo()" alt="Watch the CDSA Introduction video" />
+                            <div id="endUserSLNotPresentLayer" style="margin-left: -4px; width: 295px; height: 205px;
+                                text-align: left; background-repeat: no-repeat; background-image: url(images/CDSA/IntroVideoPlayer_SLNotPresent.jpg);">
+                                <div style="padding-left: 10px; padding-top: 10px;">
+                                    <div>
+                                        <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=3.0.40818.0" style="text-decoration: none;">
+                                            <img src="images/CDSA/Install-SL-Small.png" alt="Get Microsoft Silverlight" style="border-style: none" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="overviewHeading">
+                                <div class="downloadVideos">
+                                    <b style="color: Black">CDSA Overview</b>
+                                    <br />
+                                    <br />
+                                    <div>
+                                        This video provides an introduction to CDSA.
+                                    </div>
+                                    <img src="images/CDSA/DownloadIconSmall.jpg" />
+                                    <a href="Showcase/Media/CDSA_End_User_Video.wmv" title="Click to download this CDSA overview video">
+                                        Download .wmv file</a>
+                                </div>
+                            </div>
+                            <div id="downloadBox" style="margin-top: 10px; margin-bottom: 10px;">
+                                <table>
+                                    <tr>
+                                        <td colspan="3">
+                                            <img src="images/CDSA/DownloadHeader.jpg" alt="Download Now Image" width="280px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img style="margin-top: 10px; margin-bottom: 10px; margin-left: 10px" src="images/CDSA/DownloadIconBig.jpg"
+                                                alt="Download Clinical Document Solution Architecture" />
+                                        </td>
+                                        <td style="width: 10px">
+                                        </td>
+                                        <td class="paraText">
+                                            <a href="http://code.msdn.microsoft.com/cdsa" target="_blank" title="Link to download the latest version of the CDSA (New Window)">Download the latest version of the CDSA</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="whatsincluded" class="paraText">
+                                <b style="margin-left: 5px; color: Black">What's included?</b>
+                                <p style="margin-left: 5px; margin-top: 10px">
+                                    Clinical Documentation Solution Accelerator Source Package (Zip file) including
+                                    <ul class="requirementsList">
+                                        <li>Word Add-in source code</li>
+                                        <li>Worked Example – Discharge Summary Template (CDA format)</li>
+                                        <li>Worked Example – Cardiology Referral Template</li>
+                                        <li>Sample Web service – Clinical Encoding Service</li>
+                                        <li>Sample Web service – Drug Catalogue Service</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div id="sysrequirements" class="paraText" style="background-color: White; border: solid 1px #CCCCCC">
+                                <b style="margin-left: 5px; color: Black">System Requirements</b>
+                                <p style="margin-left: 5px; margin-top: 10px">
+                                    One of the following operating systems:
+                                    <ul class="requirementsList">
+                                        <li>Windows 7</li>
+                                        <li>Windows Vista (Service Pack 1)</li>
+                                        <li>Windows XP (Service Pack 3)</li>
+                                    </ul>
+                                </p>
+                                <p style="margin-left: 5px; margin-top: 10px">
+                                    The following applications:
+                                    <ul class="requirementsList">
+                                        <li>Microsoft Office Word 2010 or Microsoft Office Word 2007</li>
+                                        <li>Microsoft Visual Studio 2008 Service Pack 1 (for template customization)</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <img src="images/CDSA/OfficeLogos.jpg" style="margin-left: 15px; margin-top: 5px" />
+                        </div>
+                        <div id="bottomLogo">
+                            <div id="silverlightControlHost">
+                                <object id="devVideoPlayer" data="data:application/x-silverlight," type="application/x-silverlight" width="100%" height="400px">
+                                    <param name="source" value="ClientBin/MediaPlayerTemplate.xap"/>
+                                    <param name="minRuntimeVersion" value="3.0.40624.0" />     
+                                    <param name="onLoad" value="videoPlayerLoaded" />
+                                    <param name="windowless" value="true" />                                   
+                                    <param name="initparams" value='playerSettings = 
+                                            <Playlist>
+                                                <AutoLoad>true</AutoLoad>
+                                                <AutoPlay>false</AutoPlay>
+                                                <DisplayTimeCode>false</DisplayTimeCode>
+                                                <EnableCachedComposition>false</EnableCachedComposition>
+                                                <EnableCaptions>false</EnableCaptions>
+                                                <EnableOffline>false</EnableOffline>
+                                                <EnablePopOut>false</EnablePopOut>
+                                                <StartMuted>false</StartMuted>
+                                                <StretchMode>None</StretchMode>
+                                                <Items>
+							                        <PlaylistItem>
+								                        <Description>This video provides an introduction to the template development features provided by the CDSA add-in.</Description>
+								                        <MediaSource>Showcase/Media/CDSA_Dev01.wmv</MediaSource>									                
+								                        <Title>Developer Overview</Title>									
+							                        </PlaylistItem>
+							                        <PlaylistItem>
+								                        <Description>Building a new clinical document template using the controls provided with the CDSA add-in.</Description>
+								                        <MediaSource>Showcase/Media/CDSA_Dev02.wmv</MediaSource>									                
+								                        <Title>Constructing a template using existing controls</Title>									
+							                        </PlaylistItem>
+							                        <PlaylistItem>
+								                        <Description>How to create a new CDSA control using Microsoft Word content controls which can then be re-used across your clinical templates.</Description>
+								                        <MediaSource>Showcase/Media/CDSA_Dev03.wmv</MediaSource>									                
+								                        <Title>Creating a simple control</Title>									
+							                        </PlaylistItem>
+							                        <PlaylistItem>
+								                        <Description>How to customize the appearance and layout of a control provided with the CDSA add-in to meet your own template requirements.</Description>
+								                        <MediaSource>Showcase/Media/CDSA_Dev04.wmv</MediaSource>									                
+								                        <Title>Customizing the layout of an existing control</Title>									
+							                        </PlaylistItem>
+							                        <PlaylistItem>
+								                        <Description>How to use controls implemented in WPF to extend and enhance the editing experience for users completing documents.</Description>
+								                        <MediaSource>Showcase/Media/CDSA_Dev05.wmv</MediaSource>									                
+								                        <Title>Creating Rich-editing experiences using WPF based controls</Title>									
+							                        </PlaylistItem>
+							                        <PlaylistItem>
+								                        <Description>How to use your WPF based control to create a CDSA control for populating lists of information.</Description>
+								                        <MediaSource>Showcase/Media/CDSA_Dev06.wmv</MediaSource>									                
+								                        <Title>Creating a WPF based list control</Title>									
+							                        </PlaylistItem>
+							                        <PlaylistItem>
+								                        <Description>How to take the data which has been entered and mapping that information into a custom storage format (such as HL7 CDA) for interchange with other IT systems.</Description>
+								                        <MediaSource>Showcase/Media/CDSA_Dev07.wmv</MediaSource>									                
+								                        <Title>Mapping your document data to a Custom XML format</Title>									
+							                        </PlaylistItem>
+							                        <PlaylistItem>
+								                        <Description>How to programmatically prepopulate sections of your clinical document with information you already hold.</Description>
+								                        <MediaSource>Showcase/Media/CDSA_Dev08.wmv</MediaSource>									                
+								                        <Title>Prepopulating your document with data from another system</Title>									
+							                        </PlaylistItem>
+                                                </Items>
+                                            </Playlist>'/>
+                                        <div id="getSilverlightDevVideos" style="text-align:left; background-repeat:no-repeat; height:400px; background-image:url(images/CDSA/DevVideoPlayer_SLNotPresent.jpg);">
+                                            <div style="padding-left:200px; padding-top:100px;">
+                                                <div>
+                                                    <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=3.0.40818.0" style="text-decoration: none;">
+                                                    <img src="images/cdsa/Install-SL-Large.png" alt="Get Microsoft Silverlight"
+                                                        style="border-style: none" />
+                                                    </a>
+                                                </div>                                                 
+                                            </div>                     
+                                        </div>    
+                                    </object>
+                                <iframe id='_sl_historyFrame' style='visibility: hidden; height: 0; width: 0; border: 0px'>
+                                </iframe>
+                            </div>
+                            <div>
+                                <p class="paraSubTitle">
+                                    Download Developer Videos</p>
+                                <table style="margin-top: 15px">
+                                    <tr>
+                                        <td style="width: 310px; border-right: solid 1px #CCCCCC">
+                                            <div class="downloadVideos" style="margin-top: 0px; margin-left: 0px">
+                                                <span>Developer Overview</span>
+                                                <div>
+                                                    This video provides an introduction to the template development features provided
+                                                    by the CDSA add-in.</div>
+                                                <img src="images/CDSA/DownloadIconSmall.jpg" />
+                                                <a href="Showcase/Media/CDSA_Dev01.wmv" title="Click to download this CDSA Developer video">
+                                                    Download .wmv file</a>
+                                            </div>
+                                            <br />
+                                            <div class="downloadVideos" style="margin-left: 0px">
+                                                <span>Constructing a template using existing controls</span>
+                                                <div>
+                                                    Building a new clinical document template using the controls provided with the CDSA
+                                                    add-in.</div>
+                                                <img src="images/CDSA/DownloadIconSmall.jpg" />
+                                                <a href="Showcase/Media/CDSA_Dev02.wmv" title="Click to download this CDSA Developer video">
+                                                    Download .wmv file</a>
+                                            </div>
+                                            <br />
+                                            <div class="downloadVideos" style="margin-left: 0px">
+                                                <span>Creating a simple control</span>
+                                                <div>
+                                                    How to create a new CDSA control using Microsoft Word content controls which can
+                                                    then be re-used across your clinical templates.</div>
+                                                <img src="images/CDSA/DownloadIconSmall.jpg" />
+                                                <a href="Showcase/Media/CDSA_Dev03.wmv" title="Click to download this CDSA Developer video">
+                                                    Download .wmv file</a>
+                                            </div>
+                                        </td>
+                                        <td valign="top" style="width: 310px; border-right: solid 1px #CCCCCC">
+                                            <br />
+                                            <br />
+                                            <div class="downloadVideos" style="margin-top: 0px">
+                                                <span>Customizing the layout of an existing control</span>
+                                                <div>
+                                                    How to customize the appearance and layout of a control provided with the CDSA add-in,
+                                                    to meet your own template requirements.</div>
+                                                <img src="images/CDSA/DownloadIconSmall.jpg" />
+                                                <a href="Showcase/Media/CDSA_Dev04.wmv" title="Click to download this CDSA Developer video">
+                                                    Download .wmv file</a>
+                                            </div>
+                                            <br />
+                                            <div class="downloadVideos">
+                                                <span>Creating Rich-editing experiences using WPF based controls</span>
+                                                <div>
+                                                    How to use controls implemented in WPF to extend and enhance the editing experience
+                                                    for users completing documents.
+                                                </div>
+                                                <img src="images/CDSA/DownloadIconSmall.jpg" />
+                                                <a href="Showcase/Media/CDSA_Dev05.wmv" title="Click to download this CDSA Developer video">
+                                                    Download .wmv file</a>
+                                            </div>
+                                            <br />
+                                            <div class="downloadVideos" style="margin-top: 0px">
+                                                <span>Creating a WPF based list control</span>
+                                                <div>
+                                                    How to use your WPF based control to create a CDSA control for populating lists
+                                                    of information.</div>
+                                                <img src="images/CDSA/DownloadIconSmall.jpg" />
+                                                <a href="Showcase/Media/CDSA_Dev06.wmv" title="Click to download this CDSA Developer video">
+                                                    Download .wmv file</a>
+                                            </div>
+                                        </td>
+                                        <td valign="top">
+                                            <br />
+                                            <br />
+                                            <div class="downloadVideos">
+                                                <span>Mapping your document data to a Custom XML format</span>
+                                                <div>
+                                                    How to take the data which has been entered and mapping that information into a
+                                                    custom storage format (such as HL7 CDA) for interchange with other IT systems.</div>
+                                                <img src="images/CDSA/DownloadIconSmall.jpg" />
+                                                <a href="Showcase/Media/CDSA_Dev07.wmv" title="Click to download this CDSA Developer video">
+                                                    Download .wmv file</a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div class="downloadVideos">
+                                                <span>Prepopulating your document with data from another system</span>
+                                                <div>
+                                                    How to programmatically prepopulate sections of your clinical document with information you already hold.</div>
+                                                <img src="images/CDSA/DownloadIconSmall.jpg" />
+                                                <a href="Showcase/Media/CDSA_Dev08.wmv" title="Click to download this CDSA Developer video">
+                                                    Download .wmv file</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <table style="margin-top: 10px; color: Black">
+                                <tr>
+                                    <td colspan="2">
+                                        <p class="paraTextSmaller" style="line-height: normal; margin-bottom: 15px">
+                                            Microsoft would like to thank the following companies for their support in the production
+                                            of the Clinical Documentation Solution Accelerator.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 10%">
+                                        <a href="http://www.healthlanguage.com" target="_blank">
+                                            <img src="images/cdsa/healthlanguage.jpg" alt="Link to Health Language website (New Window)"
+                                                style="border: solid 0px #000000;" />
+                                        </a>
+                                    </td>
+                                    <td style="width: 10%">
+                                        <a href="http://www.firstdatabank.co.uk/" target="_blank">
+                                            <img src="images/CDSA/FDB-Logo.jpg" style="margin-top: 9px; border: solid 0px #FFFFFF;
+                                                margin-left: 30px;" alt="Link to First DataBank website (New Window)" />
+                                        </a>
+                                    </td>
+                                    <td style="width: 70%">
+                                    </td>
+                                    <td style="width: 10%">
+                                        <img alt="Microsoft logo" title="Microsoft logo" src="images/cdsa/ms_logo.png" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="footer" style="float: none">
+                            DISCLAIMER: The example companies, organizations, products, domain names, e-mail
+                            addresses, logos, people, places, and events depicted herein are fictitious. No
+                            association with any real company, organization, product, domain name, e-mail address,
+                            logo, person, places, or events is intended or should be inferred.
+                        </div>
+                        <div id="copyright" style="text-align: right; color: #999999; margin: 0px 20px 15px 20px;
+                            font-size: 80%;">
+                            <div style="text-align: left;">
+                                &copy;&nbsp;2010 Microsoft Corporation. All rights reserved.</div>
+                            <div style="margin-top: -17px">
+                                <a href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx" target="_blank"
+                                    title='Links to Trademarks page on Microsoft.com (New Window)'>Trademarks</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottomShadowBar">
+                <div id="bottomLeftCorner">
+                    &nbsp;</div>
+                <div id="bottomEdge">
+                    &nbsp;</div>
+                <div id="bottomRightCorner">
+                    &nbsp;</div>
+            </div>
+        </div>
+        <div id="divIntroVideo">
+        <div style="top:412px;left:495px;position:relative;width:600px;height:400px">                        
+            <object id="introMediaPlayer" data="data:application/x-silverlight," type="application/x-silverlight" width="100%" height="100%">
+                <param name="source" value="ClientBin/SimpleMediaPlayerTemplate.xap"/>            
+                <param name="minRuntimeVersion" value="3.0.40624.0" />            
+                <param name="initparams" value='playerSettings = 
+                            <Playlist>
+                                <AutoLoad>true</AutoLoad>
+                                <AutoPlay>true</AutoPlay>
+                                <DisplayTimeCode>false</DisplayTimeCode>
+                                <EnableCachedComposition>false</EnableCachedComposition>
+                                <EnableCaptions>false</EnableCaptions>
+                                <EnableOffline>false</EnableOffline>
+                                <EnablePopOut>false</EnablePopOut>
+                                <StartMuted>false</StartMuted>
+                                <StretchMode>None</StretchMode>
+                                <Items>
+								    <PlaylistItem>									
+									    <MediaSource>Showcase/Media/CDSA_End_User_Video.wmv</MediaSource>									
+								    </PlaylistItem>								
+                                </Items>
+                            </Playlist>'/>                        
+            </object>
+            <iframe id='Iframe1' style='visibility:hidden;height:0;width:0;border:0px'></iframe>                      
+        </div>
+    </div>
+    </div>
+</body>
+</html>

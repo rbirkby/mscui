@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Terms" nillable="true" type="tns:ArrayOfTermResult">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ExceedsMaxTotal" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchResult" nillable="true" type="tns:SearchResult" />
+  <xs:complexType name="ArrayOfTermResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TermResult" nillable="true" type="tns:TermResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTermResult" nillable="true" type="tns:ArrayOfTermResult" />
+  <xs:complexType name="TermResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TermItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Concept" nillable="true" type="tns:ConceptResult">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TermResult" nillable="true" type="tns:TermResult" />
+  <xs:complexType name="TermItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SnomedDescriptionId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TermItem" nillable="true" type="tns:TermItem" />
+  <xs:complexType name="IndexerResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TermResult">
+        <xs:sequence>
+          <xs:element name="StartIndex" type="xs:long" />
+          <xs:element name="EndIndex" type="xs:long" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Relevancy" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IndexerResult" nillable="true" type="tns:IndexerResult" />
+  <xs:complexType name="ConceptResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ConceptItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Parents" nillable="true" type="tns:ArrayOfConceptItem">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="AlternateDescriptions" nillable="true" type="tns:ArrayOfTermItem">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConceptResult" nillable="true" type="tns:ConceptResult" />
+  <xs:complexType name="ConceptItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SnomedConceptId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PreferredTerm" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="FullySpecifiedName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConceptItem" nillable="true" type="tns:ConceptItem" />
+  <xs:complexType name="ConceptDetail">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ConceptResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RefinableCharacteristics" nillable="true" type="tns:ArrayOfRefinableCharacteristic">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="Relations" nillable="true" type="tns:ArrayOfRelationResult">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="Children" nillable="true" type="tns:ArrayOfConceptResult">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConceptDetail" nillable="true" type="tns:ConceptDetail" />
+  <xs:complexType name="ArrayOfRefinableCharacteristic">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefinableCharacteristic" nillable="true" type="tns:RefinableCharacteristic" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefinableCharacteristic" nillable="true" type="tns:ArrayOfRefinableCharacteristic" />
+  <xs:complexType name="RefinableCharacteristic">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ValueConcepts" nillable="true" type="tns:ArrayOfConceptItem">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RefinableCharacteristic" nillable="true" type="tns:RefinableCharacteristic" />
+  <xs:complexType name="ArrayOfConceptItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConceptItem" nillable="true" type="tns:ConceptItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConceptItem" nillable="true" type="tns:ArrayOfConceptItem" />
+  <xs:complexType name="ArrayOfRelationResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RelationResult" nillable="true" type="tns:RelationResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRelationResult" nillable="true" type="tns:ArrayOfRelationResult" />
+  <xs:complexType name="RelationResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="TargetConcepts" nillable="true" type="tns:ArrayOfConceptItem">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RelationResult" nillable="true" type="tns:RelationResult" />
+  <xs:complexType name="ArrayOfConceptResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConceptResult" nillable="true" type="tns:ConceptResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConceptResult" nillable="true" type="tns:ArrayOfConceptResult" />
+  <xs:complexType name="ArrayOfTermItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TermItem" nillable="true" type="tns:TermItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTermItem" nillable="true" type="tns:ArrayOfTermItem" />
+  <xs:complexType name="ArrayOfIndexerResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IndexerResult" nillable="true" type="tns:IndexerResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIndexerResult" nillable="true" type="tns:ArrayOfIndexerResult" />
+</xs:schema>

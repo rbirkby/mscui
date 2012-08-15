@@ -1,0 +1,85 @@
+﻿<ResourceDictionary
+    x:Class="Microsoft.Cui.Controls.HighContrastResourceDictionary"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="Control_Background_Brush" Color="#FF000000"/>
+    <SolidColorBrush x:Key="Control_Foreground_Brush" Color="#FFE8E8E8"/>
+    <SolidColorBrush x:Key="Control_BorderBrush_Brush" Color="#FFA5A5A5"/>
+    <SolidColorBrush x:Key="Control_FocusBorderBrush_Brush" Color="#FFE8E8E8"/>
+    <SolidColorBrush x:Key="FieldLabel_Foreground_Brush" Color="#FF00FFF0"  />
+    <SolidColorBrush Color="#FFDDDDDD" x:Key="GroupLabel_Foreground_Brush" />
+
+    <SolidColorBrush x:Key="Toolbar_Background_Brush" Color="#FF3F3F3F"/>
+
+    <SolidColorBrush x:Key="ToolbarButton_Foreground_Brush" Color="#FFE8E8E8"/>
+    <SolidColorBrush x:Key="ToolbarButton_BorderBrush_Brush" Color="#66FFFFFF"/>
+    <LinearGradientBrush x:Key="ToolbarButton_MouseOverBackground_Brush" EndPoint="0.5,0" StartPoint="0.5,0.791">
+        <GradientStop Color="#00DADADA" Offset="0.004"/>
+        <GradientStop Color="#99FFFFFF" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ToolbarButton_PressedBackground_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#33616161"/>
+        <GradientStop Color="#99616161" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <SolidColorBrush x:Key="Searchbox_Background_Brush" Color="White"/>
+    <LinearGradientBrush x:Key="Searchbox_BorderBrush_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF7C7C7C" Offset="0"/>
+        <GradientStop Color="#FFD7D7D7" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ItemsHeader_Background_Brush" EndPoint="0.5,0" StartPoint="0.5,1">
+        <GradientStop Color="#FF616161" Offset="0"/>
+        <GradientStop Color="#FFE8E8E8" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ItemsHeader_Foreground_Brush" Color="#FF000000"/>
+    <SolidColorBrush x:Key="ItemsRow_Background_Brush" Color="#FF000000"/>
+    <SolidColorBrush x:Key="ItemsAlternateRow_Background_Brush" Color="#FF222222"/>
+
+
+    <SolidColorBrush x:Key="ItemMouseOver_BorderBrush_Brush" Color="#FFFFE050"/>
+    <LinearGradientBrush x:Key="ItemMouseOver_Background_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF079D07"/>
+        <GradientStop Color="#FF006100" Offset="1"/>
+        <GradientStop Color="#FF008C00" Offset="0.754"/>
+        <GradientStop Color="#FF039203" Offset="0.7"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="ItemFocused_BorderBrush_Brush" Color="#FFFFEE9F"/>
+    <LinearGradientBrush x:Key="ItemFocused_Background_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF079D07"/>
+        <GradientStop Color="#FF006100" Offset="1"/>
+        <GradientStop Color="#FF008C00" Offset="0.754"/>
+        <GradientStop Color="#FF039203" Offset="0.7"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="ItemSelected_BorderBrush_Brush" Color="#FFC5A200"/>
+    <LinearGradientBrush x:Key="ItemSelected_Background_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FFAB2BAB"/>
+        <GradientStop Color="#FF630063" Offset="1"/>
+        <GradientStop Color="Purple" Offset="0.754"/>
+        <GradientStop Color="#FF880588" Offset="0.7"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="MouseOverItemSelected_BorderBrush_Brush" Color="#FFC5A200"/>
+    <LinearGradientBrush x:Key="MouseOverItemSelected_Background_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FFAB2BAB"/>
+        <GradientStop Color="#FF630063" Offset="1"/>
+        <GradientStop Color="Purple" Offset="0.754"/>
+        <GradientStop Color="#FF880588" Offset="0.7"/>
+    </LinearGradientBrush>
+    
+    <SolidColorBrush Color="#FF00FFF0" x:Key="OptionalFieldContainerPlusIcon_Stroke_Brush" />
+    <LinearGradientBrush EndPoint="0.60699999332428,0.0219999998807907" StartPoint="0.11599999666214,0.930999994277954"
+                         x:Key="MagnifierGlassTop_Stroke_Brush">
+        <GradientStop Color="White"/>
+        <GradientStop Color="#FFE4E4E4" Offset="0.996"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush EndPoint="0.607,0.022" StartPoint="0.116,0.931"
+                         x:Key="MagnifierGlassBottom_Stroke_Brush">
+        <GradientStop Color="White"/>
+        <GradientStop Color="#FFE0E0E0" Offset="0.996"/>
+    </LinearGradientBrush>
+
+</ResourceDictionary>

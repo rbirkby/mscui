@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="Microsoft.Cui.SamplePages.DefaultPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Grid x:Name="LayoutRoot" Background="LightGray">
+        <Border Height="80" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="DarkSlateGray" BorderThickness="2,2,2,2" CornerRadius="3,3,3,3" Background="#FFFFFFFF">
+        	<TextBlock x:Name="DefaultText" Foreground="Blue" Text="No Start Page selected..." VerticalAlignment="Center" HorizontalAlignment="Center" Margin="25,15" />
+        </Border>
+    </Grid>
+</UserControl>

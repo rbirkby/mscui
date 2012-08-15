@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Microsoft.Cui.ShowcaseControls.DownloadMediaControl"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:mediaplayer="clr-namespace:Microsoft.Cui.ShowcaseControls;assembly=Microsoft.Cui.ShowcaseControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    >
+
+    <Grid x:Name="LayoutRoot" Height="138" Width="770">
+        <Canvas x:Name="textContainer"  Height="138" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="560">
+            <TextBlock TextWrapping="Wrap" x:Name="txtText"  Height="90" Width="560" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Verdana" FontSize="13">
+             	<Run Text="Dummy Text"/>
+            </TextBlock>
+        </Canvas>
+        <Canvas x:Name="DownloadImageContainer" HorizontalAlignment="Left" Margin="590,0,0,0" VerticalAlignment="Top" Height="117" Width="154">
+            <ContentControl x:Name="imgDownloadContent" TabIndex="13">
+                <Image x:Name="imgDownload" Canvas.Left="0" Canvas.Top="0"  Cursor="Hand" Stretch="Fill" Height="117" Width="154" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </ContentControl>
+        </Canvas>
+    </Grid>
+
+</UserControl>
+

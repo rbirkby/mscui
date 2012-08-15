@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Microsoft.Cui.Controls.ColumnManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        Width="400"
+        Height="300"
+        >
+    <UserControl.Resources>
+        <Style TargetType="Grid" x:Key="ColumnHeaderStyle">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        
+                            <GradientStop Color="DarkGray" Offset="0" />
+                            <GradientStop Color="DarkGray" Offset="1" />
+                            <GradientStop Color="White" Offset="0.1"/>
+                            <GradientStop Color="LightGray" Offset="0.9"/>
+                        
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="Grid" x:Key="ColumnHeaderSelectedStyle">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        
+                            <GradientStop Color="DarkGray" Offset="0" />
+                            <GradientStop Color="DarkGray" Offset="1" />
+                            <GradientStop Color="LightGray" Offset="0.1"/>
+                            <GradientStop Color="DarkGray" Offset="0.9"/>
+                        
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </UserControl.Resources>
+    <StackPanel>
+        <TextBlock Text="ColumnManager"></TextBlock>
+    </StackPanel>
+</UserControl>

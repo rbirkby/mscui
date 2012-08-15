@@ -1,0 +1,47 @@
+.nhs_monthcalendar_container {width:16.7em;height:18em;padding:4px;cursor:default;font-size:11px;text-align:center;z-index:99;line-height:normal;}
+.nhs_monthcalendar_container TABLE {font-size:11px;line-height:normal;}
+
+.nhs_monthcalendar_header {height:30px;width:100%; top:0px; left:0px;background-color:scrollbar;font-weight: bold; font-size: 9pt; font-family: 'Microsoft Sans Serif'}
+
+.nhs_monthcalendar_table_day_header {background-color:ButtonFace; border-top: black 1px solid;border-bottom: black 1px solid; width:100%; font-size: 9pt; font-family: 'Microsoft Sans Serif'}
+.nhs_monthcalendar_dayname {text-align:right;padding:0 2px;}
+
+.nhs_monthcalendar_days {text-decoration:none;color:black;}
+.nhs_monthcalendar_day {text-align:right;padding:0 2px;cursor:pointer;font-size: 10pt; font-family: 'Microsoft Sans Serif';font-weight: bold;}
+
+.nhs_monthcalendar_prev {cursor:pointer;float:left;background-repeat:no-repeat;background-position:50% 75%; vertical-align: middle; margin-left:2px; margin-right:5px; top:5px; position:relative}
+.nhs_monthcalendar_next {cursor:pointer;float:left;background-repeat:no-repeat;background-position:50% 75%; vertical-align: middle; margin-right:2px; margin-left:5px; top:5px; position:relative}
+
+.nhs_monthcalendar_monthheader {float:left;text-decoration:none; }
+.nhs_monthcalendar_yearheader {float:right;text-decoration:none; vertical-align:middle; }
+.nhs_monthcalendar_title {font-weight:bold;float:left;color:black;text-decoration:none;}
+.nhs_monthcalendar_year_title {width:2.75em;float:left;color:black;text-align:center;vertical-align: middle; top:5px; position:relative}
+.nhs_monthcalendar_month_title {width:5.65em;float:left;color:black;text-align:center;vertical-align: middle; top:5px; position:relative}
+.nhs_monthcalendar_complex .nhs_monthcalendar_title { cursor:pointer; }
+
+.nhs_monthcalendar_footer {}
+.nhs_monthcalendar_today {font-size: 8.25pt; font-family: 'Microsoft Sans Serif'}
+.nhs_monthcalendar_close {font-size: 8.25pt; font-family: 'Microsoft Sans Serif';cursor:pointer;background-color:Transparent; border:0; color:Black; text-decoration:underline;}
+.nhs_monthcalendar_nullstring_dropdown {font-size: 8.25pt; font-family: 'Microsoft Sans Serif'}
+
+.nhs_monthcalendar.nhs_monthcalendar_container {border:1px solid #646464;background-color:#ffffff;color:#000000; padding:0px; margin:0px}
+.nhs_monthcalendar .nhs_monthcalendar_footer {border-top:1px solid #f5f5f5;}
+.nhs_monthcalendar .nhs_monthcalendar_dayname {border-bottom:1px solid #f5f5f5;}
+.nhs_monthcalendar .nhs_monthcalendar_day {border:1px solid #ffffff;}
+.nhs_monthcalendar .nhs_monthcalendar_month {border:1px solid #ffffff;}
+.nhs_monthcalendar .nhs_monthcalendar_year {border:1px solid #ffffff}
+
+.nhs_monthcalendar .nhs_monthcalendar_day.nhs_monthcalendar_active {background-color:scrollbar !important;border-color: ButtonShadow;}
+.nhs_monthcalendar .nhs_monthcalendar_day.nhs_monthcalendar_selected {background-color:#ffffe0;border-color:#b22222;}
+
+.nhs_monthcalendar .nhs_monthcalendar_month_title.nhs_monthcalendar_active {background-color:#edf9ff;border-color:#0066cc;}
+.nhs_monthcalendar .nhs_monthcalendar_year_title.nhs_monthcalendar_active {background-color:#edf9ff;border-color:#0066cc;}
+
+.nhs_monthcalendar .nhs_monthcalendar_prev.nhs_monthcalendar_active {background-color:#edf9ff;border-color:#0066cc;}
+.nhs_monthcalendar .nhs_monthcalendar_next.nhs_monthcalendar_active {background-color:#edf9ff;border-color:#0066cc;}
+
+.nhs_monthcalendar .nhs_monthcalendar_day.nhs_monthcalendar_other {background-color:#ffffff;border-color:#fff;color:#646464; font-weight:normal;}
+.nhs_monthcalendar .nhs_monthcalendar_day.nhs_monthcalendar_weekend {font-weight:normal;}
+.nhs_monthcalendar .nhs_monthcalendar_year.nhs_monthcalendar_other {background-color:#ffffff;border-color:#fff;color:#646464;}
+.nhs_monthcalendar .nhs_monthcalendar_complex .nhs_monthcalendar_title.nhs_monthcalendar_hover {color:#0066cc;}
+.nhs_monthcalendar .nhs_monthcalendar_focus {border: dashed 1px black !important; }

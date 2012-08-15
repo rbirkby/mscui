@@ -1,0 +1,998 @@
+﻿<UserControl x:Class="Microsoft.Cui.SamplePages.SearchAndPrescribePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:local="clr-namespace:Microsoft.Cui.SamplePages"
+             xmlns:controls="clr-namespace:Microsoft.Cui.Controls;assembly=Microsoft.Cui.WPFControls"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             FontFamily="Arial" FontSize="12">
+
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Microsoft.Cui.SampleWinform;component/WPFControls/SearchAndPrescribe/ResourceDictionaries/DefaultResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+
+            <Storyboard x:Key="ShowSearchAndPrescribeControl">
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SearchAndPrescribeHost" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Visible</Visibility>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <Storyboard x:Key="HideSearchAndPrescribeControl">
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SearchAndPrescribeHost" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Collapsed</Visibility>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <Storyboard x:Key="ShowPreview">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PreviewBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="(UIElement.IsHitTestVisible)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <system:Boolean>True</system:Boolean>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PreviewBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Visible</Visibility>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <Storyboard x:Key="HidePreview">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PreviewBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="(UIElement.IsHitTestVisible)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <system:Boolean>False</system:Boolean>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PreviewBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Collapsed</Visibility>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <Storyboard x:Key="ShowCloseConfirmation">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CloseBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="(UIElement.IsHitTestVisible)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <system:Boolean>True</system:Boolean>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="CloseBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Visible</Visibility>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <Storyboard x:Key="HideCloseConfirmation">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="CloseBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="(UIElement.IsHitTestVisible)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <system:Boolean>False</system:Boolean>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="CloseBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Collapsed</Visibility>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            
+            <Storyboard x:Key="ShowFeatureUnavailable">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="FeatureUnavailableBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="1"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="(UIElement.IsHitTestVisible)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <system:Boolean>True</system:Boolean>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="FeatureUnavailableBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Visible</Visibility>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <Storyboard x:Key="HideFeatureUnavailable">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="FeatureUnavailableBorder" Storyboard.TargetProperty="Opacity">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PopupGridScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:0.35" Value="0"
+                                      KeySpline="0.841000020503998,0.303999990224838,0.0740000009536743,1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PopupBorder" Storyboard.TargetProperty="(UIElement.IsHitTestVisible)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <system:Boolean>False</system:Boolean>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="FeatureUnavailableBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                        <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Collapsed</Visibility>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <!-- STYLES -->
+
+            <Style TargetType="ContentControl" x:Key="DataTemplateContentControl">
+                <Setter Property="IsTabStop" Value="False" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="Padding" Value="0" />
+            </Style>
+
+            <!-- DATA TEMPLATES -->
+
+            <DataTemplate x:Key="DrugNameTemplate">
+                <controls:LinkingWrapPanel VerticalAlignment="Top" HorizontalAlignment="Left" IsHitTestVisible="False">
+
+                    <ContentPresenter Content="{Binding Converter={StaticResource DrugNameToTextBlockConverter}}"
+                                      controls:LinkingWrapPanel.CanResize="True" Margin="0,0,8,0"
+                                        />
+
+                    <StackPanel Orientation="Vertical"
+                                VerticalAlignment="Center"
+                                controls:LinkingWrapPanel.CanResize="True">
+
+                        <TextBlock Margin="0,0,8,0" Opacity="0.5"  FontStyle="Italic" Text="{Binding Path=Description}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Description}"
+                           RenderTransformOrigin="0,0.5"
+                                   FontSize="11"
+                                   TextWrapping="Wrap"
+                           />
+                    </StackPanel>
+
+                    <TextBlock TextWrapping="Wrap" Opacity="0.5" FontStyle="Italic" Text="{Binding Path=DisplayIngredientsString}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=DisplayIngredientsString}"
+                           RenderTransformOrigin="0,0.5"
+                                   controls:LinkingWrapPanel.CanResize="True"
+                                   FontSize="11"
+                           />
+
+                </controls:LinkingWrapPanel>
+            </DataTemplate>
+
+            <DataTemplate x:Key="BasicDrugTemplate">
+                <controls:LinkingWrapPanel VerticalAlignment="Top" HorizontalAlignment="Left" IsHitTestVisible="False">
+                    <TextBlock Text="{Binding Path=Name}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Name}"
+                           FontWeight="Bold"
+                               controls:LinkingWrapPanel.CanResize="True"
+                               TextWrapping="Wrap"
+                           />
+
+                    <StackPanel Orientation="Horizontal"
+                                Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=true, Path=IsBrandGeneric}">
+                        <StackPanel Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Name}">
+                            <TextBlock Text=" ― "
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=BrandName}"
+                           />
+                        </StackPanel>
+                        <TextBlock Text="{Binding Path=BrandName}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=BrandName}"
+                           
+                           />
+                    </StackPanel>
+
+                </controls:LinkingWrapPanel>
+            </DataTemplate>
+
+            <DataTemplate x:Key="BasicRouteTemplate">
+                <StackPanel Orientation="Horizontal" IsHitTestVisible="False">
+                    <TextBlock Text="{Binding Path=DisplayRoute}"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                       />
+                    <TextBlock Margin="8,0,0,0" Opacity="0.5" FontStyle="Italic" Text="{Binding Path=Description}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Description}"
+                           RenderTransformOrigin="0,0.5"
+                           />
+                </StackPanel>
+            </DataTemplate>
+
+            <DataTemplate x:Key="RouteTemplate">
+                <StackPanel  IsHitTestVisible="False">
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal"
+                            Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, Path=IsABrandGeneric}">
+                            <TextBlock Text="{Binding Path=DrugName}"
+                           FontWeight="Bold"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                               Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, ConverterParameter=true, Path=BrandName}"
+                       />
+                            <TextBlock Text=" ― "
+                       Style="{StaticResource BaseTextBlockStyle}"
+                               Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, ConverterParameter=true, Path=BrandName}"
+                       />
+                            <TextBlock Text="{Binding Path=BrandName}"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=BrandName}"
+                       />
+                            <TextBlock Text=" ― "
+                       Style="{StaticResource BaseTextBlockStyle}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=BrandName}"
+                       />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal"
+                            Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=true, Path=IsABrandGeneric}">
+                            <TextBlock Text="{Binding Path=DrugBrandName}"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=DrugBrandName}"
+                       />
+                            <TextBlock Text=" ― "
+                       Style="{StaticResource BaseTextBlockStyle}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=DrugBrandName}"
+                       />
+                        </StackPanel>
+                        <TextBlock Text="{Binding Path=DisplayRoute}"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                       />
+                    </StackPanel>
+                    <TextBlock Margin="0,5,0,0" Opacity="0.5" FontStyle="Italic" Text="{Binding Path=Description}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Description}"
+                           RenderTransformOrigin="0,0.5"
+                           />
+                </StackPanel>
+
+            </DataTemplate>
+
+            <DataTemplate x:Key="SelectedRouteTemplate">
+                <StackPanel Orientation="Horizontal" IsHitTestVisible="False">
+                    <StackPanel Orientation="Horizontal"
+                            Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, Path=IsABrandGeneric}">
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"
+                            Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=true, Path=IsABrandGeneric}">
+                        <TextBlock Text="{Binding Path=DrugBrandName}"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=DrugBrandName}"
+                       />
+                        <TextBlock Text=" ― "
+                       Style="{StaticResource BaseTextBlockStyle}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=DrugBrandName}"
+                       />
+                    </StackPanel>
+                    <TextBlock Text="{Binding Path=DisplayRoute}"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                       />
+                    <TextBlock Margin="8,0,0,0" Opacity="0.5" FontStyle="Italic" Text="{Binding Path=Description}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Description}"
+                           RenderTransformOrigin="0,0.5"
+                           />
+                </StackPanel>
+            </DataTemplate>
+
+            <DataTemplate x:Key="DoseTemplate">
+                <StackPanel Orientation="Horizontal" IsHitTestVisible="False">
+                    <TextBlock Text="DOSE "
+                           Style="{StaticResource DoseLabelStyle}"
+                           />
+                    <TextBlock Text="{Binding DisplayValue}"
+                           FontWeight="Bold"
+                           Style="{StaticResource BaseTextBlockStyle}"
+                           />
+                </StackPanel>
+            </DataTemplate>
+
+            <DataTemplate x:Key="TemplatePrescriptionTemplate">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" IsHitTestVisible="False">
+
+                        <TextBlock Text="DOSE "
+                                   Style="{StaticResource DoseLabelStyle}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Dose}"
+                                   />
+
+                        <TextBlock Text="{Binding Dose}"
+                                   FontWeight="Bold"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Dose}"
+                                   />
+
+                        <TextBlock Text=" ― "
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Strength}"
+                                   />
+                        <TextBlock Text="{Binding Strength}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Strength}"
+                                   />
+
+                        <TextBlock Text=" ― "
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Frequency}"
+                                   />
+                        <TextBlock Text="{Binding Frequency.DisplayValue}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Frequency}"
+                                   />
+
+
+
+                        <TextBlock Text=" ― "
+                           Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, Path=ShowDuration}"
+                                   />
+                        <TextBlock Text="{Binding Converter={StaticResource TimeSpanToStringConverter}, Path=Duration}"
+                               Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, Path=ShowDuration}"
+                                   />
+
+
+                        <TextBlock Text=" ― "
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=BrandName}"
+                                   />
+                        <TextBlock Text="{Binding Path=BrandName}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=BrandName}"
+                                   />
+                    </StackPanel>
+
+                    <TextBlock Margin="0,3,0,0" Opacity="0.5" FontStyle="Italic" Text="{Binding Path=Description}"
+                           Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Description}"
+                           FontSize="11" MaxWidth="250" TextWrapping="Wrap"
+                           />
+                </StackPanel>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"
+                      IsTabStop="False" Padding="0" BorderThickness="0" MinWidth="700">
+            <Border BorderThickness="1" Style="{StaticResource BorderStyle}" Padding="20,0,20,0">
+                <Grid x:Name="LayoutRoot">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"   />
+                        <RowDefinition Height="*" MinHeight="80" />
+                    </Grid.RowDefinitions>
+
+                    <Border Background="White" 
+                Margin="0,0,0,15"
+                BorderBrush="{StaticResource Control_BorderBrush_Brush}"
+                BorderThickness="1,0,1,1">
+                        <Grid>
+                            <Border Background="White">
+                                <Border.Effect>
+                                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Opacity="0.4" />
+                                </Border.Effect>
+                            </Border>
+
+                            <controls:PatientBanner
+                           x:Name="PatientBanner"
+                           BorderThickness="0"
+                           BorderWidth="0"
+                           FamilyName="Johnson"
+                           GivenName="Brian"
+                           Title="Mr"
+                           DateOfBirth="24-Jul-1945"
+                           Gender="Male"
+                           Identifier="129 728 7652"
+                           Address1="25 Rochester Road"
+                           Town="Linthorpe"
+                           County="Northshire"
+                           Postcode="NS6 9QP"
+                           HomePhoneNumber="(0116) 123 4567"
+                           WorkPhoneNumber="(0118) 912 3456"
+                           MobilePhoneNumber="(07719) 123456"
+                           EmailAddress="someone@example.com"
+                                Template="{StaticResource PatientBannerTemplate}"
+                                
+                           >
+                                <controls:PatientBanner.Style>
+                                    <Style TargetType="controls:PatientBanner" >
+                                        <Setter Property="Foreground" Value="{StaticResource Control_Foreground_Brush}" />
+                                        <Setter Property="Background" Value="{StaticResource Control_Background_Brush}" />
+                                        <Setter Property="BorderBrush" Value="{StaticResource Control_BorderBrush_Brush}" />
+                                    </Style>
+                                </controls:PatientBanner.Style>
+                            </controls:PatientBanner>
+
+                        </Grid>
+                    </Border>
+
+                    <Border x:Name="SearchAndPrescribeHost"  Background="White" 
+                Margin="0,0,0,15"
+                Grid.Row="1" Visibility="Collapsed" >
+                        <Grid>
+
+                            <Border Background="White">
+                                <Border.Effect>
+                                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Opacity="0.4" />
+                                </Border.Effect>
+                            </Border>
+
+
+                            <Border>
+                                <controls:SearchAndPrescribeControl  
+                                        DetailedViewMaxHeight="500"
+                     x:Name="SearchAndPrescribe"    
+                            VerticalAlignment="Top"
+                                        SelectedReasonForPrescribing="{Binding Mode=TwoWay, Path=Reason}"
+                    IsDrugSearchButtonEnabled="False"
+                     DrugItemTemplate="{StaticResource DrugNameTemplate}"
+                                    SelectedDrugItemTemplate="{StaticResource BasicDrugTemplate}"
+                    IsDetailedView="{Binding Mode=TwoWay, Path=IsDetailedView}"
+                     SelectedDrug="{Binding Mode=TwoWay, Path=Drug}"
+                                    BasicDrugTemplate="{StaticResource BasicDrugTemplate}"
+                    CascadingListMaximumHeight="400"
+                     
+                    ValidRoutesItemsSource="{Binding Routes}"
+                    BrandedRoutesItemsSource="{Binding BrandedRoutes}"
+                     OtherRoutesItemsSource="{Binding Drug.AllOtherRoutes}"                                                   
+                     SelectedRoute="{Binding Mode=TwoWay, Path=Route}"
+                     RouteItemTemplate="{StaticResource RouteTemplate}" 
+                    SelectedRouteItemTemplate="{StaticResource SelectedRouteTemplate}"
+                    BasicRouteTemplate="{StaticResource BasicRouteTemplate}"
+                    
+                    ValidBrandsItemsSource="{Binding ValidBrands}"
+                    SelectedBrand="{Binding Mode=TwoWay, Path=Brand}"
+                    BrandItemTemplate="{StaticResource ElementValueTemplate}"
+                                    IsBrandMandatory="{Binding Path=MandatoryBrand}"
+                     
+                    ConciseFormsItemsSource="{Binding RouteForms}"
+                    ValidFormsItemsSource="{Binding ValidForms}"
+                    ValidFormsItemsHeader="Valid forms"
+                    OtherFormsItemsSource="{Binding OtherForms}"
+                    OtherFormsItemsHeader="Other forms"
+                     SelectedForm="{Binding Mode=TwoWay, Path=Form}"
+                     FormItemTemplate="{StaticResource ElementDisplayValueTemplate}"
+                     IsFormMandatory="{Binding MandatoryForm}"                                             
+                    
+                     ValidStrengthsItemsSource="{Binding ValidStrengths}"                                                   
+                    ValidStrengthsItemsHeader="Valid strengths"
+                    OtherStrengthsItemsSource="{Binding OtherStrengths}"   
+                    OtherStrengthsItemsHeader="Other strengths"
+                     SelectedStrength="{Binding Mode=TwoWay, Path=Strength}"     
+                     StrengthItemTemplate="{StaticResource ElementDisplayValueTemplate}"
+                     IsStrengthMandatory="{Binding MandatoryStrength}"
+                    
+                    ConciseDosagesItemsSource="{Binding ValidDosages}"  
+                                    DetailedDosagesItemsSource="{Binding AllDosages}"
+                     SelectedDose="{Binding Mode=TwoWay, Path=Dose}"
+                     DoseItemTemplate="{StaticResource DoseTemplate}"    
+                    
+                    SelectedMethod="{Binding Mode=TwoWay, Path=Method}"
+                                    IsSiteMandatory="{Binding MandatorySite}"
+                    SelectedSite="{Binding Mode=TwoWay, Path=Site}"
+                    UnlicensedReason="{Binding Mode=TwoWay, Path=UnlicensedReason}"
+                    
+                     ConciseFrequenciesItemsSource="{Binding ValidFrequencies}"   
+                                    DetailedFrequenciesItemsSource="{Binding AllFrequencies}"
+                     SelectedFrequency="{Binding Mode=TwoWay, Path=Frequency}"  
+                     FrequencyItemTemplate="{StaticResource ElementDisplayValueTemplate}"
+                    IsAsRequired="{Binding Mode=TwoWay, Path=AsRequired}"
+                                    IsOnceOnly="{Binding OnceOnly}"
+                    
+                     ValidTemplatePrescriptionsItemsSource="{Binding TemplatePrescriptions}"                                                   
+                     SelectedTemplatePrescription="{Binding Mode=TwoWay, Path=TemplatePrescription}"
+                     TemplatePrescriptionItemTemplate="{StaticResource TemplatePrescriptionTemplate}"
+                    ValidStartingConditionsItemsSource="{Binding AsRequiredReasons}"
+                    SelectedStartingCondition="{Binding Mode=TwoWay, Path=AsRequiredReason}"
+                    StartingConditionItemTemplate="{StaticResource ElementValueTemplate}"
+                    
+                                        ValidAdministrationTimesItemsSource="{Binding ValidAdministrationTimes}"
+                                        SelectedAdministrationTimes="{Binding Mode=TwoWay, Path=AdministrationTimes}"
+                                        AdministrationTimesItemTemplate="{StaticResource AdministrationTimesDataTemplate}"
+                                    AdministrationTimesLabel="{Binding AdministrationTimesLabel}"
+                                        
+                    SelectedStartDate="{Binding Mode=TwoWay, Path=StartDate}"
+                    StartingLabel="{Binding StartingLabel}"
+                    ValidFirstDoseTimesItemsSource="{Binding Path=ValidFirstDoseTimes}"
+                    SelectedFirstDoseTime="{Binding Mode=TwoWay, Path=FirstDoseTime}"
+                                        FirstDoseTimeItemTemplate="{StaticResource FirstDoseTimeDataTemplate}"
+                                        
+                    ValidDurationsItemsSource="{Binding Path=ValidDurations}"
+                    SelectedDuration="{Binding Mode=TwoWay, Path=Duration}"
+                                        DurationItemTemplate="{StaticResource DurationDataTemplate}"
+                    ContinuingLabel="{Binding ContinuingLabel}"
+                    
+                    IsUnlicensed="{Binding Path=IsUnlicensed}"
+                    IsAuthorizable="{Binding Path=IsAuthorizable}"
+                    
+                    
+                                    
+                                    >
+                                    <controls:SearchAndPrescribeControl.CustomStartingConditionItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <controls:WatermarkedTextBox Watermark="Enter a starting condition" Text="{Binding Mode=TwoWay, Path=Value}" MinWidth="150"
+                                                                                 TextWrapping="Wrap" MaxWidth="350" MaxLength="128"
+                                                         Margin="-4,-4,15,-4" controls:SplitComboBox.CustomValueControlFocusContainer="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=.}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </controls:SearchAndPrescribeControl.CustomStartingConditionItemTemplate>
+                                    <controls:SearchAndPrescribeControl.CustomReasonForPrescribingItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <controls:WatermarkedTextBox Watermark="Enter a reason for prescribing" Text="{Binding Mode=TwoWay, Path=Value}" MinWidth="200"
+                                                                                 TextWrapping="Wrap" MaxWidth="350" MaxLength="128"
+                                                                                 controls:SplitComboBox.CustomValueControlFocusContainer="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=.}"
+                                                         Margin="-4,-4,15,-4"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </controls:SearchAndPrescribeControl.CustomReasonForPrescribingItemTemplate>
+                                    <controls:SearchAndPrescribeControl.CustomSiteItem>
+                                        <local:ElementValue Value="" />
+                                    </controls:SearchAndPrescribeControl.CustomSiteItem>
+                                    <controls:SearchAndPrescribeControl.CustomSiteItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <controls:WatermarkedTextBox Watermark="Enter a site" Text="{Binding Mode=TwoWay, Path=Value}" MinWidth="100"
+                                                                                 TextWrapping="Wrap" MaxWidth="350" MaxLength="128"
+                                                                                 controls:SplitComboBox.CustomValueControlFocusContainer="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=.}"
+                                                         Margin="-4,-4,15,-4"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </controls:SearchAndPrescribeControl.CustomSiteItemTemplate>
+                                    <controls:SearchAndPrescribeControl.CustomDoseItemTemplate>
+                                        <DataTemplate>
+                                            <local:DosePicker Margin="-4" SelectedDose="{Binding Mode=TwoWay, Path=Value}"
+                                                                  controls:SplitComboBox.CustomValueControlFocusContainer="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=.}"/>
+                                        </DataTemplate>
+                                    </controls:SearchAndPrescribeControl.CustomDoseItemTemplate>
+                                    <controls:SearchAndPrescribeControl.CustomFrequencyItemTemplate>
+                                        <DataTemplate>
+                                            <local:FrequencyPicker Margin="-4" SelectedFrequency="{Binding Mode=TwoWay, Path=Value}"
+                                                                       controls:SplitComboBox.CustomValueControlFocusContainer="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=.}"/>
+                                        </DataTemplate>
+                                    </controls:SearchAndPrescribeControl.CustomFrequencyItemTemplate>
+                                    <controls:SearchAndPrescribeControl.CustomDurationItemTemplate>
+                                        <DataTemplate>
+                                            <local:DurationPicker Margin="-4" SelectedDuration="{Binding Mode=TwoWay, Path=Value}"
+                                                                      DisplayDuration="{Binding Mode=TwoWay, Path=DisplayValue}"
+                                                                      controls:SplitComboBox.CustomValueControlFocusContainer="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=.}"
+                                                                  HorizontalAlignment="Left"/>
+                                        </DataTemplate>
+                                    </controls:SearchAndPrescribeControl.CustomDurationItemTemplate>
+                                </controls:SearchAndPrescribeControl>
+                            </Border>
+
+
+                        </Grid>
+                    </Border>
+
+                    <Border Grid.Row="2" Background="White" Grid.RowSpan="3">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" ShadowDepth="0" Opacity="0.4" />
+                        </Border.Effect>
+                    </Border>
+
+                    <Border Grid.Row="2" Style="{StaticResource BorderStyle}" BorderThickness="1,1,1,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Border Padding="10" Background="{StaticResource TitleToolbar_Background_Brush}">
+                                    <TextBlock Foreground="{StaticResource TitleToolbar_Foreground_Brush}" Text="Current medications"
+                                   FontSize="16" />
+                                </Border>
+
+
+                                <Border Grid.Row="1" Margin="0,0,0,0" >
+
+                                    <Grid Background="{StaticResource Toolbar_Background_Brush}">
+
+                                        <StackPanel Orientation="Horizontal">
+                                            <Border Margin="5" BorderBrush="White" BorderThickness="1" VerticalAlignment="Center">
+                                                <Border.Background>
+                                                    <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                                                        <GradientStop Color="#4C000000" Offset="0"/>
+                                                        <GradientStop Color="#4C888888" Offset="1"/>
+                                                        <GradientStop Color="#4C2C2C2C" Offset="0.5"/>
+                                                        <GradientStop Color="#4C8C8C8C" Offset="0.5"/>
+                                                    </LinearGradientBrush>
+                                                </Border.Background>
+                                                <Grid>
+                                                    <TextBlock Text="Current" Margin="4" Foreground="White" />
+                                                </Grid>
+                                            </Border>
+
+                                            <TextBlock Text="Past" Margin="15,9,9,9" Foreground="White" VerticalAlignment="Center" />
+
+                                            <Path Stretch="Fill" Margin="5,-3,0,0" Data="M0,0 L5,10 L10,0 L0,0" Height="6" Width="8" VerticalAlignment="Center" HorizontalAlignment="Center" Fill="White" />
+
+                                            <Rectangle Width="1" Fill="White" Margin="8,3,8,3" />
+
+                                            <TextBlock Text="Group by" Margin="8,9,9,9" Foreground="White" VerticalAlignment="Center" />
+                                            <ComboBox Width="100" Margin="8,0,0,0" VerticalAlignment="Center" Height="22" IsEnabled="False">
+                                                <ComboBoxItem Content="None" IsSelected="True" />
+                                            </ComboBox>
+
+                                            <Rectangle Width="1" Fill="White" Margin="8,3,8,3" />
+                                            <TextBlock Text="Level of detail" Margin="8,9,9,9" Foreground="White" VerticalAlignment="Center" />
+
+                                            <Border Margin="8,9,0,9" Width="18" Height="18" CornerRadius="4" BorderBrush="#FF3A3A3A" BorderThickness="1" Background="White">
+                                                <Grid>
+                                                    <Path Fill="Orange" Stretch="Fill" Stroke="Orange" StrokeThickness="2" Height="10" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="2" Data="M8,4 L8,13.5"/>
+                                                    <Path Fill="Orange" Stretch="Fill" Stroke="Orange" StrokeThickness="2" Height="10" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="2" Data="M8,4 L8,13.5" RenderTransformOrigin="0.5,0.5">
+                                                        <Path.RenderTransform>
+                                                            <TransformGroup>
+                                                                <ScaleTransform/>
+                                                                <SkewTransform/>
+                                                                <RotateTransform Angle="-90"/>
+                                                                <TranslateTransform/>
+                                                            </TransformGroup>
+                                                        </Path.RenderTransform>
+                                                    </Path>
+                                                </Grid>
+                                            </Border>
+                                            <Rectangle Stroke="White" Width="6" Height="18" Margin="5,0,0,0" />
+                                            <Rectangle Stroke="White" Fill="Orange"  Width="6" Height="18" Margin="5,0,0,0" />
+                                            <Rectangle Stroke="White" Width="6" Height="18" Margin="5,0,0,0" />
+                                            <Rectangle Stroke="White" Width="6" Height="18" Margin="5,0,0,0" />
+
+                                            <Border Margin="5,9,9,9" Width="18" Height="18" CornerRadius="4" BorderBrush="#FF3A3A3A" BorderThickness="1" Background="White">
+                                                <Grid>
+                                                    <Path Fill="Orange" Stretch="Fill" Stroke="Orange" StrokeThickness="2" Height="10" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="2" Data="M8,4 L8,13.5" RenderTransformOrigin="0.5,0.5">
+                                                        <Path.RenderTransform>
+                                                            <TransformGroup>
+                                                                <ScaleTransform/>
+                                                                <SkewTransform/>
+                                                                <RotateTransform Angle="-90"/>
+                                                                <TranslateTransform/>
+                                                            </TransformGroup>
+                                                        </Path.RenderTransform>
+                                                    </Path>
+                                                </Grid>
+                                            </Border>
+                                            <Rectangle Width="1" Fill="White" Margin="8,3,8,3" />
+                                        </StackPanel>
+
+
+
+
+                                        <Button x:Name="GotoMedsListView" IsTabStop="False" Cursor="Hand">
+                                            <Button.Template>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Grid>
+                                                        <VisualStateManager.VisualStateGroups>
+                                                            <VisualStateGroup x:Name="CommonStates">
+                                                                <VisualState x:Name="Normal" />
+                                                                <VisualState x:Name="MouseOver">
+                                                                    <Storyboard>
+                                                                        <DoubleAnimation Storyboard.TargetName="MouseOverBorder" Storyboard.TargetProperty="Opacity"
+                                                                     To="1" Duration="00:00:00" />
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                            </VisualStateGroup>
+                                                        </VisualStateManager.VisualStateGroups>
+
+                                                        <Border Opacity="0" x:Name="MouseOverBorder">
+                                                            <Border.Background>
+                                                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                                    <GradientStop Color="#00000000" Offset="0" />
+                                                                    <GradientStop Color="#CC000000" Offset="0.2" />
+                                                                    <GradientStop Color="#CC000000" Offset="0.8" />
+                                                                    <GradientStop Color="#00000000" Offset="0" />
+                                                                </LinearGradientBrush>
+                                                            </Border.Background>
+
+                                                            <TextBlock Text="This Medications List View is for illustration only. Click here to view a fully functioning Medications List View." FontSize="12"
+                                                       TextWrapping="Wrap" VerticalAlignment="Center" Margin="10,0,100,0" FontWeight="Bold" Foreground="White" >
+                                                            <TextBlock.Effect>
+                                                                <DropShadowEffect ShadowDepth="0" BlurRadius="5" Opacity="0.6" Color="Black"  />
+                                                            </TextBlock.Effect>
+                                                            </TextBlock>
+                                                        </Border>
+
+                                                    </Grid>
+                                                </ControlTemplate>
+                                            </Button.Template>
+                                        </Button>
+
+
+                                    </Grid>
+
+                                </Border>
+
+                                <Grid HorizontalAlignment="Right" Margin="0,8,8,8" VerticalAlignment="Top">
+                                    <Rectangle Fill="White" Opacity="{Binding ElementName=Prescribe, Path=Opacity}">
+                                        <Rectangle.Effect>
+                                            <DropShadowEffect ShadowDepth="0" Opacity="0.7" BlurRadius="8" />
+                                        </Rectangle.Effect>
+                                    </Rectangle>
+                                    <Button Content="Prescribe" x:Name="Prescribe" Style="{StaticResource BasicButtonStyle}" Padding="6" />
+                                </Grid>
+
+                            </Grid>
+
+
+
+
+                            <local:MedsListViewHost Grid.Row="1" x:Name="MedsListViewHost" MinHeight="100" />
+                        </Grid>
+
+                    </Border>
+
+
+
+
+
+                </Grid>
+
+
+
+            </Border>
+        </ScrollViewer>
+
+        <ContentControl IsTabStop="False" KeyboardNavigation.TabNavigation="Cycle" Grid.RowSpan="3" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch">
+            <Border x:Name="PopupBorder" Background="#7f000000" Opacity="0" IsHitTestVisible="False" >
+
+                <Grid VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5"
+                  Margin="100,0,100,150">
+                    <Grid.RenderTransform>
+                        <ScaleTransform x:Name="PopupGridScale" ScaleX="0" ScaleY="0" />
+                    </Grid.RenderTransform>
+                    <Border Background="White" CornerRadius="5">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="0" BlurRadius="10" />
+                        </Border.Effect>
+                    </Border>
+
+                    <Border Visibility="Collapsed"  x:Name="CloseBorder" Padding="10"
+                        CornerRadius="5" MinWidth="300" MaxWidth="500" Style="{StaticResource BorderStyle}" BorderThickness="1" >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Clear and close" Style="{StaticResource TextBlockStyle}" FontSize="16" Opacity="0.5" />
+                            <TextBlock Text="Are you sure you wish to clear and close the current prescription?" Style="{StaticResource TextBlockStyle}"
+                                       Grid.Row="1"
+                                       Margin="0,5,40,20"
+                                   TextWrapping="Wrap"/>
+
+                            <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right">
+                                <Button x:Name="DontClearAndCloseButton" Style="{StaticResource BasicButtonStyle}" Content="Return to Prescription" IsTabStop="{Binding ElementName=CloseBorder, Path=IsHitTestVisible}" />
+                                <Button x:Name="ClearAndCloseButton" Style="{StaticResource BasicButtonStyle}" Margin="5,0,0,0" IsEnabled="{Binding IsAuthorizable}" Content="Clear and Close" IsTabStop="{Binding ElementName=CloseBorder, Path=IsHitTestVisible}" />
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    
+                    <Border Visibility="Collapsed"  x:Name="FeatureUnavailableBorder" Padding="10"
+                        CornerRadius="5" MinWidth="300" MaxWidth="500" Style="{StaticResource BorderStyle}" BorderThickness="1" >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Feature unavailable" Style="{StaticResource TextBlockStyle}" FontSize="16" Opacity="0.5" />
+                            <TextBlock Text="The selected item or feature is unavailable in this sample." Style="{StaticResource TextBlockStyle}"
+                                       Grid.Row="1"
+                                       Margin="0,5,40,20"
+                                   TextWrapping="Wrap"/>
+
+                            <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right">
+                                <Button x:Name="FeatureUnavailableCloseButton" Style="{StaticResource BasicButtonStyle}" Content="Return to Prescription" IsTabStop="{Binding ElementName=CloseBorder, Path=IsHitTestVisible}" />
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
+                    <Border Visibility="Collapsed"  x:Name="PreviewBorder" DataContext="{Binding ElementName=SearchAndPrescribe, Path=DataContext}" Padding="10"
+                        CornerRadius="5" MinWidth="300" MaxWidth="700" Style="{StaticResource BorderStyle}" BorderThickness="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Preview prescription" Style="{StaticResource TextBlockStyle}" FontSize="16" Opacity="0.5" />
+
+                            <ContentControl IsTabStop="False" Content="{Binding PreviewPrescription, Converter={StaticResource CompletedPrescriptionToMedsLineConverter}}"
+                                        Grid.Row="1"
+                                         Margin="0,5,0,15"
+                                            Foreground="{StaticResource Control_Foreground_Brush}"
+                                        />
+                            <controls:LabeledContentControl BorderThickness="0" Label="starting condition"
+                                                        Padding="0,0,10,0"
+                                                        Margin="0,0,0,10"
+                                                        Grid.Row="2"
+                                                        Content="{Binding AsRequiredReason}"
+                                                        ContentTemplate="{StaticResource ElementValueTemplate}"
+                                                        Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=AsRequiredReason}"/>
+
+                            <controls:LabeledContentControl BorderThickness="0" Label="reason for prescribing"
+                                                        Padding="0,0,10,0"
+                                                        Margin="0,0,0,10"
+                                                        Grid.Row="3"
+                                                        Content="{Binding Reason}"
+                                                        ContentTemplate="{StaticResource ElementValueTemplate}"
+                                                        Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Reason}"/>
+
+                            <controls:LabeledContentControl BorderThickness="0" Label="reason for unlicensed route"
+                                                            
+                                                            Padding="0,0,10,0"
+                                                        Margin="0,0,0,10"
+                                                        Grid.Row="4"
+                                                        Content="{Binding UnlicensedReason}"
+                                                        Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=UnlicensedReason}">
+                                <controls:LabeledContentControl.ContentTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" TextWrapping="Wrap" Style="{StaticResource TextBlockStyle}" />
+                                    </DataTemplate>
+                                </controls:LabeledContentControl.ContentTemplate>
+                            </controls:LabeledContentControl>
+
+                            <controls:LabeledContentControl BorderThickness="0" Label="{Binding AdministrationTimesLabel}"
+                                                                Padding="0,0,10,0"
+                                                        Margin="0,0,0,10"
+                                                        Grid.Row="5"
+                                                        Content="{Binding AdministrationTimes}"
+                                                        ContentTemplate="{StaticResource AdministrationTimesDataTemplate}"
+                                                        VerticalContentAlignment="Top"
+                                                        Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=AdministrationTimes}"/>
+
+                            <controls:LabeledContentControl BorderThickness="0" Label="{Binding StartingLabel}"
+                                                        Padding="0,0,10,0"
+                                                        Margin="0,0,0,10"
+                                                        Grid.Row="6"
+                                                        Content="{Binding}"
+                                                        ContentTemplate="{StaticResource FirstDoseDataTemplate}"
+                                                        VerticalContentAlignment="Top"
+                                                        Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=StartDate}"/>
+
+                            <controls:LabeledContentControl BorderThickness="0" Label="duration"
+                                                                Grid.Row="7"
+                                                            Padding="0,0,10,0"
+                                                        Margin="0,0,0,10"
+                                                        Content="{Binding Duration}"
+                                                        VerticalContentAlignment="Top"
+                                                        Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Duration}"
+                                                        >
+                                <controls:LabeledContentControl.ContentTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding DisplayValue}" TextWrapping="Wrap" Style="{StaticResource TextBlockStyle}" />
+                                    </DataTemplate>
+                                </controls:LabeledContentControl.ContentTemplate>
+                            </controls:LabeledContentControl>
+
+                            <StackPanel Orientation="Horizontal" Grid.Row="8" HorizontalAlignment="Right" Margin="0,20,0,0">
+                                <Button x:Name="PreviewClosePreviewButton" Style="{StaticResource BasicButtonStyle}" Content="Close Preview" IsTabStop="{Binding ElementName=PreviewBorder, Path=IsHitTestVisible}" />
+                                <ContentControl IsEnabled="False" x:Name="PreviewAuthorizeButtonContainer" IsTabStop="False">
+                                    <Button x:Name="PreviewAuthorizeButton" Style="{StaticResource BasicButtonStyle}" Margin="5,0,0,0" IsEnabled="{Binding IsAuthorizable}" Content="Authorise" IsTabStop="{Binding ElementName=PreviewBorder, Path=IsHitTestVisible}" />
+                                </ContentControl>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
+
+                </Grid>
+            </Border>
+        </ContentControl>
+    </Grid>
+</UserControl>

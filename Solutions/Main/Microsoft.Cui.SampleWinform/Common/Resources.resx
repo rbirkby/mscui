@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdditionalInfo" xml:space="preserve">
+    <value>Additional Information</value>
+  </data>
+  <data name="AllowApprox" xml:space="preserve">
+    <value>Allow Approximate Value</value>
+  </data>
+  <data name="AllowApproximateValue" xml:space="preserve">
+    <value>Allow Approximate Value</value>
+  </data>
+  <data name="ApproximateTime" xml:space="preserve">
+    <value>Approximate Time</value>
+  </data>
+  <data name="Build" xml:space="preserve">
+    <value>Build No:</value>
+  </data>
+  <data name="ComplexFunctionality" xml:space="preserve">
+    <value>Complex Functionality</value>
+  </data>
+  <data name="ComplexTime" xml:space="preserve">
+    <value>Complex Time</value>
+  </data>
+  <data name="CopyRight" xml:space="preserve">
+    <value>© Microsoft Corporation and Crown Copyright 2007</value>
+  </data>
+  <data name="DateInputBox" xml:space="preserve">
+    <value>DateInputBox</value>
+  </data>
+  <data name="DemoCaption" xml:space="preserve">
+    <value>Demonstration</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DisplayDateAsText" xml:space="preserve">
+    <value>Set DisplayDateAsText</value>
+  </data>
+  <data name="DisplayDayOfWeek" xml:space="preserve">
+    <value>Set DisplayDayOfWeek</value>
+  </data>
+  <data name="DisplaySeconds" xml:space="preserve">
+    <value>Display Seconds</value>
+  </data>
+  <data name="GenderValueClick" xml:space="preserve">
+    <value>Gender value clicked</value>
+  </data>
+  <data name="HeadingSelect" xml:space="preserve">
+    <value>&lt;Select a control&gt;</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>Hide</value>
+  </data>
+  <data name="IdentifierClick" xml:space="preserve">
+    <value>Nhs number clicked</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="MaxTime" xml:space="preserve">
+    <value>23:59</value>
+  </data>
+  <data name="Morning" xml:space="preserve">
+    <value>Morning</value>
+  </data>
+  <data name="PatientBannerCaption" xml:space="preserve">
+    <value>Patient banner</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privacy Statement</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="Rationale" xml:space="preserve">
+    <value>Rationale</value>
+  </data>
+  <data name="Seconds" xml:space="preserve">
+    <value>Seconds</value>
+  </data>
+  <data name="Seperator" xml:space="preserve">
+    <value>|</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="SimpleTime" xml:space="preserve">
+    <value>Simple Time</value>
+  </data>
+  <data name="Terms" xml:space="preserve">
+    <value>Terms of use</value>
+  </data>
+  <data name="TimeInputBox" xml:space="preserve">
+    <value>TimeInputBox</value>
+  </data>
+  <data name="TimeLabel" xml:space="preserve">
+    <value>TimeLabel</value>
+  </data>
+  <data name="TimeLabelApprox" xml:space="preserve">
+    <value>A TimeLabel displaying an approximate time.</value>
+  </data>
+  <data name="TimeLabelExact" xml:space="preserve">
+    <value>A TimeLabel displaying an exact time.</value>
+  </data>
+  <data name="TimeLabelFormatted" xml:space="preserve">
+    <value>A TimeLabel displaying an exact time, including seconds, in 12-hour clock format with a PM indicator.</value>
+  </data>
+  <data name="TimeLabelNull" xml:space="preserve">
+    <value>A TimeLabel displaying a null index time.</value>
+  </data>
+  <data name="TimeLabelTimePeriod" xml:space="preserve">
+    <value>A TimeLabel displaying a time period.</value>
+  </data>
+  <data name="TopCaption" xml:space="preserve">
+    <value>NHS CUI Toolkit Sample Application</value>
+  </data>
+  <data name="Trademarks" xml:space="preserve">
+    <value>Trademarks</value>
+  </data>
+  <data name="UsageHints" xml:space="preserve">
+    <value>Usage Hints</value>
+  </data>
+  <data name="ViewAllAddressesClick" xml:space="preserve">
+    <value>View all addresses clicked</value>
+  </data>
+  <data name="ViewAllContactDetailsClick" xml:space="preserve">
+    <value>View all contact details clicked</value>
+  </data>
+</root>

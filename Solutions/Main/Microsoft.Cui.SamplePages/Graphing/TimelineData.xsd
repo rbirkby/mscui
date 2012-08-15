@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TimelineSampleData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Scenario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Section">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Row">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" minOccurs="0" name="Item">
+                            <xs:complexType mixed="true">
+                              <xs:sequence minOccurs="0">
+                                <xs:element minOccurs="0" name="Units" type="xs:string" />
+                                <xs:element minOccurs="0" name="UnitsDescription" type="xs:string" />
+                                <xs:element minOccurs="0" name="YAxisMaxValue" type="xs:decimal" />
+                                <xs:element minOccurs="0" name="YAxisMinValue" type="xs:decimal" />
+                                <xs:element minOccurs="0" name="YAxisPadding" type="xs:decimal" />
+                                <xs:element minOccurs="0" name="YAxisMajorInterval" type="xs:decimal" />
+                                <xs:element minOccurs="0" name="YAxisIntervalMinimumHeight" type="xs:decimal" />
+                                <xs:element minOccurs="0" name="Height" type="xs:decimal" />
+                                <xs:element minOccurs="0" name="ShowNormalRange" type="xs:string" />
+                                <xs:element minOccurs="0" name="NormalRangeDescription" type="xs:string" />
+                                <xs:element minOccurs="0" name="NormalRangeMinimumValue" type="xs:decimal" />
+                                <xs:element minOccurs="0" name="NormalRangeMaximumValue" type="xs:decimal" />
+                                <xs:element minOccurs="0" name="NormalRangeBrush" type="xs:string" />
+                                <xs:element minOccurs="0" name="HoverBackground" type="xs:string" />
+                                <xs:element minOccurs="0" name="InterpolationLineColor" type="xs:string" />
+                                <xs:element minOccurs="0" name="DataMarkerTemplate" type="xs:string" />
+                                <xs:element minOccurs="0" name="PointTemplate" type="xs:string" />
+                                <xs:element minOccurs="0" name="LabelTemplate" type="xs:string" />
+                                <xs:element minOccurs="0" name="Style" type="xs:string" />
+                                <xs:element minOccurs="0" name="Brand" type="xs:string" />
+                                <xs:element minOccurs="0" name="FluidStrength" type="xs:string" />
+                                <xs:element minOccurs="0" name="SolidStrength" type="xs:string" />
+                                <xs:element minOccurs="0" name="Form" type="xs:string" />
+                                <xs:element minOccurs="0" name="DoseLabel" type="xs:string" />
+                                <xs:element minOccurs="0" name="Dose" type="xs:string" />
+                                <xs:element minOccurs="0" name="DoseDuration" type="xs:string" />
+                                <xs:element minOccurs="0" name="Route" type="xs:string" />
+                                <xs:element minOccurs="0" name="Frequency" type="xs:string" />
+                                <xs:element minOccurs="0" name="Comments" type="xs:string" />
+                                <xs:element minOccurs="0" name="Clinician" type="xs:string" />
+                                <xs:element minOccurs="0" name="Events">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="unbounded" name="Event">
+                                        <xs:complexType>
+                                          <xs:sequence minOccurs="0">
+                                            <xs:element name="Comments" type="xs:string" />
+                                            <xs:element minOccurs="0" name="Clinician" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                          <xs:attribute name="PlannedStartDate" type="xs:string" use="optional" />
+                                          <xs:attribute name="PlannedEndDate" type="xs:string" use="optional" />
+                                          <xs:attribute name="ActualStartDate" type="xs:string" use="optional" />
+                                          <xs:attribute name="ActualEndDate" type="xs:string" use="optional" />
+                                          <xs:attribute name="CanceledDate" type="xs:string" use="optional" />
+                                          <xs:attribute name="Status" type="xs:string" use="optional" />
+                                          <xs:attribute name="Y1" type="xs:decimal" use="optional" />
+                                          <xs:attribute name="Y2" type="xs:decimal" use="optional" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="Name" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="optional" />
+                              <xs:attribute name="StartDate" type="xs:string" use="optional" />
+                              <xs:attribute name="EndDate" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Id" type="xs:decimal" use="optional" />
+                        <xs:attribute name="Name" type="xs:string" use="optional" />
+                        <xs:attribute name="Description" type="xs:string" use="optional" />
+                        <xs:attribute name="MaxLabelStackLevels" type="xs:decimal" use="optional" />
+                        <xs:attribute name="ShowLabelOvercrowdingNotifications" type="xs:string" use="optional" />
+                        <xs:attribute name="Background" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="PatientId" type="xs:string" use="required" />
+            <xs:attribute name="Description" type="xs:string" use="optional" />
+            <xs:attribute name="BaseDate" type="xs:string" use="required" />
+            <xs:attribute name="TimeFrequencySelectedIndex" type="xs:decimal" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

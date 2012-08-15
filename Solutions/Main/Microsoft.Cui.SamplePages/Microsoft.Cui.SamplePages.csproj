@@ -1,0 +1,460 @@
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D194162-C1EA-40C9-93CA-DAEDF75DADEF}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Cui.SamplePages</RootNamespace>
+    <AssemblyName>Microsoft.Cui.SamplePages</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Microsoft.Cui.SamplePages.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Microsoft.Cui.SamplePages.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+                    
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>..\Microsoft.Cui.Silverlight.snk</AssemblyOriginatorKeyFile>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>false</ThrowErrorsInValidation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>ClientBin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>+!Microsoft.Design#CA1012;-!Microsoft.Design#CA2210;+!Microsoft.Design#CA1040;+!Microsoft.Design#CA1005;+!Microsoft.Design#CA1020;+!Microsoft.Design#CA1021;+!Microsoft.Design#CA1010;+!Microsoft.Design#CA1011;+!Microsoft.Design#CA1009;+!Microsoft.Design#CA1050;+!Microsoft.Design#CA1026;+!Microsoft.Design#CA1019;+!Microsoft.Design#CA1031;+!Microsoft.Design#CA1047;+!Microsoft.Design#CA1000;+!Microsoft.Design#CA1048;+!Microsoft.Design#CA1051;+!Microsoft.Design#CA1061;-!Microsoft.Design#CA1046;+!Microsoft.Design#CA1045;-!Microsoft.Design#CA1065;+!Microsoft.Design#CA1038;+!Microsoft.Design#CA1008;-!Microsoft.Design#CA1028;-!Microsoft.Design#CA1064;+!Microsoft.Design#CA1004;+!Microsoft.Design#CA1035;+!Microsoft.Design#CA1063;+!Microsoft.Design#CA1032;+!Microsoft.Design#CA1023;+!Microsoft.Design#CA1033;+!Microsoft.Design#CA1039;+!Microsoft.Design#CA1016;+!Microsoft.Design#CA1014;+!Microsoft.Design#CA1017;+!Microsoft.Design#CA1018;+!Microsoft.Design#CA1027;+!Microsoft.Design#CA1059;+!Microsoft.Design#CA1060;+!Microsoft.Design#CA1034;+!Microsoft.Design#CA1013;+!Microsoft.Design#CA1036;+!Microsoft.Design#CA1044;+!Microsoft.Design#CA1041;+!Microsoft.Design#CA1025;+!Microsoft.Design#CA1052;+!Microsoft.Design#CA1053;+!Microsoft.Design#CA1057;+!Microsoft.Design#CA1058;+!Microsoft.Design#CA1001;+!Microsoft.Design#CA1049;+!Microsoft.Design#CA1054;+!Microsoft.Design#CA1056;+!Microsoft.Design#CA1055;+!Microsoft.Design#CA1030;+!Microsoft.Design#CA1003;+!Microsoft.Design#CA1007;+!Microsoft.Design#CA1043;+!Microsoft.Design#CA1024;+!Microsoft.Globalization#CA1301;+!Microsoft.Globalization#CA1302;+!Microsoft.Globalization#CA1308;+!Microsoft.Globalization#CA1306;+!Microsoft.Globalization#CA1304;+!Microsoft.Globalization#CA1305;+!Microsoft.Globalization#CA2101;+!Microsoft.Globalization#CA1300;+!Microsoft.Globalization#CA1307;+!Microsoft.Globalization#CA1309;+!Microsoft.Interoperability#CA1403;+!Microsoft.Interoperability#CA1406;+!Microsoft.Interoperability#CA1413;+!Microsoft.Interoperability#CA1402;+!Microsoft.Interoperability#CA1407;+!Microsoft.Interoperability#CA1404;+!Microsoft.Interoperability#CA1410;+!Microsoft.Interoperability#CA1411;+!Microsoft.Interoperability#CA1405;+!Microsoft.Interoperability#CA1409;+!Microsoft.Interoperability#CA1415;+!Microsoft.Interoperability#CA1408;+!Microsoft.Interoperability#CA1414;+!Microsoft.Interoperability#CA1412;+!Microsoft.Interoperability#CA1400;+!Microsoft.Interoperability#CA1401;-!Microsoft.Maintainability#CA1506;-!Microsoft.Maintainability#CA1502;-!Microsoft.Maintainability#CA1501;-!Microsoft.Maintainability#CA1505;-!Microsoft.Maintainability#CA1504;-!Microsoft.Maintainability#CA1500;+!Microsoft.Mobility#CA1600;+!Microsoft.Mobility#CA1601;-!Microsoft.Naming#CA1702;-!Microsoft.Naming#CA1700;+!Microsoft.Naming#CA1712;+!Microsoft.Naming#CA1713;+!Microsoft.Naming#CA1714;+!Microsoft.Naming#CA1709;+!Microsoft.Naming#CA1704;+!Microsoft.Naming#CA1708;+!Microsoft.Naming#CA1715;+!Microsoft.Naming#CA1710;-!Microsoft.Naming#CA1720;+!Microsoft.Naming#CA1707;+!Microsoft.Naming#CA1722;+!Microsoft.Naming#CA1711;+!Microsoft.Naming#CA1716;+!Microsoft.Naming#CA1717;+!Microsoft.Naming#CA1725;+!Microsoft.Naming#CA1719;+!Microsoft.Naming#CA1721;+!Microsoft.Naming#CA1701;+!Microsoft.Naming#CA1703;+!Microsoft.Naming#CA1724;+!Microsoft.Naming#CA1726;+!Microsoft.Performance#CA1809;-!Microsoft.Performance#CA1811;+!Microsoft.Performance#CA1812;+!Microsoft.Performance#CA1813;-!Microsoft.Performance#CA1823;+!Microsoft.Performance#CA1800;+!Microsoft.Performance#CA1805;+!Microsoft.Performance#CA1810;-!Microsoft.Performance#CA1824;+!Microsoft.Performance#CA1822;+!Microsoft.Performance#CA1815;+!Microsoft.Performance#CA1814;+!Microsoft.Performance#CA1819;+!Microsoft.Performance#CA1821;+!Microsoft.Performance#CA1804;+!Microsoft.Performance#CA1820;+!Microsoft.Performance#CA1802;+!Microsoft.Portability#CA1903;+!Microsoft.Portability#CA1901;+!Microsoft.Portability#CA1900;-!Microsoft.Reliability#CA2001;-!Microsoft.Reliability#CA2002;-!Microsoft.Reliability#CA2003;-!Microsoft.Reliability#CA2004;-!Microsoft.Reliability#CA2006;+!Microsoft.Security#CA2116;+!Microsoft.Security#CA2117;+!Microsoft.Security#CA2105;+!Microsoft.Security#CA2115;+!Microsoft.Security#CA2102;+!Microsoft.Security#CA2104;+!Microsoft.Security#CA2122;+!Microsoft.Security#CA2114;+!Microsoft.Security#CA2123;+!Microsoft.Security#CA2111;+!Microsoft.Security#CA2108;+!Microsoft.Security#CA2107;+!Microsoft.Security#CA2103;+!Microsoft.Security#CA2118;+!Microsoft.Security#CA2109;+!Microsoft.Security#CA2119;+!Microsoft.Security#CA2106;+!Microsoft.Security#CA2112;+!Microsoft.Security#CA2120;+!Microsoft.Security#CA2121;+!Microsoft.Security#CA2126;+!Microsoft.Security#CA2124;+!Microsoft.Security#CA2127;+!Microsoft.Security#CA2128;+!Microsoft.Security#CA2129;+!Microsoft.Usage#CA2243;+!Microsoft.Usage#CA2236;+!Microsoft.Usage#CA1816;-!Microsoft.Usage#CA2227;+!Microsoft.Usage#CA2213;+!Microsoft.Usage#CA2216;+!Microsoft.Usage#CA2214;+!Microsoft.Usage#CA2222;+!Microsoft.Usage#CA1806;+!Microsoft.Usage#CA2217;+!Microsoft.Usage#CA2212;+!Microsoft.Usage#CA2219;+!Microsoft.Usage#CA2201;+!Microsoft.Usage#CA2228;+!Microsoft.Usage#CA2221;+!Microsoft.Usage#CA2220;+!Microsoft.Usage#CA2240;+!Microsoft.Usage#CA2229;+!Microsoft.Usage#CA2238;+!Microsoft.Usage#CA2207;+!Microsoft.Usage#CA2208;+!Microsoft.Usage#CA2235;+!Microsoft.Usage#CA2237;+!Microsoft.Usage#CA2232;+!Microsoft.Usage#CA2223;+!Microsoft.Usage#CA2211;+!Microsoft.Usage#CA2233;+!Microsoft.Usage#CA2225;+!Microsoft.Usage#CA2226;+!Microsoft.Usage#CA2231;+!Microsoft.Usage#CA2224;+!Microsoft.Usage#CA2218;+!Microsoft.Usage#CA2234;+!Microsoft.Usage#CA2239;+!Microsoft.Usage#CA2200;+!Microsoft.Usage#CA1801;+!Microsoft.Usage#CA2242;+!Microsoft.Usage#CA2205;+!Microsoft.Usage#CA2230</CodeAnalysisRules>
+    <DocumentationFile>Microsoft.Cui.SamplePages.XML</DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>ClientBin\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Design#CA2210;-Microsoft.Design#CA1046;-Microsoft.Design#CA1065;-Microsoft.Design#CA1028;-Microsoft.Design#CA1064;-Microsoft.Maintainability#CA1506;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1505;-Microsoft.Maintainability#CA1504;-Microsoft.Maintainability#CA1500;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1720;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1824;-Microsoft.Reliability#CA2001;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006</CodeAnalysisRules>
+    <DocumentationFile>Microsoft.Cui.SamplePages.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>3003</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\SilverlightCommonAssemblyInfo.cs">
+      <Link>Properties\SilverlightCommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\VersionNumber.cs">
+      <Link>Properties\VersionNumber.cs</Link>
+    </Compile>
+    <Compile Include="AddressLabelPage.xaml.cs">
+      <DependentUpon>AddressLabelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AllergiesLabelPage.xaml.cs">
+      <DependentUpon>AllergiesLabelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactLabelPage.xaml.cs">
+      <DependentUpon>ContactLabelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DateLabelPage.xaml.cs">
+      <DependentUpon>DateLabelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="GraphingSamplePage.xaml.cs">
+      <DependentUpon>GraphingSamplePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultPage.xaml.cs">
+      <DependentUpon>DefaultPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenderLabelPage.xaml.cs">
+      <DependentUpon>GenderLabelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphing\ActivityDialog.xaml.cs">
+      <DependentUpon>ActivityDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphing\ContinuousAdministrationEvent.xaml.cs">
+      <DependentUpon>ContinuousAdministrationEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphing\IntToVisibilityConverter.cs" />
+    <Compile Include="Graphing\TimelineMedicationDetails.cs" />
+    <Compile Include="HelperControlsPage.xaml.cs">
+      <DependentUpon>HelperControlsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphing\CurvedInterpolationLine.xaml.cs">
+      <DependentUpon>CurvedInterpolationLine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelperControls\DecoratorTextBoxPage.xaml.cs">
+      <DependentUpon>DecoratorTextBoxPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelperControls\EncodableInputBoxPage.xaml.cs">
+      <DependentUpon>EncodableInputBoxPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelperControls\HighlightSection.cs" />
+    <Compile Include="HelperControls\IndentedLabelPage.xaml.cs">
+      <DependentUpon>IndentedLabelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelperControls\LevelOfDetailPage.xaml.cs">
+      <DependentUpon>LevelOfDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelperControls\ModalDialog.xaml.cs">
+      <DependentUpon>ModalDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelperControls\PanelViewerPage.xaml.cs">
+      <DependentUpon>PanelViewerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphing\TimelineGraphData.cs" />
+    <Compile Include="HelperControls\WrapPanelPage.xaml.cs">
+      <DependentUpon>WrapPanelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IdentifierLabelPage.xaml.cs">
+      <DependentUpon>IdentifierLabelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NameLabelPage.xaml.cs">
+      <DependentUpon>NameLabelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PatientBannerPage.xaml.cs">
+      <DependentUpon>PatientBannerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchAndPrescribePage.xaml.cs">
+      <DependentUpon>SearchAndPrescribePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchAndPrescribe\Controls\DosePicker.xaml.cs">
+      <DependentUpon>DosePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchAndPrescribe\Controls\DurationPicker.xaml.cs">
+      <DependentUpon>DurationPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchAndPrescribe\Controls\FrequencyPicker.xaml.cs">
+      <DependentUpon>FrequencyPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchAndPrescribe\Controls\MedsListViewHost.xaml.cs">
+      <DependentUpon>MedsListViewHost.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchAndPrescribe\Converters\CompletedPrescriptionToMedsLineConverter.cs" />
+    <Compile Include="SearchAndPrescribe\Converters\DateTimeToCuiDateStringConverter.cs" />
+    <Compile Include="SearchAndPrescribe\Converters\DateTimeToCuiTimeStringConverter.cs" />
+    <Compile Include="SearchAndPrescribe\Converters\DrugNameToTextBlockConverter.cs" />
+    <Compile Include="SearchAndPrescribe\Converters\StringToTimeConverter.cs" />
+    <Compile Include="SearchAndPrescribe\Converters\StringToTimeSpanConverter.cs" />
+    <Compile Include="SearchAndPrescribe\Converters\TimeSpanToStringConverter.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\AdministrationTimes.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\CompletedPrescription.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\Dose.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\Drug.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\DrugElement.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\Duration.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\ElementValue.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\Form.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\Frequency.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\Prescription.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\Route.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\Strength.cs" />
+    <Compile Include="SearchAndPrescribe\Entities\TemplatePrescription.cs" />
+    <Compile Include="SearchAndPrescribe\Helpers\DrugDataHelper.cs" />
+    <Compile Include="SearchAndPrescribe\Helpers\DrugSearchHelper.cs" />
+    <Compile Include="Service References\TerminologyProvider\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SingleConceptMatchingPage.xaml.cs">
+      <DependentUpon>SingleConceptMatchingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SingleConceptMatching\Converters\IsASynonymConverter.cs" />
+    <Compile Include="SingleConceptMatching\StringCollection.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\AdditionalTextBoxResult.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\AdditionalTextBoxParseCompletedEventArgs.cs" />
+    <Compile Include="SingleConceptMatching\Converters\AndAPrefixVowelConverter.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\AttributeValuePair.cs" />
+    <Compile Include="SingleConceptMatching\Converters\BoolToIntConverter.cs" />
+    <Compile Include="SingleConceptMatching\Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\BaseTerminologyEventArgs.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\EncodeConceptCompletedEventArgs.cs" />
+    <Compile Include="SingleConceptMatching\Converters\FlyOutConceptNameConverter.cs" />
+    <Compile Include="SingleConceptMatching\Converters\ItemByIndexInListConverter.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\InputFieldResult.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\InputFieldSearchCompletedEventArgs.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\EncodedConcept.cs" />
+    <Compile Include="SingleConceptMatching\Scenario\FilterItem.cs" />
+    <Compile Include="SingleConceptMatching\Scenario\FilterItemCollection.cs" />
+    <Compile Include="SingleConceptMatching\Converters\IsAPrefixVowelConverter.cs" />
+    <Compile Include="SingleConceptMatching\Converters\ItemCountGreaterThanToVisibilityConverter.cs" />
+    <Compile Include="SingleConceptMatching\Converters\ItemsFromIndexInListConverter.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\PostCoordinationConcept.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\SearchState.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\SnomedConcepts.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\TerminologyManager.cs" />
+    <Compile Include="SingleConceptMatching\Terminology\SingleConceptMatchingOutput.cs" />
+    <Compile Include="SingleConceptMatching\Scenario\SubsetCollection.cs" />
+    <Compile Include="SingleConceptMatching\Scenario\Scenario.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SingleConceptMatching\Scenario\ScenarioCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SingleConceptMatching\Terminology\UserState.cs" />
+    <Compile Include="TimeActivityGraphHostPage.xaml.cs">
+      <DependentUpon>TimeActivityGraphHostPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TimeFrequencyBindingHelper.cs" />
+    <Compile Include="TimeLabelPage.xaml.cs">
+      <DependentUpon>TimeLabelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphing\TimelineData.cs">
+      <DependentUpon>TimelineData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WrapDataGridPageSmall.xaml.cs">
+      <DependentUpon>WrapDataGridPageSmall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\TerminologyProvider\Microsoft.Cui.SamplePages.TerminologyProvider.ConceptDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TerminologyProvider\Microsoft.Cui.SamplePages.TerminologyProvider.IndexerResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TerminologyProvider\Microsoft.Cui.SamplePages.TerminologyProvider.SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TerminologyProvider\TerminologyProvider.wsdl" />
+    <None Include="Service References\TerminologyProvider\TerminologyProvider.xsd" />
+    <None Include="Service References\TerminologyProvider\TerminologyProvider1.xsd" />
+    <None Include="Service References\TerminologyProvider\TerminologyProvider.disco" />
+    <None Include="Service References\TerminologyProvider\TerminologyProvider2.xsd" />
+    <None Include="Service References\TerminologyProvider\TerminologyProvider3.xsd" />
+    <None Include="Service References\TerminologyProvider\configuration91.svcinfo" />
+    <None Include="Service References\TerminologyProvider\configuration.svcinfo" />
+    <None Include="Service References\TerminologyProvider\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Graphing\TimelineData.xsd" />
+    <CodeAnalysisDictionary Include="..\Common\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+    <Content Include="ServiceReferences.ClientConfig" />
+    <Content Include="SampleData\DrugData.xml" />
+    <Content Include="Graphing\TimelineData.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Cui.Controls\Microsoft.Cui.Controls.csproj">
+      <Project>{E07CA3AF-5BF8-413D-8CE2-1A46EADF9F7C}</Project>
+      <Name>Microsoft.Cui.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Cui.Data\Microsoft.Cui.Data.csproj">
+      <Project>{C358B5D4-D606-4301-A7E0-7E32B9A18B3B}</Project>
+      <Name>Microsoft.Cui.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Cui.IsvDataProvider\Microsoft.Cui.IsvDataProvider.csproj">
+      <Project>{F77B2F66-06DD-4739-B0D4-B167A4C362FC}</Project>
+      <Name>Microsoft.Cui.IsvDataProvider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Toolkit, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ReferencedAssemblies\SilverlightToolkit\System.Windows.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="WrapDataGridPageSmall.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AddressLabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllergiesLabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ContactLabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DateLabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphingSamplePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DefaultPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GenderLabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Graphing\ActivityDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Graphing\ContinuousAdministrationEvent.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Graphing\ResourceDictionaries\TimeActivityGraphHost.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Graphing\ResourceDictionaries\TimeActivityGraphHostGraphs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="HelperControlsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Graphing\CurvedInterpolationLine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="HelperControls\DecoratorTextBoxPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="HelperControls\EncodableInputBoxPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="HelperControls\IndentedLabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="HelperControls\LevelOfDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="HelperControls\ModalDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="HelperControls\PanelViewerPage.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HelperControls\WrapPanelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="IdentifierLabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NameLabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PatientBannerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchAndPrescribePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="SearchAndPrescribe\Controls\DosePicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="SearchAndPrescribe\Controls\DurationPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="SearchAndPrescribe\Controls\FrequencyPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="SearchAndPrescribe\Controls\MedsListViewHost.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="SearchAndPrescribe\ResourceDictionaries\DefaultResourceDictionary.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SingleConceptMatchingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TimeActivityGraphHostPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="TimeLabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\TerminologyProvider\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" Condition="" />
+  
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

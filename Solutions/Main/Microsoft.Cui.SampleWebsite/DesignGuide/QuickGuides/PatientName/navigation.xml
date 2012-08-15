@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Patient Name Input and Display</title>
+  <back href="NameDisplayInput.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Patient Name Input and Display.pdf" altText="Links to Design Guidance - Patient Name Input and Display documentation">Design Guidance - Patient Name Input and Display (PDF Format)</download>
+  <navigation collapseInactiveItems="false">
+    <header text="Overview" tooltip="Patient Name Input and Display - Overview" href="QuickGuides/PatientName/default.aspx" />
+    <header text="Display" tooltip="Patient Name Input and Display - Display" href="QuickGuides/PatientName/display.aspx">
+      <subheader text="Elements" tooltip="Patient Name Input and Display - Display - Elements" href="QuickGuides/PatientName/Display/elements.aspx" />
+      <subheader text="Multiple Components" tooltip="Patient Name Input and Display - Display - Multiple Components" href="QuickGuides/PatientName/Display/multiplecomponents.aspx" />
+      <subheader text="Title" tooltip="Patient Name Input and Display - Display - Title" href="QuickGuides/PatientName/Display/title.aspx" />
+      <subheader text="Family Name" tooltip="Patient Name Input and Display - Display - Family Name" href="QuickGuides/PatientName/Display/family.aspx" />
+      <subheader text="Separators" tooltip="Patient Name Input and Display - Display - Separators" href="QuickGuides/PatientName/Display/separators.aspx" />
+      <subheader text="Format" tooltip="Patient Name Input and Display - Display - Format" href="QuickGuides/PatientName/Display/format.aspx" />
+    </header>
+    <header text="Input" tooltip="Patient Name Input and Display - Input" href="QuickGuides/PatientName/input.aspx">
+      <subheader text="Defaults" tooltip="Patient Name Input and Display - Input - Defaults" href="QuickGuides/PatientName/Input/defaults.aspx" />
+      <subheader text="Title" tooltip="Patient Name Input and Display - Input - Title" href="QuickGuides/PatientName/Input/title.aspx" />
+      <subheader text="Family Name" tooltip="Patient Name Input and Display - Input - Family Name" href="QuickGuides/PatientName/Input/family.aspx" />
+      <subheader text="Given Name" tooltip="Patient Name Input and Display - Input - Given Name" href="QuickGuides/PatientName/Input/given.aspx" />
+      <subheader text="Middle Names" tooltip="Patient Name Input and Display - Input - Middle Names" href="QuickGuides/PatientName/Input/middle.aspx" />
+      <subheader text="Suffix" tooltip="Patient Name Input and Display - Input - Suffix" href="QuickGuides/PatientName/Input/suffix.aspx" />
+      <subheader text="Known As" tooltip="Patient Name Input and Display - Input - Known As" href="QuickGuides/PatientName/Input/knownas.aspx" />
+      <subheader text="Control Layout" tooltip="Patient Name Input and Display - Input - Control Layout" href="QuickGuides/PatientName/Input/control.aspx">
+        <subheader text="In-Form" tooltip="Patient Name Input and Display - Input - Control Layout - In-Form" href="QuickGuides/PatientName/Input/Layout/inform.aspx" />
+        <subheader text="In-Line" tooltip="Patient Name Input and Display - Input - Control Layout - In-Line" href="QuickGuides/PatientName/Input/Layout/inline.aspx" />
+      </subheader>
+      <subheader text="Instructional Text" tooltip="Patient Name Input and Display - Input - Instructional Text" href="QuickGuides/PatientName/Input/instructions.aspx">
+        <subheader text="Field Labels" tooltip="Patient Name Input and Display - Input - Instructional Text - Field Labels" href="QuickGuides/PatientName/Input/Instructions/fieldlabels.aspx" />
+        <subheader text="Prompts" tooltip="Patient Name Input and Display - Input - Instructional Text - Prompts" href="QuickGuides/PatientName/Input/Instructions/prompts.aspx" />
+        <subheader text="Tooltips" tooltip="Patient Name Input and Display - Input - Instructional Text - Tooltips" href="QuickGuides/PatientName/Input/Instructions/tooltips.aspx" />
+      </subheader>
+      </header>
+    <header text="Checklist" tooltip="Patient Name Input and Display - Checklist" href="QuickGuides/PatientName/checklist.aspx" />
+  </navigation>
+</quickguide>

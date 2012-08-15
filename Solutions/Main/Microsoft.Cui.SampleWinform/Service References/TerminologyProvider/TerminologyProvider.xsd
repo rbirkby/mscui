@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.mscui.net/Services" elementFormDefault="qualified" targetNamespace="http://www.mscui.net/Services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/Services/TerminologyProvider.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost/Services/TerminologyProvider.svc?xsd=xsd3" namespace="http://tempuri.org/" />
+  <xs:element name="GetRootConcept">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRootConceptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRootConceptResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchByDescription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="searchText" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="domains" nillable="true" type="q1:ArrayOfstring" />
+        <xs:element minOccurs="0" name="ancestorConceptId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="includeAncestor" type="xs:boolean" />
+        <xs:element minOccurs="0" name="fullText" type="xs:boolean" />
+        <xs:element minOccurs="0" name="locale" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="endIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="maxTotal" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchByDescriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://tempuri.org/" minOccurs="0" name="SearchByDescriptionResult" nillable="true" type="q2:SearchResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConceptDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="snomedConceptId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="locale" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConceptDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://tempuri.org/" minOccurs="0" name="GetConceptDetailsResult" nillable="true" type="q3:ConceptDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IndexText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="text" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="domains" nillable="true" type="q4:ArrayOfstring" />
+        <xs:element minOccurs="0" name="ancestorConceptId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="includeAncestor" type="xs:boolean" />
+        <xs:element minOccurs="0" name="locale" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IndexTextResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://tempuri.org/" minOccurs="0" name="IndexTextResult" nillable="true" type="q5:ArrayOfIndexerResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDomains">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDomainsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetDomainsResult" nillable="true" type="q6:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

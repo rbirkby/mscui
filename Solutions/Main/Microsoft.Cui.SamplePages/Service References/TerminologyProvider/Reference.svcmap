@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3f3d5663-f9ab-4ac8-83f8-d3955e2ccaf9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/services/TerminologyProvider.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TerminologyProvider.xsd" MetadataType="Schema" ID="8ccb1370-41eb-4d5c-afb0-7be585acff58" SourceId="1" SourceUrl="http://localhost/Services/TerminologyProvider.svc?xsd=xsd0" />
+    <MetadataFile FileName="TerminologyProvider1.xsd" MetadataType="Schema" ID="37535ec3-5cb4-4570-bea1-801a82802d96" SourceId="1" SourceUrl="http://localhost/Services/TerminologyProvider.svc?xsd=xsd3" />
+    <MetadataFile FileName="TerminologyProvider.disco" MetadataType="Disco" ID="f3856517-0381-44c6-9065-352c0c9347dc" SourceId="1" SourceUrl="http://localhost/Services/TerminologyProvider.svc?disco" />
+    <MetadataFile FileName="TerminologyProvider.wsdl" MetadataType="Wsdl" ID="f7eb2475-5199-42b6-8c0f-4265c6953d56" SourceId="1" SourceUrl="http://localhost/Services/TerminologyProvider.svc?wsdl" />
+    <MetadataFile FileName="TerminologyProvider2.xsd" MetadataType="Schema" ID="e1feae57-1173-4ede-9332-a961effaea17" SourceId="1" SourceUrl="http://localhost/Services/TerminologyProvider.svc?xsd=xsd2" />
+    <MetadataFile FileName="TerminologyProvider3.xsd" MetadataType="Schema" ID="ac340f14-50a4-453c-a94f-f32476cbd7aa" SourceId="1" SourceUrl="http://localhost/Services/TerminologyProvider.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

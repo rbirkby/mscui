@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Search and Prescribe</title>
+  <back href="SearchPrescribe.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Search and Prescribe.pdf" altText="Links to Design Guidance - Search and Prescribe documentation">Design Guidance - Search and Prescribe (PDF Format)</download>
+  <navigation collapseInactiveItems="true">
+    <header text="Overview" tooltip="Search and Prescribe - Overview" href="QuickGuides/SearchPrescribe/default.aspx" />
+    <header text="Context" tooltip="Search and Prescribe - Context" href="QuickGuides/SearchPrescribe/context.aspx">
+      <subheader text="Application Window" tooltip="Search and Prescribe - Context - Application Window" href="QuickGuides/SearchPrescribe/Context/appwindow.aspx" />
+      <subheader text="Simultaneous Views" tooltip="Search and Prescribe - Context - Simultaneous Views" href="QuickGuides/SearchPrescribe/Context/simviews.aspx" />
+    </header>  
+    <header text="Quick List" tooltip="Search and Prescribe - Quick List" href="QuickGuides/SearchPrescribe/quicklist.aspx">
+      <subheader text="Contents" tooltip="Search and Prescribe - Quick List - Contents" href="QuickGuides/SearchPrescribe/QuickList/contents.aspx" />
+      <subheader text="Layout" tooltip="Search and Prescribe - Quick List - Layout" href="QuickGuides/SearchPrescribe/QuickList/layout.aspx" />
+      <subheader text="Shortcut Keys" tooltip="Search and Prescribe - Quick List - Shortcut Keys" href="QuickGuides/SearchPrescribe/QuickList/shortcutkeys.aspx" />
+      <subheader text="Notifications" tooltip="Search and Prescribe - Quick List - Notifications" href="QuickGuides/SearchPrescribe/QuickList/notifications.aspx" />
+      <subheader text="Multiple Quick Lists" tooltip="Search and Prescribe - Quick List - Multiple Quick Lists" href="QuickGuides/SearchPrescribe/QuickList/multiplelists.aspx" />
+    </header>
+    <header text="Drug Search" tooltip="Search and Prescribe - Drug Search" href="QuickGuides/SearchPrescribe/drugsearch.aspx">
+      <subheader text="Control Layout" tooltip="Search and Prescribe - Drug Search - Control Layout" href="QuickGuides/SearchPrescribe/DrugSearch/layout.aspx" />
+      <subheader text="Text Entry" tooltip="Search and Prescribe - Drug Search - Text Entry" href="QuickGuides/SearchPrescribe/DrugSearch/textentry.aspx" />
+      <subheader text="Compact Design" tooltip="Search and Prescribe - Drug Search - Compact Design" href="QuickGuides/SearchPrescribe/DrugSearch/compactdesign.aspx" />
+      <subheader text="Progressive Search" tooltip="Search and Prescribe - Drug Search - Progressive Search" href="QuickGuides/SearchPrescribe/DrugSearch/progressive.aspx">
+        <subheader text="Minimum Characters" tooltip="Search and Prescribe - Drug Search - Progressive Search - Minimum Characters" href="QuickGuides/SearchPrescribe/DrugSearch/Progressive/characters.aspx" />
+        <subheader text="Message Dimensions" tooltip="Search and Prescribe - Drug Search - Progressive Search - Message Dimensions" href="QuickGuides/SearchPrescribe/DrugSearch/Progressive/messages.aspx" />
+      </subheader>
+      <subheader text="List Height" tooltip="Search and Prescribe - Drug Search - List Height" href="QuickGuides/SearchPrescribe/DrugSearch/listheight.aspx">
+        <subheader text="Show All" tooltip="Search and Prescribe - Drug Search - List Height - Show All" href="QuickGuides/SearchPrescribe/DrugSearch/ListHeight/showall.aspx" />
+      </subheader>
+      <subheader text="Matching" tooltip="Search and Prescribe - Drug Search - Matching" href="QuickGuides/SearchPrescribe/DrugSearch/matching.aspx">
+        <subheader text="List Order" tooltip="Search and Prescribe - Drug Search - Matching - List Order" href="QuickGuides/SearchPrescribe/DrugSearch/Matching/listorder.aspx" />
+        <subheader text="Groups" tooltip="Search and Prescribe - Drug Search - Matching - Groups" href="QuickGuides/SearchPrescribe/DrugSearch/Matching/groups.aspx" />
+        <subheader text="Spelling and Synonyms" tooltip="Search and Prescribe - Drug Search - Matching - Spelling and Synonyms" href="QuickGuides/SearchPrescribe/DrugSearch/Matching/spellsynonyms.aspx" />
+      </subheader>
+      <subheader text="Combination Drugs" tooltip="Search and Prescribe - Drug Search - Combination Drugs" href="QuickGuides/SearchPrescribe/DrugSearch/codrugs.aspx" />
+      <subheader text="Prioritised Results" tooltip="Search and Prescribe - Drug Search - Prioritised Results" href="QuickGuides/SearchPrescribe/DrugSearch/prioritised.aspx">
+        <subheader text="Labels" tooltip="Search and Prescribe - Drug Search - Prioritised Results - Labels" href="QuickGuides/SearchPrescribe/DrugSearch/Prioritised/labels.aspx" />
+        <subheader text="Shortcut Keys" tooltip="Search and Prescribe - Drug Search - Prioritised Results - Labels" href="QuickGuides/SearchPrescribe/DrugSearch/Prioritised/shortcutkeys.aspx" />
+      </subheader>
+      <subheader text="Formatting" tooltip="Search and Prescribe - Drug Search - Formatting" href="QuickGuides/SearchPrescribe/DrugSearch/formatting.aspx">
+        <subheader text="Mis-Selection Warnings" tooltip="Search and Prescribe - Drug Search - Formatting - Mis-Selection Warnings" href="QuickGuides/SearchPrescribe/DrugSearch/Formatting/misselection.aspx" />
+        <subheader text="Spelling Matches" tooltip="Search and Prescribe - Drug Search - Formatting - Spelling Matches" href="QuickGuides/SearchPrescribe/DrugSearch/Formatting/spellmatches.aspx" />
+        <subheader text="Brand Names" tooltip="Search and Prescribe - Drug Search - Formatting - Brand Names" href="QuickGuides/SearchPrescribe/DrugSearch/Formatting/brandnames.aspx" />
+      </subheader>
+    </header>
+    <header text="Cascading Lists" tooltip="Search and Prescribe - Cascading Lists" href="QuickGuides/SearchPrescribe/cascadinglists.aspx">
+      <subheader text="Display" tooltip="Search and Prescribe - Cascading Lists - Display" href="QuickGuides/SearchPrescribe/CascadingLists/display.aspx" />
+      <subheader text="Results List Width" tooltip="Search and Prescribe - Cascading Lists - Results List Width" href="QuickGuides/SearchPrescribe/CascadingLists/listwidth.aspx" />
+      <subheader text="Layout" tooltip="Search and Prescribe - Cascading Lists - Layout" href="QuickGuides/SearchPrescribe/CascadingLists/layout.aspx" />
+      <subheader text="Contents" tooltip="Search and Prescribe - Cascading Lists - Controls" href="QuickGuides/SearchPrescribe/CascadingLists/contents.aspx" />
+      <subheader text="Selecting Brand" tooltip="Search and Prescribe - Cascading Lists - Selecting Brand" href="QuickGuides/SearchPrescribe/CascadingLists/selectbrand.aspx" />
+      <subheader text="Generic Equivalents" tooltip="Search and Prescribe - Cascading Lists - Generic Equivalents" href="QuickGuides/SearchPrescribe/CascadingLists/genericequiv.aspx" />
+    </header>
+    <header text="Template Prescriptions" tooltip="Search and Prescribe - Template Prescriptions" href="QuickGuides/SearchPrescribe/templateprescriptions.aspx">
+      <subheader text="Display" tooltip="Search and Prescribe - Template Prescriptions - Display" href="QuickGuides/SearchPrescribe/TemplatePrescriptions/display.aspx" />
+      <subheader text="Contents" tooltip="Search and Prescribe - Template Prescriptions - Contents" href="QuickGuides/SearchPrescribe/TemplatePrescriptions/contents.aspx" />
+      <subheader text="Attributes" tooltip="Search and Prescribe - Template Prescriptions - Attributes" href="QuickGuides/SearchPrescribe/TemplatePrescriptions/attributes.aspx" />
+      <subheader text="Layout" tooltip="Search and Prescribe - Template Prescriptions - Layout" href="QuickGuides/SearchPrescribe/TemplatePrescriptions/layout.aspx" />
+      <subheader text="Selection Trail" tooltip="Search and Prescribe - Template Prescriptions - Selection Trail" href="QuickGuides/SearchPrescribe/TemplatePrescriptions/selectiontrail.aspx">
+        <subheader text="Re-Open" tooltip="Search and Prescribe - Template Prescriptions - Selection Trail - Re-Open" href="QuickGuides/SearchPrescribe/TemplatePrescriptions/selectiontrail/reopen.aspx" />
+      </subheader>
+
+      <subheader text="Supporting Selection" tooltip="Search and Prescribe - Template Prescriptions - Supporting Selection" href="QuickGuides/SearchPrescribe/TemplatePrescriptions/selecting.aspx" />
+      <subheader text="Re-Open List" tooltip="Search and Prescribe - Template Prescriptions - Re-Open List" href="QuickGuides/SearchPrescribe/TemplatePrescriptions/reopenlist.aspx" />
+    </header>
+    <header text="Step by Step" tooltip="Search and Prescribe - Step by Step" href="QuickGuides/SearchPrescribe/stepbystep.aspx">
+      <subheader text="Interaction" tooltip="Search and Prescribe - Step by Step - Interaction" href="QuickGuides/SearchPrescribe/StepByStep/interaction.aspx" />
+      <subheader text="Details Control" tooltip="Search and Prescribe - Step by Step - Details Control" href="QuickGuides/SearchPrescribe/StepByStep/detailscontrol.aspx" />
+      <subheader text="Input Controls" tooltip="Search and Prescribe - Step by Step - Input Controls" href="QuickGuides/SearchPrescribe/StepByStep/inputcontrols.aspx" />
+    </header>
+    <header text="Sentence Layout" tooltip="Search and Prescribe - Sentence Layout" href="QuickGuides/SearchPrescribe/sentencelayout.aspx">
+      <subheader text="Purpose" tooltip="Search and Prescribe - Sentence Layout - Purpose" href="QuickGuides/SearchPrescribe/SentenceLayout/purpose.aspx" />
+      <subheader text="Format" tooltip="Search and Prescribe - Sentence Layout - Format" href="QuickGuides/SearchPrescribe/SentenceLayout/format.aspx" />
+      <subheader text="Dimensions" tooltip="Search and Prescribe - Sentence Layout - Dimensions" href="QuickGuides/SearchPrescribe/SentenceLayout/dimensions.aspx" />
+    </header>
+    <header text="Prescription Forms" tooltip="Search and Prescribe - Prescription Forms" href="QuickGuides/SearchPrescribe/prescriptionforms.aspx">
+      <subheader text="Structure" tooltip="Search and Prescribe - Prescription Forms - Structure" href="QuickGuides/SearchPrescribe/PrescriptionForms/structure.aspx" />
+      <subheader text="Layout" tooltip="Search and Prescribe - Prescription Forms - Layout" href="QuickGuides/SearchPrescribe/PrescriptionForms/layout.aspx" />
+      <subheader text="Drug Name" tooltip="Search and Prescribe - Prescription Forms - Drug Name" href="QuickGuides/SearchPrescribe/PrescriptionForms/drugname.aspx" />
+    </header>
+    <header text="Detailed Forms" tooltip="Search and Prescribe - Detailed Forms" href="QuickGuides/SearchPrescribe/detailedforms.aspx">
+      <subheader text="Interaction" tooltip="Search and Prescribe - Detailed Forms - Interaction" href="QuickGuides/SearchPrescribe/DetailedForms/interaction.aspx" />
+      <subheader text="Default Fields" tooltip="Search and Prescribe - Detailed Forms - Default Fields" href="QuickGuides/SearchPrescribe/DetailedForms/defaultfields.aspx" />
+      <subheader text="Controls" tooltip="Search and Prescribe - Detailed Forms - Controls" href="QuickGuides/SearchPrescribe/DetailedForms/controls.aspx" />
+      <subheader text="Drug Name" tooltip="Search and Prescribe - Detailed Forms - Drug Name" href="QuickGuides/SearchPrescribe/DetailedForms/drugname.aspx" />
+      <subheader text="Structure" tooltip="Search and Prescribe - Detailed Forms - Structure" href="QuickGuides/SearchPrescribe/DetailedForms/structure.aspx" />
+    </header>
+    <header text="Fields" tooltip="Search and Prescribe - Fields" href="QuickGuides/SearchPrescribe/fields.aspx">
+      <subheader text="Access Optional" tooltip="Search and Prescribe - Fields - Access Optional" href="QuickGuides/SearchPrescribe/Fields/accessoptional.aspx" />
+      <subheader text="Multiple Optional" tooltip="Search and Prescribe - Fields - Multiple Optional" href="QuickGuides/SearchPrescribe/Fields/multipleoptional.aspx" />
+      <subheader text="Promoted Optional" tooltip="Search and Prescribe - Fields - Promoted Optional" href="QuickGuides/SearchPrescribe/Fields/promotedoptional.aspx" />
+      <subheader text="Layout" tooltip="Search and Prescribe - Fields - Layout" href="QuickGuides/SearchPrescribe/Fields/layout.aspx" />
+      <subheader text="Prompts" tooltip="Search and Prescribe - Fields - Prompts" href="QuickGuides/SearchPrescribe/Fields/prompts.aspx" />
+      <subheader text="Formatting" tooltip="Search and Prescribe - Fields - Formatting" href="QuickGuides/SearchPrescribe/Fields/formatting.aspx" />    
+    </header>
+    <header text="Input Controls" tooltip="Search and Prescribe - Input Controls" href="QuickGuides/SearchPrescribe/inputcontrols.aspx">
+      <subheader text="Order" tooltip="Search and Prescribe - Input Controls - Order" href="QuickGuides/SearchPrescribe/InputControls/order.aspx" />
+      <subheader text="Dynamic Layout" tooltip="Search and Prescribe - Input Controls - Dynamic Layout" href="QuickGuides/SearchPrescribe/InputControls/dynamiclayout.aspx" />
+      <subheader text="Selection Lists" tooltip="Search and Prescribe - Input Controls - Selection Lists" href="QuickGuides/SearchPrescribe/InputControls/selectionlists.aspx">
+        <subheader text="Interactions" tooltip="Search and Prescribe - Input Controls - Selection Lists - Interactions" href="QuickGuides/SearchPrescribe/InputControls/SelectionLists/interactions.aspx" />
+        <subheader text="Combined Controls" tooltip="Search and Prescribe - Input Controls - Selection Lists - Combined Controls" href="QuickGuides/SearchPrescribe/InputControls/SelectionLists/combinedcontrols.aspx" />
+        <subheader text="Common Values" tooltip="Search and Prescribe - Input Controls - Common Values" href="QuickGuides/SearchPrescribe/InputControls/SelectionLists/commonvalues.aspx" />
+        <subheader text="Detailed Values" tooltip="Search and Prescribe - Input Controls - Detailed Values" href="QuickGuides/SearchPrescribe/InputControls/SelectionLists/detailedvalues.aspx" />
+      </subheader>
+      <subheader text="Related Fields" tooltip="Search and Prescribe - Input Controls - Related Fields" href="QuickGuides/SearchPrescribe/InputControls/relatedfields.aspx">
+        <subheader text="Layout" tooltip="Search and Prescribe - Input Controls - Related Fields - Layout" href="QuickGuides/SearchPrescribe/InputControls/RelatedFields/layout.aspx" />
+      </subheader>  
+      <subheader text="Pre-Filling" tooltip="Search and Prescribe - Input Controls - Pre-Filling" href="QuickGuides/SearchPrescribe/InputControls/prefilling.aspx" />
+      <subheader text="Dose and Strength" tooltip="Search and Prescribe - Input Controls - Dose and Strength" href="QuickGuides/SearchPrescribe/InputControls/dosestrength.aspx" />
+        <subheader text="Administration Times" tooltip="Search and Prescribe - Input Controls - Administration Times" href="QuickGuides/SearchPrescribe/InputControls/administrationtimes.aspx" />
+        <subheader text="Date and Time" tooltip="Search and Prescribe - Input Controls - Date and Time" href="QuickGuides/SearchPrescribe/InputControls/datetime.aspx" />
+      <subheader text="Control Type" tooltip="Search and Prescribe - Input Controls - Control Type" href="QuickGuides/SearchPrescribe/InputControls/controltype.aspx" />
+    </header>
+    <header text="Preview and Authorise" tooltip="Search and Prescribe - Preview and Authorise" href="QuickGuides/SearchPrescribe/previewauthorise.aspx">
+      <subheader text="Preview" tooltip="Search and Prescribe - Preview and Authorise - Preview" href="QuickGuides/SearchPrescribe/PreviewAuthorise/preview.aspx" >
+        <subheader text="Contents" tooltip="Search and Prescribe - Preview and Authorise - Preview - Contents" href="QuickGuides/SearchPrescribe/PreviewAuthorise/Preview/contents.aspx" />
+        <subheader text="Format" tooltip="Search and Prescribe - Preview and Authorise - Preview - Format" href="QuickGuides/SearchPrescribe/PreviewAuthorise/Preview/format.aspx" />
+        <subheader text="Interaction" tooltip="Search and Prescribe - Preview and Authorise - Preview - Interaction" href="QuickGuides/SearchPrescribe/PreviewAuthorise/Preview/interaction.aspx" />
+        <subheader text="Controls" tooltip="Search and Prescribe - Preview and Authorise - Preview - Controls" href="QuickGuides/SearchPrescribe/PreviewAuthorise/Preview/control.aspx" />
+      </subheader>
+      <subheader text="Authorising" tooltip="Search and Prescribe - Preview and Authorise - Authorising" href="QuickGuides/SearchPrescribe/PreviewAuthorise/authorising.aspx" />
+    </header>
+    <header text="Checklist" tooltip="Search and Prescribe - Checklist" href="QuickGuides/SearchPrescribe/checklist.aspx" />
+  </navigation>
+</quickguide>

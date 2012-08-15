@@ -1,0 +1,52 @@
+.nhs_dateinput_container {width:16.7em;height:18em;padding:4px;cursor:default;font-size:11px;text-align:center;z-index:99;line-height:normal;}
+.nhs_dateinput_container TABLE {font-size:11px;line-height:normal;}
+
+.nhs_dateinput_header {height:30px;width:100%; top:0px; left:0px;background-color:scrollbar;font-weight: bold; font-size: 13px; font-family: 'Microsoft Sans Serif'}
+
+.nhs_table_day_header {background-color:ButtonFace; border-top: black 1px solid;border-bottom: black 1px solid; width:100%; font-size: 10pt; font-family: 'Microsoft Sans Serif'}
+.nhs_dateinput_dayname {text-align:right;padding:0 2px;}
+
+.nhs_days {text-decoration:none;color:black;}
+.nhs_dateinput_day {text-align:right;padding:0 2px;cursor:pointer;font-size: 10pt; font-family: 'Microsoft Sans Serif';font-weight: bold;}
+
+.nhs_dateinput_prev {cursor:pointer;float:left;background-repeat:no-repeat;background-position:50% 75%; vertical-align: middle; margin-left:2px; margin-right:5px; top:5px; position:relative;border:1px solid #81A9E2;}
+.nhs_dateinput_next {cursor:pointer;float:left;background-repeat:no-repeat;background-position:50% 75%; vertical-align: middle; margin-right:2px; margin-left:5px; top:5px; position:relative;border:1px solid #81A9E2;}
+
+.nhs_dateinput_monthheader {float:left;text-decoration:none; }
+.nhs_dateinput_yearheader {float:right;text-decoration:none; vertical-align:middle; }
+.nhs_dateinput_title {font-weight:bold;float:left;color:black;text-decoration:none;}
+.nhs_dateinput_year_title {width:2.75em;float:left;color:black;text-align:center;vertical-align: middle; top:5px; position:relative}
+.nhs_dateinput_month_title {width:5.65em;float:left;color:black;text-align:center;vertical-align: middle; top:5px; position:relative}
+.nhs_dateinput_complex .nhs_dateinput_title { cursor:pointer; }
+
+.nhs_dateinput_footer {}
+.nhs_dateinput_today {font-size: 8.25pt; font-family: 'Microsoft Sans Serif'}
+.nhs_dateinput_close {font-size: 8.25pt; font-family: 'Microsoft Sans Serif';cursor:pointer;background-color:Transparent; border:0; color:Black; text-decoration:underline;}
+.nhs_dateinput_nullstring_dropdown {font-size: 8.25pt; font-family: 'Microsoft Sans Serif'}
+
+.nhs_dateinput.nhs_dateinput_container {border:1px solid #646464;background-color:#ffffff;color:#000000; padding:0px; margin:0px}
+.nhs_dateinput .nhs_dateinput_footer {border-top:1px solid #f5f5f5;}
+.nhs_dateinput .nhs_dateinput_dayname {border-bottom:1px solid #f5f5f5;}
+.nhs_dateinput .nhs_dateinput_day {border:1px solid #ffffff;}
+.nhs_dateinput .nhs_dateinput_month {border:1px solid #ffffff;}
+.nhs_dateinput .nhs_dateinput_year {border:1px solid #ffffff}
+
+.nhs_dateinput .nhs_dateinput_day.nhs_dateinput_active {background-color:scrollbar !important;border-color: ButtonShadow;}
+.nhs_dateinput .nhs_dateinput_day.nhs_dateinput_selected {background-color:#ffffe0;border-color:#b22222;}
+
+.nhs_dateinput .nhs_dateinput_month_title.nhs_dateinput_active {background-color:#edf9ff;border-color:#0066cc;}
+.nhs_dateinput .nhs_dateinput_year_title.nhs_dateinput_active {background-color:#edf9ff;border-color:#0066cc;}
+
+.nhs_dateinput .nhs_dateinput_prev.nhs_dateinput_active {background-color:#edf9ff;border-color:#0066cc;}
+.nhs_dateinput .nhs_dateinput_next.nhs_dateinput_active {background-color:#edf9ff;border-color:#0066cc;}
+
+.nhs_dateinput .nhs_dateinput_day.nhs_dateinput_other {background-color:#ffffff;border-color:#fff;color:#646464; font-weight:normal;}
+.nhs_dateinput .nhs_dateinput_day.nhs_dateinput_weekend {font-weight:normal;}
+.nhs_dateinput .nhs_dateinput_year.nhs_dateinput_other {background-color:#ffffff;border-color:#fff;color:#646464;}
+.nhs_dateinput .nhs_dateinput_complex .nhs_dateinput_title.nhs_dateinput_hover {color:#0066cc;}
+.nhs_dateinput .nhs_dateinput_focus {border: dashed 1px black !important; }
+.nhs_calendar_button {border:solid 1px rgb(127, 157, 185);border-left:solid 1px white;background-color:white;}
+.nhs_calendar_button_parent {background-color:white;}
+.nhs_calendar_button_base {position: relative;left:0px; top:0px; z-index:99}
+.nhs_calendar_button_top {position: relative;left:0px; top:0px; z-index:99;}
+.nhs_calendar_button_background {border:solid 1px rgb(127, 157, 185);border-left:solid 1px white;background-color:white;background-image:url(<%=WebResource("NhsCui.Toolkit.Web.DateInputBoxControl.calendar.png")%>);background-repeat:no-repeat;background-position: center center}

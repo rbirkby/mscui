@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Microsoft.Cui.Controls.GroupingControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        >
+    <UserControl.Resources>
+        <Style TargetType="StackPanel" x:Key="ControlsStackPanelStyle">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStopCollection>
+                            <GradientStop Color="AliceBlue" Offset="0"/>
+                            <GradientStop Color="LightBlue" Offset="1"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Border BorderBrush="DarkSlateGray" BorderThickness="1" CornerRadius="1">
+            <StackPanel Orientation="Horizontal" Style="{StaticResource ControlsStackPanelStyle}" Margin="0.5">
+                <TextBlock Margin="4" Width="75" VerticalAlignment="Center" TextWrapping="NoWrap" Text="Group By:" />
+                <RadioButton Margin="3" Content="Drug Name" Tag="DrugName" GroupName="GroupBy" x:Name="groupByDrugName" Checked="GroupByDrugName_Checked" />
+                <RadioButton Margin="3" Content="Prescription" Tag="Prescription" GroupName="GroupBy" x:Name="groupByPrescription" Checked="GroupByPrescription_Checked" />
+                <RadioButton Margin="3" Content="Status" Tag="MedicationStatus" GroupName="GroupBy" x:Name="groupByStatus" Checked="GroupByStatus_Checked" />
+                <RadioButton Margin="3" Content="Medication type" Tag="MedicationType" GroupName="GroupBy" x:Name="groupByMedicationType" Checked="GroupByMedicationType_Checked" />                
+                <!--TextBox Margin="3" Width="112" Text="Status" VerticalContentAlignment="Center" VerticalAlignment="Center" x:Name="groupingTextBox" />
+                <Button Width="28" Height="28" x:Name="button1" Margin="-3,3,4,3" FontFamily="WebDings" Content="6" /-->
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

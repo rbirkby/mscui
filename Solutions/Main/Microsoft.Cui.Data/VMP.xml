@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DocumentElement>
+  <VMP>
+    <VMPID>322277008</VMPID>
+    <VTMID>90332006</VTMID>
+    <Name>paracetamol 120mg/5ml oral suspension paediatric</Name>
+    <IsCombination>False</IsCombination>
+    <SVN>120</SVN>
+    <SNU>mg</SNU>
+    <SVD>5</SVD>
+    <SDU>ml</SDU>
+  </VMP>
+  <VMP>
+    <VMPID>323073009</VMPID>
+    <VTMID>48546005</VTMID>
+    <Name>diazepam 2mg/ml rectal solution 2.5ml tube</Name>
+    <IsCombination>False</IsCombination>
+    <SVN>2</SVN>
+    <SNU>mg</SNU>
+    <SVD>1</SVD>
+    <SDU>ml</SDU>
+  </VMP>
+  <VMP>
+    <VMPID>323071006</VMPID>
+    <VTMID>48546005</VTMID>
+    <Name>diazepam 10mg/2ml emulsion for injection ampoules</Name>
+    <IsCombination>False</IsCombination>
+    <SVN>10</SVN>
+    <SNU>mg</SNU>
+    <SVD>2</SVD>
+    <SDU>ml</SDU>
+  </VMP>
+  <VMP>
+    <VMPID>323732002</VMPID>
+    <VTMID>27658006</VTMID>
+    <Name>amoxicillin 125mg/5ml oral suspension</Name>
+    <IsCombination>False</IsCombination>
+    <SVN>25</SVN>
+    <SNU>mg</SNU>
+    <SVD>1</SVD>
+    <SDU>ml</SDU>
+  </VMP>
+  <VMP>
+    <VMPID>4880611000001100</VMPID>
+    <VTMID>70379000</VTMID>
+    <Name>sodium chloride 0.9% solution for injection 500ml bags</Name>
+    <IsCombination>False</IsCombination>
+    <SVN>0.9</SVN>
+    <SNU>%</SNU>
+    <SVD></SVD>
+    <SDU></SDU>
+  </VMP>
+  <VMP>
+    <VMPID>5132011000001104</VMPID>
+    <VTMID></VTMID>
+    <Name>sodium chloride 0.9% intravenous infusion 100ml ampoules</Name>
+    <IsCombination>False</IsCombination>
+    <SVN>0.9</SVN>
+    <SNU>%</SNU>
+    <SVD></SVD>
+    <SDU></SDU>
+  </VMP>
+  <VMP>
+    <VMPID>323824004</VMPID>
+    <VTMID>3334000</VTMID>
+    <Name>cefotaxime 500mg powder for solution for injection vials</Name>
+    <IsCombination>False</IsCombination>
+    <SVN>500</SVN>
+    <SNU>mg</SNU>
+    <SVD></SVD>
+    <SDU></SDU>
+  </VMP>
+  <VMP>
+    <VMPID>3542211000001105</VMPID>
+    <VTMID></VTMID>
+    <Name>DIORALYTE</Name>
+    <IsCombination>False</IsCombination>
+    <SVN></SVN>
+    <SNU></SNU>
+    <SVD></SVD>
+    <SDU></SDU>
+  </VMP>
+  <VMP>
+    <VMPID>323542003</VMPID>
+    <VTMID>89519005</VTMID>
+    <Name>co-amoxiclav 400mg/57mg/5ml oral suspension sugar free</Name>
+    <IsCombination>False</IsCombination>
+    <SVN></SVN>
+    <SNU></SNU>
+    <SVD></SVD>
+    <SDU></SDU>
+  </VMP>
+  <VMP>
+    <VMPID>324433003</VMPID>
+    <VTMID>32792001</VTMID>
+    <Name>trimethoprim 50mg/5ml oral suspension sugar free</Name>
+    <IsCombination>False</IsCombination>
+    <SVN>10</SVN>
+    <SNU>mg</SNU>
+    <SVD>1</SVD>
+    <SDU>ml</SDU>
+  </VMP>
+</DocumentElement>

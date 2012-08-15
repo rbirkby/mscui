@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Microsoft.Cui.SamplePages.IndentedLabelPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Microsoft.Cui.Controls;assembly=Microsoft.Cui.Controls"
+             FontFamily="Verdana" FontSize="13.3"
+             Width="Auto" Height="Auto">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Border Background="#E4E4E4" Padding="5">
+            
+            <local:IndentedLabel x:Name="MyIndentedLabel"
+                                 IndentCharacterCount="12"
+                                 MaxLines="5"
+                                 Text="The Microsoft Health Common User Interface (CUI) provides User Interface Design Guidance and Toolkit controls that address a wide range of patient safety concerns for healthcare organizations worldwide, enabling a new generation of safer, more usable and compelling health applications to be quickly and easily created."
+                                 Grid.Column="0"
+                                 Margin="5" 
+                                 Height="110"
+                                 HorizontalAlignment="Center"
+                                 VerticalAlignment="Top">
+            </local:IndentedLabel>
+            
+        </Border>
+        
+        <TextBlock Text="The IndentedLabel description."
+                   Margin="10,0,0,0" 
+                   TextWrapping="Wrap" 
+                   Grid.Column="1" 
+                   VerticalAlignment="Center">
+        </TextBlock>
+
+    </Grid>
+</UserControl>

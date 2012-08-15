@@ -1,0 +1,262 @@
+<Dictionary>
+  <Words>
+    <Recognized>
+      <Word>Args</Word>
+      <Word>Hashtable</Word>
+      <Word>Validators</Word>
+      <Word>fxcopbug</Word>
+      <Word>stylesheet</Word>
+      <Word>gotdotnet</Word>
+      <Word>uninstantiated</Word>
+      <Word>rethrows</Word>
+      <Word>aspx</Word>
+      <Word>ndpsec</Word>
+      <Word>typeof</Word>
+      <Word>readonly</Word>
+      <Word>Sta</Word>
+      <Word>Callee</Word>
+      <Word>Callees</Word>
+      <Word>Pdb</Word>
+      <Word>Opcode</Word>
+      <Word>&amp;amp</Word>
+      <Word>&amp;gt</Word>
+      <Word>&amp;lt</Word>
+      <Word>Sdc</Word>
+      <Word>Msmq</Word>
+      <Word>Installshield</Word>
+      <Word>Nunit</Word>
+      <Word>Deleteable</Word>
+      <Word>Aic</Word>
+      <Word>Msi</Word>
+      <Word>Decompiler</Word>
+      <Word>Wix</Word>
+      <Word>Summarised</Word>
+      <Word>Canonicalizing</Word>
+      <Word>Nav</Word>
+      <Word>Initialise</Word>
+      <Word>Nhs</Word>
+      <Word>Recognised</Word>
+      <Word>Hilighting</Word>
+      <Word>Hilight</Word>
+      <Word>SNOMED</Word>
+      <Word>Nca</Word>
+      <Word>Paediatric</Word>
+      <Word>Carer</Word>
+      <Word>Topline</Word>
+      <Word>Json</Word>
+      <Word>Codable</Word>
+      <Word>Cfh</Word>
+      <Word>Fsn</Word>
+      <Word>Hardcoded</Word>
+      <Word>Silverlight</Word>
+      <Word>Winforms</Word>
+      <Word>cpe</Word>
+      <Word>blog</Word>
+      <Word>MSCUI</Word>
+      <Word>CSS</Word>
+      <Word>lbl</Word>
+      <Word>Prev</Word>
+      <Word>Symbology</Word>
+      <Word>Mrs</Word>
+      <Word>Str</Word>
+      <Word>Cres</Word>
+      <Word>dd-MMM-yyyy</Word>
+      <Word>yyyy</Word>
+      <Word>infobar</Word>
+      <Word>rel</Word>
+      <Word>img</Word>
+      <Word>Monospace</Word>
+      <Word>favour</Word>
+      <Word>behaviour</Word>
+      <Word>Firefox</Word>
+      <Word>nbsp</Word>
+      <Word>Xaml</Word>
+      <Word>Validator</Word>
+      <Word>Authorise</Word>
+      <Word>Authorisable</Word>
+      <Word>Authorizable</Word>
+      <Word>IsAuthorizable</Word>
+      <Word>Authorising</Word>
+      <!-- Medication Names-->
+      <Word>co-amoxiclav</Word>
+      <Word>paracetamol</Word>
+      <Word>trimethoprim</Word>
+      <Word>amoxiclav</Word>
+      <Word>dioralyte</Word>
+      <Word>cefotaxime</Word>
+      <Word>Resizer</Word>
+      <Word>datatemplates</Word>
+      <Word>SampleWinform</Word>
+      <Word>Freetext</Word>
+      <Word>QIGs</Word>
+      <Word>leftnav</Word>
+      <Word>SimView</Word>
+      <Word>Sim</Word>
+
+      <!-- Prescriber names -->
+      <Word>Clift</Word>
+      <Word>Murnich</Word>
+
+      <!--other names-->
+      <Word>subramanyan</Word>
+    </Recognized>
+    <Deprecated/>
+    <Inappropriate/>
+    <DiscreteExceptions>
+      <!--
+        This is a list of case-insensitive exceptions to the CompoundWordsShouldBeCasedCorrectly 
+        discrete term check. As this check works solely on the basis of whether two consecutive
+        tokens exists in the dictionary, it can have a high false positive rate. For example, 
+        'onset' exists in the dictionary but the user probably intended it to be 'OnSet'. 
+        Adding this word below prevents this rule from firing telling the user to change 'OnSet' 
+        to 'Onset'.
+      -->
+      <Term>onset</Term>
+      <Term>freetext</Term>      
+      <Term>qigs</Term>
+      <Term>onset</Term>
+      <Term>byname</Term>
+      <Term>setout</Term>
+      <Term>countertype</Term>
+      <Term>editor</Term>
+      <Term>longtime</Term>
+      <Term>drawstring</Term>
+      <Term>hookup</Term>
+      <Term>cleanup</Term>
+      <Term>breakout</Term>
+      <Term>setline</Term>
+      <Term>maybe</Term>
+      <Term>nods</Term>
+      <Term>classis</Term>
+      <Term>gettable</Term>
+      <Term>inform</Term>
+      <Term>beset</Term>
+      <Term>settable</Term>
+      <Term>standalone</Term>
+      <Term>threadlike</Term>
+      <Term>infield</Term>
+      <Term>infields</Term>
+      <Term>meantime</Term>
+      <Term>mackey</Term>
+      <Term>jscript</Term>
+      <Term>ipv</Term>
+      <Term>Img</Term>
+      <!-- IPv4, IPv6 -->
+      <Term>tooltip</Term>
+      <Term>tooltips</Term>
+      <Term>indispose</Term>
+    
+  </DiscreteExceptions>
+    <Compound>
+      <!-- 
+        This is a list of discrete terms with their compound alternates and is used by 
+        CompoundWordsShouldBeCasedCorrectly. These are words that exist in the 
+        dictionary as discrete terms, however, should actually be cased as compound words. 
+        For example, 'Filename' exists in the dictionary and hence the spelling rules will 
+        not see it as unrecognized but its actual preferred usage is 'FileName'; adding it
+        below causes CompoundWordsShouldBeCasedCorrectly to fire. The discrete terms are 
+        case-insensitive, however, be sure to pascal-case the compound alternates.
+        Any discrete terms added below automatically get added to the list of discrete
+        exceptions to prevent CompoundWordsShouldBeCasedCorrectly from firing both on the
+        compound word (for example 'WhiteSpace') and its discrete alternate (for example 
+        'Whitespace').
+      -->
+      <Term CompoundAlternate="DataStore">datastore</Term>
+      <Term CompoundAlternate="FreeText">freetext</Term>
+      <Term CompoundAlternate="FreeText">simviews</Term>
+      <Term CompoundAlternate="QIGs">qigs</Term>
+      <Term CompoundAlternate="NonUkInput">nonukinput</Term>
+      <Term CompoundAlternate="DataStores">datastores</Term>
+      <Term CompoundAlternate="DataSet">dataset</Term>
+      <Term CompoundAlternate="DataSets">datasets</Term>
+      <Term CompoundAlternate="TextBox">textbox</Term>
+      <Term CompoundAlternate="TextBoxes">textboxes</Term>
+      <Term CompoundAlternate="CodePage">codepage</Term>
+      <Term CompoundAlternate="CodePages">codepages</Term>
+      <Term CompoundAlternate="CheckBox">checkbox</Term>
+      <Term CompoundAlternate="CheckBoxes">checkboxes</Term>
+      <Term CompoundAlternate="PushButton">pushbutton</Term>
+      <Term CompoundAlternate="PushButtons">pushbuttons</Term>
+      <Term CompoundAlternate="DropDown">dropdown</Term>
+      <Term CompoundAlternate="DropDowns">dropdowns</Term>
+      <Term CompoundAlternate="ToolBar">toolbar</Term>
+      <Term CompoundAlternate="ToolBars">toolbars</Term>
+      <Term CompoundAlternate="ScrollBar">scrollbar</Term>
+      <Term CompoundAlternate="ScrollBars">scrollbars</Term>
+      <Term CompoundAlternate="BitFlag">bitflag</Term>
+      <Term CompoundAlternate="BitFlags">bitflags</Term>
+      <Term CompoundAlternate="FileName">filename</Term>
+      <Term CompoundAlternate="FileNames">filenames</Term>
+      <Term CompoundAlternate="FileServer">fileserver</Term>
+      <Term CompoundAlternate="FileServers">fileservers</Term>
+      <Term CompoundAlternate="UserName">username</Term>
+      <Term CompoundAlternate="UserNames">usernames</Term>
+      <Term CompoundAlternate="HostName">hostname</Term>
+      <Term CompoundAlternate="HostNames">hostnames</Term>
+      <Term CompoundAlternate="FieldName">fieldname</Term>
+      <Term CompoundAlternate="FieldNames">fieldnames</Term>
+      <Term CompoundAlternate="PathName">pathname</Term>
+      <Term CompoundAlternate="PathNames">pathnames</Term>
+      <Term CompoundAlternate="WhiteSpace">whitespace</Term>
+      <Term CompoundAlternate="WhiteSpaces">whitespaces</Term>
+      <Term CompoundAlternate="LogOn">logon</Term>
+      <Term CompoundAlternate="LogOns">logons</Term>
+      <Term CompoundAlternate="LogOff">logoff</Term>
+      <Term CompoundAlternate="LogOffs">logoffs</Term>
+      <Term CompoundAlternate="SignIn">signin</Term>
+      <Term CompoundAlternate="SignIns">signins</Term>
+      <Term CompoundAlternate="SignOut">signout</Term>
+      <Term CompoundAlternate="SignOuts">signouts</Term>
+      <Term CompoundAlternate="FrontEnd">frontend</Term>
+      <Term CompoundAlternate="FrontEnds">frontends</Term>
+      <Term CompoundAlternate="BackEnd">backend</Term>
+      <Term CompoundAlternate="BackEnds">backends</Term>
+      <Term CompoundAlternate="SiteMap">sitemap</Term>
+      <Term CompoundAlternate="SiteMaps">sitemaps</Term>
+      <Term CompoundAlternate="DataType">datatype</Term>
+      <Term CompoundAlternate="DataTypes">datatypes</Term>
+      <Term CompoundAlternate="DesignTime">designtime</Term>
+      <Term CompoundAlternate="DesignTimes">designtimes</Term>
+      <Term CompoundAlternate="ReadOnly">readonly</Term>
+      <Term CompoundAlternate="TrueType">truetype</Term>
+      <Term CompoundAlternate="NetBios">netbios</Term>
+      <Term CompoundAlternate="AutoDetect">autodetect</Term>
+      <Term CompoundAlternate="AutoDetects">autodetects</Term>
+      <Term CompoundAlternate="AutoScroll">autoscroll</Term>
+      <Term CompoundAlternate="AutoScrolls">autoscrolls</Term>
+      <Term CompoundAlternate="AutoComplete">autocomplete</Term>
+      <Term CompoundAlternate="AutoCompletes">autocompletes</Term>
+      <Term CompoundAlternate="AutoSave">autosave</Term>
+      <Term CompoundAlternate="AutoSaves">autosaves</Term>
+      <Term CompoundAlternate="JavaScript">javascript</Term>
+      <Term CompoundAlternate="JScript">jscript</Term>
+      <Term CompoundAlternate="VoiceView">voiceview</Term>
+      <Term CompoundAlternate="AppleTalk">appletalk</Term>
+      <Term CompoundAlternate="MapInfo">mapinfo</Term>
+      <Term CompoundAlternate="NewLine">newline</Term>
+      <Term CompoundAlternate="NewLines">newlines</Term>
+      <Term CompoundAlternate="QWord">qword</Term>
+      <Term CompoundAlternate="QWords">qwords</Term>
+      <Term CompoundAlternate="KeySet">keyset</Term>
+      <Term CompoundAlternate="KeySets">keysets</Term>
+      <Term CompoundAlternate="KeySets">sim</Term>
+      <Term CompoundAlternate="KeySets">prioritised</Term>
+    </Compound>
+  </Words>
+	<Acronyms>
+		<CasingExceptions>
+			<Acronym>CJK</Acronym>
+      <Acronym>Img</Acronym>
+			<Acronym>CFH</Acronym>
+      <Acronym>ID</Acronym>
+      <Acronym>QIGs</Acronym>
+			<Acronym>JSON</Acronym>
+      <Acronym>WPF</Acronym>
+      <Acronym>AMPM</Acronym>
+      <Acronym>Uk</Acronym>
+      <Acronym>Hr</Acronym>
+      <Acronym>Co</Acronym>
+      <Acronym>Re</Acronym>
+		</CasingExceptions>
+	</Acronyms>
+</Dictionary>

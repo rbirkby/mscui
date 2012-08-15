@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="Microsoft.Cui.Controls.WaitAnimation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             Loaded="UserControl_Loaded"
+    >
+    <UserControl.Resources>
+        <Storyboard x:Key="OnLoaded1">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="path" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" RepeatBehavior="Forever">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" ShowGridLines="False" Margin="0,0,0,0" Opacity="1" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*" ></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="51*"></RowDefinition>
+            <RowDefinition Height="9*" ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="NestedTop"  Margin="0,0,0,0" Grid.Row="0" Grid.Column="0"  Opacity="0.9" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Path VerticalAlignment="Bottom"  Stretch="Fill" Stroke="#7F505096" Data="M50,9.9999993 C27.908609,10 10,27.908609 9.9999993,50 10,72.091389 27.908609,90 50,90 C72.091389,90 90,72.091389 90,50 C90,27.908609 72.091389,10 50,9.9999993 z M50,0.5 C77.338097,0.5 99.5,22.661905 99.5,50 C99.5,77.338097 77.338097,99.5 50,99.5 22.661905,99.5 0.5,77.338097 0.5,50 0.5,22.661905 22.661905,0.5 50,0.5 z" RenderTransformOrigin="0.5,0.5" x:Name="path" Height="25" Width="25">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#BF080808" Offset="0"/>
+                        <GradientStop Color="#3FFFFFF6" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+        </Grid>
+
+        <Grid x:Name="NestedMiddle0" Margin="0,0,0,0" Grid.Row="1" Grid.Column="0"  Opacity="0.9" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="NestedMiddle1" Margin="0,0,0,0"  Opacity="0.9" Grid.Row="2" Grid.Column="0" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" x:Name="LoadingTextBox" Text="Scrolling..."/>
+        </Grid>
+
+        <Grid x:Name="NestedBottom"  Margin="0,0,0,0"  ShowGridLines="False" Grid.Row="3"  Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Margin="0,0,0,0" Grid.Column="0" Background="White" Opacity="0.9"></Grid>                       
+        </Grid>
+    </Grid>
+</UserControl>

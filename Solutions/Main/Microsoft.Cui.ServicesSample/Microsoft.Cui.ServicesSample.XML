@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Cui.ServicesSample</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Cui.Services.ITerminologyProvider">
+            <summary>
+            WCF Service Interface for a SNOMED CT terminology provider.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Services.ITerminologyProvider.GetRootConcept">
+            <summary>
+            Gets the root concept.
+            </summary>
+            <returns>SNOMED CT Root Concept.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Services.ITerminologyProvider.SearchByDescription(System.String,System.String[],System.String,System.Boolean,System.Boolean,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Searches the HLI SNOMED CT terminology service based on description.
+            </summary>
+            <param name="searchText">The search text.</param>
+            <param name="domains">The domains.</param>
+            <param name="ancestorConceptId">The ancestor concept id.</param>
+            <param name="includeAncestor">If set to <c>true</c> [include ancestor].</param>
+            <param name="fullText">If set to <c>true</c> perform a [full text] search.  If set to <c>false</c> perform a [starts with] search.</param>
+            <param name="locale">The locale.</param>
+            <param name="fromIndex">The index of the first result to return.</param>
+            <param name="endIndex">The index of the last result to return.</param>
+            <param name="maxTotal">The maximum total.</param>
+            <returns>SNOMED CT Search Result based on searchText.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Services.ITerminologyProvider.GetConceptDetails(System.String,System.String)">
+            <summary>
+            Gets the concept details.
+            </summary>
+            <param name="snomedConceptId">The snomed concept id.</param>
+            <param name="locale">The locale.</param>
+            <returns>Concept Details of the given SNOMED CT concept id.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Services.ITerminologyProvider.IndexText(System.String,System.String[],System.String,System.Boolean,System.String)">
+            <summary>
+            Indexes the text.
+            </summary>
+            <param name="text">The text to index.</param>
+            <param name="domains">The domains.</param>
+            <param name="ancestorConceptId">The ancestor concept id.</param>
+            <param name="includeAncestor">If set to <c>true</c> [include ancestor].</param>
+            <param name="locale">The locale.</param>
+            <returns>Array of Indexer Results indicating the positions of SNOMED CT concepts in a given string of text.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Services.ITerminologyProvider.GetDomains">
+            <summary>
+            Gets the domains.
+            </summary>
+            <returns>The list of supported SNOMED CT domains.</returns>
+        </member>
+        <member name="T:Microsoft.Cui.Services.TerminologyProvider">
+            <summary>
+            WCF Service Interface for a SNOMED CT terminology provider.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Services.TerminologyProvider.initialized">
+            <summary>
+            Indicates whether the static initialization has occured.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Services.TerminologyProvider.searchByDescriptionTerms">
+            <summary>
+            Static List containing SearchByDescription results.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Services.TerminologyProvider.qualifiers">
+            <summary>
+            Qualifiers list.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Services.TerminologyProvider.GetRootConcept">
+            <summary>
+            Gets the root concept.
+            </summary>
+            <returns>SNOMED CT Root Concept.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Services.TerminologyProvider.SearchByDescription(System.String,System.String[],System.String,System.Boolean,System.Boolean,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Searches the HLI SNOMED CT terminology service based on description.
+            </summary>
+            <param name="searchText">The search text.</param>
+            <param name="domains">The domains.</param>
+            <param name="ancestorConceptId">The ancestor concept id.</param>
+            <param name="includeAncestor">If set to <c>true</c> [include ancestor].</param>
+            <param name="fullText">If set to <c>true</c> perform a [full text] search.  If set to <c>false</c> perform a [starts with] search.</param>
+            <param name="locale">The locale.</param>
+            <param name="fromIndex">The index of the first result to return.</param>
+            <param name="endIndex">The index of the last result to return.</param>
+            <param name="maxTotal">The maximum total.</param>
+            <returns>SNOMED CT Search Result based on searchText.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Services.TerminologyProvider.GetConceptDetails(System.String,System.String)">
+            <summary>
+            Gets the concept detail.
+            </summary>
+            <param name="snomedConceptId">The SNOMED concept id.</param>
+            <param name="locale">The locale.</param>
+            <returns>Concept Details of the given SNOMED CT concept id.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Services.TerminologyProvider.IndexText(System.String,System.String[],System.String,System.Boolean,System.String)">
+            <summary>
+            Indexes the text.
+            </summary>
+            <param name="text">The text to index.</param>
+            <param name="domains">The domains.</param>
+            <param name="ancestorConceptId">The ancestor concept id.</param>
+            <param name="includeAncestor">If set to <c>true</c> [include ancestor].</param>
+            <param name="locale">The locale.</param>
+            <returns>Array of Indexer Results indicating the positions of SNOMED CT concepts in a given string of text.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Services.TerminologyProvider.GetDomains">
+            <summary>
+            Gets the domains.
+            </summary>
+            <returns>The list of supported SNOMED CT domains.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.Services.TerminologyProvider.Initialize">
+            <summary>
+            Initializes static members of the <see cref="T:Microsoft.Cui.Services.TerminologyProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Services.TerminologyProvider.RemoveSingleQualifiers(System.Collections.Generic.List{Microsoft.Cui.Services.IndexerResult})">
+            <summary>
+            Processes the qualifier list to ensure single words in a compound expression are removed.
+            </summary>
+            <param name="possibleQuals">The List of possible qualifiers.</param>
+        </member>
+    </members>
+</doc>

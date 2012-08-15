@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Medication Line</title>
+  <back href="MedicationLine.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Medication Line.pdf" altText="Links to Design Guidance - Medication Line documentation">Design Guidance - Medication Line (PDF Format)</download>
+  <navigation collapseInactiveItems="false">
+    <header text="Overview" tooltip="Medication Line - Overview" href="QuickGuides/MedicationLine/default.aspx" />
+    <header text="Format and Layout" tooltip="Medication Line - Format and Layout" href="QuickGuides/MedicationLine/formatlayout.aspx">
+      <subheader text="Numbers" tooltip="Medication Line - Format and Layout - Numbers" href="QuickGuides/MedicationLine/FormatLayout/numbers.aspx" />
+      <subheader text="Separators" tooltip="Medication Line - Format and Layout - Separators" href="QuickGuides/MedicationLine/FormatLayout/separators.aspx" />
+      <subheader text="Wrapping" tooltip="Medication Line - Format and Layout - Wrapping" href="QuickGuides/MedicationLine/FormatLayout/wrapping.aspx" />
+      <subheader text="Abbreviation" tooltip="Medication Line - Format and Layout - Abbreviation" href="QuickGuides/MedicationLine/FormatLayout/abbreviation.aspx" />
+      <subheader text="Truncation" tooltip="Medication Line - Format and Layout - Truncation" href="QuickGuides/MedicationLine/FormatLayout/truncation.aspx" />
+      <subheader text="Symbols" tooltip="Medication Line - Format and Layout - Symbols" href="QuickGuides/MedicationLine/FormatLayout/symbols.aspx" />
+      <subheader text="Text Labels" tooltip="Medication Line - Format and Layout - Text Labels" href="QuickGuides/MedicationLine/FormatLayout/textlabels.aspx" />
+      <subheader text="Line Breaks" tooltip="Medication Line - Format and Layout - Line Breaks" href="QuickGuides/MedicationLine/FormatLayout/linebreaks.aspx" />
+      <subheader text="Line Spacing" tooltip="Medication Line - Format and Layout - Line Spacing" href="QuickGuides/MedicationLine/FormatLayout/linespacing.aspx" />
+    </header>
+    <header text="Attributes" tooltip="Medication Line - Attributes" href="QuickGuides/MedicationLine/attributes.aspx">
+      <subheader text="Drug Name" tooltip="Medication Line - Attributes - Drug Name" href="QuickGuides/MedicationLine/Attributes/drugname.aspx" />
+      <subheader text="Dose" tooltip="Medication Line - Attributes - Dose" href="QuickGuides/MedicationLine/Attributes/dose.aspx" />
+      <subheader text="Strength" tooltip="Medication Line - Attributes - Strength" href="QuickGuides/MedicationLine/Attributes/strength.aspx" />
+      <subheader text="Attribute Order" tooltip="Medication Line - Attributes - Attribute Order" href="QuickGuides/MedicationLine/Attributes/order.aspx" />
+    </header>
+    <header text="Checklist" tooltip="Medication Line - Checklist" href="QuickGuides/MedicationLine/checklist.aspx" />
+  </navigation>
+</quickguide>

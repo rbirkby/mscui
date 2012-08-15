@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Date and Time Display</title>
+  <back href="DateDisplay.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Date Display.pdf" altText="Links to Design Guidance - Date Display documentation">Design Guidance - Date Display (PDF Format)</download>
+  <secondarydownload href="Pdfs/Design Guidance -- Time Display.pdf" altText="Links to Design Guidance - Time Display documentation">Design Guidance - Time Display (PDF Format)</secondarydownload>
+  <navigation collapseInactiveItems="false">
+    <header text="Overview" tooltip="Date and Time Display - Overview" href="QuickGuides/DateTimeDisplay/default.aspx" />
+    <header text="Date" tooltip="Date and Time Display - Date" href="QuickGuides/DateTimeDisplay/date.aspx">
+      <subheader text="Month" tooltip="Date and Time Display - Date - Month" href="QuickGuides/DateTimeDisplay/Date/month.aspx"/> 
+      <subheader text="Year" tooltip="Date and Time Display - Date - Year" href="QuickGuides/DateTimeDisplay/Date/year.aspx" />
+      <subheader text="Days of the Week" tooltip="Date and Time Display - Date - Days of the week" href="QuickGuides/DateTimeDisplay/Date/weekdays.aspx" />
+      <subheader text="Null Values" tooltip="Date and Time Display - Date - Null Values" href="QuickGuides/DateTimeDisplay/Date/nullvalues.aspx" />
+      <subheader text="Alignment" tooltip="Date and Time Display - Date - Alignment" href="QuickGuides/DateTimeDisplay/Date/alignment.aspx" />
+      <subheader text="Short Date Format" tooltip="Date and Time Display - Date - Short Date Format" href="QuickGuides/DateTimeDisplay/Date/shortdate.aspx">
+        <subheader text="Day and Month" tooltip="Date and Time Display - Date - Short Date Format - Day and Month" href="QuickGuides/DateTimeDisplay/Date/ShortDate/daymonth.aspx" />
+        <subheader text="Separators" tooltip="Date and Time Display - Date - Short Date Format - Separators" href="QuickGuides/DateTimeDisplay/Date/ShortDate/separators.aspx" />
+      </subheader>
+      <subheader text="Long Date Format" tooltip="Date and Time Display - Date - Long Date Format" href="QuickGuides/DateTimeDisplay/Date/longdate.aspx">
+        <subheader text="Day and Month" tooltip="Date and Time Display - Date - Long Date Format - Day and Month" href="QuickGuides/DateTimeDisplay/Date/LongDate/daymonth.aspx" />
+        <subheader text="Separators" tooltip="Date and Time Display - Date - Long Date Format - Separators" href="QuickGuides/DateTimeDisplay/Date/LongDate/separators.aspx" />
+      </subheader>
+    </header>
+    <header text="Time" tooltip="Date and Time Display - Time" href="QuickGuides/DateTimeDisplay/time.aspx">
+      <subheader text="24-Hour Clock" tooltip="Date and Time Display - Time - 24-Hour Clock" href="QuickGuides/DateTimeDisplay/Time/24hrclock.aspx" />
+      <subheader text="Syntax" tooltip="Date and Time Display - Time - Syntax" href="QuickGuides/DateTimeDisplay/Time/syntax.aspx" />
+      <subheader text="Separators" tooltip="Date and Time Display - Time - Separators" href="QuickGuides/DateTimeDisplay/Time/separators.aspx" />
+      <subheader text="Midnight and Null Values" tooltip="Date and Time Display - Time - Midnight and Null Values" href="QuickGuides/DateTimeDisplay/Time/midnight.aspx" />
+      <subheader text="Time Ranges" tooltip="Date and Time Display - Time - Time Ranges" href="QuickGuides/DateTimeDisplay/Time/ranges.aspx" />
+      <subheader text="Approximate Times" tooltip="Date and Time Display - Time - Appropriate Times" href="QuickGuides/DateTimeDisplay/Time/approx.aspx" />
+    </header>        
+    <header text="Duration" tooltip="Date and Time Display - Duration" href="QuickGuides/DateTimeDisplay/duration.aspx">
+      <subheader text="Syntax" tooltip="Date and Time Display - Duration - Syntax" href="QuickGuides/DateTimeDisplay/Duration/syntax.aspx" />
+      <subheader text="Abbreviations" tooltip="Date and Time Display - Duration - Abbreviations" href="QuickGuides/DateTimeDisplay/Duration/abbreviations.aspx" />
+      <subheader text="Separators" tooltip="Date and Time Display - Duration - Separators" href="QuickGuides/DateTimeDisplay/Duration/separators.aspx" />
+      <subheader text="Null Values" tooltip="Date and Time Display - Duration - Null Values" href="QuickGuides/DateTimeDisplay/Duration/nullvalues.aspx" />
+      <subheader text="Approximate Duration" tooltip="Date and Time Display - Duration - Approximate Duration" href="QuickGuides/DateTimeDisplay/Duration/approx.aspx" />
+    </header>
+    <header text="Checklist" tooltip="Date and Time Display - Checklist" href="QuickGuides/DateTimeDisplay/checklist.aspx" />
+  </navigation>
+</quickguide>

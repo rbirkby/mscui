@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Microsoft.Cui.ShowcaseControls.ViewVideo"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    >
+
+    <Grid x:Name="LayoutRoot" Height="138" Width="770">
+        <TextBlock Height="21" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,10,0,0" Text="TextBlock" TextWrapping="Wrap" x:Name="txtTitle" Width="500" FontFamily="Verdana" FontSize="18"/>
+        <Canvas x:Name="textContainer"  Height="138" Margin="10,35,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="560">
+            <TextBlock TextWrapping="Wrap" x:Name="txtText"  Height="90" Width="560" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Verdana" FontSize="13">
+            </TextBlock>
+        </Canvas>
+        <Canvas x:Name="VideoImageContainer" HorizontalAlignment="Left" Margin="590,10,0,0" VerticalAlignment="Top" Height="117" Width="154">
+            <ContentControl x:Name="imgVideoContent" TabIndex="11">
+                <Image x:Name="imgVideo" Canvas.Left="0" Canvas.Top="0"  Cursor="Hand" Stretch="Fill" Height="117" Width="154" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </ContentControl>
+        </Canvas>
+    </Grid>
+
+</UserControl>
+

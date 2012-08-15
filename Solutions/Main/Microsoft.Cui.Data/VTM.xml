@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DocumentElement>
+  <VTM>
+    <VTMID>3334000</VTMID>
+    <Name>cefotaxime</Name>
+  </VTM>
+  <VTM>
+    <VTMID>90332006</VTMID>
+    <Name>paracetamol</Name>
+  </VTM>
+  <VTM>
+    <VTMID>48546005</VTMID>
+    <Name>diazepam</Name>
+  </VTM>
+  <VTM>
+    <VTMID>27658006</VTMID>
+    <Name>amoxicillin</Name>
+  </VTM>
+  <VTM>
+    <VTMID>70379000</VTMID>
+    <Name>sodium chloride</Name>
+  </VTM>
+  <VTM>
+    <VTMID>320917000</VTMID>
+    <Name>oxygen</Name>
+  </VTM>
+  <VTM>
+    <VTMID>89519005</VTMID>
+    <Name>co-amoxiclav</Name>
+  </VTM>
+  <VTM>
+    <VTMID>32792001</VTMID>
+    <Name>trimethoprim</Name>
+  </VTM>
+
+</DocumentElement>

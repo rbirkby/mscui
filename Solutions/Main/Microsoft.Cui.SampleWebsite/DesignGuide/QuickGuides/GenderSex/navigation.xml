@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Sex and Current Gender</title>
+  <back href="GenderSexDisplay.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Sex and Current Gender Input and Display.pdf" altText="Links to Design Guidance - Sex and Current Gender Input and Display documentation">Design Guidance - Sex and Current Gender Input and Display (PDF Format)</download>
+  <navigation collapseInactiveItems="false">
+    <header text="Overview" tooltip="Sex and Current Gender - Overview" href="QuickGuides/GenderSex/default.aspx" />
+    <header text="Display" tooltip="Sex and Current Gender - Display" href="QuickGuides/GenderSex/display.aspx">
+      <subheader text="Status Values" tooltip="Sex and Current Gender - Display - Status Values" href="QuickGuides/GenderSex/Display/statusvalues.aspx"/>
+      <subheader text="Labels" tooltip="Sex and Current Gender - Labels" href="QuickGuides/GenderSex/Display/labels.aspx" />
+    </header>
+    <header text="Input" tooltip="Sex and Current Gender - Input" href="QuickGuides/GenderSex/input.aspx">
+      <subheader text="Current Gender" tooltip="Sex and Current Gender - Input - Current Gender" href="QuickGuides/GenderSex/Input/gender.aspx">
+        <subheader text="Label and Default" tooltip="Sex and Current Gender - Input - Current Gender - Label and Default" href="QuickGuides/GenderSex/Input/Gender/labeldefault.aspx" />
+        <subheader text="Option Buttons" tooltip="Sex and Current Gender - Input - Current Gender - Option Buttons" href="QuickGuides/GenderSex/Input/Gender/optionbuttons.aspx" />
+        <subheader text="Drop-Down List" tooltip="Sex and Current Gender - Input - Current Gender - Drop-Down List" href="QuickGuides/GenderSex/Input/Gender/dropdown.aspx" />
+        <subheader text="Definitions" tooltip="Sex and Current Gender - Input - Current Gender - Definitions" href="QuickGuides/GenderSex/Input/Gender/definitions.aspx" />
+        <subheader text="Data Values" tooltip="Sex and Current Gender - Input - Current Gender - Data Values" href="QuickGuides/GenderSex/Input/Gender/datavalues.aspx" />
+      </subheader>
+      <subheader text="Sex" tooltip="Sex and Current Gender - Input - Sex" href="QuickGuides/GenderSex/Input/sex.aspx">
+        <subheader text="Label and Default" tooltip="Sex and Current Gender - Input - Sex - Label and Default" href="QuickGuides/GenderSex/Input/Sex/labeldefault.aspx" />
+        <subheader text="Option Buttons" tooltip="Sex and Current Gender - Input - Sex - Option Buttons" href="QuickGuides/GenderSex/Input/Sex/optionbuttons.aspx" />
+        <subheader text="Drop-Down List" tooltip="Sex and Current Gender - Input - Sex - Drop-Down List" href="QuickGuides/GenderSex/Input/Sex/dropdown.aspx" />
+        <subheader text="Definitions" tooltip="Sex and Current Gender - Input - Sex - Definitions" href="QuickGuides/GenderSex/Input/Sex/definitions.aspx" />
+        <subheader text="Data Values" tooltip="Sex and Current Gender - Input - Sex - Data Values" href="QuickGuides/GenderSex/Input/Sex/datavalues.aspx" />
+      </subheader>
+      <subheader text="Control Definitions" tooltip="Sex and Current Gender - Input - Control Definitions" href="QuickGuides/GenderSex/Input/inputdefinitions.aspx" />
+    </header>
+    <header text="Checklist" tooltip="Sex and Current Gender - Checklist" href="QuickGuides/GenderSex/checklist.aspx" />
+  </navigation>
+</quickguide>

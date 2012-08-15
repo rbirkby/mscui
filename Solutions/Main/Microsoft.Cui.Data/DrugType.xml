@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <DrugType>
+    <FormCode>385024007</FormCode>
+    <RouteCode>26643006</RouteCode>
+    <Type>2</Type>
+  </DrugType>
+  <DrugType>
+    <FormCode>385221006</FormCode>
+    <RouteCode>47625008</RouteCode>
+    <Type>20</Type>
+  </DrugType>
+  <DrugType>
+    <FormCode>385219001</FormCode>
+    <RouteCode>47625008</RouteCode>
+    <Type>20</Type>
+  </DrugType>
+  <DrugType>
+    <FormCode>3095811000001100</FormCode>
+    <RouteCode>47625008</RouteCode>
+    <Type>20</Type>
+  </DrugType>
+  <DrugType>
+    <FormCode>3092311000001100</FormCode>
+    <RouteCode>112239003</RouteCode>
+    <Type>25</Type>
+  </DrugType>
+  <DrugType>
+    <FormCode>3095811000001100</FormCode>
+    <RouteCode>26643006</RouteCode>
+    <Type>9</Type>
+  </DrugType>
+</DocumentElement>

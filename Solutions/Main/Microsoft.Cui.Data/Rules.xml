@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Rules>
+    <DrugType>2</DrugType>
+    <RuleID>1</RuleID>
+    <RuleName>StrengthRule</RuleName>
+    <IsDefault>false</IsDefault>
+  </Rules>
+  <Rules>
+    <DrugType>2</DrugType>
+    <RuleID>2</RuleID>
+    <RuleName />
+    <IsDefault>true</IsDefault>
+  </Rules>
+  <Rules>
+    <DrugType>9</DrugType>
+    <RuleID>1</RuleID>
+    <RuleName>SachetRule</RuleName>
+    <IsDefault>false</IsDefault>
+  </Rules>
+  <Rules>
+    <DrugType>9</DrugType>
+    <RuleID>2</RuleID>
+    <RuleName />
+    <IsDefault>true</IsDefault>
+  </Rules>
+  <Rules>
+    <DrugType>25</DrugType>
+    <RuleID>1</RuleID>
+    <RuleName>StrengthForGases</RuleName>
+    <IsDefault>false</IsDefault>
+  </Rules>
+  <Rules>
+    <DrugType>25</DrugType>
+    <RuleID>2</RuleID>
+    <RuleName />
+    <IsDefault>true</IsDefault>
+  </Rules>  
+</DocumentElement>

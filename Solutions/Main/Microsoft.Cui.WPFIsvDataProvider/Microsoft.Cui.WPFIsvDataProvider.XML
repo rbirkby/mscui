@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Cui.WPFIsvDataProvider</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Cui.IsvData.SortDirection">
+            <summary>
+            Sort types.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.SortDirection.Ascending">
+            <summary>
+            Ascending order.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.SortDirection.Descending">
+            <summary>
+            Descending order.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Cui.IsvData.ColumnDataType">
+            <summary>
+            Data type of the column to be sorted by or grouped by.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.ColumnDataType.String">
+            <summary>
+            Column is of type string.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.ColumnDataType.DateTime">
+            <summary>
+            Column is of type Date.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Cui.IsvData.FilterCondition">
+            <summary>
+            Filter conditions. Specifies the conditions to filter the data.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.FilterCondition.Current">
+            <summary>
+            Show only current medications (Started/Suspended/Not started).
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.FilterCondition.Past">
+            <summary>
+            Show only past medications (Completed/Discontinued).
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.FilterCondition.PastTwoMonths">
+            <summary>
+            Medications that have been completed or discontinued in the past two months.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.FilterCondition.PastSixMonths">
+            <summary>
+            Medications that have been completed or discontinued in the past six months.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Cui.IsvData.IsvDataProvider">
+            <summary>
+            Sample ISV Data provider.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.IsvDataProvider.patientID">
+            <summary>
+            Member variable to hold patient id.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.IsvDataProvider.rows">
+            <summary>
+            List of dictionaries to hold the data read from XML.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.IsvDataProvider.sortColumn">
+            <summary>
+            Member variable to hold sort column.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.IsvDataProvider.sortDirection">
+            <summary>
+            Member variable to hold sort type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.IsvDataProvider.columnDataType">
+            <summary>
+            Member variable to hold the sort column type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.IsvDataProvider.filterCondition">
+            <summary>
+            Member variable to hold filter condition.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.IsvDataProvider.groupByColumnName">
+            <summary>
+            Member variable to hold group by column name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.IsvDataProvider.customDate">
+            <summary>
+            Custom Date to use while filtering data.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.IsvData.IsvDataProvider.sortOrGroupColumnName">
+            <summary>
+            Member variable to hold column name to sort or group by.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.GetPage(System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}}@,System.Int32@,System.Int32,System.Int32)">
+            <summary>
+            Gets the data from XML file and returns the data to data manager in list of dictionary format.
+            </summary>
+            <param name="rows">List of dictionary object to hold the output data.</param>
+            <param name="totalRowCount">Total number of rows returned.</param>
+            <param name="startOrdinalPosition">Specifies the start position of the data from where to fetch the data.</param>
+            <param name="pageSize">Specifies the number of records to be returned.</param>        
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.GetReader(System.String)">
+            <summary>
+            Returns Xml reader for the specified file name.
+            </summary>
+            <param name="fileName">Name of the XML file where the data is present.</param>
+            <returns>Returns a reader object which reads the XML file specified in the parameter.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.IsStringComparer(System.String)">
+            <summary>
+            Gets a value indicating which type of Comparer to use. 
+            </summary>
+            <param name="column">Name of the column to compare.</param>
+            <returns>True if the column is of type string, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.IsCurrentMedication(System.String)">
+            <summary>
+            Checks whether the medication is of type current or past.
+            </summary>
+            <param name="medicationStatus">Medication status.</param>
+            <returns>True if current medication, False if past medication.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.SortOrGroup">
+            <summary>
+            Sorts or Groups the data based on the specified column name.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.Sort">
+            <summary>
+            Sorts the data
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.Group">
+            <summary>
+            Groups the data.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.FilterData(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Specifies whether the row should be filtered or not.
+            </summary>
+            <param name="inputRow">Medications row.</param>
+            <returns>True if the medications row has to be filtered, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.GetPatientMedications(System.Xml.XmlReader)">
+            <summary>
+            Reads the medication data from XML and populates the output data.
+            </summary>
+            <param name="dataReader">XML data reader object.</param>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.IsvDataProvider.SortColumn">
+            <summary>
+            Gets or sets the Column to be sorted by. 
+            </summary>
+            <remarks>Removes sorting when set to empty. Defaults to Empty</remarks>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.IsvDataProvider.PatientId">
+            <summary>
+            Gets or sets the patient id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.IsvDataProvider.SortDirection">
+            <summary>
+            Gets or sets the direction of sorting. (Ascending or Descending). Defaults to Ascending.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.IsvDataProvider.ColumnDataType">
+            <summary>
+            Gets or sets the data type of the sorting column.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.IsvDataProvider.FilterCondition">
+            <summary>
+            Gets or sets the filter conditions to filter the data.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.IsvDataProvider.GroupBy">
+            <summary>
+            Gets or sets the Column name to group by.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.IsvDataProvider.CustomDate">
+            <summary>
+            Gets or sets the CustomDate.
+            </summary>
+            <value>
+            Custom Date.
+            </value>
+        </member>
+        <member name="T:Microsoft.Cui.IsvData.IsvDataProvider.DateComparer">
+            <summary>
+            Implementation of date comparer.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.DateComparer.Compare(System.String,System.String)">
+            <summary>
+            Compares two dates.
+            </summary>
+            <param name="date1">Date to be compared against.</param>
+            <param name="date2">Date to be compared with.</param>
+            <returns>0 if both the dates are equal, 1 if first date is greater than second, -1 if second date is greater than first.</returns>
+        </member>
+        <member name="T:Microsoft.Cui.IsvData.IsvDataProvider.StringComparer">
+            <summary>
+            Implementation of string comparer.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.IsvData.IsvDataProvider.StringComparer.Compare(System.String,System.String)">
+            <summary>
+            Compares two strings.
+            </summary>
+            <param name="x">String to be compared against.</param>
+            <param name="y">String to be compared with.</param>
+            <returns>0 if both the strings are equal, 1 if first string is greater than second, -1 if second string is greater than first.</returns>
+        </member>
+        <member name="T:Microsoft.Cui.IsvData.ISVDataProviderResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.Completed">
+            <summary>
+              Looks up a localized string similar to Completed.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.Discontinued">
+            <summary>
+              Looks up a localized string similar to Discontinued.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.Medication">
+            <summary>
+              Looks up a localized string similar to Medication.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.MedicationStatus">
+            <summary>
+              Looks up a localized string similar to MedicationStatus.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.NotStarted">
+            <summary>
+              Looks up a localized string similar to Not Started.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.Patient">
+            <summary>
+              Looks up a localized string similar to Patient.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.PatientId">
+            <summary>
+              Looks up a localized string similar to id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.RowId">
+            <summary>
+              Looks up a localized string similar to RowId.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.Started">
+            <summary>
+              Looks up a localized string similar to Started.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.StopDate">
+            <summary>
+              Looks up a localized string similar to StopDate.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.IsvData.ISVDataProviderResources.Suspended">
+            <summary>
+              Looks up a localized string similar to Suspended.
+            </summary>
+        </member>
+    </members>
+</doc>

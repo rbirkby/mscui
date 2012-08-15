@@ -1,0 +1,161 @@
+.nhscui_pb
+{
+    border: #8C8C8C solid 5px;
+    font-family: Arial, Verdana, Sans-Serif;
+}
+
+.nhscui_pb_deceased
+{
+    border: #000000 Dashed 5px;
+}
+
+.nhscui_pb .nhscui_pb_zone1
+{
+	background-color: white;
+    padding: 0px 0px 0px 0px;
+    border: solid 1px white;
+    line-height:1.5em; 
+    _height:50px;
+    min-height:50px;
+    overflow:visible;
+}
+.nhscui_pb .nhscui_pb_dead
+{
+    background-image: url(<%=WebResource("NhsCui.Toolkit.Web.PatientBannerControl.Zone1DeadBackground.bmp")%>);
+    background-position: top left;
+    background-repeat: repeat;
+
+    border: #8C8C8C solid 1px;
+}
+.nhscui_pb .nhscui_pb_active
+{
+	
+}
+.nhscui_pb .nhscui_pb_zone1 img
+{
+    float: left;
+    padding: 2px;
+}
+.nhscui_pb .nhscui_patient_name
+{
+    font-weight: bold;
+	font-size:medium;	
+}
+.nhscui_pb .nhscui_pb_zone1_label
+{
+	font-style: italic;	
+    font-weight: normal;
+    font-size: small;
+    padding: 1px;      
+}
+.nhscui_pb .nhscui_pb_zone1_data
+{
+	font-weight: bold;
+	font-size:small;
+	padding: 0px 0px 0px 0.25em;
+}
+.nhscui_pb .nhscui_pb_zone1_data span
+{
+	padding: 0px 0px 0px 0.25em;
+}
+.nhscui_pb .nhscui_pb_zone1_label_tooltip_hover
+{
+	border: 1px Solid #8C8C8C;
+	padding: 0px;
+}
+
+.nhscui_pb .nhscui_pb_zone1_data_tooltip_hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+	color: Blue;
+}
+.nhscui_pb .nhscui_pb_zone2
+{
+    width: 100%;
+	background-color: white;
+	empty-cells: show;
+	table-layout:fixed;
+}
+.nhscui_pb .nhscui_pb_zone2_title
+{
+    text-align: left;
+    font-weight: normal;
+	font-style: italic;
+    vertical-align: middle;
+    border: #C0C0C0 1px solid;
+    background-color: Transparent;
+    white-space:nowrap;
+}
+.nhscui_pb .nhscui_pb_zone2_title img
+{
+    float: right;
+    border-color:#C0C0C0;
+}
+.nhscui_pb .nhscui_pb_zone2_data
+{
+    font-weight: bold;    
+    padding-left: 0.5em;
+    border-right: #C0C0C0 1px solid;
+}
+.nhscui_pb .nhscui_pb_zone2_data ol
+{
+	list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nhscui_pb .nhscui_pb_zone2_data a
+{
+    padding-top: 5px;
+    margin: 0px;
+    float:right;
+    vertical-align:baseline;
+	font-weight:normal; 
+	text-decoration:none;
+}
+
+.nhscui_pb .nhscui_pb_zone2_data a:hover
+{
+	text-decoration:underline;
+}
+
+.nhscui_pb .nhscui_pb_zone2_title .nhscui_pb_zone2_data
+{
+    background-color: transparent;
+    font-style: normal;
+    border-width: 0px;
+    overflow: hidden;
+    padding-left: 5px;
+    color:#000000;
+}
+.nhscui_pb .nhscui_pb_zone2_label
+{
+	font-style: italic;
+    font-weight: normal;
+    text-align: right;
+    padding-right: 0.5em;
+    vertical-align:top;
+}
+.nhscui_pb .nhscui_pb_zone2_hover *
+{
+	background-color:gray;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+.nhscui_pb .nhscui_pb_zone2_hover .nhscui_pb_zone2_data
+{
+	background-color:gray;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+.nhscui_pb th + th
+{
+    border-left-width: 0px !important;
+}
+.nhscui_pb td + td
+{
+    border-left-width: 0px !important;
+}

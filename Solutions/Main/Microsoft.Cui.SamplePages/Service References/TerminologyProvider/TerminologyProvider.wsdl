@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://www.mscui.net/Services" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="TerminologyProvider" targetNamespace="http://www.mscui.net/Services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.mscui.net/Services/Imports">
+      <xsd:import schemaLocation="http://localhost/Services/TerminologyProvider.svc?xsd=xsd0" namespace="http://www.mscui.net/Services" />
+      <xsd:import schemaLocation="http://localhost/Services/TerminologyProvider.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/Services/TerminologyProvider.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost/Services/TerminologyProvider.svc?xsd=xsd3" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITerminologyProvider_GetRootConcept_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRootConcept" />
+  </wsdl:message>
+  <wsdl:message name="ITerminologyProvider_GetRootConcept_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRootConceptResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITerminologyProvider_SearchByDescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchByDescription" />
+  </wsdl:message>
+  <wsdl:message name="ITerminologyProvider_SearchByDescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchByDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITerminologyProvider_GetConceptDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConceptDetails" />
+  </wsdl:message>
+  <wsdl:message name="ITerminologyProvider_GetConceptDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConceptDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITerminologyProvider_IndexText_InputMessage">
+    <wsdl:part name="parameters" element="tns:IndexText" />
+  </wsdl:message>
+  <wsdl:message name="ITerminologyProvider_IndexText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IndexTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITerminologyProvider_GetDomains_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDomains" />
+  </wsdl:message>
+  <wsdl:message name="ITerminologyProvider_GetDomains_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDomainsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITerminologyProvider">
+    <wsdl:operation name="GetRootConcept">
+      <wsdl:input wsaw:Action="http://www.mscui.net/Services/ITerminologyProvider/GetRootConcept" message="tns:ITerminologyProvider_GetRootConcept_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mscui.net/Services/ITerminologyProvider/GetRootConceptResponse" message="tns:ITerminologyProvider_GetRootConcept_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchByDescription">
+      <wsdl:input wsaw:Action="http://www.mscui.net/Services/ITerminologyProvider/SearchByDescription" message="tns:ITerminologyProvider_SearchByDescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mscui.net/Services/ITerminologyProvider/SearchByDescriptionResponse" message="tns:ITerminologyProvider_SearchByDescription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConceptDetails">
+      <wsdl:input wsaw:Action="http://www.mscui.net/Services/ITerminologyProvider/GetConceptDetails" message="tns:ITerminologyProvider_GetConceptDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mscui.net/Services/ITerminologyProvider/GetConceptDetailsResponse" message="tns:ITerminologyProvider_GetConceptDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IndexText">
+      <wsdl:input wsaw:Action="http://www.mscui.net/Services/ITerminologyProvider/IndexText" message="tns:ITerminologyProvider_IndexText_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mscui.net/Services/ITerminologyProvider/IndexTextResponse" message="tns:ITerminologyProvider_IndexText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDomains">
+      <wsdl:input wsaw:Action="http://www.mscui.net/Services/ITerminologyProvider/GetDomains" message="tns:ITerminologyProvider_GetDomains_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mscui.net/Services/ITerminologyProvider/GetDomainsResponse" message="tns:ITerminologyProvider_GetDomains_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITerminologyProvider" type="tns:ITerminologyProvider">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRootConcept">
+      <soap:operation soapAction="http://www.mscui.net/Services/ITerminologyProvider/GetRootConcept" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchByDescription">
+      <soap:operation soapAction="http://www.mscui.net/Services/ITerminologyProvider/SearchByDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConceptDetails">
+      <soap:operation soapAction="http://www.mscui.net/Services/ITerminologyProvider/GetConceptDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IndexText">
+      <soap:operation soapAction="http://www.mscui.net/Services/ITerminologyProvider/IndexText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDomains">
+      <soap:operation soapAction="http://www.mscui.net/Services/ITerminologyProvider/GetDomains" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TerminologyProvider">
+    <wsdl:port name="BasicHttpBinding_ITerminologyProvider" binding="tns:BasicHttpBinding_ITerminologyProvider">
+      <soap:address location="http://localhost/Services/TerminologyProvider.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

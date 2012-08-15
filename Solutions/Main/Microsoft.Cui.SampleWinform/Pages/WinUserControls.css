@@ -1,0 +1,367 @@
+body, div, p, h1, h2, h3, h4, ul, li, table
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body
+{
+	background: #B4B4B4;
+	font-family: Verdana, Tahoma, Arial, Sans-Serif;
+	font-size: 75%;
+}
+
+#default_header
+{
+	margin-top: 4px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+}
+
+#default_headertop
+{
+	background: #3b71b6;
+	margin: 0px;
+}
+
+#default_page
+{
+	margin: 20px auto 20px auto;
+	width: 1024px;
+}
+
+#default_content
+{
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	padding: 10px 20px 30px 20px;
+	background-color: #EFEFEF;
+	line-height: 1.5em;
+}
+
+#default_content ul
+{
+	margin: 0 25px 0 30px;
+}
+
+#default_content table
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: #EFEFEF;
+	font-family: Verdana, Tahoma, Arial, Sans-Serif;
+	font-size: 100%;
+}
+
+#default_content th
+{
+	border-width: 0px;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #EFEFEF;
+	text-align: left;
+}
+
+#default_content td
+{
+	border-width: 0px;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #EFEFEF;
+}
+
+#default_contentheader
+{
+	height: 19px;
+	background: url(images/toolkit/rightcoltop.gif) no-repeat right top;
+}
+
+
+
+#default_contentfooter
+{
+	clear: both;
+	padding: 0px;
+	color: #333;
+	height: 45px;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	border: 0px solid black;
+	background: #EEEEEE url(../images/footer_1px.gif);
+}
+
+#default_contentfooter a:link, #default_contentfooter a:visited, #default_contentfooter a:hover
+{
+	border: none;
+	text-decoration: none;
+	font-size: 7pt;
+	font-weight: normal;
+	color: Blue;
+}
+
+#endToEndMenu
+{
+	background: Transparent url(../Samples/EndToEnd/Images/taskbar1x40px.png);
+}
+
+#endToEndMenu a:link, #endToEndMenu a:visited, #endToEndMenu a:hover
+{
+	border: none;
+	text-decoration: none;
+	font-size: 7pt;
+	font-weight: normal;
+}
+
+#endToEndMenu img
+{
+	padding: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border: none;
+	height: 40px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#menuWrapper
+{
+	height: 25px;
+	width: 1024px;
+	margin: 0px;
+	background: transparent url(../App_themes/Basic/bg_nav.gif) repeat-x;
+}
+
+/* Content Page Layout             */
+.demoarea
+{
+	padding: 20px;
+	background: #FFF url(../images/demotopfor1024.png) no-repeat left top;
+}
+
+.demoarea p
+{
+	padding: 5px;
+}
+
+.demoCCarea
+{
+	border: solid 2px DarkBlue;
+	background-color: White;
+	width: 300px;
+	z-index: 1;
+	padding: 4px;
+	margin: 10px;
+}
+
+.demoheading
+{
+	padding-bottom: 20px;
+	color: #5377A9;
+	font-family: Verdana, Tahoma, Arial, Sans-Serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.demobottom
+{
+	height: 8px;
+	background: #FFF url(../images/demobottomfor1024.png) no-repeat left bottom;
+}
+
+
+.heading
+{
+	padding: 1em 0 1em 0;
+	color: #5377A9;
+	font-family: Verdana, Tahoma, Arial, Sans-Serif;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.subheading
+{
+	padding: .8em 0 0.5em 0;
+	color: #0F2543;
+	font-weight: bold;
+	font-family: Verdana, Tahoma, Arial, Sans-Serif;
+	font-size: 1.1em;
+}
+
+table.desc
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: #EFEFEF;
+}
+table.desc th
+{
+	border-width: 0px;
+	padding: 2px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #EFEFEF;
+}
+table.desc td
+{
+	border-width: 0px;
+	padding: 2px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #EFEFEF;
+}
+
+p
+{
+	padding: 5px;
+}
+
+em
+{
+	font-style: italic;
+}
+
+i
+{
+	font-style: italic;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+.codeReference
+{
+	font-family: 'Courier New' , Monospace;
+	font-style: normal;
+	font-weight: bold;
+}
+
+pre, code
+{
+	display: block;
+	margin: 15px 15px 15px 0;
+	padding: 10px;
+	border: 1px dashed #CCC;
+	background-color: #FFF;
+	color: #000;
+	font-family: 'Courier New' , Monospace;
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.releaseList
+{
+	list-style-type: disc;
+}
+
+
+#endToEndTop
+{
+	background: transparent url(../images/End_2_End_Sample_PageTop800px.png) no-repeat top right;
+	margin: 0px;
+	height: 70px;
+	padding: 0px;
+}
+
+
+#endToEndBottom
+{
+	background: transparent url(../images/End_2_End_Sample_PageFooter800px.png) no-repeat top right;
+	margin: 0px;
+	height: 50px;
+	width: 800px;
+	padding: 0px;
+}
+
+#endToEndMiddle
+{
+	background-image: url(../images/End_2_End_Sample_background800x1px.png);
+	margin: 0px;
+	height: 550px;
+	width: 800px;
+	padding: 0px;
+}
+
+#tabPanel
+{
+	background: transparent url(../images/MedGridTabs/medsActiveTabFrontClean750px.gif) no-repeat;
+	margin: 0px;
+}
+
+#tabPanel a:link, #tabPanel a:visited
+{
+	border: none;
+	text-decoration: none;
+	font-size: 7pt;
+	font-weight: normal;
+	color: Black;
+}
+
+#tabPanel a:hover
+{
+	text-decoration: none;
+}
+
+
+#tabMid
+{
+	background: transparent url(../images/MedGridTabs/medsTabBackground750px.gif);
+	margin: 0px;
+	height: 300px;
+	width: 800px;
+	padding: 0px;
+}
+
+#tabBottom
+{
+	background: transparent url(../images/MedGridTabs/MedsTabBottom750px.gif) no-repeat;
+	margin: 0px;
+	height: 50px;
+	width: 800px;
+	padding: 0px;
+}
+
+.spacer
+{
+	background-image: url(../images/End_2_End_Sample_background800x1px.png);
+	height: 1px;
+}
+
+#info a:link, #info a:visited
+{
+	border: none;
+	color: Blue;
+	text-decoration: none;
+	font-size: 9pt;
+	font-weight: normal;
+}
+
+#info a:hover
+{
+	border: none;
+	color: Blue;
+	text-decoration: underline;
+	font-size: 9pt;
+	font-weight: normal;
+}
+
+/* The error pane should look a bit like the infobar in IE and Firefox */
+.isv-error-pane
+{
+	background-color: #ffffe1;
+	padding: 4px;
+	border: 1px solid #d6d4bd;
+	cursor: pointer;
+	cursor: hand;
+}

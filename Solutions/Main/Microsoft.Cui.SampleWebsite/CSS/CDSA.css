@@ -1,0 +1,406 @@
+﻿*
+{
+    font-family: Arial;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    
+    
+}
+a
+{
+    color:#696969;
+}
+a:hover
+{
+    color:Gray;
+    text-decoration: none;
+}
+#container
+{
+    width: 100%;
+    background-image: url( '../images/cdsa/main_bkg.png' );
+    background-repeat: repeat-x;
+    background-color: #142336;
+    background-position: top;
+    padding: 15px 0px 30px 0px;    
+}
+#divIntroVideo
+{
+    width:100%;
+    height:100%; 
+    background-color:#383E4C; 
+    z-index:100;
+    position:absolute;
+    top:0px;
+    left:0px;
+    visibility:hidden;
+    filter: alpha(opacity=50);
+    opacity: 0.5; 
+
+}
+
+#panel
+{        	
+    padding: 2px;
+    width: 931px;
+    margin: 0px auto 0px auto; 
+}
+
+
+
+#header
+{
+    text-align: left;
+    margin-left: 2px;
+    padding-bottom: 1px;
+    height: 60px;
+}
+#banner
+{
+    text-align: left;
+    margin-left: 2px;
+    padding-bottom: 1px;
+}
+#description
+{
+    height: 275px;
+    text-align: left;
+}
+#demo
+{
+    height: 440px;
+    background-color: #000000;
+    background-image: url( '../images/cdsa/bkg8.jpg' ); 
+                    background-repeat: no-repeat;   
+    margin-left: 2px;
+    margin-right: 2px;
+    
+    
+}
+#demo img
+{
+    cursor: hand;
+    cursor: pointer;
+    border-width: 0px;
+}
+
+#textContent
+{
+    width: 927px;   
+    background-color: #ffffff;         
+}
+
+#leftColumn
+{
+    clear:both;
+    padding-top: 0px;
+    padding-bottom: 1em; 
+    margin-left:15px;           
+    width: 600px;
+    float: left;
+    background: #ffffff;
+    position:relative;    
+    top:0px;
+}
+
+#rightColumn
+{
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 1em;
+    margin-right:15px;    
+    float: right;
+    width:286px;
+    background: #ffffff;
+}
+#endUserVideoImage
+{
+    cursor:pointer;
+}
+#endUserVideoImage:hover
+{
+    cursor:hand;
+}
+#downloadBox
+{
+    border: solid 1px #cccccc;
+    background-color: #F5F5F5;
+}
+
+#whatsincluded
+{
+    background-color: #F5F5F5;
+    padding: 10px;
+    margin-top:15px;
+}
+
+#sysrequirements
+{
+    background-color: #F5F5F5;
+    padding: 10px;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.downloadVideos
+{
+    margin: 15px 5px 15px 15px; 
+    max-width:310px;
+}
+
+.downloadVideos span
+{
+    margin-top: 15px;
+    text-align: left;
+    font-weight: normal;    
+    color: #000000;
+    font-size: 80%;
+}
+
+.downloadVideos div
+{       
+    text-align: left;
+    color: #666666;
+    font-size: 80%;
+}
+
+.downloadVideos a
+{    
+    font-size: 80%;
+    margin: 12px;  
+    float:left;  
+}
+
+.downloadVideos img
+{   
+    margin-top: 10px;  
+    float:left;  
+}
+
+
+#footer
+{
+    margin: 20px 20px 10px 20px;
+    clear: both;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    border-top: 1px solid #cccccc;
+    color: #cccccc;
+    font-size: 75%;
+    text-align: left;
+    line-height: 1.2em;
+    background: #ffffff;
+}
+
+#bottomLogo
+{    
+    margin: 1em 1em 5px 1em;
+    clear: both;
+    color: #cccccc;
+    text-align: left;
+    background: #ffffff;
+}
+     
+.paraTitle
+{
+    margin-top: 20px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #000000;
+    font-size: 100%;
+}
+.paraSubTitle
+{
+    margin-top: 15pt;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #000000;
+    font-size: 80%;
+}
+.paraText
+{
+    line-height: 1.5em;
+    margin-top: 5px;
+    text-align: left;
+    color: #666666;
+    font-size: 80%;
+}
+.paraTitleSmaller
+{
+    font-weight: normal;
+    line-height: 1.15em;
+    margin-top: 8pt;
+    text-align: left;
+    color: #000000;
+    font-size: 70%;            
+}
+.paraTextSmaller
+{
+    line-height: 1.75em;
+    margin-top: 10pt;
+    text-align: left;
+    color: #000000;
+    font-size: 70%;
+}
+
+#keybenefits li
+{
+    text-align: left;
+    font-weight: normal;    
+    color: #000000;
+    font-size: 80%;
+    margin-left:20px;
+}
+
+#keybenefits li p
+{       
+    text-align: left;
+    color: #666666;    
+}
+ 
+#topShadowBar
+{
+	height: 40px;        	
+}
+
+#topLeftCorner
+{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-left: -15px;
+	background-image: url( '../images/cdsa/tl_shadow.png' );
+}
+
+#topEdge
+{
+	width: 881px;  
+	float: left;
+	background-image: url( '../images/cdsa/tm_shadow.png' );
+	background-repeat:repeat-x;
+	height: 40px;
+}
+
+#topRightCorner
+{
+	width: 40px;
+	height: 40px;
+	float: right;
+	margin-right: -15px;
+	background-image: url( '../images/cdsa/tr_shadow.png' );
+}
+
+#MSCUITextPanel a
+{
+	font-size: 75%;
+	vertical-align: middle;
+    color: #666666;
+}
+#MSCUITextPanel
+{
+    float: left;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+#leftEdgeShadowDiv
+{
+	width: 931px;
+	background-image: url( '../images/cdsa/lm_shadow.png' );
+	background-repeat: repeat-y;
+	margin-left: -15px;
+	padding-left: 15px;
+}
+
+#rightEdgeShadowDiv
+{
+	width: 931px;
+	background-image: url( '../images/cdsa/rm_shadow.png' );
+	background-repeat: repeat-y;
+	background-position:right;
+	margin-right: -15px;
+	padding-right: 15px;
+	
+}
+
+#GetSilverlightTextPanel a
+{
+	font-size: 75%;
+	vertical-align: middle;
+    color: #666666;
+}
+#GetSilverlightTextPanel
+{
+    float: right;
+    margin-top: 20px;
+    margin-right: -10px;
+}
+
+#MSCUITextPanel a
+{
+	font-size: 75%;
+	vertical-align: middle;
+    color: #666666;
+}
+#MSCUITextPanel
+{
+    float: left;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+#panel_contents
+{
+    padding-left: 0px;
+    padding-right: 0px;   
+    background-color: #ffffff;         
+}
+
+#bottomShadowBar
+{
+	height: 40px;
+	margin-top: -15px;
+}
+
+#bottomLeftCorner
+{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-left: -15px;
+	background-image: url( '../images/cdsa/bl_shadow.png' );
+}
+
+#bottomEdge
+{
+	width: 881px;  
+	float: left;
+	background-image: url( '../images/cdsa/bm_shadow.png' );
+	background-repeat:repeat-x;
+	height: 40px;
+}
+
+#bottomRightCorner
+{
+	width: 40px;
+	height: 40px;
+	float: right;
+	margin-right: -15px;
+	background-image: url( '../images/cdsa/br_shadow.png' );
+}
+
+.requirementsList li 
+{
+    margin-top: 10px;
+    margin-left:20px;
+    color: #666666;
+    list-style-type:square;
+    line-height:normal;
+}
+

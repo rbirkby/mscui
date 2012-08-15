@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patients>
+	<Patient FamilyName="Chandrasekhar">
+		<GivenName>Subramanyan</GivenName>
+		<Title>Mr.</Title>
+		<DateOfBirth>14-Jul-1945</DateOfBirth>
+		<Identifier>434 382 8352</Identifier>
+		<PreferredName>Chad</PreferredName>
+		<Gender>Male</Gender>
+		<Carer>Dr. Clift</Carer>
+		<DependencyStatus>Adult</DependencyStatus>
+		<HomePhoneNumber>(01444) 123456</HomePhoneNumber>
+		<WorkPhoneNumber>(01444) 654321</WorkPhoneNumber>
+		<MobilePhoneNumber>(07971) 184701</MobilePhoneNumber>
+		<EmailAddress>ChSubram@abc.xyz</EmailAddress>
+		<Address1>56 Mississippi Malthouse</Address1>
+		<Address2 />
+		<Address3 />
+		<Town>Eastleigh</Town>
+		<County>Hampshire</County>
+		<PostCode>SO50 7TH</PostCode>
+		<AccessKey>C</AccessKey>
+		<PatientImage>~/Images/PatientSnaps/SChandraseknar.gif</PatientImage>
+		<AllergyInformation>Present</AllergyInformation>
+		<GenderLabelTooltip>Gender: a person's current Gender. This may be different from a person's Sex which is a person's Gender defined at the point of birth registration.</GenderLabelTooltip>
+		<GenderValueTooltip>Click here to open this section of the record</GenderValueTooltip>
+		<IdentifierTooltip>Click here to open this section of the record</IdentifierTooltip>
+		<IdentifierLabelTooltip>NHS Number. Patient Identifier</IdentifierLabelTooltip>
+		<PreferredNameLabel>Preferred name</PreferredNameLabel>
+	</Patient>
+	<Patient FamilyName="Cooper">
+		<GivenName>Catherine</GivenName>
+		<Title>Dr.</Title>
+		<DateOfBirth>16-Dec-1965</DateOfBirth>
+		<Identifier>629 951 5769</Identifier>
+		<PreferredName></PreferredName>
+		<Gender>Female</Gender>
+		<Carer>Dr. Evans</Carer>
+		<DependencyStatus>Adult</DependencyStatus>
+		<HomePhoneNumber>(01433) 123456</HomePhoneNumber>
+		<WorkPhoneNumber>(01433) 987654</WorkPhoneNumber>
+		<MobilePhoneNumber />
+		<EmailAddress>CatherineC@abc.xyz</EmailAddress>
+		<Address1>45 Duggan Drive</Address1>
+		<Address2></Address2>
+		<Address3 />
+		<Town>Melton Mowbray</Town>
+		<County>Leicestershire</County>
+		<PostCode>LE13 2NH</PostCode>
+		<AccessKey>C</AccessKey>
+		<PatientImage>~/Images/PatientSnaps/DrCatherineCooperSharp.gif</PatientImage>
+		<AllergyInformation>NoneKnown</AllergyInformation>
+		<PreferredNameLabel>Known as</PreferredNameLabel>
+		<GenderLabelTooltip></GenderLabelTooltip>
+		<GenderValueTooltip></GenderValueTooltip>
+		<IdentifierTooltip></IdentifierTooltip>
+		<IdentifierLabelTooltip></IdentifierLabelTooltip>
+	</Patient>
+	<Patient FamilyName="Doe">
+		<GivenName>John</GivenName>
+		<Title>Dr.</Title>
+		<DateOfBirth>30-Sep-1980</DateOfBirth>
+		<DateOfDeath>04-Apr-2004</DateOfDeath>
+		<Identifier>637 554 2855</Identifier>
+		<PreferredName></PreferredName>
+		<Gender>Male</Gender>
+		<Carer>Dr. Lee</Carer>
+		<DependencyStatus>Adult</DependencyStatus>
+		<HomePhoneNumber>(01432) 123456</HomePhoneNumber>
+		<WorkPhoneNumber>(01432) 987321</WorkPhoneNumber>
+		<MobilePhoneNumber />
+		<EmailAddress />
+		<Address1>34 Bainbridge Close</Address1>
+		<Address2></Address2>
+		<Address3 />
+		<Town>Derby</Town>
+		<County>Derbyshire</County>
+		<PostCode>DE3 7YT</PostCode>
+		<AccessKey>C</AccessKey>
+		<PatientImage>~/Images/PatientSnaps/DrJDoe.gif</PatientImage>
+		<AllergyInformation>NotRecorded</AllergyInformation>
+		<GenderLabelTooltip>Gender: a person's current Gender. This may be different from a person's Sex which is a person's Gender defined at the point of birth registration.</GenderLabelTooltip>
+		<GenderValueTooltip>Click here to open this section of the record</GenderValueTooltip>
+		<IdentifierTooltip>Click here to open this section of the record</IdentifierTooltip>
+		<IdentifierLabelTooltip>NHS Number. Patient Identifier</IdentifierLabelTooltip>
+		<PreferredNameLabel>Preferred name</PreferredNameLabel>
+	</Patient>
+	<Patient FamilyName="Evans">
+		<GivenName>Jonathan</GivenName>
+		<Title>Mr.</Title>
+		<DateOfBirth>12-Feb-2006</DateOfBirth>
+		<Identifier>606 172 4098</Identifier>
+		<PreferredName>Junior</PreferredName>
+		<Gender>Male</Gender>
+		<Carer>Dr. Clift</Carer>
+		<DependencyStatus>Infant</DependencyStatus>
+		<HomePhoneNumber>(01344) 123456</HomePhoneNumber>
+		<WorkPhoneNumber>(01344) 654321</WorkPhoneNumber>
+		<MobilePhoneNumber />
+		<EmailAddress>jane.evans@abc.xyz</EmailAddress>
+		<Address1>98 Andover Place</Address1>
+		<Address2></Address2>
+		<Address3 />
+		<Town>Reading</Town>
+		<County>Berkshire</County>
+		<PostCode>RG3 5AP</PostCode>
+		<AccessKey>W</AccessKey>
+		<PatientImage>~/Images/PatientSnaps/JohnEvans.gif</PatientImage>
+		<AllergyInformation>Unavailable</AllergyInformation>
+		<PreferredNameLabel>Known as</PreferredNameLabel>
+	</Patient>
+	<Patient FamilyName="Worth">
+		<GivenName>Karen</GivenName>
+		<Title>Ms.</Title>
+		<DateOfBirth>12-Nov-1978</DateOfBirth>
+		<Identifier>408 507 5640</Identifier>
+		<PreferredName>Kar</PreferredName>
+		<Gender>Female</Gender>
+		<Carer>Dr. Hatcher</Carer>
+		<DependencyStatus>Adult</DependencyStatus>
+		<HomePhoneNumber>(01235) 123456</HomePhoneNumber>
+		<WorkPhoneNumber>(01235) 654321</WorkPhoneNumber>
+		<MobilePhoneNumber />
+		<EmailAddress>K.Worth@abc.xyz</EmailAddress>
+		<Address1>78 Godiva Road</Address1>
+		<Address2></Address2>
+		<Address3 />
+		<Town>Coventry</Town>
+		<County>Warwickshire</County>
+		<PostCode>CV8 1WU</PostCode>
+		<AccessKey>K</AccessKey>
+		<PatientImage>~/Images/PatientSnaps/KWorth.gif</PatientImage>
+		<AllergyInformation>NotRecorded</AllergyInformation>
+		<PreferredNameLabel>Preferred name</PreferredNameLabel>
+	</Patient>
+</Patients>

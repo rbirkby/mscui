@@ -1,0 +1,911 @@
+/************ General page structure ************/
+body
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 10pt;
+	color: #333;
+	background-image: url(../images/SFTheme/background.png);
+	background-repeat: repeat-x;
+	background-color: #3c71b7;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#aspnetForm /* Centre the webpage horizontally */
+{
+	width: 990px;
+	margin: 0 auto;
+	padding: 6px;
+	background-color: #fff;
+}
+#siteHeader
+{
+	width: 990px;
+	height: 106px;
+	margin-bottom: 6px;
+	overflow: hidden; /* Keep large text inside the box */
+}
+#siteContent
+{
+	width: 990px;	
+}
+#siteFooter
+{
+	margin-top: 6px;
+	height: 19px;
+	color: #fff;
+	padding: 6px 4px;
+	clear: both;
+	font-size: 10pt;
+	background-image: url(../images/SFTheme/cuifoot.png);
+	background-repeat: no-repeat;
+	overflow: hidden; /* Constrain text so it doesn't break out of the footer */
+}
+/* The error pane should look a bit like the infobar in IE and Firefox */
+.isv-error-pane
+{
+	background-color: #ffffe1;
+	padding: 4px;
+	border: 1px solid #d6d4bd;
+	cursor: pointer;
+}
+/************ Header and footer links ************/
+
+
+#siteFooter table td, #siteHeader table td
+{
+	border-left: solid 1px #fff;
+	padding: 0 10px 0 4px;
+}
+#siteFooter table
+{
+	border-collapse: collapse;
+}
+#siteHeader table td.first, #siteFooter table td.first
+{
+	border-left: 0;
+}
+
+#siteFooter a, #siteHeader a
+{
+	color: #fff;
+	text-decoration: none;
+	padding: 0 0 0 10px;
+}
+
+#siteFooter a
+{
+	padding: 0 0 0 4px;
+}
+
+/************ Header specifics (ie non-footer) ************/
+#siteHeader a
+{
+	font-weight: bold;
+}
+#siteHeader table
+{
+	margin: 0;
+}
+#siteHeader table a:Hover
+{
+	color: #fff;
+}
+#siteHeader table a
+{
+	color: #ccc;
+}
+#siteSectionNav
+{
+	position:relative;
+	top:-40px;
+	font-size:14pt;
+	line-height:12pt;
+	float:right;
+	zoom:1; /* hasLayout */
+}
+#siteSectionNav a
+{
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+
+/************ Content specifics ************/
+h1
+{
+	font-size: 15pt;
+	color: #000;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+h2
+{
+	font-size: 14pt;
+	margin: 4px 0 6px 0;
+	color: #000;
+	font-weight: normal;
+}
+a, a:visited
+{
+	color: #06c;
+	cursor: pointer;
+}
+.section
+{
+	border: solid 1px #CCC;
+	padding: 4px;
+	zoom: 1; /* hasLayout to prevent IE6 progressively making greater negative margins on each section due to padding above */
+	margin-bottom: 10px;
+	padding-left: 8px;
+	padding-top:10px;
+}
+
+.roadmapSideSection
+{
+	border: solid 1px #CCC;
+	padding: 0;
+	margin: 0;
+	zoom: 1; /* hasLayout to prevent IE6 progressively making greater negative margins on each section due to padding above */
+	float: right;
+	margin-bottom: 10px;
+}
+
+.section p
+{
+	margin-left: 0;
+	margin-top: 2px;
+	margin-bottom: 6px;
+}
+.section ul
+{
+	margin-top: 6px;
+	margin-bottom: 6px;
+	list-style-type: square;
+	padding-left: 0;
+	margin-left: 18px;
+}
+.section ul ul
+{
+	list-style-type: none;
+	padding: 5px 0 5px 10px;
+}
+.section ul li
+{
+	
+	padding: 1px 0 1px 0px;
+}
+#navigationalContent
+{
+	margin-left: 220px;
+}
+#navigationalContent .section, #navigationalContent .relatedResources
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	border-bottom-style: none;
+}
+#navigationalContent .section.update
+{
+	background-color: #ffc;
+	color: #503000;
+	border-bottom-style: solid;
+	margin-bottom: 10px;
+}
+#navigationalContent .section.update h3
+{
+	color: #503000;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 4px 0 6px;
+	padding: 0;
+	font-size: 1em;
+}
+#navigationalContent .section.update label
+{
+	font-weight: bold;
+}
+#navigationalContent .section.update table
+{
+	width: 100%;
+	margin-bottom: 6px;
+}
+#navigationalContent .section.update table ul
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#navigationalContent .section.update table th, #navigationalContent .section.update table td
+{
+	padding: 0;
+	text-align: left;
+	vertical-align: top;
+}
+#navigationalContent .relatedResources div
+{
+	padding: 4px 4px 4px 8px;
+}
+#navigationalContent .first
+{
+	border-bottom-style: solid;
+	margin-bottom: 10px;
+}
+/* Establish a new block formatting context for the main content on a navigational page */
+/* This allows us to use clear:left and for it only to affect other content within this block */
+#contentBlockFormattingContext
+{
+	float: left;
+	width: 770px;
+}
+#navigationalContent .last, #navigationalContent .relatedResources
+{
+	border: solid 1px #CCC;
+}
+#navigationalContent .relatedResources
+{
+	margin-top: 10px;
+}
+
+/************ Footer specifics (ie non-header) ************/
+#siteFooter span
+{
+	float: left;
+}
+#siteFooter #links
+{
+	float: right;
+	padding-right: 0;
+}
+
+#siteFooter #links a:hover
+{
+	text-decoration: underline;
+}
+
+/************ Left Navigation bar ************/
+.mainNav
+{
+	background-color: #e4e4e4;
+	border: solid 1px #ccc;
+	border-bottom: none;
+	width: 210px;
+	float: left;
+	overflow: hidden; /* Keep large text hidden when it grows outside the box */
+}
+.mainNav ul
+{
+	list-style: none;
+	margin: 0 0 4px 0;
+	padding: 0;
+}
+.mainNav ul li div
+{
+	vertical-align: middle;
+	background-color: #369;
+	background-image: url(../Images/SFTheme/menuheading.png);
+	background-repeat: repeat-y;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 2px 2px 3px 6px;
+	margin-bottom: 5px;
+}
+.mainNav ul li
+{
+	padding-bottom: 1px;
+}
+.mainNav ul li a, .mainNav ul li a:visited
+{
+	padding-left: 20px;
+	width: 190px;
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+.mainNav ul li.currentNode
+{
+	background-image: url(../Images/SFTheme/currentNode.png);
+	background-repeat: repeat-y;
+	background-color: #666;
+}
+.mainNav ul li.currentNode a, .mainNav ul li.currentNode a:visited
+{
+	color: #fff;
+}
+
+.mainNav ul li a:hover
+{
+	text-decoration: underline;
+	color: #06C;
+}
+#navigationalBody
+{
+	background-image: url(../Images/SFTheme/navBackground.png);
+	background-repeat: repeat-y;
+	overflow: hidden; /* new block formatting context */
+	zoom: 1; /* hasLayout */
+}
+#extraDiv
+{
+	position: relative;
+	left: 0;
+	bottom: 0;
+	height: 1px;
+	border-bottom: solid 1px #ccc;
+	width: 212px;
+	font-size: 1px;
+	clear: left;
+}
+/************ Download box ************/
+
+.downloadBox ul
+{
+	color: #06c;
+	background-color: #e4e4e4;
+	list-style: none;
+	padding-left: 0px;
+	margin: 0;
+	border: solid 1px #ccc;
+}
+.downloadBox ul li
+{
+	overflow: hidden; /* new block formatting context */
+	zoom: 1; /* hasLayout */
+	display: block;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #ccc;
+	padding: 0;
+}
+.downloadBox ul li.first
+{
+	border-top-width: 0;
+}
+.downloadBox a span
+{
+	display: block;
+	padding-top: 10px;
+}
+
+.downloadBox a
+{
+	display: block;
+	margin: 0 4px 0 4px;
+	text-decoration: none;
+	color: #000;
+}
+
+.downloadBox a:hover
+{
+	text-decoration: underline;
+	color: #06c;
+}
+
+.downloadBox img
+{
+	border: none;
+	float: left;
+}
+.downloadBox h1
+{
+	margin: 0;
+	padding: 4px;
+	font-size: 13pt;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #369;
+	background-image: url(../Images/SFTheme/downloadheading.png);
+	background-repeat: repeat-y;
+	background-position: right;
+	border: solid 1px #000;
+}
+.downloadBoxBig
+{
+	color: #06c;
+	background-color: #e4e4e4;
+	width: 230px;
+	float: right;
+	text-align: center;
+	position: relative;
+	border: solid 1px #ccc;
+	overflow: hidden;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.installBoxBig
+{
+	color: #06c;
+	background-color: #e4e4e4;
+	width: 230px;
+	text-align: center;
+	position: relative;
+	border: solid 1px #ccc;
+	overflow: hidden;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.downloadBoxBig img
+{
+	border: none;
+	float: left;
+}
+.downloadBoxBig a
+{
+	text-decoration: none;
+	color: #000;
+}
+.downloadBoxBig a:hover
+{
+	text-decoration: underline;
+	color: #06c;
+}
+.downloadBoxBig span
+{
+	padding-bottom: 4px;
+}
+
+/* span:hover is not currently support in IE7. 
+Using here only for FF because it would not set the text-decoration of underline on the SPAN 
+using the previous a:hover */
+.downloadBoxBig a span:hover
+{
+	text-decoration: underline;
+	color: #06c;
+}
+.downloadBoxBig a span
+{
+	display: block;
+	padding-top: 10px;
+	text-align: left;
+	margin-left: 70px;
+}
+.downloadBoxBig h1
+{
+	margin: 0;
+	padding: 4px;
+	font-size: 13pt;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #369;
+	background-image: url(../Images/SFTheme/downloadheading.png);
+	background-repeat: repeat-y;
+	background-position: right;
+	border: solid 1px #ccc;
+}
+
+/******************************* Added equivalents for installBoxBig  *************************************/
+
+.installBoxBig img
+{
+	border: none;
+	float: left;
+}
+.installBoxBig a
+{
+	text-decoration: none;
+	margin-left: 70px;
+	color: #000;
+}
+.installBoxBig a:hover
+{
+	text-decoration: underline;
+	color: #06c;
+}
+
+/* span:hover is not currently support in IE7. 
+Using here only for FF because it would not set the text-decoration of underline on the SPAN 
+using the previous a:hover */
+.installBoxBig a span:hover
+{
+	text-decoration: underline;
+	color: #06c;
+}
+.installBoxBig a span
+{
+	display: block;
+	padding-top: 10px;
+	text-align: left;
+	margin-left: 70px;
+}
+.installBoxBig h1
+{
+	margin: 0;
+	padding: 4px;
+	font-size: 13pt;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #369;
+	background-image: url(../Images/SFTheme/downloadheading.png);
+	background-repeat: repeat-y;
+	background-position: right;
+	border: solid 1px #ccc;
+}
+
+/************ Controls page accordian ************/
+.heading
+{
+	background-color: #e4e4e4;
+	text-transform: uppercase;
+	border: solid 1px #ccc;
+	background-image: url(../Images/SFTheme/accordianheading.png);
+	background-repeat: repeat-y;
+}
+.heading input
+{
+	margin: 2px 0 0 2px;
+}
+.relatedResources table
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+.relatedResources table thead
+{
+	background-color: #aaa;
+	border: solid 1px #888;
+	text-transform: uppercase;
+	text-align: left;
+}
+.relatedResources table tbody td
+{
+	background-color: #e4e4e4;
+	border: solid 1px #ccc;
+	padding: 2px 0 2px 20px;
+	border-top-style: none;
+	border-bottom-style: none;
+}
+.relatedResources table th
+{
+	color: #000;
+	padding-left: 20px;
+	font-weight: normal;
+}
+.accordianSection
+{
+	border: solid 1px #CCC;
+	margin-bottom: 10px;
+}
+/************ Sitemap ************/
+/* This is experimental. Just remove this sitemap CSS block to reset the experiment */
+#sitemap
+{
+	/* New block formatting context */
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	width: 784px;
+}
+#sitemap a
+{
+	text-decoration: none;
+}
+#sitemap li
+{
+	list-style-type: none;
+}
+#sitemap ul
+{
+	padding: 0;
+	margin: 0;
+}
+#sitemap ul li
+{
+	text-align: center;
+}
+#sitemap ul li a
+{
+	padding: 2px;
+	background-color: #17355a;
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+}
+#sitemap ul ul li
+{
+	text-align: left;
+	width: 250px;
+	border: solid 1px #ccc;
+	background-color: #ccc;
+	margin: 4px;
+	float: left;
+}
+#sitemap ul li a:hover
+{
+	text-decoration: underline;
+}
+#sitemap ul ul ul li div
+{
+	padding: 2px;
+	background-color: #369;
+	text-transform: uppercase;
+	color: #fff;
+}
+#sitemap ul ul ul li a
+{
+	background-color: #ccc;
+	color: #000;
+	padding: 0 0 0 20px;
+	text-transform: none;
+}
+#sitemap ul ul ul li a:hover
+{
+	color: #06c;
+	text-decoration: underline;
+}
+#sitemap ul ul ul li
+{
+	margin: 0;
+	border: none;
+	clear: both;
+	background-color: transparent;
+}
+/************ Control demonstration areas ************/
+.demoarea
+{
+	padding: 0 10px 10px 10px;
+	width: 748px;
+	display: table;
+}
+.demoarea .demoCCarea
+{
+	padding-right: 5px;
+	float: left; /* Floated so that it auto-expands to fit child content - handles Text size accessibility */
+}
+.demoCCareaPB
+{
+	font-size: 8pt;
+	background-color: #e4e4e4;
+	padding: 4px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.demoCCarea
+{
+	background-color: #e4e4e4;
+	border: solid 1px #e4e4e4; /* Add a border for high contrast mode */
+	padding: 7px;
+	margin: 8px 10px 8px 0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.demoCCareaPB td, .demoCCareaPB p
+{
+	background-color: Transparent;
+}
+
+.samplePropertyEditors
+{
+	list-style-type: none;
+	margin: 4px;
+	padding: 0;
+}
+#activePanel
+{
+	background-color: White;
+}
+.demoarea ul
+{
+	padding-left: 0;
+	list-style-type: square;
+	margin-top: 0;
+}
+.resetFloatAfterdemoCCArea
+{
+	clear: both;
+}
+.resetFloatAfterdemoCCArea ul
+{
+	margin-top: 6px;
+	margin-bottom: 6px;
+	list-style-type: square;
+	padding-left: 0;
+	margin-left: 18px;
+}
+.resetFloatAfterdemoCCArea ul ul
+{
+	list-style-type: none;
+	padding: 5px 0 5px 10px;
+}
+.resetFloatAfterdemoCCArea ul li
+{
+	/* Place 1px top and bottom paddings and a 10px padding between the bullet and text */
+	padding: 1px 0 1px 10px;
+}
+.nhscui_pb .otherInfo .nhscui_pb_zone2_label
+{
+	text-align: left;
+}
+.ContactList .ContactLabel
+{
+	font-style: italic;
+	font-weight: normal;
+	text-align: right;
+	padding-right: 3px;
+}
+.ContactList .Data
+{
+	font-style: normal;
+	font-weight: bold;
+}
+.AddressLabel .Label
+{
+	font-style: italic;
+	font-weight: normal;
+}
+.monthCalendarTable th
+{
+	font-weight: normal;
+	text-align: left;
+	width: 210px;
+}
+.monthCalendarTable
+{
+	margin-top: 10px;
+	border-top: solid 1px #efefef;
+	width: 750px;
+}
+/************ Control tabular data ************/
+table.desc
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: #EFEFEF;
+}
+table.desc thead
+{
+	border-width: 0;
+	padding: 2px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #EFEFEF;
+	font-weight: bold;
+}
+table.desc th
+{
+	border-width: 0;
+	padding: 2px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #EFEFEF;
+}
+table.desc td
+{
+	border-width: 0;
+	padding: 2px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #EFEFEF;
+}
+pre, code
+{
+	display: block;
+	margin: 15px 15px 15px 0;
+	padding: 10px;
+	border: 1px dashed #CCC;
+	background-color: #FFF;
+	color: #000;
+	font-family: 'Courier New' , Monospace;
+	font-size: 0.9em;
+	font-style: normal;
+}
+/* Roadmap fixes for IE */
+.section p img
+{
+	margin-left: -3px;
+	margin-top: 12px;
+}
+/************ Roadmap TOC ************/
+.section.toc
+{
+	padding: 0 0 2px 0;
+}
+.toc table
+{
+	width: 100%;
+}
+
+/****** Begin Print-specific styles ******/
+
+@media print
+{
+	.mainNav
+	{
+		display: none;
+	}
+	#navigationalContent
+	{
+		margin-left: 0;
+	}
+	#siteHeader #siteSectionNav
+	{
+		display: none;
+	}
+	#navigationalContent div
+	{
+		display: block;
+		height: auto;
+		overflow: inherit;
+	}
+	#aspnetForm, #siteContent, #siteFooter, #contentBlockFormattingContext
+	{
+		width: auto;
+		float: none;
+	}
+	#links
+	{
+		display: none;
+	}
+	#navigationalBody
+	{
+		background-image: none;
+		overflow: visible;
+		position: static;
+	}
+	#navigationalContent .downloadBoxBig
+	{
+		display: none;
+	}
+	#navigationalContent .first
+	{
+		margin: 0;
+	}
+	.heading img
+	{
+		display: none;
+	}
+
+	/************** Homepage printout CSS *************/
+	.downloadBox
+	{
+		display: none;
+	}
+
+	#sidebarVideo
+	{
+		border-bottom: solid 1px #ccc !important;
+	}
+}
+
+/****** End Print-specific styles ******/
+/*
+.ajax__tab_body
+{
+   margin: 0px !important;
+   padding: 0px !important;
+}
+*/
+
+.ajax_tab_Text_body
+{
+	margin: 0px;
+}
+
+.demoControlarea
+{
+	background-color: #e4e4e4;
+	border: solid 1px #e4e4e4; /* Add a border for high contrast mode */
+	padding: 7px;
+	margin: 8px 10px 8px 0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding-right: 5px;
+	float: left;
+}
+
+.controls_border
+{
+	border: solid #e4e4e4 5px; 
+}

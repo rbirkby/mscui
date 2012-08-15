@@ -1,0 +1,1400 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Cui.ShowcaseControls</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Cui.ShowcaseControls.App">
+            <summary>
+            Application class.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.App.patientJourneyDemonstratorDirectory">
+            <summary>
+            Patient Journey Demonstrator Directory.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.App.mediaControlVideoSource">
+            <summary>
+            Video source collection for the showcase media controls.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.App.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.App.GetVideoSource(System.String)">
+            <summary>
+            Get the video source based on the key.
+            </summary>
+            <param name="key">Showcase media control video key.</param>
+            <returns>Showcase media control video source.</returns>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.App.PopulateVideoSourceDictionary(System.Windows.StartupEventArgs)">
+            <summary>
+            Pupulate the video source dictionary.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.App.Application_Startup(System.Object,System.Windows.StartupEventArgs)">
+            <summary>
+            Application startup event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.App.ApplicationPath">
+            <summary>
+            Gets the value of host application path.
+            </summary>
+            <value>
+            The Host application path.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.App.PatientJourneyDemonstratorDirectory">
+            <summary>
+            Gets the PatientJourneyDemonstratorDirectory.
+            </summary>
+            <value>
+            Patient Journey Demonstrator Directory.
+            </value>
+        </member>
+        <member name="T:Microsoft.Cui.ShowcaseControls.DemonstratorsPage">
+            <summary>
+            Showcase demonstartors page hosting the media and download controls.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.videoPositionBuffer">
+            <summary>
+            The buffer between the real video position and the captured video position.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.lstShowcaseMediaControl">
+            <summary>
+            List containing the showcase media control used in the page.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.mediaControl">
+            <summary>
+            Member variable to hold the media control for the page.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.#ctor">
+            <summary>
+            Default constructor, initialize the instance of the class.
+            </summary>        
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.Media_MediaFailed(System.Object,System.Windows.ExceptionRoutedEventArgs)">
+            <summary>
+            Media Element failed event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>   
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.Media_MediaEnded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Media Element ended event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>   
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.CloseAllMedia(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event handling closing all the media controls.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.HostPage_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event onload of the control.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.Content_FullScreenChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event handling the full screen change event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.ChangeMediaControlVisibility(System.Windows.Visibility)">
+            <summary>
+            Change the visibility status on the media control in the page.
+            </summary>
+            <param name="status">Control visibiliyu status.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.SetVideoSource">
+            <summary>
+            Set the video source for the Showcase Media Control objects.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DemonstratorsPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.Cui.ShowcaseControls.DownloadMediaControl">
+            <summary>
+            Usercontrol for downloading resource in showcase demonstartorspage.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.txtMediaText">
+            <summary>
+            Member variable to hold description text for the control.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.downloadImage">
+            <summary>
+            Member variable to hold the download image source. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.downloadSource">
+            <summary>
+            Member variable to hold the download source.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.imageToolTip">
+            <summary>
+            Member variable to hold the tooltip text for the image.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.hyperlinkText">
+            <summary>
+            Member variable to hold the hyperlink text for the control.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.#ctor">
+            <summary>
+            Default constructor, initialize the instance of the class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.ImgDownload_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Click event of the download image which download the intended source.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.ImgDownloadContent_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Video Image Content key down Event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Key event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.ImgDownloadContent_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Video Image Content lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Routed event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.ImgDownloadContent_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Video Image Content got focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Routed event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.ImgDownloadKeyDown">
+            <summary>
+            Click event of the video image to trigger the open animation.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.DownloadMediaControl_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event onload of the control.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.PopulateMediaText">
+            <summary>
+            Function populate the text section the control with correct formatting.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.PopulateHyperlink(System.Double)">
+            <summary>
+            Function populate the hyperlinks of the control with correct formatting.
+            </summary>
+            <param name="height">Top position of the hyperlinks in the canvas.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.Hyperlink_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Click event of the hyperlink which open the url in new window.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.ImageToolTip">
+            <summary>
+            Gets or sets the Image Tool Tip value.
+            </summary>
+            <value>
+            Image tooltip.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.MediaText">
+            <summary>
+            Gets or sets the control text.
+            </summary>
+            <value>
+            Media Text.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.HyperlinkText">
+            <summary>
+            Gets or sets the hyperlink text.
+            </summary>
+            <value>
+            Hyperlink text.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.DownloadImage">
+            <summary>
+            Gets or sets the download image source.
+            </summary>
+            <value>
+            Download Image.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.DownloadMediaControl.DownloadSource">
+            <summary>
+            Gets or sets the download source.
+            </summary>
+            <value>
+            Download source.
+            </value>
+        </member>
+        <member name="T:Microsoft.Cui.ShowcaseControls.Player">
+            <summary>
+            Media Player control.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.Player.height">
+            <summary>
+            Player Height.
+            </summary>        
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.Player.tempVolume">
+            <summary>
+            Player Volume before Mute.
+            </summary>        
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.Player.allowFullScreen">
+            <summary>
+            Player FullScreenmode.
+            </summary>        
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.Player.width">
+            <summary>
+            Player Width.
+            </summary>        
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.Player.mediaSource">
+            <summary>
+            Player Source.
+            </summary>        
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.Player.videoPosition">
+            <summary>
+            Player Position.
+            </summary> 
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.Player.playMode">
+            <summary>
+            Play mode for the media element.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.Player.volume">
+            <summary>
+            Media element volume level.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.Player.playerCurrentState">
+            <summary>
+            Media Player CurrentState..
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.#ctor">
+            <summary>
+            Initializes a new Player.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.SetMediaSource">
+            <summary>
+            Set the media source of the player.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.UNMuteVideo">
+            <summary>
+            Unmute the video.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.UNMutePlayer">
+            <summary>
+            Unmute the mediaplayer video.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.PlayVideo(System.TimeSpan)">
+            <summary>
+            Handles the play functionality of the Media Player.
+            </summary>
+            <param name="time">Video position.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.MuteVideo">
+            <summary>
+            Handles the mute functionality of the Media Player.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.StopVideo">
+            <summary>
+            Handles the stop functionality of the Media Player.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.Player_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event Handler for Load of the Media Player.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>        
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.ThePlayer_MediaFailed(System.Object,System.Windows.ExceptionRoutedEventArgs)">
+            <summary>
+            Media Element failed event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>   
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnMute_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Leave on Mute Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnMute_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnMute_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Enter on Mute Button.
+            </summary>     
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnMute_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button gotfocus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnMuted_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Leave on Muted Button.
+            </summary>     
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnMuted_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnMuted_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Enter on Muted Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnMuted_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button gotfocus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPause_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Leave on Pause Button.
+            </summary>  
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPause_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPause_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Enter on Pause Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPause_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button gotfocus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPlay_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Leave on Play Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPlay_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPlay_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Enter on Play Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPlay_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button gotfocus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnStop_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Leave on Stop Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnStop_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnStop_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Enter on Stop Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnStop_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button gotfocus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnNext_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Leave on Next Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnNext_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnNext_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Enter on Next Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnNext_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button gotfocus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPrev_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Leave on Previous Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPrev_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPrev_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Enter on Previous Button.
+            </summary>
+             <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPrev_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button gotfocus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnFullScreen_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Leave on Full Screen Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnFullScreen_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnFullScreen_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Enter on Full Screen Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnFullScreen_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button gotfocus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnClose_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Leave on Close Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnClose_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnClose_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Event Handler for Mouse Enter on Close Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnClose_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button gotfocus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnClose_MouseLeftButtonDown(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event Handler for MouseLeftButtonDown on Close Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnFullScreen_MouseLeftButtonDown(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event Handler for MouseLeftButtonDown on Full Screen Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnNext_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Event Handler for MouseLeftButtonDown on Next Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPrev_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Event Handler for MouseLeftButtonDown on Previous Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnMute_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Event Handler for MouseLeftButtonDown on Mute Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnStop_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Event Handler for MouseLeftButtonDown on Stop Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPause_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Event Handler for MouseLeftButtonDown on Pause Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPlay_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Event Handler for MouseLeftButtonDown on Play Button.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.VolumeSlider_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Double})">
+            <summary>
+            Event Handler for ValueChanged of the Volume Slider.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.Timer_Completed(System.Object,System.EventArgs)">
+            <summary>
+            Event Handler for completed of the Timer storyboard.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.PlaySlider_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Event Handler for MouseLeftButtonDown of the Play Slider.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.PlaySlider_MouseLeftButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Event Handler for MouseLeftButtonUp of the Play Slider.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.ThePlayer_DownloadProgressChanged(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event Handler for DownloadProgressChanged of the Player media.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.HandlePlaySliderChange">
+            <summary>
+            Handles the forward and backward seek functionality of the Media Player.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.UpdateStatusText">
+            <summary>
+            Updates Status Text.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnCloseKeyDown(System.Object)">
+            <summary>
+            Close button key down.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnFullScreenKeyDown(System.Object)">
+            <summary>
+            Fullscreen button key down.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnNextKeyDown">
+            <summary>
+             BtnNext key down.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPrevKeyDown">
+            <summary>
+             BtnPrev key down.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPauseKeyDown">
+            <summary>
+             BtnPause key down.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPlayKeyDown">
+            <summary>
+             BtnPlay key down.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPause_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Pause button key down event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnClose_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Close button key down event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPlay_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Play button key down event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnStop_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Stop button key down event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnMute_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Mute button key down event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnNext_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Next button key down event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnPrev_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Prev button key down event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.BtnFullScreen_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Fullscreen button key down event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.Player.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="E:Microsoft.Cui.ShowcaseControls.Player.FullScreenEventHandler">
+            <summary>
+            Routed even handler for attaching event at it's parent Handles the full screen mode changed event of the combobox.
+            </summary>        
+        </member>
+        <member name="E:Microsoft.Cui.ShowcaseControls.Player.CloseEventHandler">
+            <summary>
+            Routed even handler for attaching event at it's parent Handles the player close button clicked event of the combobox.
+            </summary>        
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.Player.AllowFullScreen">
+            <summary>
+            Gets or sets a value indicating whether the AllowFullScreen is set.
+            </summary>
+            <value>
+            Allow full screen status.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.Player.ControlHeight">
+            <summary>
+            Gets or sets the Height.
+            </summary>
+            <value>
+            Height of the control.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.Player.TempVolume">
+            <summary>
+            Gets or sets the TempVolume.
+            </summary>
+            <value>
+            TempVolume of the control.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.Player.ControlWidth">
+            <summary>
+            Gets or sets the Width.
+            </summary>
+            <value>
+            Control width.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.Player.MediaSource">
+            <summary>
+            Gets or sets the Source.
+            </summary>
+            <value>
+            Media source.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.Player.VideoPosition">
+            <summary>
+            Gets or sets the Seek Position.
+            </summary>  
+            <value>
+            Video time position.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.Player.PlayMode">
+            <summary>
+            Gets or sets the play mode.
+            </summary>
+            <value>
+            Play mode.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.Player.Volume">
+            <summary>
+            Gets the media player volume.
+            </summary>
+            <value>
+            Volume level of the player.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.Player.PlayerCurrentState">
+            <summary>
+            Gets Media Player CurrentState.
+            </summary>
+            <value>
+            Media Player CurrentState.
+            </value>
+        </member>
+        <member name="T:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl">
+            <summary>
+            ShowcaseMediaControl encapsulating the media, text and animation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.txtMediaTitle">
+            <summary>
+            Member variable to hold control title.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.txtMediaText">
+            <summary>
+            Member variable to hold description text for the control.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.isopen">
+            <summary>
+            Member variable to hold the open status of the control.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.videoImage">
+            <summary>
+            Member variable to hold the video image source. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.mediaSource">
+            <summary>
+            Member variable to hold the media source.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.videoPosition">
+            <summary>
+            Member variable to hold the video position of the media element.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.imageToolTip">
+            <summary>
+            Member variable to hold the tooltip text for the image.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.hyperlinkText">
+            <summary>
+            Member variable to hold the hyperlink text of the control.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.allowFullScreen">
+            <summary>
+            Member variable to hold the full screen status.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.playMode">
+            <summary>
+            Member variable to hold the play mode.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.volume">
+            <summary>
+            Player volume level.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.playerCurrentState">
+            <summary>
+            Media element current state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.showcaseMediaPlayer">
+            <summary>
+            Media Player.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.#ctor">
+            <summary>
+            Default constructor, initialize the instance of the class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.TriggerAnimation">
+            <summary>
+            Trigger the animation in the media player.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.CloseMediaControl">
+            <summary>
+            Event triggering the close animation.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.PlayVideo(System.TimeSpan)">
+            <summary>
+            Event start playing the media element.
+            </summary>
+            <param name="time">Video position.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.UNMutePlayer">
+            <summary>
+            Unmute the mediaplayer video.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.ClosePlayerControl(System.Object,System.EventArgs)">
+            <summary>
+            Event handle the close event of the control.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.FullscreenChange(System.Object,System.EventArgs)">
+            <summary>
+            Event handling the fullscreen change event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.ShowcaseMediaControl_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event onload of the control.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.ImgVideo_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Click event of the video image to trigger the open animation.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.ImgVideoContent_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Video Image Content key down Event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Key event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.ImgVideoContent_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Video Image Content lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Routed event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.ImgVideoContent_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Video Image Content got focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Routed event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.ImgVideoKeyDown">
+            <summary>
+            Click event of the video image to trigger the open animation.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.CloseVideo_Completed(System.Object,System.EventArgs)">
+            <summary>
+            Event triggered on completion of the close animation.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.OpenVideo_Completed(System.Object,System.EventArgs)">
+            <summary>
+            Event handle the opening the media control.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.PopulateMediaText">
+            <summary>
+            Populate the text section the control with correct formatting.
+            </summary>        
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.PopulateHyperlink(System.Double)">
+            <summary>
+            Function populate the hyperlinks of the control with correct formatting.
+            </summary>
+            <param name="height">Top location of the hyperlink in canvas.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.Hyperlink_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Click event of the hyperlinks.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="E:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.CloseControlEventHandler">
+            <summary>
+            Routed even handler for attaching event at it's parent for triggering the close control event.
+            </summary>        
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.ImageToolTip">
+            <summary>
+            Gets or sets the Image Tool Tip value.
+            </summary>
+            <value>
+            Image tooltip text.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether running status of the control is set or not.
+            </summary>
+            <value>
+            Open status of the control.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.TextTitle">
+            <summary>
+            Gets or sets the control title.
+            </summary>
+            <value>
+            Text title.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.MediaText">
+            <summary>
+            Gets or sets the control text.
+            </summary>
+            <value>
+            Media Text.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.HyperlinkText">
+            <summary>
+            Gets or sets the hyperlink text.
+            </summary>
+            <value>
+            Hyperlink text.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.VideoImage">
+            <summary>
+            Gets or sets the video inage source.
+            </summary>
+            <value>
+            Image source.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.MediaSource">
+            <summary>
+            Gets or sets the media source.
+            </summary>
+            <value>
+            Media source.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.VideoPosition">
+            <summary>
+            Gets or sets the position of the media element.
+            </summary>
+            <value>
+            Media play position.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.AllowFullScreen">
+            <summary>
+            Gets or sets a value indicating whether the fullscreen status of the media element.
+            </summary>
+            <value>
+            Allow full screen status.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.PlayMode">
+            <summary>
+            Gets or sets the play mode.
+            </summary>
+            <value>
+            Play mode.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.Volume">
+            <summary>
+            Gets the media player volume.
+            </summary>
+            <value>
+            Volume level of the player.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ShowcaseMediaControl.PlayerCurrentState">
+            <summary>
+            Gets Media element current state.
+            </summary>
+            <value>
+            Media element current stat.
+            </value>
+        </member>
+        <member name="T:Microsoft.Cui.ShowcaseControls.TestimonialsPage">
+            <summary>
+            Showcase testimonials page hosting the media and download controls.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.TestimonialsPage.videoPositionBuffer">
+            <summary>
+            The buffer between the real video position and the captured video position.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.TestimonialsPage.lstShowcaseMediaControl">
+            <summary>
+            List containing the showcase media control used in the page.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.TestimonialsPage.mediaControl">
+            <summary>
+            Member variable to hold the media control for the page.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.TestimonialsPage.#ctor">
+            <summary>
+            Default constructor, initialize the instance of the class.
+            </summary>       
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.TestimonialsPage.Media_MediaFailed(System.Object,System.Windows.ExceptionRoutedEventArgs)">
+            <summary>
+            Media Element failed event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>   
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.TestimonialsPage.Media_MediaEnded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Media Element ended event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>   
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.TestimonialsPage.CloseAllMedia(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event handling closing all the media controls.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.TestimonialsPage.TestimonialsPage_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event onload of the control.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.TestimonialsPage.Content_FullScreenChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event handling the.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.TestimonialsPage.ChangeMediaControlVisibility(System.Windows.Visibility)">
+            <summary>
+            Change the visibility status on the media control in the page.
+            </summary>
+            <param name="status">Control visibiliyu status.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.TestimonialsPage.SetVideoSource">
+            <summary>
+            Set the video source for the Showcase Media Control objects.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.TestimonialsPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.Cui.ShowcaseControls.ViewVideo">
+            <summary>
+            Video view usercontrol for viewing the demonstartor video url in showcase - demonstartor page.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ViewVideo.txtMediaText">
+            <summary>
+            Member variable to hold description text for the control.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ViewVideo.videoImage">
+            <summary>
+            Member variable to hold the video image source. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ViewVideo.videoSource">
+            <summary>
+            Member variable to hold the video source.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ViewVideo.txtMediaTitle">
+            <summary>
+            Member variable to hold control title.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.ShowcaseControls.ViewVideo.imageToolTip">
+            <summary>
+            Member variable to hold the tooltip text for the image.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ViewVideo.#ctor">
+            <summary>
+            Default constructor, initialize the instance of the class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ViewVideo.ImgVideoKeyDown">
+            <summary>
+            Click event of the video image to trigger the open animation.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ViewVideo.ImgVideo_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Click event of the video image to trigger the open animation.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ViewVideo.ImgVideoContent_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Video Image Content key down Event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Key event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ViewVideo.ImgVideoContent_LostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Video Image Content lost focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Routed event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ViewVideo.ImgVideoContent_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Video Image Content got focus event.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Routed event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ViewVideo.DownloadMediaControl_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event onload of the control.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ViewVideo.PopulateMediaText">
+            <summary>
+            Function populate the text section the control with correct formatting.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.ShowcaseControls.ViewVideo.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ViewVideo.ImageToolTip">
+            <summary>
+            Gets or sets the Image Tool Tip value.
+            </summary>
+            <value>
+            Image tooltip.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ViewVideo.TextTitle">
+            <summary>
+            Gets or sets the control title.
+            </summary>
+            <value>
+            Text title.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ViewVideo.MediaText">
+            <summary>
+            Gets or sets the control text.
+            </summary>
+            <value>
+            Media Text.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ViewVideo.VideoImage">
+            <summary>
+            Gets or sets the Image source.
+            </summary>
+            <value>
+            Video Image.
+            </value>
+        </member>
+        <member name="P:Microsoft.Cui.ShowcaseControls.ViewVideo.VideoSource">
+            <summary>
+            Gets or sets the video source.
+            </summary>
+            <value>
+            Video source of the control.
+            </value>
+        </member>
+    </members>
+</doc>

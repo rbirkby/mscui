@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE3A5DE8-7A7A-4FBA-8F0C-CD3FF4AE6E0E}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Cui.Data</RootNamespace>
+    <AssemblyName>Microsoft.Cui.WPFData</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+                    
+    <AssemblyOriginatorKeyFile>..\Nhs.Cui.Public.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>true</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Design#CA2210;-Microsoft.Design#CA1046;-Microsoft.Design#CA1065;-Microsoft.Design#CA1028;-Microsoft.Design#CA1064;-Microsoft.Maintainability#CA1506;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1505;-Microsoft.Maintainability#CA1504;-Microsoft.Maintainability#CA1500;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1720;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1824;-Microsoft.Reliability#CA2001;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006</CodeAnalysisRules>
+    <DocumentationFile>Microsoft.Cui.WPFData.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Design#CA2210;-Microsoft.Design#CA1046;-Microsoft.Design#CA1065;-Microsoft.Design#CA1028;-Microsoft.Design#CA1064;-Microsoft.Maintainability#CA1506;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1505;-Microsoft.Maintainability#CA1504;-Microsoft.Maintainability#CA1500;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1720;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1824;-Microsoft.Reliability#CA2001;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006</CodeAnalysisRules>
+    <DocumentationFile>Microsoft.Cui.WPFData.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\VersionNumber.cs">
+      <Link>Properties\VersionNumber.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\CfhRule.cs">
+      <Link>CfhRule.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\CfhRuleOutput.cs">
+      <Link>CfhRuleOutput.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\CfhRulesDataStore.cs">
+      <Link>CfhRulesDataStore.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\ColumnMapping.cs">
+      <Link>ColumnMapping.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\ColumnMappingList.cs">
+      <Link>ColumnMappingList.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\DataManager.cs">
+      <Link>DataManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\DataManagerEnum.cs">
+      <Link>DataManagerEnum.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\RuleManager.cs">
+      <Link>RuleManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\RuleStrategy.cs">
+      <Link>RuleStrategy.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\SachetRule.cs">
+      <Link>SachetRule.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\StrengthForGases.cs">
+      <Link>StrengthForGases.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\StrengthRule.cs">
+      <Link>StrengthRule.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.Cui.Data\VirtualSet.cs">
+      <Link>VirtualSet.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Microsoft.Cui.Data\AMP.xml">
+      <Link>AMP.xml</Link>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Microsoft.Cui.Data\DrugType.xml">
+      <Link>DrugType.xml</Link>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Microsoft.Cui.Data\Form.xml">
+      <Link>Form.xml</Link>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Microsoft.Cui.Data\Route.xml">
+      <Link>Route.xml</Link>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Microsoft.Cui.Data\Rules.xml">
+      <Link>Rules.xml</Link>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Microsoft.Cui.Data\Template.xml">
+      <Link>Template.xml</Link>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Microsoft.Cui.Data\VMP.xml">
+      <Link>VMP.xml</Link>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Microsoft.Cui.Data\VTM.xml">
+      <Link>VTM.xml</Link>
+      <WithCulture>False</WithCulture>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Cui.WPFIsvDataProvider\Microsoft.Cui.WPFIsvDataProvider.csproj">
+      <Project>{D32A088D-260B-4826-908A-B711B9E0250C}</Project>
+      <Name>Microsoft.Cui.WPFIsvDataProvider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

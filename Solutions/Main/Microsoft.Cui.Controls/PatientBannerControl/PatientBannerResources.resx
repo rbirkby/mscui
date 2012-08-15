@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddressItemSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="AddressTypeLabelText" xml:space="preserve">
+    <value>Usual address</value>
+  </data>
+  <data name="AgeAtDeathLabelText" xml:space="preserve">
+    <value>Age at death</value>
+  </data>
+  <data name="AgeAtDeathLabelTooltip" xml:space="preserve">
+    <value>Age at which the patient died</value>
+  </data>
+  <data name="AgeAtDeathTooltip" xml:space="preserve">
+    <value>Click here to open this section of the record</value>
+  </data>
+  <data name="AgeNotKnown" xml:space="preserve">
+    <value>Not Known</value>
+  </data>
+  <data name="AllergiesNotPresentIconURI" xml:space="preserve">
+    <value>/Microsoft.Cui.Controls;component/PatientBannerControl/AllergiesNotPresentIcon.png</value>
+  </data>
+  <data name="AllergiesNotPresentIconWPFURI" xml:space="preserve">
+    <value>pack://application:,,,/Microsoft.Cui.WPFControls;component/PatientBannerControl/AllergiesNotPresentIcon.png</value>
+  </data>
+  <data name="AllergiesPresentIconURI" xml:space="preserve">
+    <value>/Microsoft.Cui.Controls;component/PatientBannerControl/AllergiesPresentIcon.png</value>
+  </data>
+  <data name="AllergiesPresentIconWPFURI" xml:space="preserve">
+    <value>pack://application:,,,/Microsoft.Cui.WPFControls;component/PatientBannerControl/AllergiesPresentIcon.png</value>
+  </data>
+  <data name="AllergiesUnavailableIconURI" xml:space="preserve">
+    <value>/Microsoft.Cui.Controls;component/PatientBannerControl/AllergiesUnavailable.png</value>
+  </data>
+  <data name="AllergiesUnavailableIconWPFURI" xml:space="preserve">
+    <value>pack://application:,,,/Microsoft.Cui.WPFControls;component/PatientBannerControl/AllergiesUnavailable.png</value>
+  </data>
+  <data name="AllergyNotKnown" xml:space="preserve">
+    <value>No known allergies</value>
+  </data>
+  <data name="AllergyNotRecorded" xml:space="preserve">
+    <value>Allergies not recorded</value>
+  </data>
+  <data name="AllergyPresent" xml:space="preserve">
+    <value>Known allergies</value>
+  </data>
+  <data name="AllergyUnavailable" xml:space="preserve">
+    <value>Allergies unavailable</value>
+  </data>
+  <data name="CollapseImageURI" xml:space="preserve">
+    <value>/Microsoft.Cui.Controls;component/PatientBannerControl/Collapse.png</value>
+  </data>
+  <data name="CollapseImageWPFURI" xml:space="preserve">
+    <value>pack://application:,,,/Microsoft.Cui.WPFControls;component/PatientBannerControl/Collapse.png</value>
+  </data>
+  <data name="DateNotKnown" xml:space="preserve">
+    <value>Not Known</value>
+  </data>
+  <data name="DateOfBirthLabelText" xml:space="preserve">
+    <value>Born</value>
+  </data>
+  <data name="DateOfBirthLabelTooltip" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="DateOfBirthTooltip" xml:space="preserve">
+    <value>Click here to open this section of the record</value>
+  </data>
+  <data name="DateOfDeathLabelText" xml:space="preserve">
+    <value>Died</value>
+  </data>
+  <data name="DateOfDeathLabelToolTip" xml:space="preserve">
+    <value>Date of Death</value>
+  </data>
+  <data name="DateOfDeathToolTip" xml:space="preserve">
+    <value>Click here to open this section of the record</value>
+  </data>
+  <data name="DefaultIdentifierValue" xml:space="preserve">
+    <value>XXX XXX XXXX</value>
+  </data>
+  <data name="DropDownImageURI" xml:space="preserve">
+    <value>/Microsoft.Cui.Controls;component/PatientBannerControl/Expand.png</value>
+  </data>
+  <data name="DropDownImageWPFURI" xml:space="preserve">
+    <value>pack://application:,,,/Microsoft.Cui.WPFControls;component/PatientBannerControl/Expand.png</value>
+  </data>
+  <data name="EmailLabelText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FamilyName" xml:space="preserve">
+    <value>FamilyName</value>
+  </data>
+  <data name="FutureDateOfBirth" xml:space="preserve">
+    <value>Date of birth cannot be in future</value>
+  </data>
+  <data name="FutureDateOfDeath" xml:space="preserve">
+    <value>Date of death cannot be in future</value>
+  </data>
+  <data name="GenderLabelText" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="GenderLabelTooltip" xml:space="preserve">
+    <value>A person's current Gender. This may differ from a person's Sex (which is the Gender registered at birth)</value>
+  </data>
+  <data name="GenderTooltip" xml:space="preserve">
+    <value>Click here to open this section of the record</value>
+  </data>
+  <data name="GivenName" xml:space="preserve">
+    <value>GivenName</value>
+  </data>
+  <data name="HomePhoneLabelText" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="IdentifierLabelText" xml:space="preserve">
+    <value>NHS No.</value>
+  </data>
+  <data name="IdentifierLabelTooltip" xml:space="preserve">
+    <value>A ten-digit number used to identify a person uniquely within the NHS in England and Wales</value>
+  </data>
+  <data name="IdentifierTooltip" xml:space="preserve">
+    <value>Click here to open this section of the record</value>
+  </data>
+  <data name="InvalidCollapsedImageValue" xml:space="preserve">
+    <value>Please specify valid image path for the collapsed image</value>
+  </data>
+  <data name="InvalidDropdownImageValue" xml:space="preserve">
+    <value>Please specify valid image path for the drop down image</value>
+  </data>
+  <data name="MobilePhoneLabelText" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="PatientImageURI" xml:space="preserve">
+    <value>/Microsoft.Cui.Controls;component/PatientBannerControl/Patient.png</value>
+  </data>
+  <data name="PatientImageWPFURI" xml:space="preserve">
+    <value>pack://application:,,,/Microsoft.Cui.WPFControls;component/PatientBannerControl/Patient.png</value>
+  </data>
+  <data name="PatientNameToolTip" xml:space="preserve">
+    <value>Click here to open this section of the record</value>
+  </data>
+  <data name="PreferredNameLabelText" xml:space="preserve">
+    <value>Preferred name</value>
+  </data>
+  <data name="PreferredNameLabelToolTip" xml:space="preserve">
+    <value>Name by which the patient prefers to be known</value>
+  </data>
+  <data name="PreferredNameToolTip" xml:space="preserve">
+    <value>Click here to open this section of the record</value>
+  </data>
+  <data name="SubSectionOneTitle" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="SubSectionTwoTitle" xml:space="preserve">
+    <value>Phone and email</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ViewAllAddressesLinkText" xml:space="preserve">
+    <value>View all addresses</value>
+  </data>
+  <data name="ViewAllContactDetailsLinkText" xml:space="preserve">
+    <value>View all contact details</value>
+  </data>
+  <data name="ViewAllergyRecordLinkText" xml:space="preserve">
+    <value>View allergy record</value>
+  </data>
+  <data name="WorkPhoneLabelText" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="ZoneTwoTooltip" xml:space="preserve">
+    <value>Click here to expand or collapse</value>
+  </data>
+</root>

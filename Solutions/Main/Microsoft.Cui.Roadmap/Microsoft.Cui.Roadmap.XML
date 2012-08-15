@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Cui.Roadmap</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Cui.Roadmap.App">
+            <summary>
+            App startup Class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.App.#ctor">
+            <summary>
+            Constructor method.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.App.Application_Startup(System.Object,System.Windows.StartupEventArgs)">
+            <summary>
+            Application_Startup method.
+            </summary>
+            <param name="sender">Sender object.</param>
+            <param name="e">Event args.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.App.Application_Exit(System.Object,System.EventArgs)">
+            <summary>
+            Application_Exit method.
+            </summary>
+            <param name="sender">Sender object.</param>
+            <param name="e">Event args.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.App.Application_UnhandledException(System.Object,System.Windows.ApplicationUnhandledExceptionEventArgs)">
+            <summary>
+            Application_UnhandledException method.
+            </summary>
+            <param name="sender">Sender object.</param>
+            <param name="e">Event args.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.App.ApplicationPath">
+            <summary>
+            Gets the value of host application path.
+            </summary>
+            <value>
+            The Host application path.
+            </value>
+        </member>
+        <member name="T:Microsoft.Cui.Roadmap.Page">
+            <summary>
+            Page class for the roadmap.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.Page.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Cui.Roadmap.Page"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.Page.Grid_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Loaded event of the Grid control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.Page.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.Cui.Roadmap.RoadmapHost">
+            <summary>
+            RoadMap class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapHost.#ctor">
+            <summary>
+            Roadmap class constructor.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapHost.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes (such as a rebuilding layout pass) call <see cref="M:System.Windows.Controls.Control.ApplyTemplate"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapHost.GetTemplateChild``1(System.String,System.Boolean)">
+            <summary>
+            Gets the template child.
+            </summary>
+            <typeparam name="T">The type that the template item returns.</typeparam>
+            <param name="name">The name of the item.</param>
+            <param name="mustHave">If set to <c>true</c> [must have].</param>
+            <returns>The template.</returns>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapHost.ItemsControl">
+            <summary>
+            Gets or sets the items control.
+            </summary>
+            <value>The items control.</value>
+        </member>
+        <member name="T:Microsoft.Cui.Roadmap.RoadmapHyperlink">
+            <summary>
+            RoadmapHyperlink class.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Roadmap.RoadmapHyperlink.LinkProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Uri.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Roadmap.RoadmapHyperlink.TextProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Text.  This enables animation, styling, binding, etc...
+            </summary> 
+        </member>
+        <member name="F:Microsoft.Cui.Roadmap.RoadmapHyperlink.hyperlinkTextblock">
+            <summary>
+            Textblock used for hyperlink.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Cui.Roadmap.RoadmapHyperlink.loaded">
+            <summary>
+            Flag to show if loaded.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapHyperlink.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Cui.Roadmap.RoadmapHyperlink"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapHyperlink.Callback(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Callbacks the specified dep obj.
+            </summary>
+            <param name="dependencyObj">The dependency obj.</param>
+            <param name="args">The <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapHyperlink.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes (such as a rebuilding layout pass) call <see cref="M:System.Windows.Controls.Control.ApplyTemplate"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapHyperlink.RoadmapHyperlink_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Loaded event of the RoadmapHyperlink control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapHyperlink.ValidateLayout">
+            <summary>
+            Validates the layout.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapHyperlink.HyperlinkTextblock_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Handles the MouseLeftButtonDown event of the hyperlinkTextblock control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.MouseButtonEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapHyperlink.GetTemplateChild``1(System.String,System.Boolean)">
+            <summary>
+            Gets the template child.
+            </summary>
+            <typeparam name="T">The return type from the template.</typeparam>
+            <param name="name">The name of the template.</param>
+            <param name="mustHave">If set to <c>true</c> [must have].</param>
+            <returns>The item created via the template.</returns>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapHyperlink.Text">
+            <summary>
+            Gets or sets the text.
+            </summary>
+            <value>The text for the hyperlink.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapHyperlink.Link">
+            <summary>
+            Gets or sets the URI.
+            </summary>
+            <value>The URI property.</value>
+        </member>
+        <member name="T:Microsoft.Cui.Roadmap.RoadmapItem">
+            <summary>
+            RoadMapItem class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapItem.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapItem.DescriptionToolTip">
+            <summary>
+            Gets or sets the description tool tip.
+            </summary>
+            <value>The description tool tip.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapItem.Link">
+            <summary>
+            Gets or sets the URI.
+            </summary>
+            <value>The URI property.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapItem.CurrentStatusTemplate">
+            <summary>
+            Gets or sets the current status template.
+            </summary>
+            <value>The current status template.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapItem.QuarterOneTemplate">
+            <summary>
+            Gets or sets the quarter one template.
+            </summary>
+            <value>The quarter one template.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapItem.QuarterTwoTemplate">
+            <summary>
+            Gets or sets the quarter two template.
+            </summary>
+            <value>The quarter two template.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapItem.QuarterThreeTemplate">
+            <summary>
+            Gets or sets the quarter three template.
+            </summary>
+            <value>The quarter three template.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapItem.QuarterFourTemplate">
+            <summary>
+            Gets or sets the quarter four template.
+            </summary>
+            <value>The quarter four template.</value>
+        </member>
+        <member name="P:Microsoft.Cui.Roadmap.RoadmapItem.Template">
+            <summary>
+            Gets or sets the template.
+            </summary>
+            <value>The template.</value>
+        </member>
+        <member name="T:Microsoft.Cui.Roadmap.RoadmapItemCollection">
+            <summary>
+            RoadMapItemCollection class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Cui.Roadmap.RoadmapTemplateConverter">
+            <summary>
+            RoadMapTemplateConverter class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapTemplateConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Cui.Roadmap.RoadmapTemplateConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapTemplateConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Modifies the source data before passing it to the target for display in the UI.
+            </summary>
+            <param name="value">The source data being passed to the target.</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property.</param>
+            <param name="parameter">An optional parameter to be used in the converter logic.</param>
+            <param name="culture">The culture of the conversion.</param>
+            <returns>
+            The value to be passed to the target dependency property.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Cui.Roadmap.RoadmapTemplateConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Modifies the target data before passing it to the source object.  This method is called only in <see cref="F:System.Windows.Data.BindingMode.TwoWay"/> bindings.
+            </summary>
+            <param name="value">The target data being passed to the source.</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the source object.</param>
+            <param name="parameter">An optional parameter to be used in the converter logic.</param>
+            <param name="culture">The culture of the conversion.</param>
+            <returns>
+            The value to be passed to the source object.
+            </returns>
+        </member>
+    </members>
+</doc>

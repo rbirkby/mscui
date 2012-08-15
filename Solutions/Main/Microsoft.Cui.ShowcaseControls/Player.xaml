@@ -1,0 +1,296 @@
+﻿<UserControl x:Class="Microsoft.Cui.ShowcaseControls.Player"
+    xmlns="http://schemas.microsoft.com/client/2007" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    xmlns:extended="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls" 
+    >
+    <UserControl.Resources>
+        <Storyboard x:Name="Timer" Duration="00:00:01"/>
+        <Storyboard x:Name="Resize">
+            <DoubleAnimationUsingKeyFrames x:Name="LayoutScaleX" Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.29"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames x:Name="LayoutScaleY" Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" BeginTime="00:00:00" Duration="00:00:00.0010000">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.273"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <ContentControl TabNavigation="Cycle">
+        <Grid x:Name="LayoutRoot" Background="#FF040404" Height="468" Width="616">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Rectangle HorizontalAlignment="Stretch" Margin="0,0,0,-0.279" VerticalAlignment="Bottom" RadiusX="0" RadiusY="0" Fill="#FFD9E6F6" Stroke="#FF2A5DAD" x:Name="Border" Height="68.55" d:LayoutOverrides="Height"/>
+            <Image Height="68.55" Margin="1,0,0,0.534" VerticalAlignment="Bottom" Source="Images/bottomrectangle.png" Stretch="Fill" d:LayoutOverrides="Height" x:Name="controlplaceholder"/>
+            <MediaElement x:Name="thePlayer" Margin="0,0,0,68.271" AutoPlay="False" Visibility="Visible" OpacityMask="#FF000000" Source="D:/DefaultVideo.wmv"/>
+            <Image Height="64" Margin="0,0,0,-0.858" VerticalAlignment="Bottom" Source="Images/bottomrectone.png" Stretch="Fill" x:Name="bottombar" HorizontalAlignment="Right" Width="616"/>
+            <Path x:Name="Path_179" Width="200" Height="44.69" Stretch="Fill" Data="F1 M 285.081,473.671C 283.431,473.671 283.05,472.731 284.235,471.583L 312.366,444.318C 313.551,443.17 315.871,442.23 317.521,442.23L 627,442.23C 628.65,442.23 630,443.58 630,445.23L 630,470.671C 630,472.321 628.65,473.671 627,473.671L 285.081,473.671 Z " HorizontalAlignment="Right" Margin="0,0,0,-0.858" VerticalAlignment="Bottom">
+                <Path.Fill>
+                    <LinearGradientBrush StartPoint="0.500002,-0.0709269" EndPoint="0.500002,0.946855">
+                        <GradientStop Color="#FFDAE4F4" Offset="0"/>
+                        <GradientStop Color="#FFD2DFF0" Offset="0.544944"/>
+                        <GradientStop Color="#FF8EAED6" Offset="0.595506"/>
+                        <GradientStop Color="#FFC3D3EA" Offset="0.926966"/>
+                        <GradientStop Color="#FFCDDBEF" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <Rectangle x:Name="volumeRect" Height="3.933" Stretch="Fill" HorizontalAlignment="Stretch" Margin="305.88,0,199,12" VerticalAlignment="Bottom" d:LayoutOverrides="Width, Height" Width="111.12">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.500001,0.100464" EndPoint="0.500001,0.837872">
+                        <GradientStop Color="#FF33AC33" Offset="0"/>
+                        <GradientStop Color="#FF33AC33" Offset="0.0168539"/>
+                        <GradientStop Color="#FF87D100" Offset="0.0168539"/>
+                        <GradientStop Color="#FF69C412" Offset="0.825843"/>
+                        <GradientStop Color="#FF33AC33" Offset="0.842697"/>
+                        <GradientStop Color="#FF33AC33" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Slider HorizontalAlignment="Stretch" Margin="300.63,0,194,7.756" x:Name="VolumeSlider" VerticalAlignment="Bottom" Opacity="0.4" RenderTransformOrigin="0.5,0.5" Width="121.37" d:LayoutOverrides="Width" Height="18"/>
+            <TextBlock Height="21.92" HorizontalAlignment="Right" Margin="0,0,91.61,4.836" VerticalAlignment="Bottom" x:Name="statusText" Text="" FontFamily="Verdana" FontSize="12" TextAlignment="Center" Foreground="#FF000000" FontWeight="Normal" Width="96.945" d:LayoutOverrides="Width, Height"/>
+            <Path Height="34.306" HorizontalAlignment="Left" Margin="193,0,0,6.333" x:Name="gradient_Next" VerticalAlignment="Bottom" Width="36.852" Opacity="0" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Data="M15.667,0 C24.319645,-2.1634833E-07 31.334,6.7157288 31.334,15 L31.105728,17.167999 C30.068405,24.429945 23.547106,30 15.667,30 C7.7868938,30 1.2655938,24.429945 0.22827144,17.167999 C0.055915024,16.466797 -3.7700184E-07,15.73965 1.9042545E-12,15 C-3.7700184E-07,6.7157288 7.0143542,-2.1634833E-07 15.667,0 z" d:LayoutOverrides="Width, Height">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.05,0.323" StartPoint="0.47,0.452">
+                        <GradientStop Color="#00ECEFF2"/>
+                        <GradientStop Color="#7FFFFFFF" Offset="1"/>
+                        <GradientStop Color="#FFEAEEF4" Offset="0.504"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-97.307998657226562"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Height="34.577" HorizontalAlignment="Left" Margin="109.837,0,0,3.155" x:Name="gradient_Prev" VerticalAlignment="Bottom" Width="33.765" Opacity="0" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Data="M15.667,0 C24.319645,-2.1634833E-07 31.334,6.7157288 31.334,15 L31.105728,17.167999 C30.068405,24.429945 23.547106,30 15.667,30 C7.7868938,30 1.2655938,24.429945 0.22827144,17.167999 C0.055915024,16.466797 -3.7700184E-07,15.73965 1.9042545E-12,15 C-3.7700184E-07,6.7157288 7.0143542,-2.1634833E-07 15.667,0 z" d:LayoutOverrides="Width, Height">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.05,0.323" StartPoint="0.47,0.452">
+                        <GradientStop Color="#00ECEFF2"/>
+                        <GradientStop Color="#7FFFFFFF" Offset="1"/>
+                        <GradientStop Color="#FFEAEEF4" Offset="0.504"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-97.307998657226562"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Rectangle Height="24.261" HorizontalAlignment="Right" Margin="0,0,67.133,10" x:Name="gradient_Fullscreen" VerticalAlignment="Bottom" Width="24.477" Opacity="0" RadiusX="0" RadiusY="0" d:LayoutOverrides="Width, Height">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="-0.147,-0.626" StartPoint="1.01300001144409,1.37999999523163">
+                        <GradientStop Color="#99EAEEF4"/>
+                        <GradientStop Color="#33FFFFFF" Offset="1"/>
+                        <GradientStop Color="#CAF4F6F9" Offset="0.48199999332427979"/>
+                        <GradientStop Color="#99F3F5F8" Offset="0.487"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Path Height="34.896" HorizontalAlignment="Left" Margin="44.305,0,0,5.936" x:Name="gradient_stop" VerticalAlignment="Bottom" Opacity="0" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Data="M15.667,0 C24.319645,-2.1634833E-07 31.334,6.7157288 31.334,15 L31.105728,17.167999 C30.068405,24.429945 23.547106,30 15.667,30 C7.7868938,30 1.2655938,24.429945 0.22827144,17.167999 C0.055915024,16.466797 -3.7700184E-07,15.73965 1.9042545E-12,15 C-3.7700184E-07,6.7157288 7.0143542,-2.1634833E-07 15.667,0 z" Width="36" d:LayoutOverrides="Height">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.05,0.323" StartPoint="0.47,0.452">
+                        <GradientStop Color="#00ECEFF2"/>
+                        <GradientStop Color="#7FFFFFFF" Offset="1"/>
+                        <GradientStop Color="#FFEAEEF4" Offset="0.504"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-97.307998657226562"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Height="28.915" HorizontalAlignment="Right" Margin="0,0,12.681,6.994" x:Name="gradient_Close" VerticalAlignment="Bottom" Width="34.918" Opacity="0" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Data="M15.667,0 C24.319645,-2.1634833E-07 31.334,6.7157288 31.334,15 L31.105728,17.167999 C30.068405,24.429945 23.547106,30 15.667,30 C7.7868938,30 1.2655938,24.429945 0.22827144,17.167999 C0.055915024,16.466797 -3.7700184E-07,15.73965 1.9042545E-12,15 C-3.7700184E-07,6.7157288 7.0143542,-2.1634833E-07 15.667,0 z" d:LayoutOverrides="Width, Height">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.05,0.323" StartPoint="0.47,0.452">
+                        <GradientStop Color="#00ECEFF2"/>
+                        <GradientStop Color="#7FFFFFFF" Offset="1"/>
+                        <GradientStop Color="#FFEAEEF4" Offset="0.504"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-97.307998657226562"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="Path_175" Height="15.685" Stretch="Fill" Data="F1 M 622.567,426.038L 16.567,426.038C 12.595,426.038 9.375,429.258 9.375,433.23C 9.375,437.203 12.595,440.423 16.567,440.423L 622.567,440.423C 626.54,440.423 629.76,437.203 629.76,433.23C 629.76,429.258 626.54,426.038 622.567,426.038 Z " Margin="4,0,2.333,47.832" VerticalAlignment="Bottom" d:LayoutOverrides="Height">
+                <Path.Fill>
+                    <LinearGradientBrush StartPoint="0.500001,0.970594" EndPoint="0.500001,-5.2164">
+                        <GradientStop Color="#FFF2F7FF" Offset="0"/>
+                        <GradientStop Color="#FFA3BFE4" Offset="0.106742"/>
+                        <GradientStop Color="#FF6F97CC" Offset="0.207865"/>
+                        <GradientStop Color="#FF6F97CC" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <Rectangle Opacity="0" Fill="#FF5575AF" Stroke="#FF000000" x:Name="TimeSlider" Height="11.256" Margin="5,0,8,49.261" VerticalAlignment="Bottom" d:LayoutOverrides="Height"/>
+            <Rectangle x:Name="progressRect" Width="10" Height="8" Stretch="Fill" HorizontalAlignment="Left" Margin="9,0,0,52.832" VerticalAlignment="Bottom">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.499999,0.100464" EndPoint="0.499999,0.837872">
+                        <GradientStop Color="#FF33AC33" Offset="0"/>
+                        <GradientStop Color="#FF33AC33" Offset="0.0168539"/>
+                        <GradientStop Color="#FF87D100" Offset="0.0168539"/>
+                        <GradientStop Color="#FF69C412" Offset="0.825843"/>
+                        <GradientStop Color="#FF33AC33" Offset="0.842697"/>
+                        <GradientStop Color="#FF33AC33" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle x:Name="DownloadProgressSlider" Height="2" Stretch="Fill" Margin="8.333,0,8.667,48.76" VerticalAlignment="Bottom">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0.500001,1.0079" EndPoint="0.500001,-1.30362">
+                        <GradientStop Color="#FFB62E1C" Offset="0"/>
+                        <GradientStop Color="#FFDFC33B" Offset="0.0280899"/>
+                        <GradientStop Color="#FFE4C43C" Offset="0.162921"/>
+                        <GradientStop Color="#FFF48021" Offset="0.235955"/>
+                        <GradientStop Color="#FFF48021" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Slider Height="18" HorizontalAlignment="Stretch" Margin="1,0,2.381,47.998" x:Name="PlaySlider" VerticalAlignment="Bottom" Opacity="0.5" RenderTransformOrigin="0.5,0.5">
+                <Slider.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Slider.RenderTransform>
+            </Slider>
+            <Path Height="40.235" HorizontalAlignment="Left" Margin="148.137,0,0,6.102" x:Name="gradient" VerticalAlignment="Bottom" Width="36.375" Opacity="0" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Data="M15.667,0 C24.319645,-2.1634833E-07 31.334,6.7157288 31.334,15 L31.105728,17.167999 C30.068405,24.429945 23.547106,30 15.667,30 C7.7868938,30 1.2655938,24.429945 0.22827144,17.167999 C0.055915024,16.466797 -3.7700184E-07,15.73965 1.9042545E-12,15 C-3.7700184E-07,6.7157288 7.0143542,-2.1634833E-07 15.667,0 z" d:LayoutOverrides="Height">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.05,0.323" StartPoint="0.47,0.452">
+                        <GradientStop Color="#00ECEFF2"/>
+                        <GradientStop Color="#7FFFFFFF" Offset="1"/>
+                        <GradientStop Color="#FFEAEEF4" Offset="0.504"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-97.307998657226562"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Height="33.391" HorizontalAlignment="Left" Margin="250.483,0,0,7.356" x:Name="gradient_unmute" VerticalAlignment="Bottom" Width="34.875" Opacity="0" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Data="M15.667,0 C24.319645,-2.1634833E-07 31.334,6.7157288 31.334,15 L31.105728,17.167999 C30.068405,24.429945 23.547106,30 15.667,30 C7.7868938,30 1.2655938,24.429945 0.22827144,17.167999 C0.055915024,16.466797 -3.7700184E-07,15.73965 1.9042545E-12,15 C-3.7700184E-07,6.7157288 7.0143542,-2.1634833E-07 15.667,0 z" d:LayoutOverrides="Height">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.05,0.323" StartPoint="0.47,0.452">
+                        <GradientStop Color="#00ECEFF2"/>
+                        <GradientStop Color="#7FFFFFFF" Offset="1"/>
+                        <GradientStop Color="#FFEAEEF4" Offset="0.504"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-97.307998657226562"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Height="33.485" HorizontalAlignment="Left" Margin="250.168,0,0,7.161" x:Name="gradient_Mute" VerticalAlignment="Bottom" Opacity="0" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Data="M15.667,0 C24.319645,-2.1634833E-07 31.334,6.7157288 31.334,15 L31.105728,17.167999 C30.068405,24.429945 23.547106,30 15.667,30 C7.7868938,30 1.2655938,24.429945 0.22827144,17.167999 C0.055915024,16.466797 -3.7700184E-07,15.73965 1.9042545E-12,15 C-3.7700184E-07,6.7157288 7.0143542,-2.1634833E-07 15.667,0 z" Width="34.104" d:LayoutOverrides="Width, Height">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.05,0.323" StartPoint="0.47,0.452">
+                        <GradientStop Color="#00ECEFF2"/>
+                        <GradientStop Color="#7FFFFFFF" Offset="1"/>
+                        <GradientStop Color="#FFEAEEF4" Offset="0.504"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-97.307998657226562"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <ContentControl x:Name="BtnClose" IsTabStop="True" TabIndex="9" Margin="0,0,12.681,3.051" Height="38.063" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="39.753">
+                <Image Source="Images/CloseImage.png" Stretch="Fill"  Cursor="Hand">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Content="Close"/>
+                    </ToolTipService.ToolTip>
+                </Image>
+            </ContentControl>
+            <ContentControl x:Name="BtnFullScreen" IsTabStop="True" TabIndex="8" Margin="0,0,47.434,3.051" Height="37.255" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="43.676">
+                <Image Source="Images/fullscreen.png" Stretch="Fill" Cursor="Hand">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Content="FullScreen"></ToolTip>
+                    </ToolTipService.ToolTip>
+                </Image>
+            </ContentControl>
+            <ContentControl x:Name="BtnPrev" IsTabStop="True" TabIndex="2" Height="39.915" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="46.808" Margin="105.329,0,0,2.08">
+                <Image Source="Images/PreviousImage.png" Stretch="Fill" Cursor="Hand">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Content="Previous"></ToolTip>
+                    </ToolTipService.ToolTip>
+                </Image>
+            </ContentControl>
+            <ContentControl x:Name="BtnNext" IsTabStop="True" TabIndex="5" Height="38.944" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="47.488" Margin="189,0,0,3.051">
+                <Image Cursor="Hand" Source="Images/NextImage.png" Stretch="Fill">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Content="Next"></ToolTip>
+                    </ToolTipService.ToolTip>
+                </Image>
+            </ContentControl>
+            <ContentControl x:Name="BtnPlay" IsTabStop="True" TabIndex="3" Height="64.509" HorizontalAlignment="Left" Margin="143.137,0,0,-16.248" VerticalAlignment="Bottom" Width="58.007">
+                <Image Source="Images/PlayImage.png" Stretch="Fill" Cursor="Hand">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Content="Play"></ToolTip>
+                    </ToolTipService.ToolTip>
+                </Image>
+            </ContentControl>
+            <ContentControl x:Name="BtnPause" IsTabStop="True" TabIndex="4" Height="48.192" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="58.007" Margin="142.137,0,0,0.271">
+                <Image Source="Images/PauseImage.png" Stretch="Fill">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Content="Pause"/>
+                    </ToolTipService.ToolTip>
+                </Image>
+            </ContentControl>
+            <ContentControl x:Name="BtnMuted" IsTabStop="False" TabIndex="6" Height="41.725" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="51.154" Margin="246.109,0,0,1.836" Opacity="0">
+                <Image Source="Images/MutedImage.png" Stretch="Fill" Cursor="Hand">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Content="Mute"/>
+                    </ToolTipService.ToolTip>
+                </Image>
+            </ContentControl>
+            <ContentControl x:Name="BtnMute" IsTabStop="True" TabIndex="7" Height="41.725" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="51.154" Margin="246.109,0,0,1.836">
+                <Image Source="Images/MuteImage.png" Stretch="Fill">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Content="Mute"></ToolTip>
+                    </ToolTipService.ToolTip>
+                </Image>
+            </ContentControl>
+            <ContentControl x:Name="BtnStop" IsTabStop="True" TabIndex="1" Height="39.959" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="42.481" Margin="42.562,0,0,1.155">
+                <Image Source="Images/StopImage.png" Stretch="Fill" Cursor="Hand">
+                    <ToolTipService.ToolTip>
+                        <ToolTip Content="Stop"/>
+                    </ToolTipService.ToolTip>
+                </Image>
+            </ContentControl>
+        </Grid>
+    </ContentControl>
+</UserControl>

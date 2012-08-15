@@ -1,0 +1,905 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NhsCui.Toolkit.Test</name>
+    </assembly>
+    <members>
+        <member name="T:NhsCui.Toolkit.Test.NhsNumberTest">
+            <summary>
+            NhsNumberTest class
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.NullParameterConstructorTest">
+            <summary>
+            TestNullParameterConstructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ParseNhsNumberBadParameterTest">
+            <summary>
+            TestParseMethodBadParameter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ParseNhsNumberGoodParameterTest">
+            <summary>
+            TestParseMethodGoodParameter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ParseInvalidNhsNumberStringTest">
+            <summary>
+            TestParseInvalidNhsNumberString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ParseTooFewDigitsStringTest">
+            <summary>
+            TestParseTooFewDigitsString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ParseTooManyDigitsStringTest">
+            <summary>
+            TestParseTooManyDigitsString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ParseAllDigitsSameStringTest">
+            <summary>
+            TestParseAllDigitsSameString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorNegativeIntStringTest">
+            <summary>
+            TestNegativeIntString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorTooFewDigitsStringTest">
+            <summary>
+            TestTooFewDigitsString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorTooManyDigitsStringTest">
+            <summary>
+            TestTooManyDigitsString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorFloatDoubleNumberStringTest">
+            <summary>
+            TestFloatDoubleNumberString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorAlphaCharsStringTest">
+            <summary>
+            TestAlphaCharsString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorAllDigitsSameStringTest">
+            <summary>
+            TestAllDigitsSameString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorInvalidNhsNumberStringTest">
+            <summary>
+            TestInvalidNhsNumberString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorValidNhsNumberFormattedInputStringTest">
+            <summary>
+            TestValidNhsNumberFormattedInputString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorValidNhsNumberUnformattedInputStringTest">
+            <summary>
+            TestValidNhsNumberUnformattedInputString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorNegativeNumericTest">
+            <summary>
+            TestNegativeNumeric
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorTooFewDigitsNumericTest">
+            <summary>
+            TestNegativeNumeric
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorTooManyDigitsNumericTest">
+            <summary>
+            TestTooManyDigitsNumeric
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorDoubleNhsNumberNumericTest">
+            <summary>
+            TestDoubleNhsNumberNumeric
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorFloatNhsNumberNumericTest">
+            <summary>
+            TestFloatNhsNumberNumeric
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorAllDigitsSameNumericTest">
+            <summary>
+            TestAllDigitsSameNumeric
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorInvalidNhsNumberNumericTest">
+            <summary>
+            TestInvalidNhsNumberNumeric
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.NhsNumberTest.ConstructorValidNhsNumberNumericTest">
+            <summary>
+            TestValidNhsNumberNumeric
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Test.PatientNameTest">
+            <summary>
+            Patient Name class test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.#ctor">
+            <summary>
+            constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.FormatNameTest">
+            <summary>
+            Test Format method
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.FormatNameMaximumLengthTest">
+            <summary>
+            Test formatted name property at maximum lengths
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.FormatNameTruncationTest">
+            <summary>
+            Test formatted name property truncates names as expected
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.PatientNameFormatNameArrayTest">
+             <summary>
+             Test the FormatNameArray method
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.PatientNameFormatGivenNameTest">
+             <summary>
+            A test for FormatGivenName (string)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.PatientNameNullGivenNameTest">
+             <summary>
+            A test for Null GivenName
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.PatientNameFormatFamilyNameTest">
+             <summary>
+            A test for FormatFamilyName (string)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.PatientNameNullFamilyNameTest">
+             <summary>
+            A test for Null FamilyName
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.PatientNameFormatTitleTest">
+             <summary>
+            A test for FormatTitle (string)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientNameTest.PatientNameNullTitleTest">
+             <summary>
+            A test for Null Title
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Test.PatientSearchParserTest">
+             <summary>
+            This is a test class for NhsCui.Toolkit.Parser and is intended
+            to contain all NhsCui.Toolkit.Parser Unit Tests
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.AllMandatoryInformationEnteredTrueTest">
+             <summary>
+            A test for AllMandatoryInformationEntered ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.AllMandatoryInformationEnteredFalseTest">
+             <summary>
+            A test for AllMandatoryInformationEntered ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.IsCommonFamilyNameTrueTest">
+             <summary>
+            A test for IsCommonFamilyName
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.IsCommonFamilyNameFalseTest">
+             <summary>
+            A test for IsCommonFamilyName
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.IsDateOfBirthAgeMismatchTrueTest">
+             <summary>
+            A test for IsDateOfBirthAgeMismatch
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.IsDateOfBirthAgeMismatchFalseTest">
+             <summary>
+            A test for IsDateOfBirthAgeMismatch
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.IsGenderTitleMismatchTrueTest">
+             <summary>
+            A test for IsGenderTitleMismatch
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.IsGenderTitleMismatchFalseTest">
+             <summary>
+            A test for IsGenderTitleMismatch
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.IsMandatoryInformationEnteredTrueTest">
+             <summary>
+            A test for IsMandatoryInformationEntered
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.IsMandatoryInformationEnteredFalseTest">
+             <summary>
+            A test for IsMandatoryInformationEntered
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.MandatoryInformationTest">
+             <summary>
+            A test for MandatoryInformation
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase1Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase2Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase3Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase4Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase5Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase6Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase7Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase8Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase9Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase10Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase11Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase12Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase13Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.ParseCase14Test">
+             <summary>
+            A test for Parse ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.PropertyHasBeenSetTrueTest">
+             <summary>
+            A test for PropertyHasBeenSet (Information)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.PropertyHasBeenSetFalseTest">
+             <summary>
+            A test for PropertyHasBeenSet (Information)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.AddressTest">
+             <summary>
+            A test for Address
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.AgeTest">
+             <summary>
+            A test for Age
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.AgeUpperTest">
+             <summary>
+            A test for AgeUpper
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.CommonFamilyNamesTest">
+             <summary>
+            A test for CommonFamilyNames
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.DateOfBirthDayIntMonthYearTest">
+             <summary>
+            A test for DateOfBirth
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.DateOfBirthDayTextMonthYearTest">
+             <summary>
+            A test for DateOfBirth
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.DateOfBirthIntMonthYearTest">
+             <summary>
+            A test for DateOfBirth
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.DateOfBirthTextMonthYearTest">
+             <summary>
+            A test for DateOfBirth
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.DateOfBirthYearTest">
+             <summary>
+            A test for DateOfBirth
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.DateOfBirthUpperTest">
+             <summary>
+            A test for DateOfBirthUpper
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.EndGroupDelimiterTest">
+             <summary>
+            A test for EndGroupDelimiter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.FamilyNameTest">
+             <summary>
+            A test for FamilyName
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.GenderMaleTest">
+             <summary>
+            A test for Gender - Male
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.GenderFemaleTest">
+             <summary>
+            A test for Gender - Female
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.GivenNameTest">
+             <summary>
+            A test for GivenName
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.InformationDelimiterTest">
+             <summary>
+            A test for InformationDelimiter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.InformationDelimiterParseTest">
+             <summary>
+            A test for parsing with specific InformationDelimiter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.InformationFormatTest">
+             <summary>
+            A test for InformationFormat
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.InformationFormatParseTest">
+             <summary>
+            A test for parsing using InformationFormat
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.MaximumAgeTest">
+             <summary>
+            A test for MaximumAge
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.NhsNumberFormattedTest">
+             <summary>
+            A test for formatted NhsNumber
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.NhsNumberUnformattedTest">
+             <summary>
+            A test for unformatted NhsNumber
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.PostcodeFormattedTest">
+             <summary>
+            A test for Postcode
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.PostcodeUnformattedTest">
+             <summary>
+            A test for Postcode
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.StartGroupDelimiterTest">
+             <summary>
+            A test for StartGroupDelimiter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.TextTest">
+             <summary>
+            A test for Text
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.TitleTest">
+             <summary>
+            A test for Title
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.TitlesTest">
+             <summary>
+            A test for Titles
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchParserTest.UnmatchedTextTest">
+             <summary>
+            A test for UnmatchedText
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Test.DateTest">
+            <summary>
+            Unit tests to test the Date class in the NhsCui.Toolkit.DateAndTime namespace
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.#ctor">
+            <summary>
+            Default ctor 
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ConstructNhsDateDateTimeAndBool">
+            <summary>
+            Test ToString on DateType Exact
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.NullInstructionAddTest">
+            <summary>
+            Test the ArgumentNullException for instruction parameter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.NullSourceDateAddTest">
+            <summary>
+            Test the ArgumentNullException for sourcedate parameter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.InvalidInstructionAddTest">
+            <summary>
+            Test the ArgumentException for instruction parameter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.SourceDateYearAddTest">
+            <summary>
+            Test the ArgumentException for sourcedate parameter being a year
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.DataAddDay">
+            <summary>
+            Test the ability to do simple arithemtic updates to date by asking Date to add 1 day
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.DataAddMonthAndDay">
+            <summary>
+            Test the ability to do complex arithemtic updates to date by asking Date to add 1 month and 1 day
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.DataAdd7Years">
+            <summary>
+            Test the ability to do simple arithemtic updates to date by asking Date to Add 7 years
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.DataSubtract7Years">
+            <summary>
+            Test the ability to do simple arithemtic updates to date by asking Date to Subtract 7 years
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.DataSubtract2YearsAdd5Days">
+            <summary>
+            Test the ability to do complex arithemtic updates to date by asking Date to Subtract 2 years AND add 5 days
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ToStringExact">
+            <summary>
+            Test ToString on DateType Exact
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ToStringExactGetRelativeText">
+            <summary>
+            Test ToString on DateType Exact
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ToStringYear">
+            <summary>
+            Test ToString on DateType Year
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ToStringYearMonth">
+            <summary>
+            Test ToString on DateType YearMonth
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ToStringNull">
+            <summary>
+            Test ToString on DateType Null
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ParseMonthAndYear">
+            <summary>
+            Test Parse for a Month and Year
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ParseNullIndex">
+            <summary>
+            Test Parse for a Null
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ParseInvalidNullIndex">
+            <summary>
+            Test Parse for an Invalid NullIndex
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ParseDateText">
+            <summary>
+            Test Parse for a free text
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ParseNull">
+             <summary>
+             Test Parse null
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.ParseEmptyString">
+             <summary>
+             Test Parse empty string
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.TryParseFailures">
+             <summary>
+             Test tryParse to see thatit gets a False when it hsould
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.IsNullProperty">
+             <summary>
+             Test IsNull Property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.DateTest.NullIsAddInstructionTest">
+             <summary>
+             Test the ArgumentNullException for IsAddInstruction method
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Test.TimeSpanTest">
+            <summary>
+            Unit tests to test the TimeSpan class in the NhsCui.Toolkit.TimeAndTime namespace
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.#ctor">
+            <summary>
+            Default ctor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.TimeSpanFromOnlyConstructorTest">
+            <summary>
+            Test the constructor NhsTimeSpan(DateTime from) and FixGranularityAndThreshold for Years > 18
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.TimeSpanFromAndToConstructorTest">
+            <summary>
+            Test the constructor NhsTimeSpan(DateTime from, DateTime to)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_IsAge_LessThan2Hours">
+            <summary>
+            Test that ToString works for an Age Less than 2 hours
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_IsAge_GreaterThan2HoursLessThan2Days">
+            <summary>
+            Test that ToString works for an Age Less than 2 days
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_IsAge_LessThan4WeeksGreaterThan2Days">
+            <summary>
+            Test that ToString works for an Age LessThan4WeeksGreaterThan2Days
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_IsAge_LessThan1Month">
+            <summary>
+            Test that ToString works for an Age Less Than Month
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_IsAge_LessThan1YearIs4Weeks">
+            <summary>
+            Test that ToString works for an Age Less Than 1 Year Is 4 Weeks
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_IsAge_LessThan1YearGreaterThan4WeeksAndADay">
+            <summary>
+            Test that ToString works for an Age LessThan1YearGreaterThan4WeeksAndADay
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_IsAge_LessThan2YearsGreaterThan1Year">
+            <summary>
+            Test that ToString works for an Age LessThan2YearsGreaterThan1Year
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_IsAge_LessThan2YearsGreaterThan1YearAndAWeek">
+            <summary>
+            Test that ToString works for an Age LessThan2YearsGreaterThan1YearAndAWeek
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_IsAge_LessThan2YearsGreaterThan13Months">
+            <summary>
+            Test that ToString works for an Age LessThan2YearsGreaterThan13Months
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_IsAge_LessThan18YearsGreaterThan4Years">
+            <summary>
+            Test that ToString works for an Age LessThan18YearsGreaterThan4Years
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_LessThan2Hours_MinutesAndMinutes">
+            <summary>
+            Test that ToString works for Less than 2 days
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_LessThan2Hours_HoursAndMinutes">
+            <summary>
+            Test that ToString works for Less than 2 hours
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_GreaterThan2Hours_LessThan2Days_HoursToMinutes">
+            <summary>
+            Test that ToString works for GreaterThan2Hours_LessThan2Days with Granularity and Threshold set to HoursAndMinutes
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_GreaterThan2Hours_LessThan2Days_DaysToMinutes">
+            <summary>
+            Test that ToString works for GreaterThan2Hours_LessThan2Days with Granularity and Threshold set to DaysToMinutes
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_3Days17Hours7Minutes">
+            <summary>
+            Test that ToString works for 3Days17Hours7Minutes with Granularity and Threshold set to Hours to Hours
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToString_1Year1Day5Hours">
+            <summary>
+            Test that ToString works for 4Years39Days with Granularity and Threshold set to Months to Months
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToStringLongUnitLength">
+            <summary>
+            Test that ToString works for long format
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ToStringAutomaticUnitLength">
+            <summary>
+            Test that ToString works for automatic format
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.Parse_InvalidTextRepeatedValues">
+            <summary>
+            Test Parse for valid but repeated TimeSpan units
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.ParseInvalidText">
+            <summary>
+            Test Parse for valid but repeated TimeSpan units
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.Parse_Text">
+            <summary>
+            Test Parse for a free text
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeSpanTest.NullArgumentTimeSpanParseTest">
+            <summary>
+            Test the ArgumentNullException for Parse method
+            </summary>
+        </member>
+        <member name="P:NhsCui.Toolkit.Test.TimeSpanTest.BaseDate">
+            <summary>
+            Base date from which to calculate timespans
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Test.TimeTest">
+            <summary>
+            Unit tests to test the Time class in the NhsCui.Toolkit.DateAndTime namespace
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.#ctor">
+            <summary>
+            Default ctor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.NullInstructionTimeTwoParametersAddTest">
+             <summary>
+             Test the ArgumentNullException for instruction parameter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.NullSourceTimeAddTest">
+             <summary>
+             Test the ArgumentNullException for sourcetime parameter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.InvalidInstructionTimeAddTest">
+            <summary>
+            Test the ArgumentOutOfRangeException for instruction parameter
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.NullInstructionTimeOneParameterAddTest">
+             <summary>
+             Test the ArgumentNullException for instruction parameter for Add(string instruction) method
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.NullInstructionTimeIsAddInstructionTest">
+             <summary>
+             Test the ArgumentNullException for instruction parameter for IsAddInstruction() method
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.AddAddHour">
+            <summary>
+            Test the ability to do simple arithemtic updates to date by asking Time to add 1 hour
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.AddAddHoursAndMinutes">
+            <summary>
+            Test the ability to do complex arithemtic updates to date by asking Time to add 1 hour and 5 minutes
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.AddSubtract5Hours">
+            <summary>
+            Test the ability to do simple arithemtic updates to time by asking Time to Subtract 5 hours
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.AddSubtract2HoursAdd25Minutes">
+            <summary>
+            Test the ability to do complex arithemtic updates to time by asking Time to Subtract 2 hours AND add 25 minutes
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ToStringApproximate">
+            <summary>
+            Test ToString for TimeType Approx
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ToStringDisplaySeconds">
+            <summary>
+            Test ToString can output seconds
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ToStringDisplay12Hour">
+            <summary>
+            Test ToString display in 12 / 24 hour clock
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ToStringDisplayAMPM">
+            <summary>
+            Test ToString display in AMPM indicator
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ParseNotApproximate">
+            <summary>
+            Test Parse for an NhsTime set to a time (not approx)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ParseNotApproximateTruePassedToToString">
+            <summary>
+            Test Parse for an NhsTime set to a time (not approx, but approx = true passed to ToString)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ParseApproximate">
+            <summary>
+            Test Parse for an NhsTime set to a time (IS approx)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ParseNullIndex">
+            <summary>
+            Test Parse for a Null
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ParseInvalidNullIndex">
+            <summary>
+            Test Parse for an Invalid NullIndex
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ParseShouldFail">
+            <summary>
+            Test Parse for an NhsTime set to Afternoon
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ParseWithSeconds">
+            <summary>
+            Test Parse for an NhsTime set to a time (not approx) with seconds
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ParseWithAMPMDesignator">
+            <summary>
+            Test Parse with AM designator
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ParseNull">
+             <summary>
+             Test Parse null
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.ParseEmptyString">
+             <summary>
+             Test Parse empty string
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.TimeTest.IsNullProperty">
+             <summary>
+             Test IsNull Property
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Test.PatientSearchTitleTest">
+             <summary>
+            This is a test class for NhsCui.Toolkit.Title and is intended
+            to contain all NhsCui.Toolkit.Title Unit Tests
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchTitleTest.GenderTest">
+             <summary>
+            A test for Gender
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchTitleTest.NameTest">
+             <summary>
+            A test for Name
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchTitleTest.ConstructWithNameTest">
+             <summary>
+            A test for Title (string)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Test.PatientSearchTitleTest.ConstructWithNameAndGenderTest">
+             <summary>
+            A test for Title (string, Gender)
+            </summary>
+        </member>
+    </members>
+</doc>

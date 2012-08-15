@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home" description="Home page" url="~/default.aspx">
+    <siteMapNode category="Guidance" title="Guidance Overview" description="Guidance section" url="~/DesignGuide/DesignGuide.aspx">
+      <siteMapNode title="Clinical Noting and Terminology" links="Clinical Noting and Terminology">
+        <siteMapNode title="Clinical Noting in Forms: Admissions Clerking" description="Clinical Noting in Forms: Admissions Clerking Guidance page" url="~/DesignGuide/AdmissionsClerking.aspx"/>
+        <siteMapNode title="Display of Clinical Statements" description="Display of Clinical Statements Guidance page" url="~/DesignGuide/ClinicalStatement.aspx" />
+        <siteMapNode title="Displaying Adverse Drug Reaction Risks" description="Displaying Adverse Drug Reaction Risks Guidance page" url="~/DesignGuide/DisplayingAllergies.aspx"></siteMapNode>        
+        <siteMapNode title="Displaying Graphs and Tables" description="Displaying Graphs and Tables Guidance page" url="~/DesignGuide/TablesGraphsDisplay.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/Graphing.aspx?crossref" title="Graphing Control"  description="Graphing Control"/>
+            <siteMapNode url="~/Components/Timeline.aspx?crossref" title="Timeline Control"  description="Timeline Control"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Noting Using Templates" description="Noting Using Templates Guidance page" url="~/DesignGuide/NotingUsingTemplates.aspx"/>
+        <siteMapNode title="Recording Adverse Drug Reaction Risks" description="Recording Adverse Drug Reaction Risks Guidance page" url="~/DesignGuide/RecordingAllergies.aspx"></siteMapNode>
+        <siteMapNode title="Terminology Display Standards" description="Terminology Display Standards Guidance page" url="~/DesignGuide/TerminologyCodedInformation.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/SingleConceptMatching.aspx?crossref&amp;id=1" title="Single Concept Matching"  description="Single Concept Matching"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Terminology Elaboration" description="Terminology Elaboration Guidance page" url="~/DesignGuide/TerminologyElaboration.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/SingleConceptMatching.aspx?crossref&amp;id=2" title="Single Concept Matching"  description="Single Concept Matching"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Terminology Matching" description="Terminology Matching Guidance page" url="~/DesignGuide/TerminologyMatching.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/SingleConceptMatching.aspx?crossref&amp;id=3" title="Single Concept Matching"  description="Single Concept Matching"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Truncation of Clinical Terms" description="Truncation of Clinical Terms Guidance page" url="~/DesignGuide/Truncation.aspx" />
+      </siteMapNode>
+      <siteMapNode title="Consistent Navigation" links="Consistent Navigation">
+        <siteMapNode title="Alerts and Reminders Framework" description="Alerts and Reminders Framework Guidance page" url="~/DesignGuide/AlertsReminders.aspx" />
+        <siteMapNode title="Filtering, Sorting and Grouping" description="Filtering, Sorting and Grouping Guidance page" url="~/DesignGuide/FilteringSortingAndGrouping.aspx"/>
+        <siteMapNode title="Icons and Symbology" description="Icons and Symbology Guidance page" url="~/DesignGuide/IconsSymbology.aspx" />                
+      </siteMapNode>
+      <siteMapNode title="Medications" links="Medications">
+        <siteMapNode title="Drug Administration" description="Drug Administration Guidance page" url="~/DesignGuide/MedicationsAdmin.aspx" />
+        <siteMapNode title="Medication Line" description="Medication Line Guidance page" url="~/DesignGuide/MedicationLine.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/MedicationsListView.aspx?crossref&amp;id=7" title="MedicationsList View"  description="MedicationsList View"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Medications List" description="Medications List Guidance page" url="~/DesignGuide/MedicationsList.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/MedicationsListView.aspx?crossref&amp;id=8" title="Medications List View"  description="Medications List View"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Search and Prescribe" description="Search and Prescribe Guidance page" url="~/DesignGuide/SearchPrescribe.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/SearchAndPrescribe.aspx?crossref" title="Search And Prescribe Control"  description="Search And Prescribe Control"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Timeline View" description="Timeline View Guidance page" url ="~/DesignGuide/TimelineView.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/Timeline.aspx?crossref&amp;id=1" title="Timeline"  description="Timeline control"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Patient Identification">        
+        <siteMapNode title="Address Input and Display" description="Address Input and Display Guidance page" url="~/DesignGuide/AddressDisplay.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/AddressLabel.aspx?crossref" title="AddressLabel"  description="AddressLabel"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>       
+        <siteMapNode title="Email Input and Display" description="Email Input and Display Guidance page" url="~/DesignGuide/EmailDisplayInput.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/ContactLabel.aspx?crossref&amp;id=1" title="ContactLabel" description="Contact Label"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode  title="Find a Patient" description="Find a Patient Guidance page" url="~/DesignGuide/PatientFindAPatient.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/PatientSearchInputBox.aspx?crossref&amp;id=1" title="PatientSearchInputBox " description="Patient Search Input Box"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+            <siteMapNode url="~/Samples/PSIB/PatientSearchInputBox.aspx?crossref&amp;id=1" title="Patient Search Input Box" description="Patient Search Input Box Sample" />
+          </siteMapNode>
+        </siteMapNode>        
+        <siteMapNode title="Micro Patient Banner" description="Micro Patient Banner Guidance page" url="~/DesignGuide/MicroPatientBanner.aspx">
+        </siteMapNode>
+        <siteMapNode title="Patient Banner" description="Patient Banner Guidance page" url="~/DesignGuide/PatientIdentification.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/NameLabel.aspx?crossref&amp;id=1" title="NameLabel" description="Name Label"/>
+            <siteMapNode url="~/Components/PatientBanner.aspx?crossref&amp;id=1" title="PatientBanner" description="Patient Banner"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+            <siteMapNode url="~/Samples/PatientBanner/XMLPatientBanner.aspx?crossref&amp;id=1" title="Patient Banner (Binding)" description="PatientBanner (Data-Binding)" />
+            <siteMapNode url="~/Samples/PatientBanner/RestyledPatientBanner.aspx?crossref&amp;id=1" title="Patient Banner (CSS)" description="PatientBanner (CSS Styling)" />
+            <siteMapNode url="~/Samples/PatientBanner/ExtendedPatientBanner.aspx?crossref&amp;id=1" title="Patient Banner (Data)" description="PatientBanner (Extending Data)" />
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Patient ID Number Input and Display" description="Patient Number Input and Display Guidance page" url="~/DesignGuide/PatientNoDisplay.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/IdentifierLabel.aspx?crossref" title="IdentifierLabel" description="Identifier Label"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Patient List View" description="Patient List View Guidance page" url="~/DesignGuide/PatientList.aspx" />
+        <siteMapNode title="Patient Name Input and Display" description="Patient Name Input and Display Guidance page" url="~/DesignGuide/NameDisplayInput.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/NameLabel.aspx?crossref" title="NameLabel" description="Name Label"/>
+            <siteMapNode url="~/Components/PatientBanner.aspx?crossref" title="PatientBanner" description="Patient Banner"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Sex and Current Gender Input and Display" description="Gender and Sex Display Guidance page" url="~/DesignGuide/GenderSexDisplay.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/GenderLabel.aspx?crossref" title="GenderLabel" description="Gender Label"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Telephone Number Input and Display" description="Telephone Number Input and Display Guidance page" url="~/DesignGuide/TelephoneNoDisplay.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/ContactLabel.aspx?crossref" title="ContactLabel" description="Contact Label"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>        
+      </siteMapNode>
+      <siteMapNode title="Miscellaneous" links="Miscellaneous">
+        <siteMapNode title="Abbreviations and Acronyms" description="Abbreviations and Acronyms Guidance page" url="~/DesignGuide/AbbreviationsAcronyms.aspx">
+        </siteMapNode>        
+        <siteMapNode title="Accessibility Principles" description="Accessibility Principles Guidance page" url="~/DesignGuide/AccessibilityPrinciples.aspx"></siteMapNode>
+        <siteMapNode title="Accessibility Checklist" description="Accessibility Checklist Guidance page" url="~/DesignGuide/AccessibilityChecklist.aspx"></siteMapNode>
+        <siteMapNode title="Date Input and Display" description="Date Input and Display Guidance page" url="~/DesignGuide/DateDisplay.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/DateLabel.aspx?crossref" title="DateLabel" description="Date Label"/>
+            <siteMapNode url="~/Components/DateInputBox.aspx?crossref&amp;id=1" title="DateInputBox" description="Date Input Box"/>
+            <siteMapNode url="~/Components/MonthCalendar.aspx?crossref&amp;id=2" title="MonthCalendar" description="Month Calendar"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+            <siteMapNode url="~/Samples/DateTime/DateTimeSampleAmbiguous.aspx?crossref&amp;id=6" title="Date &amp; Time (Ambiguous)" description="Date &amp; Time (Ambiguous)" />
+            <siteMapNode url="~/Samples/DateTime/RestyledDateSample.aspx?crossref&amp;id=3" title="Date (CSS Styling)" description="Date (CSS Styling)" />
+            <siteMapNode url="~/Samples/DateTime/DateTimeSample.aspx?crossref&amp;id=4" title="Date &amp; Time (Simple)" description="Date &amp; Time (Simple)" />
+            <siteMapNode url="~/Samples/DateTime/DateTimeSampleComplex.aspx?crossref&amp;id=6" title="Date &amp; Time (Complex)" description="Date &amp; Time (Complex)" />
+            <siteMapNode url="~/Samples/Validators/InputBoxValidators.aspx?crossref&amp;id=7" title="InputBox Validators" description="InputBox Validation" />
+            <siteMapNode url="~/Samples/Validators/IsvInputBoxValidator.aspx?crossref&amp;id=8" title="Custom InputBox Validation" description="Custom Validation of DateInputBox" />
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Time Input and Display" description="Time Input and Display Guidance page" url="~/DesignGuide/TimeDisplay.aspx">
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/TimeLabel.aspx?crossref" title="TimeLabel" description="Time Label Control"/>
+            <siteMapNode url="~/Components/TimeSpanLabel.aspx?crossref" title="TimeSpanLabel" description="TimeSpanLabel Control"/>
+            <siteMapNode url="~/Components/TimeInputBox.aspx?crossref&amp;id=1" title="TimeInputBox" description="Time Input Box"/>
+            <siteMapNode url="~/Components/TimeSpanInputBox.aspx?crossref&amp;id=2" title="TimeSpanInputBox" description="Time Span Input Box"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+            <siteMapNode url="~/Samples/DateTime/DateTimeSample.aspx?crossref&amp;id=3" title="Date &amp; Time (Simple)" description="Date &amp; Time (Simple)" />
+            <siteMapNode url="~/Samples/DateTime/DateTimeSampleComplex.aspx?crossref&amp;id=4" title="Date &amp; Time (Complex)" description="Date &amp; Time (Complex)" />
+            <siteMapNode url="~/Samples/Validators/InputBoxValidators.aspx?crossref&amp;id=5" title="InputBox Validators" description="InputBox Validation" />
+            <siteMapNode url="~/Samples/Validators/IsvInputBoxValidator.aspx?crossref&amp;id=6" title="Custom InputBox Validation" description="Custom Validation of DateInputBox" />
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>    
+    <siteMapNode title="Controls and Samples Overview" description="Controls and Samples section" url="~/ControlsAndSamples.aspx">
+      <siteMapNode category="Controls" description="Controls" title="Controls">
+        <siteMapNode url="~/Components/AddressLabel.aspx" title="AddressLabel"  description="AddressLabel Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Address" description="Address Display Guidance" url="~/DesignGuide/AddressDisplay.aspx?crossref"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/ContactLabel.aspx" title="ContactLabel" description="ContactLabel Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Telephone Number" description="Telephone Number Display Guidance" url="~/DesignGuide/TelephoneNoDisplay.aspx?crossref"/>
+            <siteMapNode  title="Email" description="Email Display Guidance" url="~/DesignGuide/EmailDisplayInput.aspx?crossref"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/DateInputBox.aspx" title="DateInputBox" description="DateInputBox Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Date Input" description="Date Input Guidance" url="~/DesignGuide/DateDisplay.aspx?crossref&amp;id=1"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+            <siteMapNode url="~/Samples/DateTime/DateTimeSampleAmbiguous.aspx?crossref&amp;id=4" title="Date &amp; Time (Ambiguous)" description="Date &amp; Time (Ambiguous)" />
+            <siteMapNode url="~/Samples/DateTime/DateTimeSample.aspx?crossref&amp;id=5" title="Date &amp; Time (Simple)" description="Date &amp; Time (Simple)" />
+            <siteMapNode url="~/Samples/DateTime/DateTimeSampleComplex.aspx?crossref&amp;id=5" title="Date &amp; Time (Complex)" description="Date &amp; Time (Complex)" />
+            <siteMapNode url="~/Samples/Validators/InputBoxValidators.aspx?crossref&amp;id=4" title="InputBox Validators" description="InputBox Validation" />
+            <siteMapNode url="~/Samples/Validators/IsvInputBoxValidator.aspx?crossref&amp;id=4" title="Custom InputBox Validation" description="Custom Validation of DateInputBox" />
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/DateLabel.aspx" title="DateLabel" description="DateLabel Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode title="Date Display" description="Date Display Guidance" url="~/DesignGuide/DateDisplay.aspx?crossref">
+            </siteMapNode>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/GenderLabel.aspx" title="GenderLabel" description="GenderLabel Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Gender and Sex" description="Gender and Sex Display Guidance" url="~/DesignGuide/GenderSexDisplay.aspx?crossref"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/Graphing.aspx" title="Graphing" description="Graphing Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Displaying Graphs and Tables" description="Displaying Graphs and Tables Guidance" url="~/DesignGuide/TablesGraphsDisplay.aspx?crossref"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/IdentifierLabel.aspx" title="IdentifierLabel" description="IdentifierLabel Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Patient ID Number" description="Patient Number Display Guidance" url="~/DesignGuide/PatientNoDisplay.aspx?crossref&amp;id=1"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/MedicationsListView.aspx" title="MedicationsListView" description="MedicationsListView Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Medication Line Overview" description="Medication Line Overview" url="~/DesignGuide/MedicationLine.aspx?crossref&amp;id=6"/>
+            <siteMapNode  title="Medications List Overview" description="Medications List Overview" url="~/DesignGuide/MedicationsList.aspx?crossref&amp;id=9"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/MonthCalendar.aspx" title="MonthCalendar" description="MonthCalendar Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Date Input" description="Date Input Guidance" url="~/DesignGuide/DateDisplay.aspx?crossref&amp;id=2"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+            <siteMapNode url="~/Samples/DateTime/RestyledDateSample.aspx?crossref&amp;id=1" title="MonthCalendar" description="Month Calendar"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/NameLabel.aspx" title="NameLabel" description="NameLabel Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Identification" description="Patient Administration - Identification" url="~/DesignGuide/PatientIdentification.aspx?crossref&amp;id=1"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/PatientBanner.aspx" title="PatientBanner" description="PatientBanner Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Identification" description="Patient Administration - Identification" url="~/DesignGuide/PatientIdentification.aspx?crossref&amp;id=2"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+            <siteMapNode url="~/Samples/PatientBanner/XMLPatientBanner.aspx?crossref&amp;id=2" title="Patient Banner (Binding)" description="PatientBanner (Data-Binding)" />
+            <siteMapNode url="~/Samples/PatientBanner/RestyledPatientBanner.aspx?crossref&amp;id=2" title="Patient Banner (CSS)" description="PatientBanner (CSS Styling)" />
+            <siteMapNode url="~/Samples/PatientBanner/ExtendedPatientBanner.aspx?crossref&amp;id=2" title="Patient Banner (Data)" description="PatientBanner (Extending Data)" />
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/PatientSearchInputBox.aspx" title="PatientSearchInputBox " description="PatientSearchInputBox Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Find a Patient" description="Patient Administration - Find a Patient" url="~/DesignGuide/PatientFindAPatient.aspx?crossref&amp;id=1"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+            <siteMapNode url="~/Samples/PSIB/PatientSearchInputBox.aspx?crossref&amp;id=2" title="Patient Search Input Box" description="Patient Search Input Box Sample" />
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/SearchAndPrescribe.aspx" title="SearchAndPrescribe" description="Search And Prescribe">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Search And Prescribe" description="Search And Prescribe Guidance" url="~/DesignGuide/SearchPrescribe.aspx?crossref"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/SingleConceptMatching.aspx" title="SingleConceptMatching" description="SingleConceptMatching Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Terminology Display Standards" description="Link to design guidance document" url="~/DesignGuide/TerminologyCodedInformation.aspx?crossref&amp;id=3"/>
+            <siteMapNode  title="Terminology Elaboration" description="Link to design guidance document" url="~/DesignGuide/TerminologyElaboration.aspx?crossref&amp;id=3"/>
+            <siteMapNode  title="Terminology Matching" description="Link to design guidance document" url="~/DesignGuide/TerminologyMatching.aspx?crossref&amp;id=3"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/TimeInputBox.aspx" title="TimeInputBox" description="TimeInputBox Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Time Input" description="Time Input Guidance" url="~/DesignGuide/TimeDisplay.aspx?crossref&amp;id=1"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+            <siteMapNode url="~/Samples/DateTime/DateTimeSample.aspx?crossref&amp;id=9" title="Date &amp; Time (Simple)" description="Date &amp; Time (Simple)" />
+            <siteMapNode url="~/Samples/DateTime/DateTimeSampleComplex.aspx?crossref&amp;id=3" title="Date &amp; Time (Complex)" description="Date &amp; Time (Complex)" />
+            <siteMapNode url="~/Samples/Validators/InputBoxValidators.aspx?crossref&amp;id=3" title="InputBox Validators" description="InputBox Validation" />
+            <siteMapNode url="~/Samples/Validators/IsvInputBoxValidator.aspx?crossref&amp;id=3" title="Custom InputBox Validation" description="Custom Validation of DateInputBox" />
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/TimeLabel.aspx" title="TimeLabel" description="TimeLabel Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode title="Time Display" description="Time Display Guidance page" url="~/DesignGuide/TimeDisplay.aspx?crossref&amp;id=8"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/Timeline.aspx" title="Timeline" description="Timeline Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Displaying Graphs and Tables" description="Displaying Graphs and Tables Guidance" url="~/DesignGuide/TablesGraphsDisplay.aspx?crossref&amp;id=1"/>
+            <siteMapNode title="Timeline View" description="Displaying Timeline Guidance" url="~/DesignGuide/TimelineView.aspx?crossref"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/TimeSpanInputBox.aspx" title="TimeSpanInputBox" description="TimeSpanInputBox Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Time Input" description="Time Input Guidance" url="~/DesignGuide/TimeDisplay.aspx?crossref&amp;id=9"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+            <siteMapNode url="~/Samples/Validators/InputBoxValidators.aspx?crossref&amp;id=6" title="InputBox Validators" description="InputBox Validation" />
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Components/TimeSpanLabel.aspx" title="TimeSpanLabel" description="TimeSpanLabel Control page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode title="Time Display" description="Time Display Guidance" url="~/DesignGuide/TimeDisplay.aspx?crossref&amp;id=7"/>
+          </siteMapNode>
+          <siteMapNode title="Samples">
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode category="Samples" description="Samples" title="Samples">
+        <siteMapNode url="~/Samples/DateTime/DateTimeSampleAmbiguous.aspx" title="Date (Ambiguous)" description="Date (Ambiguous) Sample page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Date Input" description="Date Input Guidance" url="~/DesignGuide/DateDisplay.aspx?crossref&amp;id=5"/>
+          </siteMapNode>
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/DateInputBox.aspx?crossref&amp;id=4" title="DateInputBox" description="Date Input Box"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Samples/DateTime/RestyledDateSample.aspx" title="Date (CSS styling)" description="Restyled Date Sample page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Date Input" description="Date Input Guidance" url="~/DesignGuide/DateDisplay.aspx?crossref&amp;id=3"/>
+          </siteMapNode>
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/DateInputBox.aspx?crossref&amp;id=7" title="DateInputBox" description="Date Input Box"/>
+            <siteMapNode url="~/Components/MonthCalendar.aspx?crossref&amp;id=1" title="MonthCalendar" description="Month Calendar"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Samples/DateTime/DateTimeSample.aspx" title="Date and Time (Basic)" description="Date and Time (Basic) Sample page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Date Input" description="Date Input Guidance" url="~/DesignGuide/DateDisplay.aspx?crossref&amp;id=4"/>
+            <siteMapNode  title="Time Input" description="Time Input Guidance" url="~/DesignGuide/TimeDisplay.aspx?crossref&amp;id=3"/>
+          </siteMapNode>
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/DateInputBox.aspx?crossref&amp;id=2" title="DateInputBox" description="Date Input Box"/>
+            <siteMapNode url="~/Components/TimeInputBox.aspx?crossref&amp;id=2" title="TimeInputBox" description="Time Input Box"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Samples/DateTime/DateTimeSampleComplex.aspx" title="Date and Time (Complex)" description="Date and Time (Complex) Sample page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Date Input" description="Date Input Guidance" url="~/DesignGuide/DateDisplay.aspx?crossref&amp;id=6"/>
+            <siteMapNode  title="Time Input" description="Time Input Guidance" url="~/DesignGuide/TimeDisplay.aspx?crossref&amp;id=4"/>
+          </siteMapNode>
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/DateInputBox.aspx?crossref&amp;id=3" title="DateInputBox" description="Date Input Box"/>
+            <siteMapNode url="~/Components/TimeInputBox.aspx?crossref&amp;id=3" title="TimeInputBox" description="Time Input Box"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Samples/Validators/InputBoxValidators.aspx" title="Input Validation" description="Input Validation Sample page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Date Input" description="Date Input Guidance" url="~/DesignGuide/DateDisplay.aspx?crossref&amp;id=7"/>
+            <siteMapNode  title="Time Input" description="Time Input Guidance" url="~/DesignGuide/TimeDisplay.aspx?crossref&amp;id=5"/>
+          </siteMapNode>
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/DateInputBox.aspx?crossref&amp;id=5" title="DateInputBox" description="Date Input Box"/>
+            <siteMapNode url="~/Components/TimeInputBox.aspx?crossref&amp;id=5" title="TimeInputBox" description="Time Input Box"/>
+            <siteMapNode url="~/Components/TimeSpanInputBox.aspx?crossref&amp;id=3" title="TimeSpanInputBox" description="Time Span Input Box"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Samples/Validators/IsvInputBoxValidator.aspx" title="Input Validation (Custom)"
+                     description="Input Validation (Custom) Sample page" >
+          <siteMapNode title="Design Guidance">
+            <siteMapNode title="Date Input" description="Date Input Guidance" url="~/DesignGuide/DateDisplay.aspx?crossref&amp;id=8"/>
+            <siteMapNode title="Time Input" description="Time Input Guidance" url="~/DesignGuide/TimeDisplay.aspx?crossref&amp;id=6"/>
+          </siteMapNode>
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/DateInputBox.aspx?crossref&amp;id=6" title="DateInputBox" description="Date Input Box"/>
+            <siteMapNode url="~/Components/TimeInputBox.aspx?crossref&amp;id=6" title="TimeInputBox" description="Time Input Box"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Samples/PatientBanner/RestyledPatientBanner.aspx" title="PatientBanner (CSS Styling)" description="PatientBanner (CSS Styling) Sample page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Identification" description="Patient Administration - Identification" url="~/DesignGuide/PatientIdentification.aspx?crossref&amp;id=4"/>
+          </siteMapNode>
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/PatientBanner.aspx?crossref&amp;id=3" title="PatientBanner" description="Patient Banner"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Samples/PatientBanner/XMLPatientBanner.aspx" title="PatientBanner (Data)" description="PatientBanner (Data) Sample page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Identification" description="Patient Administration - Identification" url="~/DesignGuide/PatientIdentification.aspx?crossref&amp;id=3"/>
+          </siteMapNode>
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/PatientBanner.aspx?crossref&amp;id=2" title="PatientBanner" description="Patient Banner"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Samples/PatientBanner/ExtendedPatientBanner.aspx" title="PatientBanner (Extending)" description="PatientBanner (Extending) Sample page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Identification" description="Patient Administration - Identification" url="~/DesignGuide/PatientIdentification.aspx?crossref&amp;id=5"/>
+          </siteMapNode>
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/PatientBanner.aspx?crossref&amp;id=4" title="PatientBanner" description="Patient Banner"/>
+          </siteMapNode>
+        </siteMapNode>
+        <siteMapNode url="~/Samples/PSIB/PatientSearchInputBox.aspx" title="PatientSearchInputBox" description="PatientSearchInputBox Sample page">
+          <siteMapNode title="Design Guidance">
+            <siteMapNode  title="Find a Patient" description="Patient Administration - Find a Patient" url="~/DesignGuide/PatientFindAPatient.aspx?crossref&amp;id=2"/>
+          </siteMapNode>
+          <siteMapNode title="Controls">
+            <siteMapNode url="~/Components/PatientSearchInputBox.aspx?crossref&amp;id=2" title="PatientSearchInputBox " description="Patient Search Input Box"/>
+          </siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode title="Quick Reference" description="Design Guidance section" url="~/DesignGuide/DesignGuide.aspx?crossref&amp;id=3">
+      <siteMapNode title="Quick Implementation Guides" description="Design Guidance section">
+        <siteMapNode url="~/DesignGuide/QuickGuides/Address/default.aspx" title="Address Input and Display"  description="Address Input and Display Quick Implementation Guide page" />
+        <siteMapNode url="~/DesignGuide/QuickGuides/DateTimeDisplay/default.aspx" title="Date and Time Display"  description="Date and Time Display Quick Implementation Guide page" />
+        <siteMapNode url="~/DesignGuide/QuickGuides/DateTimeInput/default.aspx" title="Date and Time Input"  description="Date and Time Input Quick Implementation Guide page" />
+        <siteMapNode url="~/DesignGuide/QuickGuides/GenderSex/default.aspx" title="Sex and Current Gender Input and Display"  description="Sex and Current Gender Input and Display Quick Implementation Guide page" />
+        <siteMapNode url="~/DesignGuide/QuickGuides/MedicationLine/default.aspx" title="Medication Line"  description="Medication Line Quick Implementation Guide page" />
+        <siteMapNode url="~/DesignGuide/QuickGuides/MedicationsList/default.aspx" title="Medications List"  description="Medications List Quick Implementation Guide page" />
+        <siteMapNode url="~/DesignGuide/QuickGuides/PatientBanner/default.aspx" title="Patient Banner"  description="Patient Banner Quick Implementation Guide page" />
+        <siteMapNode url="~/DesignGuide/QuickGuides/PatientIDNumber/default.aspx" title="Patient Identification Number Input and Display"  description="Patient Identification Number Input and Display Quick Implementation Guide page" />
+        <siteMapNode url="~/DesignGuide/QuickGuides/PatientName/default.aspx" title="Patient Name Input and Display"  description="Patient Name Input and Display Quick Implementation Guide page" />
+        <siteMapNode url="~/DesignGuide/QuickGuides/SearchPrescribe/default.aspx" title="Search and Prescribe"  description="Search and Prescribe Quick Implementation Guide page" />
+        <siteMapNode url="~/DesignGuide/QuickGuides/TelNumber/default.aspx" title="Telephone Number Input and Display"  description="Telephone Number Input and Display Quick Implementation Guide page" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode title="Introduction Overview" description="Introduction section" url="~/Introduction/Introduction.aspx" Category="Introduction">
+      <siteMapNode title="Introduction" links="Introduction">
+        <siteMapNode title="Patient Safety" description="Patient Safety Introduction page" url="~/Introduction/PatientSafety.aspx"/>
+        <siteMapNode title="The Benefits" description="The Benefits Introduction page" url="~/Introduction/Benefits.aspx"/>
+        <siteMapNode title="What is Microsoft Health CUI?" description="Microsoft Health CUI Introduction page" url="~/Introduction/MSCUI.aspx"/>
+        <siteMapNode title="Who's Involved" description="Who's Involved Introduction page" url="~/Introduction/Involved.aspx"/>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode category="Showcase" title="Showcase Overview" description="Showcase section" url="~/Showcase/Showcase.aspx">
+      <siteMapNode title="Showcase" links="Showcase">
+        <siteMapNode title="Testimonials" description="Testimonials Showcase page" url="~/Showcase/Testimonials.aspx">
+        </siteMapNode>
+        <siteMapNode title="Demonstrators" description="Demonstrators Showcase page" url="~/Showcase/Demonstrators.aspx">
+        </siteMapNode>
+        <siteMapNode title="Solution Accelerators" description="Solution Accelerators Showcase page" url="~/Showcase/SolutionAccelerators.aspx">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode title="Roadmap Overview" description="Roadmap section" url="~/Roadmap/Roadmap.aspx" Category="Roadmap">
+      <siteMapNode title="Roadmap">
+        <siteMapNode title="Schedule" description="Schedule Roadmap page" url="~/Roadmap/Schedule.aspx"/>
+        <siteMapNode title="Delivery Lifecycle" description="Delivery Lifecycle Roadmap page" url="~/Roadmap/lifecycle.aspx"/>
+        <siteMapNode title="Architecture" description="Architecture Roadmap page" url="~/Roadmap/architecture.aspx"/>
+      </siteMapNode>
+    </siteMapNode>
+    <!--    <siteMapNode url="~/Blog/Default.aspx" title="Team Blog"  description="Team Blog section" >
+    </siteMapNode>-->
+  </siteMapNode>
+</siteMap>

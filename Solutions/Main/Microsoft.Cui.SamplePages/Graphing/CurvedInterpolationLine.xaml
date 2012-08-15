@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="Microsoft.Cui.SamplePages.CurvedInterpolationLine"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             
+    >
+    <Canvas x:Name="LayoutRoot">
+        <Polyline x:Name="PolyLine" Canvas.ZIndex="50" 
+                  StrokeLineJoin="Round" Stroke="#4A7EBB" StrokeThickness="3"/>        
+    </Canvas>
+</UserControl>

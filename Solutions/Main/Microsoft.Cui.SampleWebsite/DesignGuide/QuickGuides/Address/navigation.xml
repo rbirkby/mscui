@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quickguide>
+  <title>Address Input and Display</title>
+  <back href="AddressDisplay.aspx">Return to full guidance</back>
+  <download href="Pdfs/Design Guidance -- Address Input and Display.pdf" altText="Links to Design Guidance - Address Input and Display documentation">Design Guidance - Address Input and Display (PDF Format)</download>
+  <navigation collapseInactiveItems="false">
+    <header text="Overview" tooltip="Address Input and Display - Overview" href="QuickGuides/Address/default.aspx" />
+    <header text="Display" tooltip="Address Input and Display - Display" href="QuickGuides/Address/display.aspx">
+      <subheader text="General" tooltip="Address Input and Display - Display - General" href="QuickGuides/Address/Display/general.aspx"/> 
+      <subheader text="In-Form" tooltip="Address Input and Display - Display - In-Form" href="QuickGuides/Address/Display/inform.aspx" />
+      <subheader text="In-Line" tooltip="Address Input and Display - Display - In-Line" href="QuickGuides/Address/Display/inline.aspx" />
+    </header>
+    <header text="Input" tooltip="Address Input and Display - Input" href="QuickGuides/Address/input.aspx">
+      <subheader text="UK Address Input" tooltip="Address Input and Display - Input - UK Address Input" href="QuickGuides/Address/Input/ukinput.aspx">
+        <subheader text="Input Boxes" tooltip="Address Input and Display - Input - UK Address Input - Input Boxes" href="QuickGuides/Address/Input/UKInput/inputboxes.aspx" />
+        <subheader text="Labels" tooltip="Address Input and Display - Input - UK Address Input - Labels" href="QuickGuides/Address/Input/UKInput/labels.aspx" />
+        <subheader text="Postcode Finder" tooltip="Address Input and Display - Input - UK Address Input - Postcode Finder" href="QuickGuides/Address/Input/UKInput/postcode.aspx" />
+        <subheader text="Dimensions" tooltip="Address Input and Display - Input - UK Address Input - Dimensions" href="QuickGuides/Address/Input/UKInput/dimensions.aspx" />
+        <subheader text="Layout" tooltip="Address Input and Display - Input - UK Address Input - Layout" href="QuickGuides/Address/Input/UKInput/layout.aspx" />
+        <subheader text="Data Values" tooltip="Address Input and Display - Input - UK Address Input - Data Values" href="QuickGuides/Address/Input/UKInput/datavalues.aspx" />
+        <subheader text="Input Methods" tooltip="Address Input and Display - Input - UK Address Input - Input Methods" href="QuickGuides/Address/Input/UKInput/inputmethods.aspx" />
+        <subheader text="Instructional Text" tooltip="Address Input and Display - Input - UK Address Input - Instructional Text" href="QuickGuides/Address/Input/UKInput/instructionaltext.aspx" />
+      </subheader>
+      <subheader text="UK Address Finder" tooltip="Address Input and Display - Input - UK Address Finder" href="QuickGuides/Address/Input/finder.aspx">
+        <subheader text="Input Boxes" tooltip="Address Input and Display - Input - UK Address Finder - Input Boxes" href="QuickGuides/Address/Input/Finder/inputboxes.aspx" />
+        <subheader text="Labels" tooltip="Address Input and Display - Input - UK Address Finder - Lables" href="QuickGuides/Address/Input/Finder/labels.aspx" />
+        <subheader text="Find Address" tooltip="Address Input and Display - Input - UK Address Finder - Find Address" href="QuickGuides/Address/Input/Finder/findaddress.aspx" />
+        <subheader text="Dimensions" tooltip="Address Input and Display - Input - UK Address Finder - Dimensions" href="QuickGuides/Address/Input/Finder/dimensions.aspx" />
+        <subheader text="Layout" tooltip="Address Input and Display - Input - UK Address Finder - Layout" href="QuickGuides/Address/Input/Finder/layout.aspx" />
+        <subheader text="Input Methods" tooltip="Address Input and Display - Input - UK Address Finder - Input Methods" href="QuickGuides/Address/Input/Finder/inputmethods.aspx" />        
+      </subheader>
+      <subheader text="Non-UK Address Input" tooltip="Address Input and Display - Input - Non-UK Address Input" href="QuickGuides/Address/Input/nonukinput.aspx">
+        <subheader text="Input Boxes" tooltip="Address Input and Display - Input - Non-UK Address Input - Input Boxes" href="QuickGuides/Address/Input/NonUKInput/inputboxes.aspx" />
+        <subheader text="Labels" tooltip="Address Input and Display - Input - Non-UK Address Input - Labels" href="QuickGuides/Address/Input/NonUKInput/labels.aspx" />
+        <subheader text="Dimensions" tooltip="Address Input and Display - Input - Non-UK Address Input - Dimensions" href="QuickGuides/Address/Input/NonUKInput/dimensions.aspx" />
+        <subheader text="Layout" tooltip="Address Input and Display - Input - Non-UK Address Input - Layout" href="QuickGuides/Address/Input/NonUKInput/layout.aspx" />
+        <subheader text="Input Methods" tooltip="Address Input and Display - Input - Non-UK Address Input - Input Methods" href="QuickGuides/Address/Input/NonUKInput/inputmethods.aspx" />
+        <subheader text="Country" tooltip="Address Input and Display - Input - Non-UK Address Input - Country" href="QuickGuides/Address/Input/NonUKInput/country.aspx" />
+      </subheader>
+    </header>
+    <header text="Checklist" tooltip="Address Input and Display - Checklist" href="QuickGuides/Address/checklist.aspx" />
+  </navigation>
+</quickguide>

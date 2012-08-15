@@ -1,0 +1,477 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:controls="clr-namespace:Microsoft.Cui.Controls;assembly=Microsoft.Cui.WPFControls"
+    xmlns:local="clr-namespace:Microsoft.Cui.SampleWinform"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"   
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="Microsoft.Cui.SampleWinform.SingleConceptMatchingPage"   
+    mc:Ignorable="d"
+    FontFamily="Arial" FontSize="13">
+    <UserControl.Resources>
+
+        <SolidColorBrush x:Key="SingleConceptMatchingPrimaryColor" Color="#FF95B5DE"/>
+        <SolidColorBrush x:Key="SingleConceptMatchingSecondaryColor" Color="#FFBCD0E9"/>
+       
+        <local:BoolToIntConverter x:Key="BoolToIntConverter" />
+        <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+        <local:IsAPrefixVowelConverter x:Key="IsAPrefixVowelConverter" />
+        <local:AndAPrefixVowelConverter x:Key="AndAPrefixVowelConverter" />
+        <local:ItemByIndexInListConverter x:Key="ItemByIndexInListConverter" />
+        <local:ItemsFromIndexInListConverter x:Key="ItemsFromIndexInListConverter" />
+        <local:FlyOutConceptNameConverter x:Key="FlyOutConceptNameConverter" />
+        <local:ItemCountGreaterThanToVisibilityConverter x:Key="ItemCountGreaterThanToVisibilityConverter" />
+        <local:IsASynonymConverter x:Key="IsASynonymConverter" />
+        
+        <!-- START SUBSET DATA -->
+        
+        <local:SubsetCollection x:Key="AllAllergiesSubsetCollection">      
+            <system:String>NHS_DMD_TF</system:String>
+            <system:String>NHS_DMD_VTM</system:String>
+            <system:String>ALLERGIES_AND_ADVERSE_REACTION_GROUPS</system:String>
+            <system:String>FOOD_ALLERGY_AND_ADVERSE_RACTION_GROUPS</system:String>           
+            <system:String>NON_FOOD_SUBSTANCE_ALLERGENS</system:String>
+        </local:SubsetCollection>
+
+        <local:SubsetCollection x:Key="DrugAllergiesSubsetCollection">          
+            <system:String>NHS_DMD_TF</system:String>
+            <system:String>NHS_DMD_VTM</system:String>
+            <system:String>ALLERGIES_AND_ADVERSE_REACTION_GROUPS</system:String>
+        </local:SubsetCollection>
+        
+        <local:SubsetCollection x:Key="FoodAllergiesSubsetCollection">            
+            <system:String>FOOD_ALLERGY_AND_ADVERSE_RACTION_GROUPS</system:String>
+        </local:SubsetCollection>
+        
+        <local:SubsetCollection x:Key="NonFoodAllergiesSubsetCollection">
+            <system:String>NON_FOOD_SUBSTANCE_ALLERGENS</system:String>
+        </local:SubsetCollection>
+
+        <local:SubsetCollection x:Key="ClinicalFindingSubsetCollection">
+            <system:String>CLINICALFINDING</system:String>
+        </local:SubsetCollection>
+
+        <local:FilterItemCollection x:Key="AllergiesFilterItemCollection">
+            <local:FilterItem DisplayName="All Allergies" SubsetCollection="{StaticResource AllAllergiesSubsetCollection}" />
+            <local:FilterItem DisplayName="Drugs" SubsetCollection="{StaticResource DrugAllergiesSubsetCollection}" />
+            <local:FilterItem DisplayName="Food" SubsetCollection="{StaticResource FoodAllergiesSubsetCollection}" />
+            <local:FilterItem DisplayName="Non-Drug / Non-Food" SubsetCollection="{StaticResource NonFoodAllergiesSubsetCollection}" />
+        </local:FilterItemCollection>    
+        
+        <local:FilterItemCollection x:Key="ClinicalFindingFilterItemCollection">
+            <local:FilterItem DisplayName="Clinical Findings" SubsetCollection="{StaticResource ClinicalFindingSubsetCollection}" />
+        </local:FilterItemCollection>
+
+        <local:ScenarioCollection x:Key="Scenarios">
+            <local:Scenario DisplayName="Adverse Drug Reaction (ADR) entry" WatermarkText="e.g. a food or drug" TitleText="Enter a substance" FilterItemCollection="{StaticResource AllergiesFilterItemCollection}" />
+            <local:Scenario DisplayName="Diagnosis entry" WatermarkText="e.g. Hypertension" TitleText="Enter a diagnosis" FilterItemCollection="{StaticResource ClinicalFindingFilterItemCollection}" />
+            <local:Scenario DisplayName="Past Medical History" WatermarkText="e.g. Migraine" TitleText="Enter a condition" FilterItemCollection="{StaticResource ClinicalFindingFilterItemCollection}" />
+        </local:ScenarioCollection>
+        
+        <!-- END SUBSET DATA -->
+
+        <local:StringCollection x:Key="SearchModes">
+           <system:String>User-initiated</system:String>
+            <system:String>Progressive</system:String>
+        </local:StringCollection>
+
+        <!-- START TEMPLATES -->
+        
+        <DataTemplate x:Key="OutputListBoxItemTemplate">
+            <Border>
+                <controls:IndentedLabel Margin="2,2,2,5" IndentCharacterCount="2" Text="{Binding EncodedConcept.DisplayName}" />
+            </Border>
+        </DataTemplate>
+        
+        <DataTemplate x:Key="OutputDataTemplate">
+            <StackPanel>
+                <TextBlock FontWeight="Bold" Text="{Binding EncodedConcept.Name}"
+                           TextWrapping="Wrap"
+                           />
+                <Grid Margin="0,8,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Text="Original search text" Margin="0,0,5,5" Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, Path=HaveOriginalText}"
+                               FontStyle="Italic" VerticalAlignment="Top" Foreground="#ff999999" />
+                    
+                    <TextBlock Text="Original additional text" Margin="0,0,5,5" Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, Path=HaveOriginalText}"
+                               FontStyle="Italic" Grid.Row="1" VerticalAlignment="Top" Foreground="#ff999999" />
+                    
+                    <TextBlock Text="{Binding OriginalInputFieldText}" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,0,0,5" />
+                    <TextBlock Text="{Binding OriginalAdditionalText}" Grid.Column="1" Grid.Row="1"  TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,0,0,5" />
+                    
+                </Grid>
+
+            </StackPanel>
+        </DataTemplate>
+        
+        <Style TargetType="TextBlock" x:Key="LabelStyle">            
+            <Setter Property="Foreground" Value="#FF0F3566" />
+        </Style>
+        
+        <DataTemplate x:Key="InputBoxItemTemplate">
+            <Border>
+                <Grid Margin="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>                    
+                    <TextBlock FontWeight="Bold" 
+                               Text="{Binding PrefixText}"
+                               Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, Path=IsNegated}"
+                               VerticalAlignment="Top" Margin="0,0,5,0" 
+                               />
+                    
+                    <controls:IndentedLabel MaxLines="2" 
+                                            IndentCharacterCount="{Binding Converter={StaticResource BoolToIntConverter}, ConverterParameter=2, Path=IsNegated}" 
+                                            Text="{Binding Description}" 
+                                            VerticalAlignment="Top" Grid.Column="1" 
+                                            />
+                </Grid>
+            </Border>
+        </DataTemplate>
+
+        <DataTemplate x:Key="InputBoxEncodedItemTemplate">
+            <Border>
+                <Grid Margin="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontWeight="Bold" 
+                               Text="{Binding PrefixText}"
+                               Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, Path=IsNegated}"
+                               VerticalAlignment="Top" Margin="0,0,5,0" 
+                               />
+
+                    <controls:IndentedLabel MaxLines="0" 
+                                            IndentCharacterCount="{Binding Converter={StaticResource BoolToIntConverter}, ConverterParameter=2, Path=IsNegated}" 
+                                            Text="{Binding Description}" 
+                                            VerticalAlignment="Top" Grid.Column="1" 
+                                            />
+                </Grid>
+            </Border>
+        </DataTemplate>
+
+        <DataTemplate x:Key="FlyoutTemplate">
+            <StackPanel>                
+                <ContentControl Content="{Binding Converter={StaticResource FlyOutConceptNameConverter}, Path=.}"
+                                FontWeight="Bold" />              
+                
+                <TextBlock Margin="10,5,0,0" Visibility="{Binding Converter={StaticResource IsASynonymConverter}, Path=.}" Text="{Binding Concept.FullySpecifiedName}" VerticalAlignment="Top" Grid.Column="1"
+                                                   TextWrapping="Wrap"/>
+                
+                <StackPanel Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=Collapsed, Path=IsNegated}">
+                    <Border Margin="10,5,0,0" 
+                        Visibility="{Binding Converter={StaticResource ItemCountGreaterThanToVisibilityConverter}, ConverterParameter=-1, Path=Concept.Parents}">
+                        <Grid DataContext="{Binding Converter={StaticResource ItemByIndexInListConverter}, ConverterParameter=0, Path=Concept.Parents}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock FontSize="11" 
+                                           Text="{Binding Converter={StaticResource IsAPrefixVowelConverter}, Path=PreferredTerm}" 
+                                           VerticalAlignment="Top" Margin="0,2,4,0" />
+                            <TextBlock  Text="{Binding PreferredTerm}" VerticalAlignment="Top" Grid.Column="1"
+                                                   TextWrapping="Wrap"/>
+
+                        </Grid>
+                    </Border>
+
+                    <ItemsControl Margin="10,0,0,0" ItemsSource="{Binding Converter={StaticResource ItemsFromIndexInListConverter}, ConverterParameter=1, Path=Concept.Parents}"
+                              Visibility="{Binding Converter={StaticResource ItemCountGreaterThanToVisibilityConverter}, ConverterParameter=1, Path=Concept.Parents}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock FontSize="11" 
+                                           Text="{Binding Converter={StaticResource AndAPrefixVowelConverter}, Path=PreferredTerm}" 
+                                           VerticalAlignment="Top" Margin="0,2,4,0" />
+                                    <TextBlock Text="{Binding PreferredTerm}" VerticalAlignment="Top" Grid.Column="1"
+                                                   TextWrapping="Wrap"/>
+
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="MatchingTermFlyoutTemplate">
+            <StackPanel>
+                <ContentControl Content="{Binding Converter={StaticResource FlyOutConceptNameConverter}, Path=.}"
+                                FontWeight="Bold" /> 
+                
+                    <Border Margin="10,5,0,0" 
+                        Visibility="{Binding Converter={StaticResource ItemCountGreaterThanToVisibilityConverter}, ConverterParameter=-1, Path=Parents}">
+                        <Grid DataContext="{Binding Converter={StaticResource ItemByIndexInListConverter}, ConverterParameter=0, Path=Parents}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock FontSize="11" 
+                                           Text="{Binding Converter={StaticResource IsAPrefixVowelConverter}, Path=PreferredTerm}" 
+                                           VerticalAlignment="Top" Margin="0,2,4,0" />
+                            <TextBlock Text="{Binding PreferredTerm}" VerticalAlignment="Top" Grid.Column="1"
+                                                   TextWrapping="Wrap"/>
+
+                        </Grid>
+                    </Border>
+
+                    <ItemsControl Margin="10,0,0,0" ItemsSource="{Binding Converter={StaticResource ItemsFromIndexInListConverter}, ConverterParameter=1, Path=Parents}"
+                              Visibility="{Binding Converter={StaticResource ItemCountGreaterThanToVisibilityConverter}, ConverterParameter=1, Path=Parents}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock FontSize="11" 
+                                           Text="{Binding Converter={StaticResource AndAPrefixVowelConverter}, Path=PreferredTerm}" 
+                                           VerticalAlignment="Top" Margin="0,2,4,0" />
+                                    <TextBlock Text="{Binding PreferredTerm}" VerticalAlignment="Top" Grid.Column="1"
+                                                   TextWrapping="Wrap"/>
+
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="SubsetPickerItemTemplate">
+            <Border>
+                <TextBlock Margin="2" Text="{Binding DisplayName}" TextWrapping="Wrap" />
+            </Border>
+        </DataTemplate>
+
+        <DataTemplate x:Key="MatchingTermItemTemplate">
+            <Border>
+                <controls:IndentedLabel
+                                                MaxLines="2" IndentCharacterCount="2"
+                                                Margin="2" Text="{Binding PreferredTerm}" 
+                                                                    />
+            </Border>
+        </DataTemplate>
+        <DataTemplate x:Key="MatchingTermEncodedItemTemplate">
+                <Border>
+                    <controls:IndentedLabel
+                                                MaxLines="0" IndentCharacterCount="2"
+                                                Margin="2" Text="{Binding PreferredTerm}"  
+                                                                    />
+                </Border>
+            </DataTemplate>
+
+
+        <!-- END TEMPLATES -->
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"  x:Name="ScrollViewer" />
+
+        <Grid x:Name="MainGrid" Background="White" DataContext="{StaticResource Scenarios}" MinHeight="570" MinWidth="550">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="390" />
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="0,10,0,0">
+
+                <Border BorderThickness="1" BorderBrush="#ff999999" CornerRadius="10" Grid.RowSpan="2" Grid.ColumnSpan="3" Background="#ffdddddd" />
+
+                <Border  Margin="15,-8,0,0" Background="#ffffffff" BorderThickness="1" BorderBrush="#ff999999" Padding="3,2,3,2" CornerRadius="5"  Grid.RowSpan="2" Grid.ColumnSpan="3"
+                     VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <TextBlock Text="ISV Configuration Options" Grid.Row="1" Foreground="#ff000000" />
+                </Border>
+                <Grid Margin="18,25,18,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Select a scenario" />
+                    <ComboBox Margin="0,5,25,0" x:Name="ScenarioComboBox" SelectionChanged="ScenarioComboBoxSelectionChanged" MinWidth="250" ItemsSource="{Binding}"
+                              MinHeight="25"
+                      Grid.Row="1" VerticalAlignment="Top">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DisplayName}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+                    <TextBlock Text="Select a search type" Grid.Column="1" />
+
+                    <Grid Grid.Row="1" Grid.Column="1" Margin="0,5,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <ComboBox x:Name="SearchTypeComboBox" SelectedIndex="0" SelectionChanged="SearchTypeComboBoxSelectionChanged"
+                                  MinHeight="25"
+                          VerticalAlignment="Top" Margin="0,0,5,0" MinWidth="180" ItemsSource="{StaticResource SearchModes}">
+
+                        </ComboBox>
+
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="2" Margin="0,25,0,0" Grid.RowSpan="1">
+
+                <Border BorderThickness="1" BorderBrush="#ff999999" CornerRadius="10" />
+
+                <Border  Margin="15,-8,0,0" Background="#ffffffff" BorderThickness="1" BorderBrush="#ff999999"  CornerRadius="5"  Padding="3,2,3,2"
+                     VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <TextBlock Text="Single Concept Matching Control" Grid.Row="1" Foreground="#ff000000" />
+                </Border>
+                <controls:SingleConceptMatching x:Name="SingleConceptMatching" 
+                                            IsEnabled="False"
+                                            Margin="15,25,15,15"
+                                            
+                                                VerticalAlignment="Top"
+                                            SubsetPickerDataTemplate="{StaticResource SubsetPickerItemTemplate}"
+                                            InputBoxTextChanged="SingleConceptMatching_InputBoxTextChanged"   
+                                            InputBoxEnterPressed="SingleConceptMatching_InputBoxEnterPressed"
+                                            InputBoxSearchButtonClicked="SingleConceptMatching_InputBoxSearchButtonClicked"    
+                                            InputBoxSelectionChanged="SingleConceptMatching_InputBoxSelectionChanged"
+                                            InputBoxItemTemplate="{StaticResource InputBoxItemTemplate}"
+                                            InputBoxEncodedItemTemplate="{StaticResource InputBoxEncodedItemTemplate}"
+                                            Background="{StaticResource SingleConceptMatchingSecondaryColor}" 
+                                            BorderBrush="{StaticResource SingleConceptMatchingPrimaryColor}"
+                                            InputBoxFlyOutTemplate="{StaticResource FlyoutTemplate}"                                        
+                                            BorderThickness="1"                                            
+                                            Padding="10,0,10,5" 
+                                            LabelStyle="{StaticResource LabelStyle}"                                            
+                                            Saved="SingleConceptMatching_Saved"    
+                                            AdditionalTextBoxTextChanged="SingleConceptMatching_AdditionalTextBoxTextChanged"    
+                                            AdditionalTextBoxEnterPressed="SingleConceptMatching_AdditionalTextBoxEnterPressed"
+                                            MatchingTermSelectedItemMemberPath="SelectedItem"
+                                            MatchingTermSelectedItemTextMemberPath="PreferredTerm"
+                                            MatchingTermAlternateItemsMemberPath="AlternateItems"
+                                            MatchingTermItemsControlItemTemplate="{StaticResource MatchingTermItemTemplate}"
+                                            MatchingTermItemsControlEncodedItemTemplate="{StaticResource MatchingTermEncodedItemTemplate}"
+                                            MatchingTermFlyOutContentTemplate="{StaticResource MatchingTermFlyoutTemplate}"
+                                            AdditionalTextBoxMatchingTermStartIndexMemberPath="StartIndex" 
+                                            AdditionalTextBoxMatchingTermLengthMemberPath="Length"
+                                            AdditionalTextBoxMatchingTermIsSelectedMemberPath="IsSelected"
+                                                AdditionalTextBoxMaxLength="1024"
+                                            FilterSelectedIndexChanged="SingleConceptMatching_FilterSelectedIndexChanged"
+                                            MinHeight="200"
+                                            InputBoxFlyOutWidth="400"     
+                                            />
+
+            </Grid>
+
+            <Grid Grid.Row="3" Margin="0,25,0,0" Grid.RowSpan="1" Height="220">
+
+                <Border BorderThickness="1" BorderBrush="#ff999999" CornerRadius="10" Background="#ffdddddd"/>
+
+                <Border  Margin="15,-8,0,0" Background="#ffffffff" BorderThickness="1" BorderBrush="#ff999999" CornerRadius="5"  Padding="3,2,3,2"
+                     VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <TextBlock Text="ISV Data Output" Grid.Row="1" Foreground="#ff000000" />
+                </Border>
+
+                <Grid Margin="15,25,15,15" Grid.Row="3" Grid.RowSpan="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Encoded terms" Grid.Row="1" />
+                    <ListBox Width="250" Margin="0,5,25,0"
+                   x:Name="OutputListBox"
+                   ItemTemplate="{StaticResource OutputListBoxItemTemplate}"
+                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                   SelectionChanged="OutputListBox_SelectionChanged"
+                   Grid.Row="2" Grid.RowSpan="1"
+                       BorderThickness="1">
+                        <ListBox.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                                <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                                <GradientStop Color="#FF718597" Offset="0.375"/>
+                                <GradientStop Color="#FF617584" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ListBox.BorderBrush>
+                    </ListBox>
+
+                    <TextBlock Text="Encoded term details" Grid.Column="1" Grid.Row="1" />
+                    <Border BorderThickness="1" Grid.Column="1" Grid.Row="2" Margin="0,5,0,0" Grid.RowSpan="1">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                                <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                                <GradientStop Color="#FF718597" Offset="0.375"/>
+                                <GradientStop Color="#FF617584" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                        <Grid>
+                            <ScrollViewer BorderThickness="0" Padding="5"
+                                          Background="White"
+                                          IsEnabled="False"
+                                          x:Name="EncodedTermDetailsScrollViewer"
+                                          GotFocus="EncodedTermDetailsScrollViewer_GotFocus"
+                                          LostFocus="EncodedTermDetailsScrollViewer_LostFocus">
+                                <ContentPresenter 
+                                  x:Name="SelectedOutputContentPresenter"
+                                  ContentTemplate="{StaticResource OutputDataTemplate}"
+                                  />
+                            </ScrollViewer>
+                            
+                            <Rectangle Margin="2,2,18,2" Stroke="#7f000000" StrokeDashArray="2 2" StrokeThickness="1" x:Name="EncodedTermDetailsFocusRectangle" Opacity="0"
+                                       IsHitTestVisible="False"
+                                               />
+                        </Grid>                        
+                    </Border>
+
+                    <StackPanel Margin="0,8,0,12" Grid.ColumnSpan="2">
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,2">
+                            <TextBlock Visibility="Visible" Text="Search status: " />
+                            <TextBlock Visibility="Visible" Text="" x:Name="StatusText" Height="16" HorizontalAlignment="Left" TextWrapping="NoWrap" />
+                        </StackPanel>
+                        <ProgressBar Width="250" IsIndeterminate="False" IsEnabled="True" x:Name="SearchProgressBar" Visibility="Visible" Height="16"
+                             HorizontalAlignment="Left" />
+                    </StackPanel>
+
+                </Grid>
+            </Grid>
+
+            <Button x:Name="ResetFormButton"
+                    VerticalAlignment="Top" HorizontalAlignment="Right"
+                    Content="Reset the form" Padding="5,3,5,3"
+                    Margin="0,20,15,0"
+                    Click="ResetFormButtonClick"
+                    MinHeight="25"
+                    />
+        </Grid>
+    </Grid>
+</UserControl>

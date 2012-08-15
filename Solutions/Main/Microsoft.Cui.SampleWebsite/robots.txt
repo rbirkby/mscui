@@ -1,0 +1,7 @@
+# Robots.txt file
+
+User-agent: *
+Disallow: /CSS
+Disallow: /Data
+Disallow: /JavaScript
+Disallow: /Services

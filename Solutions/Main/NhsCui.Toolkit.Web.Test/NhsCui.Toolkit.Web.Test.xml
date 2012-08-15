@@ -1,0 +1,1561 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NhsCui.Toolkit.Web.Test</name>
+    </assembly>
+    <members>
+        <member name="T:NhsCui.Toolkit.Web.Test.AddressLabelTest">
+            <summary>
+            Unit tests for address label control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.AddressLabelTest.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.AddressLabelTest.Address1Test">
+            <summary>
+            Test for Address1 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.AddressLabelTest.Address2Test">
+            <summary>
+            Test for Address2 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.AddressLabelTest.Address3Test">
+            <summary>
+            Test for Address3 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.AddressLabelTest.TownTest">
+            <summary>
+            Test for Town property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.AddressLabelTest.CountyTest">
+            <summary>
+            Test for County property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.AddressLabelTest.PostCodeTest">
+            <summary>
+            Test for PostCode property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.AddressLabelTest.CountryTest">
+            <summary>
+            Test for Country property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.AddressLabelTest.AddressDisplayFormatTest">
+            <summary>
+            Test for AddressDisplayFormat property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.AddressLabelTest.AddressDisplayFormatBadParameterTest">
+            <summary>
+            Test for AddressDisplayFormat property
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.ContactLabelTest">
+            <summary>
+            Unit tests for contact label control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ContactLabelTest.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ContactLabelTest.HomePhoneNumberTest">
+            <summary>
+            HomePhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ContactLabelTest.WorkPhoneNumberTest">
+            <summary>
+            WorkPhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ContactLabelTest.MobilePhoneNumberTest">
+            <summary>
+            MobilePhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ContactLabelTest.EmailAddressTest">
+            <summary>
+            EmailAddress property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ContactLabelTest.HomePhoneLabelTextTest">
+            <summary>
+            HomePhoneLabelText property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ContactLabelTest.WorkPhoneLabelTextTest">
+            <summary>
+            WorkPhoneLabelText property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ContactLabelTest.MobilePhoneLabelTextTest">
+            <summary>
+            MobilePhoneLabelText property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ContactLabelTest.EmailLabelTextTest">
+            <summary>
+            EmailLabelText property test
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.IdentifierLabelTest">
+            <summary>
+            IdentifierLabelTest class
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.IdentifierLabelTest.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.IdentifierLabelTest.IdentifierTypeTest">
+             <summary>
+            A test for IdentifierType
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.IdentifierLabelTest.IdentifierTypeBadParameterTest">
+             <summary>
+             Test that value throws an exception when an invalid identifier type is specified
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.IdentifierLabelTest.RenderContentsTest">
+             <summary>
+            A test for RenderContents (HtmlTextWriter)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.IdentifierLabelTest.ValidNhsNumberFormattedInputStringTest">
+            <summary>
+            TestValidNhsNumberFormattedInputString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.IdentifierLabelTest.ValidNhsNumberUnformattedInputStringTest">
+            <summary>
+            TestValidNhsNumberUnformattedInputString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.IdentifierLabelTest.ValueTest">
+             <summary>
+            A test for Value
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.MedicationGridTest">
+             <summary>
+            This is a test class for NhsCui.Toolkit.Web.MedicationGrid and is intended
+            to contain all NhsCui.Toolkit.Web.MedicationGrid Unit Tests
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationGridTest.testContextInstance">
+            <summary>
+            Test Context
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationGridTest.propertyChangedThreadEvent">
+            <summary>
+            Reset event to indicate that the propertychanged event was raised
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationGridTest.eventRaisedEvent">
+            <summary>
+            Reset event to indicate that an expected event was fired
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationGridTest.raisedEventName">
+            <summary>
+            Name of event that was raised
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ConstructorTest">
+             <summary>
+            A test for MedicationGrid ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.DrugDetailsColumnHeaderTextTest">
+             <summary>
+            A test for DrugDetailsColumnHeaderText
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.DrugDetailsColumnWidthTest">
+             <summary>
+            A test for DrugDetailsColumnWidth
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.FindMedicationTest">
+             <summary>
+            A test for FindMedication (string)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.GetSelectedItemsTest">
+             <summary>
+            A test for GetSelectedItems ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.GetSelectedItemTest">
+             <summary>
+            A test for GetSelectedItem ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.IDTest">
+             <summary>
+            A test for ID
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ItemsTest">
+             <summary>
+            A test for Items
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.OnClickTest">
+             <summary>
+            A test for OnClick (MedicationEventArgs)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.OnDoubleClickTest">
+             <summary>
+            A test for OnDoubleClick (MedicationEventArgs)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ReasonColumnHeaderTextTest">
+             <summary>
+            A test for ReasonColumnHeaderText
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ReasonColumnWidthTest">
+             <summary>
+            A test for ReasonColumnWidth
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.SortTestDescending">
+             <summary>
+            A test for Sort (bool)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.SortTestAscending">
+             <summary>
+            A test for Sort (bool)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.SortTestByComparer">
+             <summary>
+            A test for Sort (IComparer&lt;Medication&gt;)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.SortTestByDrugDetailsColumn">
+             <summary>
+            A test for Sort (MedicationGridColumn, bool)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.SortTestByReason">
+             <summary>
+            A test for Sort (MedicationGridColumn, bool)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.SortTestByStartDate">
+             <summary>
+            A test for Sort (MedicationGridColumn, bool)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.SortTestByStatus">
+             <summary>
+            A test for Sort (MedicationGridColumn, bool)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.StartDateColumnHeaderTextTest">
+             <summary>
+            A test for StartDateColumnHeaderText
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.StartDateColumnWidthTest">
+             <summary>
+            A test for StartDateColumnWidth
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.StatusColumnHeaderTextTest">
+             <summary>
+            A test for StatusColumnHeaderText
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.StatusColumnWidthTest">
+             <summary>
+            A test for StatusColumnWidth
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ApplyShowRulesTestShowOverride">
+             <summary>
+             A test for ApplyShowRules - not tested directly, but rather through the properties.
+             If SimpleMode is set to true, and any Show property is to true, then SimpleMode should be set to false
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ApplyShowRulesTestSimpleModeOverride">
+             <summary>
+             A test for SimpeMode disabling
+             If SimpleMode is set to true, all properties should be set to false
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.OnClientClickTest">
+             <summary>
+            A test for OnClientClick
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.OnClientDoubleClickTest">
+             <summary>
+            A test for OnClientDoubleClick
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.OnClientRightClickTest">
+             <summary>
+            A test for OnClientRightClick
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ShowDosageDetailsTest">
+             <summary>
+            A test for ShowDosageDetails
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ShowGraphicsTest">
+             <summary>
+            A test for ShowGraphics
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ShowReasonTest">
+             <summary>
+            A test for ShowReason
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ShowStatusDateTest">
+             <summary>
+            A test for ShowStatusDate
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.ShowStatusTest">
+             <summary>
+            A test for ShowStatus
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.SimpleModeTest">
+             <summary>
+            A test for SimpleMode
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.Dispose">
+            <summary>
+            Clean up Property Changed Event
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing">Dispose</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.WaitForEvent(System.String)">
+            <summary>
+            Wait for a property changed event to be raised, and ensure that the correct property event was raised
+            </summary>
+            <param name="eventName">Event Name</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.Target_Click(System.Object,NhsCui.Toolkit.Web.MedicationEventArgs)">
+            <summary>
+            Generic EventHandler 
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.Target_DoubleClick(System.Object,NhsCui.Toolkit.Web.MedicationEventArgs)">
+            <summary>
+            Doulbe Click Test
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="P:NhsCui.Toolkit.Web.Test.MedicationGridTest.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.MedicationGridTest.SortByRouteThenStatus">
+            <summary>
+            Custom sorting - SortByRoute then Status Date
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationGridTest.SortByRouteThenStatus.Compare(NhsCui.Toolkit.Web.Medication,NhsCui.Toolkit.Web.Medication)">
+            <summary>
+            Compare Route and Status of two medications
+            </summary>
+            <param name="x">First Medication</param>
+            <param name="y">Second Medication</param>
+            <returns>-1 if based on Route and Status x should be before y. 0 if Route and Status are equal. +1 if x should be after y based on Route and Status</returns>            
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.MedicationLineTest">
+             <summary>
+            This is a test class for NhsCui.Toolkit.Web.MedicationLine and is intended
+            to contain all NhsCui.Toolkit.Web.MedicationLine Unit Tests
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationLineTest.testContextInstance">
+            <summary>
+            Test Context Instance
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationLineTest.propertyChangedThreadEvent">
+            <summary>
+            Reset event to indicate that the propertychanged event was raised
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationLineTest.eventRaisedEvent">
+            <summary>
+            Reset event to indicate that an expected event was fired
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationLineTest.raisedEventName">
+            <summary>
+            Name of event that was raised
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.ApplyShowRulesTestShowOverride">
+             <summary>
+             A test for ApplyShowRules - not tested directly, but rather through the properties.
+             If SimpleMode is set to true, and any Show property is to true, then SimpleMode should be set to false
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.ApplyShowRulesTestSimpleModeOverride">
+             <summary>
+             A test for SimpeMode disabling
+             If SimpleMode is set to true, all properties should be set to false
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.CriticalAlertGraphicTest">
+             <summary>
+            A test for CriticalAlertGraphic
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.DosageTextTest">
+             <summary>
+            A test for DosageText
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.DosageTextTestException">
+             <summary>
+            A test for DosageText
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.DoseTest">
+             <summary>
+            A test for Dose
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.DoseTestException">
+             <summary>
+            A test for Dose - exceeding the max length
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.FormTest">
+             <summary>
+            A test for Form
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.FormTestException">
+             <summary>
+            A test for Form
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.FrequencyTest">
+             <summary>
+            A test for Frequency
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.FrequencyTestException">
+             <summary>
+            A test for Frequency
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.IndicatorGraphicTest">
+             <summary>
+            A test for IndicatorGraphic
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.IsSelectedTest">
+             <summary>
+            A test for IsSelected
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.MedicationNamesTest">
+             <summary>
+            A test for MedicationNames
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.OnClickTest">
+             <summary>
+            A test for OnClick (EventArgs)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.OnClientClickTest">
+             <summary>
+            A test for OnClientClick
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.OnClientDoubleClickTest">
+             <summary>
+            A test for OnClientDoubleClick
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.OnClientRightClickTest">
+             <summary>
+            A test for OnClientRightClick
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.OnDoubleClickTest">
+             <summary>
+            A test for OnDoubleClick (EventArgs)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.ReasonTest">
+             <summary>
+            A test for Reason
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.ReasonTestException">
+             <summary>
+            A test for Reason
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.RouteTest">
+             <summary>
+            A test for Route
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.RouteTestException">
+             <summary>
+            A test for Route
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.ShowDosageDetailsTest">
+             <summary>
+            A test for ShowDosageDetails
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.ShowGraphicsTest">
+             <summary>
+            A test for ShowGraphics
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.ShowReasonTest">
+             <summary>
+            A test for ShowReason
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.ShowStatusDateTest">
+             <summary>
+            A test for ShowStatusDate
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.ShowStatusTest">
+             <summary>
+            A test for ShowStatus
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.SimpleModeTest">
+             <summary>
+            A test for SimpleMode
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.StartDateTest">
+             <summary>
+            A test for StartDate
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.StatusDateTest">
+             <summary>
+            A test for StatusDate
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.StatusTest">
+             <summary>
+            A test for Status
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.Dispose">
+            <summary>
+            Clean up Property Changed Event
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing">Dispose</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.WaitForEvent(System.String)">
+            <summary>
+            Wait for a property changed event to be raised, and ensure that the correct property event was raised
+            </summary>
+            <param name="eventName">Event Name</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.Target_Click(System.Object,System.EventArgs)">
+            <summary>
+            Generic EventHandler 
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationLineTest.Target_DoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            Doulbe Click Test
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="P:NhsCui.Toolkit.Web.Test.MedicationLineTest.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest">
+             <summary>
+            This is a test class for NhsCui.Toolkit.Web.MedicationNameCollection and is intended
+            to contain all NhsCui.Toolkit.Web.MedicationNameCollection Unit Tests
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.testContextInstance">
+            <summary>
+            Test Context Instance
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.propertyChangedThreadEvent">
+            <summary>
+            Reset event to indicate that the propertychanged event was raised
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.changedPropertyName">
+            <summary>
+            Name of property reported by the property changed event
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.ClearTest">
+             <summary>
+            A test for ClearItems ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.InsertItemTest">
+             <summary>
+            A test for InsertItem
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.OnPropertyChangedTest">
+             <summary>
+            A test for OnPropertyChanged (object, PropertyChangedEventArgs)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.RemoveItemTest">
+             <summary>
+            A test for RemoveItem (int)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.SetItemTest">
+             <summary>
+            A test for SetItem (int, MedicationName)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.ValidateTest">
+             <summary>
+            A test for Validate ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.Cleanup">
+            <summary>
+            Ensure that the Change Event is cleaned up
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.Dispose">
+            <summary>
+            Clean up Property Changed Event
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing">Dispose</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Event Handler for Property Changed Event
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="e">Property Changed Event Args</param>
+        </member>
+        <member name="P:NhsCui.Toolkit.Web.Test.MedicationNameCollectionTest.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest">
+             <summary>
+             This is a test class for NhsCui.Toolkit.Web.MedicationNameLabel and is intended
+             to contain all NhsCui.Toolkit.Web.MedicationNameLabel Unit Tests
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.testContextInstance">
+            <summary>
+            Test Context Instance
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.propertyChangedThreadEvent">
+            <summary>
+            Reset event to indicate that the propertychanged event was raised
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.changedPropertyName">
+            <summary>
+            Name of property reported by the property changed event
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.CriticalAlertGraphicTest">
+             <summary>
+            A test for CriticalAlertGraphic
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.DrugNameStyleTest">
+             <summary>
+            A test for DrugNameStyle
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.IndicatorGraphicTest">
+             <summary>
+            A test for IndicatorGraphic
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.MedicationNamesTest">
+             <summary>
+            A test for MedicationNames
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.OnPropertyChangedTest">
+             <summary>
+            A test for OnPropertyChanged (PropertyChangedEventArgs)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.ShowGraphicsTest">
+             <summary>
+            A test for ShowGraphics
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.Cleanup">
+            <summary>
+            Ensure that the Change Event is cleaned up
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.Dispose">
+            <summary>
+            Clean up Property Changed Event
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing">Dispose</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Event Handler for Property Changed Event
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="e">Property Changed Event</param>
+        </member>
+        <member name="P:NhsCui.Toolkit.Web.Test.MedicationNameLabelTest.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.MedicationNameTest">
+             <summary>
+             This is a test class for NhsCui.Toolkit.Web.MedicationName and is intended
+             to contain all NhsCui.Toolkit.Web.MedicationName Unit Tests
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationNameTest.testContextInstance">
+            <summary>
+            Text Context Instnace
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationNameTest.propertyChangedThreadEvent">
+            <summary>
+            Reset event to indicate that the propertychanged event was raised
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationNameTest.changedPropertyName">
+            <summary>
+            Name of property reported by the property changed event
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.DisplayLengthTest">
+             <summary>
+            A test for DisplayLength
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.DisplayLengthTest2">
+             <summary>
+            A test for DisplayLength
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.InformationTest">
+             <summary>
+            A test for Information
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.ConstructorTest">
+             <summary>
+            A test for MedicationName (string, string)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.NameTest">
+             <summary>
+            A test for Name
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.NameNullTest">
+             <summary>
+            A test for Name null
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.NameEmptyTest">
+             <summary>
+            A test for Name empty 
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.NotifyPropertyChangedTestInformation">
+             <summary>
+            A test for NotifyPropertyChanged (string)
+            </summary>        
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.NotifyPropertyChangedTestName">
+             <summary>
+            A test for NotifyPropertyChanged (string)
+            </summary>        
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.ToStringTest">
+             <summary>
+            A test for ToString ()
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.Cleanup">
+            <summary>
+            Ensure that the Change Event is cleaned up
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.Dispose">
+            <summary>
+            Clean up Property Changed Event
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing">Dispose</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationNameTest.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Event Handler for Property Changed Event
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="e">Property Changed Event Args</param>
+        </member>
+        <member name="P:NhsCui.Toolkit.Web.Test.MedicationNameTest.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.MedicationTest">
+             <summary>
+             This is a test class for NhsCui.Toolkit.Web.Medication and is intended
+             to contain all NhsCui.Toolkit.Web.Medication Unit Tests
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationTest.testContextInstance">
+            <summary>
+            Context Instance
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationTest.propertyChangedThreadEvent">
+            <summary>
+            Reset event to indicate that the propertychanged event was raised
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.MedicationTest.changedPropertyName">
+            <summary>
+            Name of property reported by the property changed event
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.CriticalAlertGraphicTest">
+             <summary>
+            A test for CriticalAlertGraphic
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.DosageTextTest">
+             <summary>
+            A test for DosageText
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.DoseTest">
+             <summary>
+            A test for Dose
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.FormTest">
+             <summary>
+            A test for Form
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.FrequencyTest">
+             <summary>
+            A test for Frequency
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.IndicatorGraphicTest">
+             <summary>
+            A test for IndicatorGraphic
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.IsSelectedTest">
+             <summary>
+            A test for IsSelected
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.MedicationNamesTest">
+             <summary>
+            A test for MedicationNames
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.MedicationTooltipTest">
+             <summary>
+            A test for MedicationTooltip
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.NotifyPropertyChangedTest">
+             <summary>
+            A test for NotifyPropertyChanged (string)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.ReasonTest">
+             <summary>
+            A test for Reason
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.RouteTest">
+             <summary>
+            A test for Route
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.StartDateTest">
+             <summary>
+            A test for StartDate
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.StatusTest">
+             <summary>
+            A test for Status
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.StatusDateTest">
+             <summary>
+            A test for StatusDate
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.Cleanup">
+            <summary>
+            Ensure that the Change Event is cleaned up
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.Dispose">
+            <summary>
+            Clean up Property Changed Event
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing">Dispose</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Event Handler for Property Changed Event
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="e">Property Changed Event Args</param>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.MedicationTest.WaitForProperty(System.String)">
+            <summary>
+            Wait for a property changed event to be raised, and ensure that the correct property event was raised
+            </summary>
+            <param name="property">Property</param>
+        </member>
+        <member name="P:NhsCui.Toolkit.Web.Test.MedicationTest.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.NameLabelTest">
+            <summary>
+            Unit tests for name label
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.NameLabelTest.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.NameLabelTest.LastNameTest">
+            <summary>
+            Test LastName property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.NameLabelTest.GivenNameTest">
+            <summary>
+            Test GivenName property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.NameLabelTest.TitleTest">
+            <summary>
+            Test Title property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.NameLabelTest.DisplayValueTest">
+            <summary>
+            Test display value property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.NameLabelTest.DisplayValueMaximumLengthTest">
+            <summary>
+            Test display value property at maximum lengths
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.NameLabelTest.DisplayValueTruncationTest">
+            <summary>
+            Test display value property truncates names as expected
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.DateLabelTest">
+            <summary>
+            Unit tests for NhsDate label control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.DateLabelTest.#ctor">
+            <summary>
+            Default ctor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.DateLabelTest.SetDateValue">
+            <summary>
+            Test the DateLabel , more specifically test assignment to the DateValue property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.DateLabelTest.SetMonth">
+            <summary>
+            Test the DateLabel , more specifically test assignment to the Month property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.DateLabelTest.SetNullIndex">
+            <summary>
+            Test the DateLabel , more specifically test assignment to the NullIndex property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.DateLabelTest.SetYear">
+            <summary>
+            Test the DateLabel , more specifically test assignment to the Year property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.DateLabelTest.SetDisplayDayOfWeek">
+            <summary>
+            Test the DateLabel , more specifically test assignment to the DisplayDayOfWeek property
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.TimeLabelTest">
+            <summary>
+            Unit tests for TimeLabel control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeLabelTest.#ctor">
+            <summary>
+            Default ctor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeLabelTest.TimeValueProperty">
+            <summary>
+            Test assignment to the TimeValue property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeLabelTest.TimeTypeProperty">
+            <summary>
+            Test assignment to the TimeType property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeLabelTest.ValueProperty">
+            <summary>
+            Test assignment to the TimePeriod property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeLabelTest.DisplaySecondsProperty">
+            <summary>
+            Test assignment to the DisplaySeconds property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeLabelTest.Display12HourProperty">
+            <summary>
+            Test assignment to the Display12Hour property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeLabelTest.DisplayAMPMProperty">
+            <summary>
+            Test assignment to the DisplayAMPM property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeLabelTest.NullIndexProperty">
+            <summary>
+            Test assignment to the NullIndex property
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.TimeSpanLabelTest">
+            <summary>
+            Unit tests for NhsTimeSpan label control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeSpanLabelTest.#ctor">
+            <summary>
+            Default ctor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeSpanLabelTest.Write_ToFrom">
+            <summary>
+            Test the TimeSpanLabel , more specifically test assignment to the From property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeSpanLabelTest.Write_ToTo">
+            <summary>
+            Test the TimeSpanLabel , more specifically test assignment to the To property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeSpanLabelTest.Write_ToIsAge">
+            <summary>
+            Test the TimeSpanLabel, more specifically test assignment to the IsAge property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeSpanLabelTest.Write_ToGranularity">
+            <summary>
+            Test the TimeSpanLabel, more specifically test assignment to the Granularity property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeSpanLabelTest.Write_ToThreshold">
+            <summary>
+            Test the TimeSpanLabel, more specifically test assignment to the Threshold property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.TimeSpanLabelTest.UnitLengthProperty">
+            <summary>
+            Test UnitLength property
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.PatientBannerTest">
+            <summary>
+            Unit tests for patient banner control
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.PatientImageTest">
+            <summary>
+            Test display value property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ImageDisplayedTest">
+            <summary>
+            Test image displayed property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.LastNameTest">
+            <summary>
+            Test LastName property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.FirstNameTest">
+            <summary>
+            Test FirstName property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.TitleTest">
+            <summary>
+            Test Title property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.NameDisplayValueTest">
+            <summary>
+            Test display value property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.PreferredNameTest">
+            <summary>
+            Test Preferred Name
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.PreferredNameLabelTest">
+            <summary>
+            Test preferred name label
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.IdentifierTypeTest">
+             <summary>
+            A test for IdentifierType
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.IdentifierTypeBadParameterTest">
+             <summary>
+             Test that value throws an exception when an invalid identifier type is specified
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ValidNhsNumberFormattedInputStringTest">
+            <summary>
+            TestValidNhsNumberFormattedInputString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ValidNhsNumberUnformattedInputStringTest">
+            <summary>
+            TestValidNhsNumberUnformattedInputString
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.DateOfBirthTest">
+            <summary>
+            Test DateOfBirth property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.DateOfDeathTest">
+            <summary>
+            Test DateOfDeath property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.GenderTest">
+            <summary>
+            Test Gender property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.HomePhoneNumberTest">
+            <summary>
+            HomePhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.WorkPhoneNumberTest">
+            <summary>
+            WorkPhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.MobilePhoneNumberTest">
+            <summary>
+            MobilePhoneNumber property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.EmailAddressTest">
+            <summary>
+            EmailAddress property test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.Address1Test">
+            <summary>
+            Test for Address1 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.Address2Test">
+            <summary>
+            Test for Address2 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.Address3Test">
+            <summary>
+            Test for Address3 property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.TownTest">
+            <summary>
+            Test for Town property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.CountyTest">
+            <summary>
+            Test for County property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.PostCodeTest">
+            <summary>
+            Test for PostCode property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.CountryTest">
+            <summary>
+            Test for Country property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.IdentifierLabelTextTest">
+            <summary>
+            Test IdentifierLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.GenderLabelTextTest">
+            <summary>
+            Test GenderLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.BornLabelTextTest">
+            <summary>
+            Test BornLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ContactDetailsLabelTextTest">
+            <summary>
+            Test ContactDetailsLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.AddressLabelTextTest">
+            <summary>
+            Test AddressLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.HomePhoneLabelTextTest">
+            <summary>
+            Test HomePhoneLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.WorkPhoneLabelTextTest">
+            <summary>
+            Test WorkPhoneLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.MobilePhoneLabelTextTest">
+            <summary>
+            Test MobilePhoneLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.EmailLabelTextTest">
+            <summary>
+            Test EmailLabelText property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.DropDownImageTest">
+            <summary>
+            Test for DropDownImage property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.CollapseImageTest">
+            <summary>
+            Test for CollapseImage property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ZoneOneStyleTest">
+            <summary>
+            Test for ZoneOneStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ZoneOneLabelStyleTest">
+            <summary>
+            Test for ZoneOneLabelStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ZoneOneDataStyleTest">
+            <summary>
+            Test for ZoneOneDataStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.PatientNameStyleTest">
+            <summary>
+            Test for PatientNameStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ZoneTwoTitleStyleTest">
+            <summary>
+            Test for ZoneTwoTitleStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ZoneTwoStyleTest">
+            <summary>
+            Test for ZoneTwoStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ZoneTwoDataStyleTest">
+            <summary>
+            Test for ZoneTwoDataStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ZoneTwoLabelStyleTest">
+            <summary>
+            Test for ZoneTwoLabelStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ActivePatientStyleTest">
+            <summary>
+            Test for ActivePatientStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.DeadPatientStyleTest">
+            <summary>
+            Test for DeadPatientStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ZoneTwoHoverStyleTest">
+            <summary>
+            Test for ZoneTwoHoverStyle property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.ZoneTwoTooltipTest">
+            <summary>
+            Test for ZoneTwoTooltip property
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.GenderLabelTooltipTest">
+            <summary>
+            Gender label tooltip test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.GenderValueTooltipTest">
+            <summary>
+            Gender value tooltip test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.IdentifierLabelTooltipTest">
+            <summary>
+            Identifier label tooltip test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.IdentifierTooltipTest">
+            <summary>
+            Identifier tooltip
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.SubsectionOneWidthTest">
+            <summary>
+            Subsection one width test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.SubsectionTwoWidthTest">
+            <summary>
+            Subsection two width test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.SubsectionThreeWidthTest">
+            <summary>
+            Subsection three width test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.SubsectionFourWidthTest">
+            <summary>
+            Subsection four width test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.SubsectionFiveWidthTest">
+            <summary>
+            Subsection five width test
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.PatientBannerTest.AllergyInformationTest">
+            <summary>
+            Allergy information test
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.ResourcesTest">
+             <summary>
+            This is a test class for NhsCui.Toolkit.Web.GenderLabelControl.Resources and is intended
+            to contain all NhsCui.Toolkit.Web.GenderLabelControl.Resources Unit Tests
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.ResourcesTest.testContextInstance">
+            <summary>
+            testContextInstance
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ResourcesTest.CultureTest">
+             <summary>
+            A test for Culture
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ResourcesTest.FemaleTest">
+             <summary>
+            A test for Female
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ResourcesTest.MaleTest">
+             <summary>
+            A test for Male
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ResourcesTest.NotKnownTest">
+             <summary>
+            A test for NotKnown
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ResourcesTest.ResourceManagerTest">
+             <summary>
+            A test for ResourceManager
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.ResourcesTest.ConstructorTest">
+             <summary>
+            A test for Resources ()
+            </summary>
+        </member>
+        <member name="P:NhsCui.Toolkit.Web.Test.ResourcesTest.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:NhsCui.Toolkit.Web.Test.GenderLabelTest">
+             <summary>
+            This is a test class for NhsCui.Toolkit.Web.GenderLabel and is intended
+            to contain all NhsCui.Toolkit.Web.GenderLabel Unit Tests
+            </summary>
+        </member>
+        <member name="F:NhsCui.Toolkit.Web.Test.GenderLabelTest.testContextInstance">
+            <summary>
+            testContextInstance
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.GenderLabelTest.RenderContentsTest">
+             <summary>
+            A test for RenderContents (HtmlTextWriter)
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.GenderLabelTest.ValueTest">
+             <summary>
+            A test for Value
+            </summary>
+        </member>
+        <member name="M:NhsCui.Toolkit.Web.Test.GenderLabelTest.ValueBadParameterTest">
+             <summary>
+             Test that value throws an exception when in invalid enum value is set
+            </summary>
+        </member>
+        <member name="P:NhsCui.Toolkit.Web.Test.GenderLabelTest.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+    </members>
+</doc>

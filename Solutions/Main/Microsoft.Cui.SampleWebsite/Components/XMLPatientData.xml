@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patients>
+  <Patient FamilyName="Evans">
+    <GivenName>Jonathan</GivenName>
+    <Title>Mr</Title>
+    <DateOfBirth>12-Feb-2006</DateOfBirth>
+    <Identifier>606 172 4098</Identifier>
+    <PreferredName>Junior</PreferredName>
+    <Gender>Male</Gender>
+    <Carer>Dr. Clift</Carer>
+    <DependencyStatus>Infant</DependencyStatus>
+    <HomePhoneNumber>(01344) 123456</HomePhoneNumber>
+    <WorkPhoneNumber>(01344) 654321</WorkPhoneNumber>
+    <MobilePhoneNumber />
+    <EmailAddress>jane.evans@abc.xyz</EmailAddress>
+    <Address1>98 Andover Place</Address1>
+    <Address2></Address2>
+    <Address3 />
+    <Town>Reading</Town>
+    <County>Berkshire</County>
+    <PostCode>RG3 5AP</PostCode>
+    <AccessKey>W</AccessKey>
+    <PatientImage>~/Images/PatientSnaps/JohnEvans.gif</PatientImage>
+    <AllergyInformation>Unavailable</AllergyInformation>
+    <PreferredNameLabel>Known as</PreferredNameLabel>
+  </Patient>
+  <Patient FamilyName="Cooper">
+    <GivenName>Catherine</GivenName>
+    <Title>Ms</Title>
+    <DateOfBirth>16-Dec-1965</DateOfBirth>
+    <Identifier>629 951 5769</Identifier>
+    <PreferredName></PreferredName>
+    <Gender>Female</Gender>
+    <Carer>Dr. Evans</Carer>
+    <DependencyStatus>Adult</DependencyStatus>
+    <HomePhoneNumber>(01433) 123456</HomePhoneNumber>
+    <WorkPhoneNumber>(01433) 987654</WorkPhoneNumber>
+    <MobilePhoneNumber />
+    <EmailAddress>CatherineC@abc.xyz</EmailAddress>
+    <Address1>45 Duggan Drive</Address1>
+    <Address2></Address2>
+    <Address3 />
+    <Town>Melton Mowbray</Town>
+    <County>Leicestershire</County>
+    <PostCode>LE13 2NH</PostCode>
+    <AccessKey>C</AccessKey>
+    <PatientImage>~/Images/PatientSnaps/DrCatherineCooperSharp.gif</PatientImage>
+    <AllergyInformation>NoneKnown</AllergyInformation>
+    <PreferredNameLabel>Known as</PreferredNameLabel>
+    <GenderLabelTooltip></GenderLabelTooltip>
+    <GenderValueTooltip></GenderValueTooltip>
+    <IdentifierTooltip></IdentifierTooltip>
+    <IdentifierLabelTooltip></IdentifierLabelTooltip>
+  </Patient>
+</Patients>

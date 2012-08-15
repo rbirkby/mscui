@@ -1,0 +1,332 @@
+﻿<UserControl xmlns:basics="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls" 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Microsoft.Cui.Roadmap.Page"
+	xmlns:RoadMap="clr-namespace:Microsoft.Cui.Roadmap"
+    FontFamily="Verdana" FontSize="12">    
+    <UserControl.Resources>
+        <DataTemplate x:Key="EmptyTemplate">
+            <Grid Margin="2">
+                
+            </Grid>
+        </DataTemplate>
+        
+        <DataTemplate x:Key="ConsultationTemplate">            
+                <Grid Margin="2">
+                    <Rectangle HorizontalAlignment="Stretch" Stroke="#FF339908" RadiusX="2" RadiusY="2">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF339908" Offset="0.987"/>
+                                <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Grid>           
+        </DataTemplate>
+        
+        <DataTemplate x:Key="DeliveryTemplate">
+            <Grid Margin="2">
+                <Rectangle HorizontalAlignment="Left" Width="30" Stroke="#FFF0E710" RadiusX="2" RadiusY="2">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFF0E710" Offset="0.987"/>
+                            <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="FutureWorkTemplate">
+            <Grid Margin="2">
+                <Rectangle HorizontalAlignment="Stretch" Stroke="#FF031691" RadiusX="2" RadiusY="2">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF031691" Offset="0.991"/>
+                            <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="InProgressAvailableTemplate">            
+                <TextBlock Margin="2,0,0,0"  VerticalAlignment="Center" Text="In progress" ToolTipService.ToolTip="Guidance on this topic is available and further work is in progress" />            
+        </DataTemplate>
+
+        <DataTemplate x:Key="InProgressNotAvailableTemplate">
+            <TextBlock Margin="2,0,0,0"  VerticalAlignment="Center" Text="In progress" ToolTipService.ToolTip="Guidance on this topic is not yet available, but work is in progress" />
+        </DataTemplate>
+
+        <DataTemplate x:Key="CompletedTemplate">
+            <TextBlock Margin="2,0,0,0"  VerticalAlignment="Center" Text="Completed" ToolTipService.ToolTip="Guidance on this topic is available and no further work is planned" />
+        </DataTemplate>
+
+        <DataTemplate x:Key="ToBeStartedTemplate">
+            <TextBlock Margin="2,0,0,0"  VerticalAlignment="Center" Text="To be started" ToolTipService.ToolTip="Guidance on this topic is not yet available. Scheduling for work from June 2009 is still to be confirmed" />
+        </DataTemplate>
+
+        <DataTemplate x:Key="ControlInProgressAvailableTemplate">
+            <TextBlock Margin="2,0,0,0"  VerticalAlignment="Center" Text="In progress" ToolTipService.ToolTip="Implementation on this topic is available and further work is in progress" />
+        </DataTemplate>
+
+        <DataTemplate x:Key="ControlInProgressNotAvailableTemplate">
+            <TextBlock Margin="2,0,0,0"  VerticalAlignment="Center" Text="In progress" ToolTipService.ToolTip="Implementation on this topic is not yet available, but work is in progress" />
+        </DataTemplate>
+
+        <DataTemplate x:Key="ControlCompletedTemplate">
+            <TextBlock Margin="2,0,0,0"  VerticalAlignment="Center" Text="Completed" ToolTipService.ToolTip="Implementation on this topic is available and no further work is planned" />
+        </DataTemplate>
+
+        <DataTemplate x:Key="ControlToBeStartedTemplate">
+            <TextBlock Margin="2,0,0,0"  VerticalAlignment="Center" Text="To be started" ToolTipService.ToolTip="Implementation on this topic is not yet available. Scheduling for work from June 2009 is still to be confirmed" />
+        </DataTemplate>
+
+        <DataTemplate x:Key="RoadmapSectionTemplate">
+            <Border Height="30" BorderBrush="White" BorderThickness="0,2,0,2">
+                <Grid Background="#FF57739B">                    
+                        <TextBlock Margin="2,0,0,0" VerticalAlignment="Center" Foreground="White" Text="{Binding Description}" />                    
+                </Grid>
+            </Border>
+        </DataTemplate>
+
+        <DataTemplate x:Key="RoadmapSectionFooterTemplate">
+            <Rectangle Height="2" Fill="#FFB2B1B1"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="RoadmapHeaderTemplate">
+            <Grid Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+               
+                <Border Grid.Column="0" BorderThickness="0, 0, 0, 0" BorderBrush="White">
+                    <Grid Background="#FF385484" HorizontalAlignment="Stretch">
+                        <TextBlock Margin="2,0,0,0"  Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Stretch" Text="{Binding Description}" ToolTipService.ToolTip="{Binding DescriptionToolTip}" />                    
+                    </Grid>
+                </Border>
+                
+                <Border Grid.Column="1" BorderThickness="2, 0, 0, 0" BorderBrush="White">
+                    <Grid Background="#FF385484" HorizontalAlignment="Stretch">
+                        <TextBlock  Margin="2,0,0,0" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Stretch" Text="Current Status"/>                    
+                    </Grid>
+                </Border>
+                
+                <Border Grid.Column="2" BorderThickness="2, 0, 0, 0" BorderBrush="White">
+                    <Grid Background="#FF385484" HorizontalAlignment="Stretch">
+                        <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Q3 09"/>                                        
+                    </Grid>
+                </Border>
+                
+                <Border Grid.Column="3" BorderThickness="2, 0, 0, 0" BorderBrush="White">
+                    <Grid Background="#FF385484" HorizontalAlignment="Stretch">
+                        <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Q4 09"/>                       
+                    </Grid>
+                </Border>
+                
+                <Border Grid.Column="4" BorderThickness="2, 0, 0, 0" BorderBrush="White">
+                    <Grid Background="#FF385484" HorizontalAlignment="Stretch">
+                        <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Q1 10"/>                     
+                    </Grid>
+                </Border>
+                
+                <Border Grid.Column="5" BorderThickness="2, 0, 0, 0" BorderBrush="White">
+                    <Grid Background="#FF385484" HorizontalAlignment="Stretch">
+                        <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Q2 10"/>
+                    </Grid> 
+                </Border>
+            </Grid>
+        </DataTemplate>        
+        <DataTemplate x:Key="RoadmapLineTemplate">
+            <Grid HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Border Background="#FFE4E4E4" BorderThickness="2,2,0,0" BorderBrush="#FFB2B1B1" >
+                    <Grid Grid.Column="0" HorizontalAlignment="Stretch">
+                        <StackPanel Orientation="Horizontal">
+                                <Grid ToolTipService.ToolTip="{Binding Link}">
+                                    <RoadMap:RoadmapHyperlink Link="{Binding Link}" Margin="2,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Stretch" Text="{Binding Description}" />
+                                </Grid>
+                            
+                                <Grid Margin="4,0,0,0" Height="15" Width="15" HorizontalAlignment="Left" VerticalAlignment="Center" Loaded="Grid_Loaded">
+                                <ToolTipService.ToolTip>
+                                    <ToolTip>
+                                        <TextBlock Text="{Binding DescriptionToolTip}" TextWrapping="Wrap"/>
+                                    </ToolTip>
+                                </ToolTipService.ToolTip>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="0.684*"/>
+                                        <RowDefinition Height="0.316*"/>
+                                    </Grid.RowDefinitions>
+                                    <Path Margin="0,6,0,0" Grid.Column="0" Stretch="Fill" Data="M185,292 C5,292 4,501 4,291" HorizontalAlignment="Left" Fill="#FF585E84" Width="23" Grid.RowSpan="2"/>
+                                    <Grid Grid.Row="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="0.735*"/>
+                                            <RowDefinition Height="0.265*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.23*"/>
+                                            <ColumnDefinition Width="0.77*"/>
+                                        </Grid.ColumnDefinitions>
+                                    </Grid>
+                                    <Rectangle RadiusX="3" RadiusY="3" Stroke="#FF585E84">
+                                        <Rectangle.Fill>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#FFFFFFFF" Offset="0.429"/>
+                                                <GradientStop Color="#FF585E84" Offset="0.987"/>
+                                            </LinearGradientBrush>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+                                </Grid>
+                        </StackPanel>
+                    </Grid>
+                    </Border>
+                <Border BorderThickness="2,2,0,0" BorderBrush="#FFB2B1B1" Background="#FFE4E4E4" Grid.Column="1"><ContentControl VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" ContentTemplate="{Binding CurrentStatusTemplate}" /></Border>
+                <Border BorderThickness="2,2,0,0" BorderBrush="#FFB2B1B1" Background="White" Grid.Column="2"><ContentControl VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" ContentTemplate="{Binding QuarterOneTemplate}" /></Border>
+                <Border BorderThickness="2,2,0,0" BorderBrush="#FFB2B1B1" Background="#FFE4E4E4" Grid.Column="3"><ContentControl VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" ContentTemplate="{Binding QuarterTwoTemplate}" /></Border>
+                <Border BorderThickness="2,2,0,0" BorderBrush="#FFB2B1B1" Background="#FFE4E4E4" Grid.Column="4"><ContentControl VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" ContentTemplate="{Binding QuarterThreeTemplate}" /></Border>
+                <Border BorderThickness="2,2,2,0" BorderBrush="#FFB2B1B1" Background="#FFE4E4E4" Grid.Column="5"><ContentControl VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" ContentTemplate="{Binding QuarterFourTemplate}" /></Border>
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+	<Grid x:Name="LayoutRoot">
+        <Grid.Resources>
+            <RoadMap:RoadmapItemCollection x:Key="RoadMapItemCollectionGuidance">
+                <RoadMap:RoadmapItem 
+                    Description="Guidance Topic"
+                    Template="{StaticResource RoadmapHeaderTemplate}">
+                </RoadMap:RoadmapItem>
+                <RoadMap:RoadmapItem 
+                    Description="CONSISTENT NAVIGATION"
+                    Template="{StaticResource RoadmapSectionTemplate}">
+                </RoadMap:RoadmapItem>
+                <RoadMap:RoadmapItem 
+                    Description="Noting using Templates"
+                    DescriptionToolTip="Guidance on the implementation of search facilities used to find and subsequently to present data templates in a clinical noting scenario."
+                    Template="{StaticResource RoadmapLineTemplate}"
+                    CurrentStatusTemplate="{StaticResource InProgressAvailableTemplate}"
+                    QuarterOneTemplate="{StaticResource ConsultationTemplate}"                   
+                    QuarterTwoTemplate="{StaticResource ConsultationTemplate}"   
+                    QuarterThreeTemplate="{StaticResource DeliveryTemplate}"   
+                    QuarterFourTemplate="{StaticResource EmptyTemplate}" />
+                <RoadMap:RoadmapItem 
+                    Description="Patient List"
+                    DescriptionToolTip="Guidance on the design of multi patient lists using a combination of primary and secondary care scenarios."
+                    Template="{StaticResource RoadmapLineTemplate}"
+                    CurrentStatusTemplate="{StaticResource InProgressAvailableTemplate}"
+                    QuarterOneTemplate="{StaticResource ConsultationTemplate}"                   
+                    QuarterTwoTemplate="{StaticResource ConsultationTemplate}"   
+                    QuarterThreeTemplate="{StaticResource DeliveryTemplate}"   
+                    QuarterFourTemplate="{StaticResource EmptyTemplate}" />
+                <RoadMap:RoadmapItem 
+                    Template="{StaticResource RoadmapSectionFooterTemplate}">
+                </RoadMap:RoadmapItem>
+                <RoadMap:RoadmapItem 
+                    Description="MEDICATIONS"
+                    Template="{StaticResource RoadmapSectionTemplate}">
+                </RoadMap:RoadmapItem>
+                <RoadMap:RoadmapItem 
+                    Description="Drug Administration"
+                    Template="{StaticResource RoadmapLineTemplate}"
+                    DescriptionToolTip="Guidance supporting the display of a patient’s medication administration information in clinical applications."
+                    Link="DesignGuide/MedicationsAdmin.aspx"
+                    CurrentStatusTemplate="{StaticResource InProgressAvailableTemplate}"
+                    QuarterOneTemplate="{StaticResource ConsultationTemplate}"                   
+                    QuarterTwoTemplate="{StaticResource EmptyTemplate}"   
+                    QuarterThreeTemplate="{StaticResource DeliveryTemplate}"   
+                    QuarterFourTemplate="{StaticResource EmptyTemplate}" />
+                <RoadMap:RoadmapItem 
+                    Description="Search and Prescribe"                    
+                    Template="{StaticResource RoadmapLineTemplate}"
+                    Link="DesignGuide/SearchPrescribe.aspx"
+                    DescriptionToolTip="Guidance and recommendations for the design of solutions whose aim is to support searching for and prescribing individual medications."
+                    CurrentStatusTemplate="{StaticResource InProgressNotAvailableTemplate}"
+                    QuarterOneTemplate="{StaticResource ConsultationTemplate}"
+                    QuarterTwoTemplate="{StaticResource EmptyTemplate}"
+                    QuarterThreeTemplate="{StaticResource DeliveryTemplate}"
+                    QuarterFourTemplate="{StaticResource EmptyTemplate}" />
+                <RoadMap:RoadmapItem 
+                    Template="{StaticResource RoadmapSectionFooterTemplate}">
+                </RoadMap:RoadmapItem>
+            </RoadMap:RoadmapItemCollection>
+
+            <RoadMap:RoadmapItemCollection x:Key="RoadMapItemCollectionControls">
+                <RoadMap:RoadmapItem 
+                    Description="Controls"
+                    Template="{StaticResource RoadmapHeaderTemplate}">
+                </RoadMap:RoadmapItem>
+                <RoadMap:RoadmapItem 
+                    Description="CONTROLS"
+                    Template="{StaticResource RoadmapSectionTemplate}">
+                </RoadMap:RoadmapItem>
+                <RoadMap:RoadmapItem 
+                    Description="Search and Prescribe"                    
+                    DescriptionToolTip="The Search and Prescribe control is an example implementation aligned with Search and Prescribe guidance."
+                    Template="{StaticResource RoadmapLineTemplate}"
+                    CurrentStatusTemplate="{StaticResource ControlInProgressNotAvailableTemplate}"
+                    QuarterOneTemplate="{StaticResource ConsultationTemplate}"                   
+                    QuarterTwoTemplate="{StaticResource EmptyTemplate}"   
+                    QuarterThreeTemplate="{StaticResource DeliveryTemplate}"   
+                    QuarterFourTemplate="{StaticResource EmptyTemplate}" />
+                <RoadMap:RoadmapItem 
+                    Description="Timeline"
+                    DescriptionToolTip="The Timeline control demonstrates Microsoft Health CUI guidance for the use of timelines in a clinical context."
+                    Template="{StaticResource RoadmapLineTemplate}"
+                    CurrentStatusTemplate="{StaticResource ControlInProgressNotAvailableTemplate}"
+                    QuarterOneTemplate="{StaticResource EmptyTemplate}"                   
+                    QuarterTwoTemplate="{StaticResource ConsultationTemplate}"   
+                    QuarterThreeTemplate="{StaticResource DeliveryTemplate}"   
+                    QuarterFourTemplate="{StaticResource EmptyTemplate}" />
+                <RoadMap:RoadmapItem 
+                    Template="{StaticResource RoadmapSectionFooterTemplate}">
+                </RoadMap:RoadmapItem>
+            </RoadMap:RoadmapItemCollection>
+        </Grid.Resources>
+        
+        
+            <Grid Height="28" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="600"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <ContentControl Width="40" Height="25" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ContentTemplate="{StaticResource ConsultationTemplate}"></ContentControl>                    
+                    <TextBlock VerticalAlignment="Center" Text="Consultation and Design   " />                                
+                    <ContentControl Width="40" Height="25" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ContentTemplate="{StaticResource DeliveryTemplate}"></ContentControl>
+                    <TextBlock VerticalAlignment="Center" Text="Delivery   " />                
+                    <ContentControl Width="40" Height="25" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ContentTemplate="{StaticResource FutureWorkTemplate}"></ContentControl>                         
+                    <TextBlock VerticalAlignment="Center" Text="Future Work   " />
+                </StackPanel>
+            </Grid>
+        
+            <basics:TabControl TabStripPlacement="Top">
+                <basics:TabItem Header="Guidance">
+                    <RoadMap:RoadmapHost DataContext="{StaticResource RoadMapItemCollectionGuidance}">
+                    </RoadMap:RoadmapHost>      
+                </basics:TabItem>
+                <basics:TabItem Header="Controls">
+                    <RoadMap:RoadmapHost DataContext="{StaticResource RoadMapItemCollectionControls}">
+                    </RoadMap:RoadmapHost>
+                </basics:TabItem>
+            </basics:TabControl>   
+            
+    </Grid>
+</UserControl>

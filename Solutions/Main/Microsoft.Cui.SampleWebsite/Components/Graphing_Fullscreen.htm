@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Microsoft Health CUI - Controls - Graphing</title>   
+    <style type="text/css">
+    html, body {
+	    height: 100%;
+	    overflow: auto;
+    }
+    body {
+	    padding: 0;
+	    margin: 0;
+    }
+    #silverlightControlHost {
+	    height: 100%;
+    }
+    </style>
+
+    <script type="text/javascript">
+        <!--
+        self.moveTo(0, 0);
+        self.resizeTo(screen.availWidth, screen.availHeight);
+        self.focus();
+
+        function onSilverlightError(sender, args) {
+            
+            alert('This application has encountered a problem and needs to close. Please retry the application by opening it from the launch page. If the problem persists, please contact mscui@microsoft.com for assistance. Sorry for the inconvenience.');
+            window.close();
+        }
+
+        window.onload = function() {
+            // set focus on the Silverlight control
+            document.getElementById('silverlightControlHostObject').focus();
+        }        
+        
+        //-->         
+    </script>
+
+</head>
+<body style="margin:0;background-color:#31456A">
+    <div id="silverlightControlHost">
+        <div style="background-image:url('../images/PopupBannerImages/TITLE_BACKGROUND.png');height:3%;" >
+            <table width="100%">        
+                <tr>
+                    <td align="left" valign="middle"><img src="../images/PopupBannerImages/TITLE_MSCUI_TEXT.png" alt="Microsoft Health Common User Interface"/></td>
+                    <td align="right" valign="middle"><img src="../images/PopupBannerImages/TITLE_Company.png" alt="Microsoft"/></td>
+                </tr>
+            </table>
+        </div>        
+        
+        <object id="silverlightControlHostObject" data="data:application/x-silverlight," type="application/x-silverlight-2"
+            width="100%" height="97%">
+                <param name="source" value="../ClientBin/Microsoft.Cui.SamplePages.xap" />
+                <param name="initParams" value="StartPage=GraphingSample" />
+                <param name="minRuntimeVersion" value="3.0.40818.0" />
+                <div style="text-align:left; background-repeat:no-repeat; height:750px; background-image:url(images/SL_NotPresent_DCC.png);">
+                    <div style="padding-left:250px; padding-top:250px;">
+                        <div>
+                            <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=3.0.40818.0" style="text-decoration: none;">
+                            <img src="http://go.microsoft.com/fwlink/?LinkId=108181" alt="Get Microsoft Silverlight"
+                                style="border-style: none" />
+                            </a>
+                        </div> 
+                    </div>                              
+                </div>      
+        </object>
+        <iframe style='visibility:hidden;height:0;width:0;border:0px'></iframe>
+    </div>
+</body>
+</html>

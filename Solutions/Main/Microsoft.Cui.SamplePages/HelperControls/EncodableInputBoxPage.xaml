@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Microsoft.Cui.SamplePages.EncodableInputBoxPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Microsoft.Cui.Controls;assembly=Microsoft.Cui.Controls"
+             FontFamily="Verdana" FontSize="13.3" 
+             Width="Auto" Height="Auto">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Border Background="#E4E4E4" Padding="5">
+
+            <local:EncodableInputBox x:Name="ExampleEncodableInputBox"
+                                     Watermark="Watermark"
+                                     Grid.Column="0">
+            </local:EncodableInputBox>
+
+        </Border>
+        
+        <TextBlock Text="The EncodableInputBox description."
+                   Margin="10,0,0,0" 
+                   TextWrapping="Wrap" 
+                   Grid.Column="1" 
+                   VerticalAlignment="Center">
+        </TextBlock>
+
+    </Grid>
+</UserControl>

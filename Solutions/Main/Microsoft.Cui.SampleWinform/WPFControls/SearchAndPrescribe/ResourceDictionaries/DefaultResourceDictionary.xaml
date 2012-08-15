@@ -1,0 +1,1780 @@
+﻿<ResourceDictionary    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Microsoft.Cui.SamplePages"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:controls="clr-namespace:Microsoft.Cui.Controls;assembly=Microsoft.Cui.WPFControls"
+    >
+
+    <!-- General Brush Resources -->
+    <SolidColorBrush x:Key="Control_Background_Brush" Color="#FFFFFFFF" controls:SolidColorBrushHighContrastSetter.Color="#FF000000" />
+    <SolidColorBrush x:Key="Control_Foreground_Brush" Color="#FF000000" controls:SolidColorBrushHighContrastSetter.Color="#FFE8E8E8" />
+    <SolidColorBrush x:Key="Control_BorderBrush_Brush" Color="#FF9A9A9A" controls:SolidColorBrushHighContrastSetter.Color="#FFA5A5A5" />
+    <SolidColorBrush x:Key="Control_FocusBorderBrush_Brush" Color="#FF000000" controls:SolidColorBrushHighContrastSetter.Color="#FFE8E8E8" />
+    <SolidColorBrush x:Key="FieldLabel_Foreground_Brush" Color="#ff508dc2" controls:SolidColorBrushHighContrastSetter.Color="#FF00FFF0" />
+    <SolidColorBrush x:Key="GroupLabel_Foreground_Brush" Color="#FF595959"  controls:SolidColorBrushHighContrastSetter.Color="#FFDDDDDD" />
+
+    <!-- Toolbar Brush Resources -->
+    <LinearGradientBrush x:Key="Toolbar_Background_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FFB0CBDA" Offset="0"/>
+        <GradientStop Color="#FF005788" Offset="1"/>
+        <GradientStop Color="#FF075B8B" Offset="0.634"/>
+        <GradientStop Color="#FE5992B1" Offset="0.323"/>
+        <GradientStop Color="#FE76A5BE" Offset="0.185"/>
+        <controls:LinearGradientBrushHighContrastSetter.GradientStops>
+            <system:String>#FF3F3F3F 0</system:String>
+        </controls:LinearGradientBrushHighContrastSetter.GradientStops>
+    </LinearGradientBrush>
+
+
+    <!-- Toolbar Button Brush Resources -->
+    <SolidColorBrush x:Key="ToolbarButton_Foreground_Brush" Color="White" controls:SolidColorBrushHighContrastSetter.Color="#FFE8E8E8" />
+
+    <SolidColorBrush x:Key="ToolbarButton_BorderBrush_Brush" Color="#66FFFFFF" />
+    <LinearGradientBrush x:Key="ToolbarButton_MouseOverBackground_Brush" EndPoint="0.5,0" StartPoint="0.5,0.791">
+        <GradientStop Color="#00DADADA" Offset="0.004"/>
+        <GradientStop Color="#99FFFFFF" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ToolbarButton_PressedBackground_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#33616161"/>
+        <GradientStop Color="#99616161" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="TitleToolbar_Background_Brush" EndPoint="0.5,0" StartPoint="0.5,1">
+        <GradientStop Color="#FF3A3A3A" Offset="0.05"/>
+        <GradientStop Color="White" Offset="1"/>
+        <GradientStop Color="#FF9FBFD1" Offset="0.05"/>
+        <GradientStop Color="White" Offset="0"/>
+        <controls:LinearGradientBrushHighContrastSetter.GradientStops>
+            <system:String>#FF3A3A3A 0.05,#FF2A2A2A 1,#FF3F3F3F 0.05,#FFFFFFFF 0</system:String>
+        </controls:LinearGradientBrushHighContrastSetter.GradientStops>
+    </LinearGradientBrush>
+
+    <SolidColorBrush Color="#FF3A3A3A" x:Key="TitleToolbar_Foreground_Brush" controls:SolidColorBrushHighContrastSetter.Color="#FFFFFFFF" />
+
+    <SolidColorBrush x:Key="Searchbox_Background_Brush" Color="White"/>
+    <LinearGradientBrush x:Key="Searchbox_BorderBrush_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF7C7C7C" Offset="0"/>
+        <GradientStop Color="#FFD7D7D7" Offset="1"/>
+    </LinearGradientBrush>
+
+
+    <LinearGradientBrush x:Key="ItemsHeader_Background_Brush" EndPoint="0.5,0" StartPoint="0.5,1">
+        <GradientStop Offset="0" Color="#FFEEEEEE" />
+        <controls:LinearGradientBrushHighContrastSetter.GradientStops>
+            <system:String>#FF616161 0,#FFE8E8E8 1</system:String>
+        </controls:LinearGradientBrushHighContrastSetter.GradientStops>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="ItemsHeader_Foreground_Brush" Color="#FF005788" controls:SolidColorBrushHighContrastSetter.Color="#FF000000"/>
+    <SolidColorBrush x:Key="ItemsRow_Background_Brush" Color="#FFFFFFFF" controls:SolidColorBrushHighContrastSetter.Color="#FF000000"/>
+    <SolidColorBrush x:Key="ItemsAlternateRow_Background_Brush" Color="#FFEEEEEE" controls:SolidColorBrushHighContrastSetter.Color="#FF222222"/>
+
+    <!-- ListBox Item Resources -->
+    <SolidColorBrush x:Key="ItemMouseOver_BorderBrush_Brush" Color="#FFCAECFC" controls:SolidColorBrushHighContrastSetter.Color="#FFFFE050" />
+    <LinearGradientBrush x:Key="ItemMouseOver_Background_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FFF9FDFF"/>
+        <GradientStop Color="#FFCAECFC" Offset="1"/>
+        <GradientStop Color="#FFC5EDFF" Offset="0.75"/>
+        <GradientStop Color="#FFD3EFFC" Offset="0.7"/>
+        <controls:LinearGradientBrushHighContrastSetter.GradientStops>
+            <system:String>#FF079D07 0,#FF006100 1,#FF008C00 0.754,#FF039203 0.7</system:String>
+        </controls:LinearGradientBrushHighContrastSetter.GradientStops>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="ItemFocused_BorderBrush_Brush" Color="#FFB3DCF0" controls:SolidColorBrushHighContrastSetter.Color="#FFFFEE9F"/>
+    <LinearGradientBrush x:Key="ItemFocused_Background_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FFF9FDFF"/>
+        <GradientStop Color="#FFB3DCF0" Offset="1"/>
+        <GradientStop Color="#FFACDBF0" Offset="0.75"/>
+        <GradientStop Color="#FFBBE0F2" Offset="0.7"/>
+        <controls:LinearGradientBrushHighContrastSetter.GradientStops>
+            <system:String>#FF079D07 0,#FF006100 1,#FF008C00 0.754,#FF039203 0.7</system:String>
+        </controls:LinearGradientBrushHighContrastSetter.GradientStops>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="ItemSelected_BorderBrush_Brush" Color="#FFF2A71E" controls:SolidColorBrushHighContrastSetter.Color="#FFC5A200"/>
+    <LinearGradientBrush x:Key="ItemSelected_Background_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FFFFEDCB" Offset="0"/>
+        <GradientStop Color="#FFFFB122" Offset="1"/>
+        <GradientStop Color="#FFFFBF4A" Offset="0.75"/>
+        <GradientStop Color="#FFFFBF4A" Offset="0.7"/>
+        <controls:LinearGradientBrushHighContrastSetter.GradientStops>
+            <system:String>#FFAB2BAB 0,#FF630063 1,#FF800080 0.754,#FF880588 0.7</system:String>
+        </controls:LinearGradientBrushHighContrastSetter.GradientStops>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="MouseOverItemSelected_BorderBrush_Brush" Color="#FFE49E1D" controls:SolidColorBrushHighContrastSetter.Color="#FFC5A200"/>
+    <LinearGradientBrush x:Key="MouseOverItemSelected_Background_Brush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FFFFE1A9" Offset="0.004"/>
+        <GradientStop Color="#FFFFAD16" Offset="1"/>
+        <GradientStop Color="#FFFFBF4A" Offset="0.75"/>
+        <GradientStop Color="#FFFFBF4A" Offset="0.7"/>
+        <controls:LinearGradientBrushHighContrastSetter.GradientStops>
+            <system:String>#FFAB2BAB 0,#FF630063 1,#FF800080 0.754,#FF880588 0.7</system:String>
+        </controls:LinearGradientBrushHighContrastSetter.GradientStops>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" x:Key="ColumnHeader_Background_Brush">
+        <GradientStop Color="#FFF9FDFF"/>
+        <GradientStop Color="#FFCAECFC" Offset="1"/>
+        <GradientStop Color="#FFC5EDFF" Offset="0.75"/>
+        <GradientStop Color="#FFD3EFFC" Offset="0.7"/>
+        <controls:LinearGradientBrushHighContrastSetter.GradientStops>
+            <system:String>#FFFEFEFE 0,#FFE2E2E2 1,#FFD8D8D8 0.75,#FFDCDCDC 0.7</system:String>
+        </controls:LinearGradientBrushHighContrastSetter.GradientStops>
+    </LinearGradientBrush>
+
+    <!-- CONVERTERS -->
+    <local:DateTimeToCuiTimeStringConverter x:Key="DateTimeToCuiTimeStringConverter" />
+    <local:TimeSpanToStringConverter x:Key="TimeSpanToStringConverter" />
+    <local:DrugNameToTextBlockConverter x:Key="DrugNameToTextBlockConverter" />
+    <local:CompletedPrescriptionToMedsLineConverter x:Key="CompletedPrescriptionToMedsLineConverter" />
+    <local:DateTimeToCuiDateStringConverter x:Key="DateTimeToCuiDateStringConverter" />
+
+    <controls:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    <controls:NullEmptyToVisibilityConverter x:Key="NullEmptyToVisibilityConverter" />
+    <controls:NullEmptyToBoolConverter x:Key="NullEmptyToBoolConverter" />
+
+
+    <!-- STYLES -->
+    <Style TargetType="Control" x:Key="BaseControlStyle">
+        <Setter Property="BorderThickness" Value="1,1,1,1" />
+        <Setter Property="Background" Value="{StaticResource Control_Background_Brush}" />
+        <Setter Property="Foreground" Value="{StaticResource Control_Foreground_Brush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource Control_BorderBrush_Brush}" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="TextBlockStyle">
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="Foreground" Value="{StaticResource Control_Foreground_Brush}" />
+    </Style>
+
+    <Style TargetType="Border" x:Key="BorderStyle">
+        <Setter Property="Background" Value="{StaticResource Control_Background_Brush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource Control_BorderBrush_Brush}" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="BaseTextBlockStyle">
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="IsHitTestVisible" Value="False" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="DoseLabelStyle" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="Foreground" Value="{StaticResource FieldLabel_Foreground_Brush}" />
+        <Setter Property="FontFamily" Value="Courier New" />
+        <Setter Property="Margin" Value="0,0,2,0" />
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.1" ScaleY="1.1" />
+                    <TranslateTransform Y="0" />
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- Button Styles-->
+    <Style x:Key="BasicButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource Control_Background_Brush}" />
+        <Setter Property="Foreground" Value="{StaticResource Control_Foreground_Brush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource Control_BorderBrush_Brush}" />
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="6,6,6,6" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="BorderThickness" Value="1,1,1,1" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <Storyboard>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused">
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.2" Storyboard.TargetName="MouseOverBorder" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <SplineDoubleKeyFrame KeyTime="00:00:00.2" Value="0"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.2" Storyboard.TargetName="MouseOverBorder" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <SplineDoubleKeyFrame KeyTime="00:00:00.2" Value="0"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="MouseOverBorder" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="PressedBorder" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ContentPresenterTranslateTransform" Storyboard.TargetProperty="(TranslateTransform.X)">
+                                            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ContentPresenterTranslateTransform" Storyboard.TargetProperty="(TranslateTransform.Y)">
+                                            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="FocusBorder" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Border x:Name="ButtonBorder" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                            <Grid>
+                                <Rectangle x:Name="MouseOverBorder" Opacity="0" Fill="{StaticResource ItemMouseOver_Background_Brush}" />
+                                <Rectangle x:Name="FocusBorder" StrokeDashArray="2 2" Margin="1" Opacity="0" Stroke="{StaticResource Control_FocusBorderBrush_Brush}" />
+                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+										Margin="{TemplateBinding Padding}">
+                                    <ContentPresenter.RenderTransform>
+                                        <TranslateTransform x:Name="ContentPresenterTranslateTransform" />
+                                    </ContentPresenter.RenderTransform>
+                                </ContentPresenter>
+                                <Border x:Name="PressedBorder" Opacity="0">
+                                    <Grid>
+                                        <Rectangle VerticalAlignment="Top" Height="3">
+                                            <Rectangle.Fill>
+                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                    <GradientStop Color="#44000000" Offset="0"/>
+                                                    <GradientStop Offset="1"/>
+                                                </LinearGradientBrush>
+                                            </Rectangle.Fill>
+                                        </Rectangle>
+                                        <Rectangle HorizontalAlignment="Left" Width="3">
+                                            <Rectangle.Fill>
+                                                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                                    <GradientStop Color="#44000000" Offset="0"/>
+                                                    <GradientStop Offset="1"/>
+                                                </LinearGradientBrush>
+                                            </Rectangle.Fill>
+                                        </Rectangle>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="ButtonBorder" Property="Opacity" Value="0.4" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="True">
+                            <Setter TargetName="ButtonBorder" Property="Opacity" Value="1" />
+                        </Trigger>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Opacity" Value="1" TargetName="FocusBorder"/>
+                        </Trigger>
+                        <Trigger Property="IsFocused" Value="False">
+                            <Setter Property="Opacity" Value="0" TargetName="FocusBorder"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- DATA TEMPLATES -->
+    <DataTemplate x:Key="ElementDisplayValueTemplate">
+        <TextBlock Text="{Binding Path=DisplayValue}"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                       IsHitTestVisible="False"
+                       />
+    </DataTemplate>
+
+    <DataTemplate x:Key="ElementValueTemplate">
+        <TextBlock Text="{Binding Path=Value}"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                       IsHitTestVisible="False"
+                       />
+    </DataTemplate>
+
+    <DataTemplate x:Key="AdministrationTimesDataTemplate">
+        <StackPanel Orientation="Horizontal" IsHitTestVisible="False">
+            <ItemsControl ItemsSource="{Binding Path=DisplayAdministrationTimes}" 
+                                                      Visibility="{Binding Converter={StaticResource NullEmptyToVisibilityConverter}, Path=Times}"
+                                                      IsTabStop="False" Margin="0">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+
+            <TextBlock Text="{Binding Description}"
+                                                       FontStyle="Italic"
+                                                       Margin="5,0,0,0"
+                                           Foreground="#FF7f7f7f"/>
+
+        </StackPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="FirstDoseTimeDataTemplate">
+        <TextBlock IsHitTestVisible="False" Text="{Binding Converter={StaticResource DateTimeToCuiTimeStringConverter}}" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="FirstDoseDataTemplate">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock IsHitTestVisible="False" Text="{Binding Converter={StaticResource DateTimeToCuiDateStringConverter}, Path=StartDate}" />
+            <TextBlock IsHitTestVisible="False" Text=" " Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=true, Path=AsRequired}" />
+            <TextBlock IsHitTestVisible="False" Text="{Binding Converter={StaticResource DateTimeToCuiTimeStringConverter}, Path=FirstDoseTime}"  Visibility="{Binding Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter=true, Path=AsRequired}" />
+        </StackPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="DurationDataTemplate">
+        <TextBlock IsHitTestVisible="False" Text="{Binding Path=DisplayValue}"
+                                               />
+    </DataTemplate>
+
+    <!-- PATIENT BANNER STYLES -->
+    <Style TargetType="Button" x:Key="CircularButton">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <ContentPresenter HorizontalAlignment="Left"
+                            VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate TargetType="controls:PatientBanner" x:Key="PatientBannerTemplate">
+        <Grid VerticalAlignment="Top" x:Name="RootElement">
+            <Grid.Resources>
+                <Color x:Key="StripeColour">#FFC0C0C0</Color>
+                <Color x:Key="StripeColour2">#FFCCCCCC</Color>
+                <SolidColorBrush x:Key="ZoneTwoTitleNormalForeground">Black</SolidColorBrush>
+                <SolidColorBrush x:Key="ZoneTwoTitleHoverForeground">White</SolidColorBrush>
+            </Grid.Resources>
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="PatientStates">
+                    <VisualState x:Name="Deceased">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="GridBorder"
+                                            Storyboard.TargetProperty="StrokeDashArray"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <DoubleCollection>2</DoubleCollection>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="ZoneOneContainer"
+                                            Storyboard.TargetProperty="Background">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <LinearGradientBrush EndPoint="0.05,0.01" StartPoint="0.001,0.999" SpreadMethod="Repeat">
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.01"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.02"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.08"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.09"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.1"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.11"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.12"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.18"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.19"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.2"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.21"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.22"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.28"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.29"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.3"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.31"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.32"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.38"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.39"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.4"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.41"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.42"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.48"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.49"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.5"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.51"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.52"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.58"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.59"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.6"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.61"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.62"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.68"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.69"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.7"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.71"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.72"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.78"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.79"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.8"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.81"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.82"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.88"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.89"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.9"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.91"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.92"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.98"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="DeathDetailsPanel"
+                                            Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Visible</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="Alive">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="GridBorder"
+                                            Storyboard.TargetProperty="StrokeDashArray"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <DoubleCollection></DoubleCollection>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="ZoneOneContainer"
+                                            Storyboard.TargetProperty="Background">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000" Value="{TemplateBinding Background}">
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="DeathDetailsPanel"
+                                            Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+                <VisualStateGroup x:Name="ZoneTwoStates">
+                    <VisualState x:Name="ZoneTwoNormal">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ZoneTwoHeaderBorder"
+                                                                       Storyboard.TargetProperty="Background"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{TemplateBinding Background}">
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionOneTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AddressPreview"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionTwoTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContactPreview"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionThreeTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionFourTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="ZoneTwoHover">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ZoneTwoHeaderBorder"
+                                                                       Storyboard.TargetProperty="Background"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <SolidColorBrush>#C0C0C0</SolidColorBrush>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionOneTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AddressPreview"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionTwoTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContactPreview"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionThreeTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionFourTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+                <VisualStateGroup x:Name="AllergyInformationStates">
+                    <VisualState x:Name="AllergyDetailsKnown">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                            Storyboard.TargetProperty="FontWeight"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.00100" Value="Bold" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                            Storyboard.TargetProperty="FontStyle"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.00100" Value="Normal" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="AllergyDetailsNotKnown">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                            Storyboard.TargetProperty="FontWeight"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.00100" Value="Normal" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                            Storyboard.TargetProperty="FontStyle"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.00100" Value="Italic" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+                <VisualStateGroup x:Name="PatientImageVisibleStates">
+                    <VisualState x:Name="PatientImageVisible">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PatientImage"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Visible</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="PatientImageCollapsed">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PatientImage"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Rectangle x:Name="GridBorder" Stroke="{TemplateBinding BorderBrush}" 
+                                   StrokeThickness="{TemplateBinding BorderWidth}"                                     
+                                   >
+            </Rectangle>
+
+            <Grid x:Name="PART_RootElement" Margin="{TemplateBinding BorderThickness}" ShowGridLines="False" Background="{TemplateBinding Background}">
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="ZoneOneRow" Height="Auto" MinHeight="{TemplateBinding ZoneOneMinHeight}" />
+                    <RowDefinition  x:Name="ZoneTwoHeaderRow" Height="Auto" />
+                    <RowDefinition  x:Name="ZoneTwoContentRow" Height="0" />
+                    <RowDefinition x:Name="ZoneTwoLinksRow" Height="0" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width= "2*" />
+                    <ColumnDefinition Width= "2*" />
+                    <ColumnDefinition Width= "1*" />
+                    <ColumnDefinition Width= "1*" />
+                    <ColumnDefinition Width= "2*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Zone one-->
+                <Grid x:Name="ZoneOneContainer" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6"
+                                  MinHeight="{TemplateBinding ZoneOneMinHeight}"                                  
+                                  >
+                    <Grid x:Name="ZoneOne" Margin="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid x:Name="PatientNamePanel" 
+                                        VerticalAlignment="Center" HorizontalAlignment="Left"
+                                        Grid.Column="0" 
+                                        >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="PatientImage" Stretch="UniformToFill" 
+                                               Height="48" Width="48" 
+                                               Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"                                       
+                                               Source="{TemplateBinding PatientImage}" 
+                                               Visibility="{TemplateBinding PatientImageVisible}"
+                                               HorizontalAlignment="Left" />
+
+                            <controls:NameLabel x:Name="NameLabel" 
+                                                         VerticalAlignment="Center" HorizontalAlignment="Left"
+                                                         FamilyName="{TemplateBinding FamilyName}"
+                                                         GivenName="{TemplateBinding GivenName}"
+                                                         Title="{TemplateBinding Title}"
+                                                         BorderBrush="{TemplateBinding BorderBrush}"
+                                                         HoverAction="Underline"
+                                                         ToolTip="{TemplateBinding PatientNameToolTip}"
+                                                         Style="{TemplateBinding PatientNameStyle}"
+                                                         Grid.Row="0" Grid.Column="1"
+                                                         ShowHandOnHover="True"
+                                                     />
+
+                            <StackPanel x:Name="PreferredNameDetails" 
+                                                Orientation="Horizontal"                                                  
+                                                Grid.Column="1" Grid.Row="1">
+                                <controls:Label x:Name="PreferredNameLabelText" 
+                                                     HorizontalAlignment="Left"
+                                                     VerticalAlignment="Center"
+                                                     Text="{TemplateBinding PreferredNameLabelText}" 
+                                                     HoverAction="Border"
+                                                     BorderBrush="{TemplateBinding BorderBrush}"
+                                                     ToolTip="{TemplateBinding PreferredNameLabelToolTip}"
+                                                     Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                     Margin="0,0,2,0"
+                                                     />
+
+                                <controls:Label x:Name="PreferredName" 
+                                                     Text="{TemplateBinding PreferredName}" 
+                                                     Margin="2,0,0,0"
+                                                     HoverAction="Underline"                                                     
+                                                     HorizontalAlignment="Left" VerticalAlignment="Center"
+                                                     ToolTip="{TemplateBinding PreferredNameToolTip}"
+                                                     Style="{TemplateBinding ZoneOneDataStyle}"
+                                                   />
+
+
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:Name="PatientDetailsPanel"
+                                            HorizontalAlignment="Right" VerticalAlignment="Center"
+                                            Grid.Column="1" Grid.Row="0"
+                                            >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <controls:WrapPanel Grid.Row="0" Grid.Column="1">
+                                <controls:Label x:Name="DOBLabel" 
+                                                         Text="{TemplateBinding DateOfBirthLabelText}" 
+                                                         VerticalAlignment="Center"
+                                                         HoverAction="Border" BorderBrush="{TemplateBinding BorderBrush}"
+                                                         ToolTip="{TemplateBinding DateOfBirthLabelToolTip}"
+                                                         Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                         TextWrapping="Wrap"
+                                                     />
+
+                                <controls:Label x:Name="DOBValue" 
+                                                         Text="{TemplateBinding DateOfBirthText}" 
+                                                         VerticalAlignment="Center"
+                                                         HoverAction="Underline" 
+                                                         BorderBrush="{TemplateBinding BorderBrush}"
+                                                         ToolTip="{TemplateBinding DateOfBirthToolTip}"
+                                                         Style="{TemplateBinding ZoneOneDataStyle}"
+                                                         TextWrapping="Wrap"
+                                                         />
+
+                                <controls:Label x:Name="GenderLabel" 
+                                                         Text="{TemplateBinding GenderLabelText}" 
+                                                         VerticalAlignment="Center"
+                                                         HoverAction="Border" 
+                                                         BorderBrush="{TemplateBinding BorderBrush}"
+                                                         ToolTip="{TemplateBinding GenderLabelTooltip}"
+                                                         Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                         />
+
+                                <controls:GenderLabel x:Name="GenderValue" 
+                                                               VerticalAlignment="Center"
+                                                               Value="{TemplateBinding Gender}"          
+                                                               HoverAction="Underline" 
+                                                               BorderBrush="{TemplateBinding BorderBrush}"
+                                                               ToolTip="{TemplateBinding GenderValueTooltip}"
+                                                               Style="{TemplateBinding ZoneOneDataStyle}"
+                                                               ShowHandOnHover="True"
+                                                           />
+
+                                <controls:Label x:Name="IdentifierLabel"
+                                                         Text="{TemplateBinding IdentifierLabelText}" 
+                                                         VerticalAlignment="Center" 
+                                                         HoverAction="Border" 
+                                                         BorderBrush="{TemplateBinding BorderBrush}"
+                                                         ToolTip="{TemplateBinding IdentifierLabelTooltip}"
+                                                         Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                         />
+
+                                <controls:IdentifierLabel x:Name="IdentifierValue" 
+                                                                   VerticalAlignment="Center"                         
+                                                                   IdentifierType="{TemplateBinding IdentifierType}" 
+                                                                   Text="{TemplateBinding Identifier}"
+                                                                   HoverAction="Underline" 
+                                                                   BorderBrush="{TemplateBinding BorderBrush}"
+                                                                   ToolTip="{TemplateBinding IdentifierTooltip}"
+                                                                   Style="{TemplateBinding ZoneOneDataStyle}"
+                                                                   ShowHandOnHover="True"
+                                                                   />
+                            </controls:WrapPanel>
+
+                            <controls:WrapPanel x:Name="DeathDetailsPanel" Grid.Row="1" Grid.Column="1">
+                                <controls:Label x:Name="DODLabel" 
+                                                     Text="{TemplateBinding DateOfDeathLabelText}" 
+                                                     VerticalAlignment="Center"
+                                                     HoverAction="Border" 
+                                                     BorderBrush="{TemplateBinding BorderBrush}"
+                                                     ToolTip="{TemplateBinding DateOfDeathLabelToolTip}"
+                                                     Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                     />
+
+                                <controls:Label x:Name="DODValue" 
+                                                     Text="{TemplateBinding DateOfDeathText}" 
+                                                     VerticalAlignment="Center"                           
+                                                     HoverAction="Underline" 
+                                                     BorderBrush="{TemplateBinding BorderBrush}"
+                                                     ToolTip="{TemplateBinding DateOfDeathToolTip}"
+                                                     Style="{TemplateBinding ZoneOneDataStyle}"
+                                                     />
+
+                                <controls:Label x:Name="AgeAtDeathLabel" 
+                                                     Text="{TemplateBinding AgeAtDeathLabelText}" 
+                                                     VerticalAlignment="Center"
+                                                     HoverAction="Border" 
+                                                     BorderBrush="{TemplateBinding BorderBrush}"
+                                                     ToolTip="{TemplateBinding AgeAtDeathLabelTooltip}"
+                                                     Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                     />
+
+                                <controls:Label x:Name="AgeAtDeathValue" 
+                                                     Text="{TemplateBinding AgeAtDeath}" 
+                                                     VerticalAlignment="Center"                      
+                                                     HoverAction="Underline" 
+                                                     BorderBrush="{TemplateBinding BorderBrush}"
+                                                     ToolTip="{TemplateBinding AgeAtDeathTooltip}"
+                                                     Style="{TemplateBinding ZoneOneDataStyle}"
+                                                     />
+                            </controls:WrapPanel>
+                        </Grid>
+
+                    </Grid>
+                </Grid>
+
+                <!-- Zone two headers-->
+                <Border x:Name="ZoneTwoHeaderBorder" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    Background="{TemplateBinding Background}" 
+                                    BorderThickness="0" 
+                                    Grid.Column="0" Grid.ColumnSpan="6" Grid.Row="1"
+                                    />
+
+                <Border x:Name="SubsectionOne" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="0,1,1,0" 
+                                    Grid.Column="0" Grid.Row="1"
+                                    ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"
+                                    >
+                    <StackPanel Orientation="Horizontal" x:Name="SubSectionOneHeader" Background="Transparent">
+                        <controls:Label HoverAction="None" TextWrapping="NoWrap" x:Name="SubsectionOneTitleLabel" Margin="5,0,0,0"  Text="{TemplateBinding SubSectionOneTitle}" VerticalAlignment="Center" 
+                                                 Style="{TemplateBinding ZoneTwoTitleLabelStyle}"
+                                           />
+                        <controls:Label HoverAction="None" TextWrapping="NoWrap" x:Name="AddressPreview" Margin="5,0,0,0" VerticalAlignment="Center"
+                                                   Style="{TemplateBinding ZoneTwoTitleDataStyle}" Text="{TemplateBinding AddressPreview}"
+                                                    />
+                    </StackPanel>
+                </Border>
+
+                <Border x:Name="SubsectionTwo" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="0,1,1,0" 
+                                    Grid.Column="1" Grid.Row="1"
+                                    ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"
+                                    >
+                    <StackPanel Orientation="Horizontal" Background="Transparent" Width="Auto" x:Name="SubSectionTwoHeader">
+
+                        <controls:Label HoverAction="None" TextWrapping="NoWrap" Margin="5,0,0,0" x:Name="SubsectionTwoTitleLabel" Text="{TemplateBinding SubSectionTwoTitle}"  VerticalAlignment="Center"
+                                                                               Style="{TemplateBinding ZoneTwoTitleLabelStyle}"/>
+                        <controls:Label HoverAction="None" TextWrapping="NoWrap" x:Name="ContactPreview"  Margin="5,0,0,0" Text="{TemplateBinding ContactPreview}"  VerticalAlignment="Center"
+                                                                                             Style="{TemplateBinding ZoneTwoTitleDataStyle}"            />
+                    </StackPanel>
+                </Border>
+
+                <Border x:Name="SubsectionThree" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="0,1,1,0" 
+                                    Grid.Column="2" Grid.Row="1"
+                                    ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"                                    
+                                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                                    Background="Transparent"
+                                    >
+                    <controls:Label x:Name="SubsectionThreeTitleLabel"
+                                                 HoverAction="None" TextWrapping="NoWrap" 
+                                                 Margin="5,0,0,0" 
+                                                 Text="{TemplateBinding SubSectionThreeTitle}"  
+                                                 VerticalAlignment="Center"
+                                                 Style="{TemplateBinding ZoneTwoTitleLabelStyle}"                                                                                                  
+                                                 />
+
+                </Border>
+
+                <Border x:Name="SubsectionFour" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="0,1,1,0" 
+                                    Grid.Column="3" Grid.Row="1"
+                                    ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"  
+                                    HorizontalAlignment="Stretch" Background="Transparent" VerticalAlignment="Stretch"
+                                    >
+                    <controls:Label x:Name="SubsectionFourTitleLabel"
+                                             HoverAction="None" 
+                                             TextWrapping="NoWrap" 
+                                             Margin="5,0,0,0" 
+                                             Text="{TemplateBinding SubSectionFourTitle}"  
+                                             VerticalAlignment="Center" 
+                                             Style="{TemplateBinding ZoneTwoTitleLabelStyle}"
+                                             />
+                </Border>
+
+                <Border x:Name="SubsectionFive" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="0,1,1,0" 
+                                    Grid.Column="4" Grid.Row="1"
+                                    ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"                                    
+                                    >
+                    <StackPanel Background="Transparent"  Orientation="Horizontal" x:Name="SubSectionFiveHeader">
+                        <Image x:Name="AllergiesImage" Stretch="UniformToFill" Margin="5,0,0,0"  Height="16" Width="16" VerticalAlignment="Center"></Image>
+                        <controls:Label x:Name="SubsectionFiveTitleLabel" 
+                                                 HoverAction="None" 
+                                                 TextWrapping="NoWrap" 
+                                                 Margin="5,0,0,0" 
+                                                 Text="{TemplateBinding AllergyStatus}" 
+                                                 VerticalAlignment="Center" 
+                                                 Style="{TemplateBinding ZoneTwoTitleLabelStyle}"
+                                                 />
+                    </StackPanel>
+                </Border>
+
+                <Border x:Name="ExpandCollapseImagePanel" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="0,1,0,0" 
+                                Grid.Column="5" Grid.Row="1"
+                                ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"
+                                >
+                    <StackPanel Background="Transparent"  x:Name="SubSectionSixHeader" Height="Auto" VerticalAlignment="Center">
+                        <Button x:Name="ButtonExpand" Background="{TemplateBinding Background}" Style="{StaticResource CircularButton}" MaxWidth="20" MaxHeight="20">
+                        </Button>
+                    </StackPanel>
+                </Border>
+
+
+                <!-- Zone two content-->
+
+                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,1,1,0" Grid.Column="0" Grid.Row="2" >
+                    <Grid Margin="5,0,0,0" x:Name="SubsectionOneContent">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <controls:Label 
+                                        x:Name="AddressTypeLabel"
+                                        IsTabStop="False"
+                                        HoverAction="None" 
+                                        Text="{TemplateBinding AddressTypeLabelText}" 
+                                        Grid.Row="0"                                          
+                                        Style="{TemplateBinding ZoneTwoLabelStyle}"
+                                        ShowHandOnHover="False"
+                                        />
+                        <controls:AddressLabel x:Name="AddressLabel" 
+                                                        IsTabStop="False"                                                          
+                                                        Grid.Row="1" 
+                                                        AddressDisplayFormat="{TemplateBinding AddressDisplayFormat}" 
+                                                        Address1="{TemplateBinding Address1}"
+                                                        Address2="{TemplateBinding Address2}"
+                                                        Address3="{TemplateBinding Address3}"
+                                                        Town="{TemplateBinding Town}"
+                                                        County="{TemplateBinding County}"
+                                                        Country="{TemplateBinding Country}"
+                                                        Postcode="{TemplateBinding Postcode}"
+                                                        Style="{TemplateBinding ZoneTwoDataStyle}"
+                                                        />
+                    </Grid>
+                </Border>
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0,1,1,0" Grid.Column="1" Grid.Row="2">
+                    <StackPanel Orientation="Vertical" x:Name="SubsectionTwoContent">
+                        <controls:ContactLabel x:Name="ContactLabel" 
+                                                        Margin="5,0,0,0" 
+                                                        HomePhoneNumber="{TemplateBinding HomePhoneNumber}" 
+                                                        WorkPhoneNumber="{TemplateBinding WorkPhoneNumber}" 
+                                                        MobilePhoneNumber="{TemplateBinding MobilePhoneNumber}" 
+                                                        EmailAddress="{TemplateBinding EmailAddress}" 
+                                                        HomePhoneLabelText="{TemplateBinding HomePhoneLabelText}"
+                                                        MobilePhoneLabelText="{TemplateBinding MobilePhoneLabelText}"
+                                                        WorkPhoneLabelText="{TemplateBinding WorkPhoneLabelText}"
+                                                        EmailLabelText="{TemplateBinding EmailLabelText}"  
+                                                        IsTabStop="False"                                                
+                                                        Style="{TemplateBinding ZoneTwoDataStyle}"
+                                                        />
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0,1,1,0" Grid.Column="2" Grid.Row="2" x:Name="SubsectionThreeContentPanel">
+                    <ContentControl IsTabStop="False" Content="{TemplateBinding SubSectionThreeContent}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
+                </Border>
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0,1,1,0" Grid.Column="3" Grid.Row="2" x:Name="SubsectionFourContentPanel">
+                    <ContentControl IsTabStop="False" Content="{TemplateBinding SubSectionFourContent}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
+                </Border>
+
+                <Border Background="{TemplateBinding Background}"  BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,1,0,0" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="2">
+                    <controls:AllergiesLabel x:Name="AllergiesLabel" Margin="5,0,0,0"
+                                                      Allergies="{TemplateBinding Allergies}" 
+                                                      Style="{TemplateBinding ZoneTwoDataStyle}"
+                                                      MaxAllergiesToShow="5"
+                                                      />
+                </Border>
+
+                <!-- Zone two links-->
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,0" Grid.Column="0" Grid.Row="3" Background="{TemplateBinding Background}">
+                    <StackPanel x:Name="ViewAllAddressLinkPanel" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <controls:Label x:Name="ViewAllAddressLink" 
+                                             Text="{TemplateBinding ViewAllAddressLinkText}" 
+                                             HoverAction="Underline"
+                                             Style="{TemplateBinding ZoneTwoLinksStyle}"
+                                             />
+                    </StackPanel>
+
+                </Border>
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,0" Background="{TemplateBinding Background}" Grid.Column="1" Grid.Row="3">
+                    <StackPanel x:Name="ViewContactDetailsLinkPanel" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <controls:Label x:Name="ViewContactDetailsLink" 
+                                             Text="{TemplateBinding ViewAllContactDetailsLinkText}" 
+                                             HoverAction="Underline"
+                                             Style="{TemplateBinding ZoneTwoLinksStyle}"
+                                             />
+                    </StackPanel>
+                </Border>
+
+                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,0" Grid.Column="2" Grid.Row="3" />
+                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,0" Grid.Column="3" Grid.Row="3" />
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" Background="{TemplateBinding Background}" Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="2">
+                    <StackPanel x:Name="ViewAllergyRecordLinkPanel"  Orientation="Horizontal" HorizontalAlignment="Right">
+                        <controls:Label x:Name="ViewAllergyRecordLink" 
+                                             Text="{TemplateBinding ViewAllergyRecordLinkText}" 
+                                             HoverAction="Underline"
+                                             Style="{TemplateBinding ZoneTwoLinksStyle}"
+                                             />
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate TargetType="controls:PatientBanner" x:Key="HC_PatientBannerTemplate">
+        <Grid VerticalAlignment="Top" x:Name="RootElement">
+            <Grid.Resources>
+                <Color x:Key="StripeColour">#FFC0C0C0</Color>
+                <Color x:Key="StripeColour2">#FFCCCCCC</Color>
+                <SolidColorBrush x:Key="ZoneTwoTitleNormalForeground">White</SolidColorBrush>
+                <SolidColorBrush x:Key="ZoneTwoTitleHoverForeground">Black</SolidColorBrush>
+            </Grid.Resources>
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="PatientStates">
+                    <VisualState x:Name="Deceased">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="GridBorder"
+                                            Storyboard.TargetProperty="StrokeDashArray"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <DoubleCollection>2</DoubleCollection>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="ZoneOneContainer"
+                                            Storyboard.TargetProperty="Background">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <LinearGradientBrush EndPoint="0.05,0.01" StartPoint="0.001,0.999" SpreadMethod="Repeat">
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.01"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.02"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.08"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.09"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.1"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.11"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.12"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.18"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.19"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.2"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.21"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.22"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.28"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.29"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.3"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.31"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.32"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.38"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.39"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.4"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.41"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.42"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.48"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.49"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.5"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.51"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.52"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.58"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.59"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.6"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.61"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.62"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.68"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.69"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.7"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.71"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.72"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.78"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.79"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.8"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.81"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.82"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.88"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.89"/>
+                                            <GradientStop Color="{StaticResource StripeColour}" Offset="0.9"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="0.91"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.92"/>
+                                            <GradientStop Color="#FFFFFFFF" Offset="0.98"/>
+                                            <GradientStop Color="{StaticResource StripeColour2}" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="DeathDetailsPanel"
+                                            Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Visible</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="Alive">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="GridBorder"
+                                            Storyboard.TargetProperty="StrokeDashArray"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <DoubleCollection></DoubleCollection>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="ZoneOneContainer"
+                                            Storyboard.TargetProperty="Background">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000" Value="{TemplateBinding Background}">
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="DeathDetailsPanel"
+                                            Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.0010000">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+                <VisualStateGroup x:Name="ZoneTwoStates">
+                    <VisualState x:Name="ZoneTwoNormal">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ZoneTwoHeaderBorder"
+                                                                       Storyboard.TargetProperty="Background"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{TemplateBinding Background}">
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionOneTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AddressPreview"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionTwoTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContactPreview"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionThreeTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionFourTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleNormalForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="ZoneTwoHover">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ZoneTwoHeaderBorder"
+                                                                       Storyboard.TargetProperty="Background"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <SolidColorBrush>#C0C0C0</SolidColorBrush>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionOneTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AddressPreview"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionTwoTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContactPreview"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionThreeTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionFourTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                                                       Storyboard.TargetProperty="Foreground"
+                                                                       >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.000100" Value="{StaticResource ZoneTwoTitleHoverForeground}" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+                <VisualStateGroup x:Name="AllergyInformationStates">
+                    <VisualState x:Name="AllergyDetailsKnown">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                            Storyboard.TargetProperty="FontWeight"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.00100" Value="Bold" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                            Storyboard.TargetProperty="FontStyle"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.00100" Value="Normal" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="AllergyDetailsNotKnown">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                            Storyboard.TargetProperty="FontWeight"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.00100" Value="Normal" />
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames
+                                            Storyboard.TargetName="SubsectionFiveTitleLabel"
+                                            Storyboard.TargetProperty="FontStyle"
+                                            >
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00.00100" Value="Italic" />
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+                <VisualStateGroup x:Name="PatientImageVisibleStates">
+                    <VisualState x:Name="PatientImageVisible">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PatientImage"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Visible</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="PatientImageCollapsed">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PatientImage"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Rectangle x:Name="GridBorder" Stroke="{TemplateBinding BorderBrush}" 
+                                   StrokeThickness="{TemplateBinding BorderWidth}"                                     
+                                   >
+            </Rectangle>
+
+            <Grid x:Name="PART_RootElement" Margin="{TemplateBinding BorderThickness}" ShowGridLines="False" Background="{TemplateBinding Background}">
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="ZoneOneRow" Height="Auto" MinHeight="{TemplateBinding ZoneOneMinHeight}" />
+                    <RowDefinition  x:Name="ZoneTwoHeaderRow" Height="Auto" />
+                    <RowDefinition  x:Name="ZoneTwoContentRow" Height="0" />
+                    <RowDefinition x:Name="ZoneTwoLinksRow" Height="0" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width= "2*" />
+                    <ColumnDefinition Width= "2*" />
+                    <ColumnDefinition Width= "1*" />
+                    <ColumnDefinition Width= "1*" />
+                    <ColumnDefinition Width= "2*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Zone one-->
+                <Grid x:Name="ZoneOneContainer" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6"
+                                  MinHeight="{TemplateBinding ZoneOneMinHeight}"                                  
+                                  >
+                    <Grid x:Name="ZoneOne" Margin="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid x:Name="PatientNamePanel" 
+                                        VerticalAlignment="Center" HorizontalAlignment="Left"
+                                        Grid.Column="0" 
+                                        >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="PatientImage" Stretch="UniformToFill" 
+                                               Height="48" Width="48" 
+                                               Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"                                       
+                                               Source="{TemplateBinding PatientImage}" 
+                                               Visibility="{TemplateBinding PatientImageVisible}"
+                                               HorizontalAlignment="Left" />
+
+                            <controls:NameLabel x:Name="NameLabel" 
+                                                         VerticalAlignment="Center" HorizontalAlignment="Left"
+                                                         FamilyName="{TemplateBinding FamilyName}"
+                                                         GivenName="{TemplateBinding GivenName}"
+                                                         Title="{TemplateBinding Title}"
+                                                         BorderBrush="{TemplateBinding BorderBrush}"
+                                                         HoverAction="Underline"
+                                                         ToolTip="{TemplateBinding PatientNameToolTip}"
+                                                         Style="{TemplateBinding PatientNameStyle}"
+                                                         Grid.Row="0" Grid.Column="1"
+                                                         ShowHandOnHover="True"
+                                                     />
+
+                            <StackPanel x:Name="PreferredNameDetails" 
+                                                Orientation="Horizontal"                                                  
+                                                Grid.Column="1" Grid.Row="1">
+                                <controls:Label x:Name="PreferredNameLabelText" 
+                                                     HorizontalAlignment="Left"
+                                                     VerticalAlignment="Center"
+                                                     Text="{TemplateBinding PreferredNameLabelText}" 
+                                                     HoverAction="Border"
+                                                     BorderBrush="{TemplateBinding BorderBrush}"
+                                                     ToolTip="{TemplateBinding PreferredNameLabelToolTip}"
+                                                     Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                     Margin="0,0,2,0"
+                                                     />
+
+                                <controls:Label x:Name="PreferredName" 
+                                                     Text="{TemplateBinding PreferredName}" 
+                                                     Margin="2,0,0,0"
+                                                     HoverAction="Underline"                                                     
+                                                     HorizontalAlignment="Left" VerticalAlignment="Center"
+                                                     ToolTip="{TemplateBinding PreferredNameToolTip}"
+                                                     Style="{TemplateBinding ZoneOneDataStyle}"
+                                                   />
+
+
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:Name="PatientDetailsPanel"
+                                            HorizontalAlignment="Right" VerticalAlignment="Center"
+                                            Grid.Column="1" Grid.Row="0"
+                                            >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <controls:WrapPanel Grid.Row="0" Grid.Column="1">
+                                <controls:Label x:Name="DOBLabel" 
+                                                         Text="{TemplateBinding DateOfBirthLabelText}" 
+                                                         VerticalAlignment="Center"
+                                                         HoverAction="Border" BorderBrush="{TemplateBinding BorderBrush}"
+                                                         ToolTip="{TemplateBinding DateOfBirthLabelToolTip}"
+                                                         Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                         TextWrapping="Wrap"
+                                                     />
+
+                                <controls:Label x:Name="DOBValue" 
+                                                         Text="{TemplateBinding DateOfBirthText}" 
+                                                         VerticalAlignment="Center"
+                                                         HoverAction="Underline" 
+                                                         BorderBrush="{TemplateBinding BorderBrush}"
+                                                         ToolTip="{TemplateBinding DateOfBirthToolTip}"
+                                                         Style="{TemplateBinding ZoneOneDataStyle}"
+                                                         TextWrapping="Wrap"
+                                                         />
+
+                                <controls:Label x:Name="GenderLabel" 
+                                                         Text="{TemplateBinding GenderLabelText}" 
+                                                         VerticalAlignment="Center"
+                                                         HoverAction="Border" 
+                                                         BorderBrush="{TemplateBinding BorderBrush}"
+                                                         ToolTip="{TemplateBinding GenderLabelTooltip}"
+                                                         Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                         />
+
+                                <controls:GenderLabel x:Name="GenderValue" 
+                                                               VerticalAlignment="Center"
+                                                               Value="{TemplateBinding Gender}"          
+                                                               HoverAction="Underline" 
+                                                               BorderBrush="{TemplateBinding BorderBrush}"
+                                                               ToolTip="{TemplateBinding GenderValueTooltip}"
+                                                               Style="{TemplateBinding ZoneOneDataStyle}"
+                                                               ShowHandOnHover="True"
+                                                           />
+
+                                <controls:Label x:Name="IdentifierLabel"
+                                                         Text="{TemplateBinding IdentifierLabelText}" 
+                                                         VerticalAlignment="Center" 
+                                                         HoverAction="Border" 
+                                                         BorderBrush="{TemplateBinding BorderBrush}"
+                                                         ToolTip="{TemplateBinding IdentifierLabelTooltip}"
+                                                         Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                         />
+
+                                <controls:IdentifierLabel x:Name="IdentifierValue" 
+                                                                   VerticalAlignment="Center"                         
+                                                                   IdentifierType="{TemplateBinding IdentifierType}" 
+                                                                   Text="{TemplateBinding Identifier}"
+                                                                   HoverAction="Underline" 
+                                                                   BorderBrush="{TemplateBinding BorderBrush}"
+                                                                   ToolTip="{TemplateBinding IdentifierTooltip}"
+                                                                   Style="{TemplateBinding ZoneOneDataStyle}"
+                                                                   ShowHandOnHover="True"
+                                                                   />
+                            </controls:WrapPanel>
+
+                            <controls:WrapPanel x:Name="DeathDetailsPanel" Grid.Row="1" Grid.Column="1">
+                                <controls:Label x:Name="DODLabel" 
+                                                     Text="{TemplateBinding DateOfDeathLabelText}" 
+                                                     VerticalAlignment="Center"
+                                                     HoverAction="Border" 
+                                                     BorderBrush="{TemplateBinding BorderBrush}"
+                                                     ToolTip="{TemplateBinding DateOfDeathLabelToolTip}"
+                                                     Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                     />
+
+                                <controls:Label x:Name="DODValue" 
+                                                     Text="{TemplateBinding DateOfDeathText}" 
+                                                     VerticalAlignment="Center"                           
+                                                     HoverAction="Underline" 
+                                                     BorderBrush="{TemplateBinding BorderBrush}"
+                                                     ToolTip="{TemplateBinding DateOfDeathToolTip}"
+                                                     Style="{TemplateBinding ZoneOneDataStyle}"
+                                                     />
+
+                                <controls:Label x:Name="AgeAtDeathLabel" 
+                                                     Text="{TemplateBinding AgeAtDeathLabelText}" 
+                                                     VerticalAlignment="Center"
+                                                     HoverAction="Border" 
+                                                     BorderBrush="{TemplateBinding BorderBrush}"
+                                                     ToolTip="{TemplateBinding AgeAtDeathLabelTooltip}"
+                                                     Style="{TemplateBinding ZoneOneLabelStyle}"
+                                                     />
+
+                                <controls:Label x:Name="AgeAtDeathValue" 
+                                                     Text="{TemplateBinding AgeAtDeath}" 
+                                                     VerticalAlignment="Center"                      
+                                                     HoverAction="Underline" 
+                                                     BorderBrush="{TemplateBinding BorderBrush}"
+                                                     ToolTip="{TemplateBinding AgeAtDeathTooltip}"
+                                                     Style="{TemplateBinding ZoneOneDataStyle}"
+                                                     />
+                            </controls:WrapPanel>
+                        </Grid>
+
+                    </Grid>
+                </Grid>
+
+                <!-- Zone two headers-->
+                <Border x:Name="ZoneTwoHeaderBorder" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    Background="{TemplateBinding Background}" 
+                                    BorderThickness="0" 
+                                    Grid.Column="0" Grid.ColumnSpan="6" Grid.Row="1"
+                                    />
+
+                <Border x:Name="SubsectionOne" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="0,1,1,0" 
+                                    Grid.Column="0" Grid.Row="1"
+                                    ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"
+                                    >
+                    <StackPanel Orientation="Horizontal" x:Name="SubSectionOneHeader" Background="Transparent">
+                        <controls:Label HoverAction="None" TextWrapping="NoWrap" x:Name="SubsectionOneTitleLabel" Margin="5,0,0,0"  Text="{TemplateBinding SubSectionOneTitle}" VerticalAlignment="Center" 
+                                                 Style="{TemplateBinding ZoneTwoTitleLabelStyle}"
+                                           />
+                        <controls:Label HoverAction="None" TextWrapping="NoWrap" x:Name="AddressPreview" Margin="5,0,0,0" VerticalAlignment="Center"
+                                                   Style="{TemplateBinding ZoneTwoTitleDataStyle}" Text="{TemplateBinding AddressPreview}"
+                                                    />
+                    </StackPanel>
+                </Border>
+
+                <Border x:Name="SubsectionTwo" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="0,1,1,0" 
+                                    Grid.Column="1" Grid.Row="1"
+                                    ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"
+                                    >
+                    <StackPanel Orientation="Horizontal" Background="Transparent" Width="Auto" x:Name="SubSectionTwoHeader">
+
+                        <controls:Label HoverAction="None" TextWrapping="NoWrap" Margin="5,0,0,0" x:Name="SubsectionTwoTitleLabel" Text="{TemplateBinding SubSectionTwoTitle}"  VerticalAlignment="Center"
+                                                                               Style="{TemplateBinding ZoneTwoTitleLabelStyle}"/>
+                        <controls:Label HoverAction="None" TextWrapping="NoWrap" x:Name="ContactPreview"  Margin="5,0,0,0" Text="{TemplateBinding ContactPreview}"  VerticalAlignment="Center"
+                                                                                             Style="{TemplateBinding ZoneTwoTitleDataStyle}"            />
+                    </StackPanel>
+                </Border>
+
+                <Border x:Name="SubsectionThree" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="0,1,1,0" 
+                                    Grid.Column="2" Grid.Row="1"
+                                    ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"                                    
+                                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                                    Background="Transparent"
+                                    >
+                    <controls:Label x:Name="SubsectionThreeTitleLabel"
+                                                 HoverAction="None" TextWrapping="NoWrap" 
+                                                 Margin="5,0,0,0" 
+                                                 Text="{TemplateBinding SubSectionThreeTitle}"  
+                                                 VerticalAlignment="Center"
+                                                 Style="{TemplateBinding ZoneTwoTitleLabelStyle}"                                                                                                  
+                                                 />
+
+                </Border>
+
+                <Border x:Name="SubsectionFour" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="0,1,1,0" 
+                                    Grid.Column="3" Grid.Row="1"
+                                    ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"  
+                                    HorizontalAlignment="Stretch" Background="Transparent" VerticalAlignment="Stretch"
+                                    >
+                    <controls:Label x:Name="SubsectionFourTitleLabel"
+                                             HoverAction="None" 
+                                             TextWrapping="NoWrap" 
+                                             Margin="5,0,0,0" 
+                                             Text="{TemplateBinding SubSectionFourTitle}"  
+                                             VerticalAlignment="Center" 
+                                             Style="{TemplateBinding ZoneTwoTitleLabelStyle}"
+                                             />
+                </Border>
+
+                <Border x:Name="SubsectionFive" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="0,1,1,0" 
+                                    Grid.Column="4" Grid.Row="1"
+                                    ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"                                    
+                                    >
+                    <StackPanel Background="Transparent"  Orientation="Horizontal" x:Name="SubSectionFiveHeader">
+                        <Image x:Name="AllergiesImage" Stretch="UniformToFill" Margin="5,0,0,0"  Height="16" Width="16" VerticalAlignment="Center"></Image>
+                        <controls:Label x:Name="SubsectionFiveTitleLabel" 
+                                                 HoverAction="None" 
+                                                 TextWrapping="NoWrap" 
+                                                 Margin="5,0,0,0" 
+                                                 Text="{TemplateBinding AllergyStatus}" 
+                                                 VerticalAlignment="Center" 
+                                                 Style="{TemplateBinding ZoneTwoTitleLabelStyle}"
+                                                 />
+                    </StackPanel>
+                </Border>
+
+                <Border x:Name="ExpandCollapseImagePanel" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="0,1,0,0" 
+                                Grid.Column="5" Grid.Row="1"
+                                ToolTipService.ToolTip="{TemplateBinding ZoneTwoTooltip}"
+                                >
+                    <StackPanel Background="Transparent"  x:Name="SubSectionSixHeader" Height="Auto" VerticalAlignment="Center">
+                        <Button x:Name="ButtonExpand" Background="{TemplateBinding Background}" Style="{StaticResource CircularButton}" MaxWidth="20" MaxHeight="20">
+                        </Button>
+                    </StackPanel>
+                </Border>
+
+
+                <!-- Zone two content-->
+
+                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,1,1,0" Grid.Column="0" Grid.Row="2" >
+                    <Grid Margin="5,0,0,0" x:Name="SubsectionOneContent">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <controls:Label 
+                                        x:Name="AddressTypeLabel"
+                                        IsTabStop="False"
+                                        HoverAction="None" 
+                                        Text="{TemplateBinding AddressTypeLabelText}" 
+                                        Grid.Row="0"                                          
+                                        Style="{TemplateBinding ZoneTwoLabelStyle}"
+                                        ShowHandOnHover="False"
+                                        />
+                        <controls:AddressLabel x:Name="AddressLabel" 
+                                                        IsTabStop="False"                                                          
+                                                        Grid.Row="1" 
+                                                        AddressDisplayFormat="{TemplateBinding AddressDisplayFormat}" 
+                                                        Address1="{TemplateBinding Address1}"
+                                                        Address2="{TemplateBinding Address2}"
+                                                        Address3="{TemplateBinding Address3}"
+                                                        Town="{TemplateBinding Town}"
+                                                        County="{TemplateBinding County}"
+                                                        Country="{TemplateBinding Country}"
+                                                        Postcode="{TemplateBinding Postcode}"
+                                                        Style="{TemplateBinding ZoneTwoDataStyle}"
+                                                        />
+                    </Grid>
+                </Border>
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0,1,1,0" Grid.Column="1" Grid.Row="2">
+                    <StackPanel Orientation="Vertical" x:Name="SubsectionTwoContent">
+                        <controls:ContactLabel x:Name="ContactLabel" 
+                                                        Margin="5,0,0,0" 
+                                                        HomePhoneNumber="{TemplateBinding HomePhoneNumber}" 
+                                                        WorkPhoneNumber="{TemplateBinding WorkPhoneNumber}" 
+                                                        MobilePhoneNumber="{TemplateBinding MobilePhoneNumber}" 
+                                                        EmailAddress="{TemplateBinding EmailAddress}" 
+                                                        HomePhoneLabelText="{TemplateBinding HomePhoneLabelText}"
+                                                        MobilePhoneLabelText="{TemplateBinding MobilePhoneLabelText}"
+                                                        WorkPhoneLabelText="{TemplateBinding WorkPhoneLabelText}"
+                                                        EmailLabelText="{TemplateBinding EmailLabelText}"  
+                                                        IsTabStop="False"                                                
+                                                        Style="{TemplateBinding ZoneTwoDataStyle}"
+                                                        />
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0,1,1,0" Grid.Column="2" Grid.Row="2" x:Name="SubsectionThreeContentPanel">
+                    <ContentControl IsTabStop="False" Content="{TemplateBinding SubSectionThreeContent}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
+                </Border>
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0,1,1,0" Grid.Column="3" Grid.Row="2" x:Name="SubsectionFourContentPanel">
+                    <ContentControl IsTabStop="False" Content="{TemplateBinding SubSectionFourContent}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
+                </Border>
+
+                <Border Background="{TemplateBinding Background}"  BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,1,0,0" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="2">
+                    <controls:AllergiesLabel x:Name="AllergiesLabel" Margin="5,0,0,0"
+                                                      Allergies="{TemplateBinding Allergies}" 
+                                                      Style="{TemplateBinding ZoneTwoDataStyle}"
+                                                      MaxAllergiesToShow="5"
+                                                      />
+                </Border>
+
+                <!-- Zone two links-->
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,0" Grid.Column="0" Grid.Row="3" Background="{TemplateBinding Background}">
+                    <StackPanel x:Name="ViewAllAddressLinkPanel" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <controls:Label x:Name="ViewAllAddressLink" 
+                                             Text="{TemplateBinding ViewAllAddressLinkText}" 
+                                             HoverAction="Underline"
+                                             Style="{TemplateBinding ZoneTwoLinksStyle}"
+                                             />
+                    </StackPanel>
+
+                </Border>
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,0" Background="{TemplateBinding Background}" Grid.Column="1" Grid.Row="3">
+                    <StackPanel x:Name="ViewContactDetailsLinkPanel" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <controls:Label x:Name="ViewContactDetailsLink" 
+                                             Text="{TemplateBinding ViewAllContactDetailsLinkText}" 
+                                             HoverAction="Underline"
+                                             Style="{TemplateBinding ZoneTwoLinksStyle}"
+                                             />
+                    </StackPanel>
+                </Border>
+
+                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,0" Grid.Column="2" Grid.Row="3" />
+                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0,0,1,0" Grid.Column="3" Grid.Row="3" />
+
+                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" Background="{TemplateBinding Background}" Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="2">
+                    <StackPanel x:Name="ViewAllergyRecordLinkPanel"  Orientation="Horizontal" HorizontalAlignment="Right">
+                        <controls:Label x:Name="ViewAllergyRecordLink" 
+                                             Text="{TemplateBinding ViewAllergyRecordLinkText}" 
+                                             HoverAction="Underline"
+                                             Style="{TemplateBinding ZoneTwoLinksStyle}"
+                                             />
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </ControlTemplate>
+    
+</ResourceDictionary>

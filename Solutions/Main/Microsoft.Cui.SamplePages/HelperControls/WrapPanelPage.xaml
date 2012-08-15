@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Microsoft.Cui.SamplePages.WrapPanelPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sl="clr-namespace:Microsoft.Cui.Controls;assembly=Microsoft.Cui.Controls"
+    xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+    Width="Auto" Height="Auto">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="0.01*"/>
+        </Grid.ColumnDefinitions>
+        <Border Background="#E4E4E4" Padding="5">
+            <sl:WrapPanel Background="White">
+                <sl:WrapPanel.Children>
+                    <Rectangle Fill="AliceBlue" Height="100" Width="200"/>
+                    <Rectangle Fill="AntiqueWhite" Height="200" Width="200"/>
+                    <Rectangle Fill="MediumSeaGreen" Height="100" Width="200"/>
+                    <Rectangle Fill="Coral" Height="20" Width="300"/>
+                    <Rectangle Fill="DarkGoldenrod" Height="500" Width="10"/>
+                    <Rectangle Fill="Khaki" Height="10" Width="20"/>
+                </sl:WrapPanel.Children>
+            </sl:WrapPanel>
+        </Border>
+        <controls:GridSplitter Grid.Column="1" HorizontalAlignment="Center" Width="5" Background="Blue"/>
+        <TextBlock Margin="10,0,0,0" Text="The WrapPanel description." TextWrapping="Wrap" FontFamily="Verdana" FontSize="13" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
+    </Grid>
+</UserControl>

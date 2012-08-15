@@ -1,0 +1,42 @@
+﻿<ResourceDictionary 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"    
+  xmlns:local="clr-namespace:Microsoft.Cui.Roadmap"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="local:RoadmapHost">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>                        
+                        <ItemsControl x:Name="ItemsControl" ItemsSource="{TemplateBinding DataContext}">
+                            <ItemsControl.Resources>
+                                <local:RoadmapTemplateConverter x:Key="RoadMapTemplateConverter">
+                                </local:RoadmapTemplateConverter>
+                            </ItemsControl.Resources>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <ContentControl HorizontalContentAlignment="Stretch" Content="{Binding Converter={StaticResource RoadMapTemplateConverter}}"/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="local:RoadmapHyperlink">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <TextBlock x:Name="HyperlinkTextblock"></TextBlock>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

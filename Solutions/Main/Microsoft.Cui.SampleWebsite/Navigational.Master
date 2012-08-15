@@ -1,0 +1,24 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navigational.master.cs" Inherits="Microsoft.Cui.SampleWebsite.Navigational" MasterPageFile="~/DefaultMaster.master"%>
+<%@ Register Assembly="Microsoft.Cui.SampleWebsite" Namespace="Microsoft.Cui.SampleWebsite" TagPrefix="SS" %>   
+
+<asp:Content runat="server" ContentPlaceHolderID="pageSpecificHeadTags">
+    <asp:ContentPlaceHolder id="navigationSpecificHeadTags" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="siteContentPlaceHolder">
+    <a href="#navskip" style="display:block;"><asp:Image runat="server" ImageUrl="~/images/SFTheme/blank.gif" AlternateText="skip to main content"></asp:Image></a>
+    <div id="navigationalBody">
+        <div id="mainNav" class="mainNav" runat="server">
+            <SS:SiteMapListControl runat="server"  id="siteMapListControl" Depth="2"></SS:SiteMapListControl>
+        </div>
+        <div id="navigationalContent">
+            <a id="navskip"></a>
+            <div id="contentBlockFormattingContext">
+                <asp:ContentPlaceHolder ID="navigationPageContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="extraDiv"></div>        
+    </div>
+</asp:Content>
